@@ -1,0 +1,49 @@
+{
+  "bannerImage": "/images/services/textimage.png",
+  "feature": {
+    "background": "/images/what-we-do/landscaping/landscaping-1.jpg",
+    "eyebrow": {
+      "icon": "/images/home-2/icon/04.svg",
+      "text": "what we do"
+    },
+    "headline": "Complete Agriculture\nSolutions",
+    "cta": { "label": "view all services", "href": "/what-we-do/irrigation-and-landscaping" }
+  },
+  "tags": ["Turn-Key", "Pan-India", "Govt & Corporate"],
+  "cardDescription": "20+ years of irrigation, landscape, and agriculture expertise — delivered end-to-end across India.",
+  "cards": [
+    {
+      "image": "/images/what-we-do/irrigation/irrigation-1.jpg",
+      "title": "Irrigation & Landscaping",
+      "href": "/what-we-do/irrigation-and-landscaping",
+      "delay": ".5"
+    },
+    {
+      "image": "/images/what-we-do/landscaping/landscaping-2.jpg",
+      "title": "Maintenance & Upkeep",
+      "href": "/what-we-do/maintenance",
+      "delay": ".7"
+    },
+    {
+      "image": "/images/what-we-do/outlets/outlets-1.webp",
+      "title": "Outlets & Nurseries",
+      "href": "/what-we-do/outlets",
+      "delay": ".3"
+    },
+    {
+      "image": "/images/what-we-do/manufacturing/manufacturing-1.jpg",
+      "title": "Manufacturing",
+      "href": "/what-we-do/manufacturing",
+      "delay": ".5"
+    }
+  ],
+  "carousel": {
+    "slides": [
+      "/images/what-we-do/projects/projects-1.jpg",
+      "/images/what-we-do/projects/projects-3.jpg",
+      "/images/what-we-do/projects/projects-5.jpg"
+    ],
+    "delay": ".7"
+  },
+  "cardLink": "/what-we-do/irrigation-and-landscaping"
+}

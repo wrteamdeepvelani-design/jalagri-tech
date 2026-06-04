@@ -1,0 +1,31 @@
+{
+  "eyebrow": "About Jal Agritech",
+  "headline": "Pioneers of Irrigation &\nLandscape in Kutch",
+  "description": "At Jal Agritech India Pvt Ltd, our directors bring 20+ years of experience in irrigation and landscape development. Our dedicated team of landscape architects, horticulturists, and irrigation engineers crafts outstanding outdoor environments that blend modern design with practical functionality — from hardscaped seating areas and water features to vibrant plant arrangements and complete plantation projects.",
+  "images": [
+    {
+      "src": "/images/what-we-do/landscaping/landscaping-1.jpg",
+      "counter": { "value": "20", "suffix": "+", "label": "years of experience" }
+    },
+    {
+      "src": "/images/what-we-do/miyawaki/miyawaki-1.jpg"
+    }
+  ],
+  "rightBox": {
+    "background": "/images/home-3/about-shape.png",
+    "title": "What Makes Us Different",
+    "columns": [
+      ["Turn-Key Delivery", "Native Species"],
+      ["Govt & Corporate", "Eco-Friendly"]
+    ],
+    "person": {
+      "image": "/images/home-3/client-1.png",
+      "name": "Mr. Jamandas V. Bachani",
+      "role": "Director"
+    },
+    "ctas": [
+      { "label": "Explore Our Work",  "href": "/projects",            "className": "theme-btn theme-btn-3" },
+      { "label": "Talk To Us",        "href": "/contact",             "className": "theme-btn style-2" }
+    ]
+  }
+}

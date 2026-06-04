@@ -1,0 +1,34 @@
+{
+  "background": "/images/home-3/work-process-bg.png",
+  "eyebrow": "WHAT WE OFFER",
+  "headline": "Services Designed for Real Farms",
+  "description": "From system design to crop disease consultancy — on-field expertise that helps farmers get the best from their soil.",
+  "steps": [
+    {
+      "number": "01",
+      "icon": "/images/home-3/icon/05.svg",
+      "title": "Drip Irrigation Development",
+      "delay": ".2"
+    },
+    {
+      "number": "02",
+      "icon": "/images/home-3/icon/06.svg",
+      "title": "Farm Crop Management",
+      "delay": ".4",
+      "modifier": "card-style"
+    },
+    {
+      "number": "03",
+      "icon": "/images/home-3/icon/07.svg",
+      "title": "Farm Development",
+      "delay": ".6"
+    },
+    {
+      "number": "04",
+      "icon": "/images/home-3/icon/08.svg",
+      "title": "Crop Disease Consultancy",
+      "delay": ".8",
+      "modifier": "card-style"
+    }
+  ]
+}

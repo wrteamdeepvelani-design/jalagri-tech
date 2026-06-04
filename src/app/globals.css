@@ -1,0 +1,244 @@
+/* ───────────────────────────────────────────────────────────────────
+   globals.css — Agriva Next.js (Maize Farming theme)
+
+   The Agriva theme's CSS architecture is intact in src/app/styles/:
+     1. bootstrap.min.css
+     2. all.min.css            (FontAwesome)
+     3. animate.css
+     4. magnific-popup.css
+     5. meanmenu.css
+     6. swiper-bundle.min.css
+     7. nice-select.css
+     8. main.css               (theme styles)
+   These load first via layout.tsx. THIS file loads last and contains only:
+     - Tailwind v4 utilities (theme + utilities only, no preflight reset)
+     - CSS variables shared with main.css :root
+
+   We skip Tailwind's preflight because it fights the theme's CSS reset.
+   No project-specific overrides — the theme handles its own responsive
+   behavior, mobile menu, overflow, etc. via main.css + main.js.
+   ─────────────────────────────────────────────────────────────────── */
+
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+:root {
+  --body: #fff;
+  --black: #000;
+  --white: #fff;
+  --theme: #C8433A;
+  --theme2: #F5D83E;
+  --theme3: #11A21B;
+  --header: #2F2F2F;
+  --text: #50624A;
+  --border: #02060A;
+  --bg: #F5F6F4;
+  --bg2: #50624A;
+  --bg3: #F5F6F4;
+  --box-shadow: 0px 1px 14px 0px rgba(0, 0, 0, 0.13);
+}
+
+@theme inline {
+  --color-theme: var(--theme);
+  --color-theme2: var(--theme2);
+  --color-theme3: var(--theme3);
+  --color-header: var(--header);
+  --color-text-body: var(--text);
+  --color-bg: var(--bg);
+  --color-bg2: var(--bg2);
+  --font-sans: "Inter", sans-serif;
+  --font-heading: "Instrument Sans", sans-serif;
+}
+
+/* Hero — two fixes:
+   1. Theme uses fixed pixel heights (950/900/670px). On tall monitors
+      that leaves a white gap below the hero. Force 100vh so the hero
+      always fills the viewport.
+   2. The slide-inner is auto-height (padding + content ≈ 800-970px) but
+      the slider container is 100vh. Without this, the slide-inner's
+      background image doesn't reach the bottom, exposing white where the
+      "What Makes Us Different" overlay sits. min-height: 100vh stretches
+      the slide-inner so the background-cover image fills the full hero. */
+.hero-section.hero-2 {
+  height: 100vh;
+}
+.hero-section.hero-2 .hero-portfolio-revealing-slide-inner {
+  min-height: 100vh;
+}
+
+/* Hero bottom strip — theme uses `justify-content: space-between` to
+   push .hero-bottom-item left and .pagi-item right. We removed the pagi
+   (only one child remains), so space-between leaves it stuck on the
+   left. Force-center the strip horizontally. !important needed because
+   the theme rule has identical specificity and PostCSS layer ordering
+   isn't guaranteed to put globals.css after main.css's at-rules. */
+.hero-2 .hero-border-item {
+  justify-content: center !important;
+}
+.hero-2 .hero-border-item .hero-bottom-item {
+  justify-content: center !important;
+}
+
+/* Hero video background — replaces the theme's bg-cover image slider.
+   The theme's .hero-portfolio-revealing-slide is `position:absolute` with
+   a `clip-path: circle(...)` masking it to an invisible dot at 120vw —
+   the slider JS expands the clip to reveal each slide. Since we're using
+   a static video instead, override the clip-path + positioning so the
+   slide fills the full hero. .hero-video-active is a modifier we add only
+   on the static video slide; the original revealing-slider behavior is
+   untouched. */
+.hero-2 .hero-portfolio-revealing-slide.hero-video-active {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  clip-path: none;
+  transform: none;
+  left: 0;
+  top: 0;
+}
+.hero-2 .hero-portfolio-revealing-slide.hero-video-active
+  .hero-portfolio-revealing-slide-inner {
+  position: absolute;
+  inset: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  margin: 0;
+}
+
+/* Video element fills the slide; dark overlay improves text readability;
+   .container sits above both with z-index. */
+.hero-video-slide {
+  overflow: hidden;
+}
+.hero-video-slide .hero-video-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+.hero-video-slide::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+.hero-video-slide > .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Home service-section cards — pin .service-image to a fixed 220px so
+   portrait photos don't stretch the cards. object-fit: cover crops the
+   image cleanly. The IMG stays in normal document flow (no position
+   tricks) so the rest of the card markup is unaffected. */
+.service-section-2 .service-card-items-2 .service-image {
+  height: 220px !important;
+  overflow: hidden !important;
+  border-radius: 10px;
+}
+.service-section-2 .service-card-items-2 .service-image img {
+  width: 100% !important;
+  height: 220px !important;
+  object-fit: cover !important;
+  object-position: center !important;
+}
+
+/* Home project section — theme uses natural image dimensions for the
+   left project cards, so different aspect ratios mean different card
+   heights. Pin to 175px so all 4 cards line up at the same height. */
+.project-wrapper-2 .project-left-item .project-image {
+  height: 175px;
+  overflow: hidden;
+}
+.project-wrapper-2 .project-left-item .project-image img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+/* Match right thumb height to left column. Theme hard-codes 735px on
+   .project-thumb, but our 4 cards (175px × 4 + 20px gaps × 3) total
+   ~760px which leaves a gap. Make the thumb wrapper a flex column and
+   let .project-thumb stretch to fill. Bootstrap's row makes left and
+   right cols equal height, so we just need to fill that. */
+.project-wrapper-2 .project-thumb-item {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.project-wrapper-2 .project-thumb-item .project-thumb {
+  height: auto !important;
+  flex: 1 1 auto;
+  min-height: 0;
+}
+
+/* Active card state — theme's main.js uses GSAP ScrollTrigger to set
+   inline color styles on the dot + h3 link when each project becomes
+   active on scroll. Inside ScrollSmoother + Next.js SPA, the pin
+   sometimes never triggers for this section, leaving every card white.
+   This CSS makes :hover give the same yellow accent so cards still feel
+   responsive even when the scroll-pin path doesn't fire. The inline
+   style set by main.js (when it does fire) still overrides this. */
+.project-wrapper-2 .project-left-item .project-image:hover .project-content span {
+  background-color: var(--theme2) !important;
+}
+.project-wrapper-2 .project-left-item .project-image:hover .project-content h3 a {
+  color: var(--theme2) !important;
+}
+
+/* About-page History — hide the .cabage-shape decorative leaf
+   placeholder. The theme ships it as a 360x290 placeholder image
+   (cabage-3.png) that's an absolutely positioned shape near the top
+   of the section. Without a real Jal Agritech shape asset to swap in,
+   suppress it so the dimension-placeholder text doesn't leak into
+   the layout next to the headline. */
+.our-history-section-3 .cabage-shape {
+  display: none;
+}
+
+/* About-page History section — theme's .history-image inherits its
+   height from the natural image dimensions. Theme demo uses a tall
+   portrait photo so the section looks proportional. Our landscape
+   project photos (Adani Township, airports, etc.) are wider/shorter so
+   the section collapses to a tiny row. Pin a fixed height to match
+   theme demo proportions; .history-image img already has width/height
+   100% in main.css so it fills the box. */
+.our-history-wrapper .history-image {
+  height: 670px !important;
+  flex: 0 0 auto;
+  width: 50%;
+  max-width: 760px;
+}
+.our-history-wrapper .history-image img {
+  object-fit: cover !important;
+}
+@media (max-width: 1399px) {
+  .our-history-wrapper .history-image {
+    height: 480px !important;
+    width: 100%;
+    max-width: none;
+  }
+}
+
+/* Preloader safety-net — theme's main.js hides #agri-preloader on
+   window.load. In Next.js's SPA with strategy="afterInteractive", main.js
+   sometimes registers its load listener AFTER window.load has already
+   fired, leaving the preloader stuck. This CSS animation forces it to
+   fade away regardless. main.js's own fade still runs on top when its
+   listener catches the event. */
+#agri-preloader {
+  animation: preloader-fade 0.4s ease 1s forwards;
+}
+@keyframes preloader-fade {
+  to {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}

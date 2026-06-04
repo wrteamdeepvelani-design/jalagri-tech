@@ -1,0 +1,37 @@
+{
+  "eyebrow": {
+    "icon": "/images/home-2/icon/04.svg",
+    "text": "our flagship projects"
+  },
+  "headline": "Trusted by Airports, Corporates\n& Government Bodies",
+  "tags": ["Pan-India", "Turn-Key"],
+  "projects": [
+    {
+      "thumb": "/images/what-we-do/miyawaki/miyawaki-1.jpg",
+      "title": "Smritivan — Bhuj Earthquake Memorial",
+      "href": "/projects"
+    },
+    {
+      "thumb": "/images/what-we-do/landscaping/landscaping-1.jpg",
+      "title": "Adani Township — Mundra",
+      "href": "/projects"
+    },
+    {
+      "thumb": "/images/what-we-do/projects/projects-5.jpg",
+      "title": "Lucknow International Airport",
+      "href": "/projects"
+    },
+    {
+      "thumb": "/images/what-we-do/landscaping/landscaping-5.jpg",
+      "title": "Umed Bhavan Palace",
+      "href": "/projects"
+    }
+  ],
+  "thumbnails": [
+    "/images/what-we-do/miyawaki/miyawaki-2.jpg",
+    "/images/what-we-do/landscaping/landscaping-2.jpg",
+    "/images/what-we-do/projects/projects-3.jpg",
+    "/images/what-we-do/landscaping/landscaping-6.jpg"
+  ],
+  "counterLabel": "01"
+}

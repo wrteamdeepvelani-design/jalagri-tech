@@ -1,0 +1,29 @@
+{
+  "image": "/images/whychoose/float.png ",
+  "eyebrow": {
+    "icon": "/images/home-2/icon/05.svg",
+    "text": "why choose us?"
+  },
+  "headline": "Where Engineering Meets Sustainable Agriculture",
+  "description": "With 20+ years in the field, Jal Agritech delivers end-to-end agriculture solutions — from project survey and design to installation, supply, and after-sales support. Our in-house team of irrigation engineers, landscape architects, and horticulturists has earned the trust of government bodies, top corporates, and farmers across Kutch and Pan India.",
+  "boxes": [
+    {
+      "title": "Turn-Key Project Delivery",
+      "description": "One team for survey, design, installation, supply & maintenance — saving you time, cost, and coordination headaches."
+    },
+    {
+      "title": "Trusted by India's Best",
+      "description": "From BSF, Indian Air Force & International Airports to Adani, Welspun, Tata & Jindal — our work speaks for itself.",
+      "modifier": "style-2"
+    }
+  ],
+  "cta": {
+    "label": "Explore Our Services",
+    "href": "/what-we-do/irrigation-and-landscaping"
+  },
+  "contact": {
+    "icon": "/images/home-2/icon/06.svg",
+    "label": "Call us :",
+    "phone": "+91 98794 47395"
+  }
+}

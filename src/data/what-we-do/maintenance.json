@@ -1,0 +1,125 @@
+{
+  "slug": "maintenance",
+  "title": "Maintenance",
+  "heroImage": "/images/what-we-do/landscaping/landscaping-1.jpg",
+  "seo": {
+    "title": "Maintenance & Specialty Services | Jal Agritech",
+    "description": "AMC, on-call repairs, landscape upkeep, drainage and lighting maintenance — keeping your irrigation systems and landscapes healthy year-round.",
+    "keywords": "maintenance, AMC, landscape maintenance, irrigation upkeep, drainage, grading, landscape lighting, on-call repairs, jal agritech"
+  },
+  "impact": {
+    "background": "/images/what-we-do/landscaping/landscaping-2.jpg",
+    "title": "Always-On Support\nFor Your Project",
+    "items": [
+      { "icon": "/images/inner-page/icon/01.svg", "label": "Sites under AMC",     "value": "180", "delay": ".4s" },
+      { "icon": "/images/inner-page/icon/02.svg", "label": "Avg response (hours)","value": "6",   "delay": ".6s" },
+      { "icon": "/images/inner-page/icon/03.svg", "label": "Service technicians", "value": "25",  "delay": ".8s" }
+    ]
+  },
+  "statistics": {
+    "image": "/images/what-we-do/landscaping/landscaping-3.jpg",
+    "eyebrow": "uptime that matters",
+    "headline": "Maintenance Built Around Your Schedule.",
+    "description": "We keep your irrigation systems and landscapes healthy through scheduled servicing, fast-response repairs, and full seasonal care — so you never lose a season to downtime.",
+    "stats": [
+      { "value": "98", "suffix": "%", "description": "First-visit fix rate." },
+      { "value": "12", "suffix": "+", "description": "Service visits per year per site." },
+      { "value": "24", "suffix": "/7", "description": "Emergency hotline." },
+      { "value": "100","suffix": "%", "description": "Genuine spare parts policy." }
+    ]
+  },
+  "topics": [
+    {
+      "title": "Annual Maintenance Contracts (AMC)",
+      "intro": [
+        "Comprehensive AMC packages cover scheduled servicing, replacement of consumables, and priority emergency response. We tailor the plan to the system size, climate, and crop cycle — so the contract pays for itself through avoided downtime and longer system life."
+      ],
+      "highlight": "98% first-visit fix rate across active AMC sites — the contract pays for itself through avoided downtime.",
+      "thumbnails": [
+        "/images/what-we-do/irrigation/irrigation-1.jpg",
+        "/images/what-we-do/irrigation/irrigation-2.jpg"
+      ],
+      "sections": [
+        {
+          "title": "What an AMC Covers",
+          "list": [
+            "Scheduled servicing of pumps, controllers, valves, and filters",
+            "Replacement of consumables (drippers, sprinklers, gaskets)",
+            "Priority emergency response within agreed SLA",
+            "Annual system health audit + performance report",
+            "Discounted spares and add-on works"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "On-Call Repairs",
+      "intro": [
+        "Pay-per-visit emergency service for non-AMC clients with same-day response in Kutch and next-day response across major Gujarat districts. Common call-outs include pump failures, controller resets, leak repair, and storm-damage recovery."
+      ],
+      "thumbnails": [
+        "/images/what-we-do/irrigation/irrigation-3.jpg",
+        "/images/what-we-do/irrigation/irrigation-4.jpg"
+      ],
+      "sections": []
+    },
+    {
+      "title": "General Landscape Maintenance",
+      "intro": [
+        "Routine garden care that keeps soft and hard landscapes looking sharp and operating safely throughout the year. Our crews handle the seasonal cycle from spring cleanup to monsoon prep to winter trim-back."
+      ],
+      "highlight": "Seasonal clean-up, mulching, trimming, leaf removal, and routine garden care — handled on a fixed monthly schedule.",
+      "thumbnails": [
+        "/images/what-we-do/landscaping/landscaping-1.jpg",
+        "/images/what-we-do/landscaping/landscaping-2.jpg"
+      ],
+      "sections": [
+        {
+          "title": "Included Maintenance Tasks",
+          "list": [
+            "Seasonal clean-up and debris removal",
+            "Mulching for moisture retention and weed control",
+            "Trimming, pruning, and dead-wood removal",
+            "Leaf removal and pathway clearing",
+            "Routine garden care and plant health checks",
+            "Pest and disease scouting"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Drainage & Grading",
+      "intro": [
+        "Land levelling and drainage system installation prevent waterlogging and soil erosion — issues that quietly destroy landscapes and irrigation networks if left unaddressed. We design grading and sub-surface drainage that work in combination with the planting plan."
+      ],
+      "thumbnails": [
+        "/images/what-we-do/landscaping/landscaping-3.jpg",
+        "/images/what-we-do/landscaping/landscaping-4.jpg"
+      ],
+      "sections": []
+    },
+    {
+      "title": "Landscape Lighting Maintenance",
+      "intro": [
+        "Outdoor lighting needs more attention than indoor fixtures — UV exposure, monsoon ingress, and insect debris all shorten driver life. Our maintenance plan covers cleaning, lamp replacement, driver swaps, and seasonal re-aiming for path and accent lights."
+      ],
+      "thumbnails": [
+        "/images/what-we-do/landscaping/landscaping-5.jpg",
+        "/images/what-we-do/landscaping/landscaping-6.jpg"
+      ],
+      "sections": [
+        {
+          "title": "Maintenance Scope for Outdoor Lighting",
+          "list": [
+            "Quarterly cleaning of lenses and reflectors",
+            "Lamp and LED replacement on schedule",
+            "Driver and transformer health checks",
+            "Cable and connection inspection",
+            "Seasonal re-aiming for path and accent lights",
+            "Sensor and timer programming updates"
+          ]
+        }
+      ]
+    }
+  ]
+}

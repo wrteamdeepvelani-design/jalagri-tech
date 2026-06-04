@@ -1,0 +1,46 @@
+{
+  "shape": "/images/home-3/faq-shape.png",
+  "eyebrow": "faq",
+  "headline": "Common Questions About\nJal Agritech",
+  "images": [
+    "/images/what-we-do/landscaping/landscaping-2.jpg",
+    "/images/what-we-do/miyawaki/miyawaki-2.jpg"
+  ],
+  "faqs": [
+    {
+      "id": "One",
+      "question": "Where are you located?",
+      "answer": "Our head office is at 34 Time Square Empire, Mirzapar Road, Bhuj – Kutch 370001, Gujarat, India. We operate retail outlets across Bhachau, Bhuj, Adas (Aanand), and Ayodhya. For Pan-India project work, our field team mobilizes from these regional hubs.",
+      "delay": ".3s",
+      "expanded": true
+    },
+    {
+      "id": "Two",
+      "question": "What services do you offer?",
+      "answer": "We provide drip irrigation system development, farm crop management consultancy, farm development planning, crop disease consultancy, and on-field advisory on demand. We also handle complete landscape design, plantation, and Miyawaki forest projects for corporate, government, and residential clients.",
+      "delay": ".5s",
+      "expanded": false
+    },
+    {
+      "id": "three",
+      "question": "Which products do you sell?",
+      "answer": "Fertilizers, pesticides, insecticides, seeds, and all agriculture equipment from our retail outlets. We also manufacture polyester PET wire, ropes, nets, and barbed wire through our joint venture with Inoventive Filaments Pvt Ltd.",
+      "delay": ".7s",
+      "expanded": false
+    },
+    {
+      "id": "four",
+      "question": "Who are your major clients?",
+      "answer": "Government bodies (BSF, Indian Air Force, airport authorities) and corporate giants like Adani Group, Welspun Group, Tata, Jindal, Smritivan Memorial, and Umed Bhavan Palace. Our director Mr. Parsotam Bachani has 15+ years of corporate-level project experience.",
+      "delay": ".3s",
+      "expanded": false
+    },
+    {
+      "id": "five",
+      "question": "Are you opening more outlets?",
+      "answer": "Yes — we are in the process of opening more agro malls based on our successful Bhachau-Kutch experience. Planned locations include Rapar-Kutch, Kothara (Abdasa Tehsil), Adesar (Rapar Taluka), and Kanmer (Samkhiyali–Palanpur Highway).",
+      "delay": ".3s",
+      "expanded": false
+    }
+  ]
+}

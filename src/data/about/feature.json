@@ -1,0 +1,24 @@
+{
+  "description": "Why farmers, corporates, and government bodies across India trust Jal Agritech with their irrigation and landscape projects.",
+  "readMoreLabel": "Read More",
+  "features": [
+    {
+      "image": "/images/what-we-do/landscaping/landscaping-1.jpg",
+      "icon": "/images/home-1/icon/05.svg",
+      "title": "Sustainability First",
+      "href": "/about"
+    },
+    {
+      "image": "/images/what-we-do/outlets/outlets-1.webp",
+      "icon": "/images/home-1/icon/06.svg",
+      "title": "Farmer-First Approach",
+      "href": "/about"
+    },
+    {
+      "image": "/images/what-we-do/manufacturing/manufacturing-1.jpg",
+      "icon": "/images/home-1/icon/07.svg",
+      "title": "End-to-End Delivery",
+      "href": "/about"
+    }
+  ]
+}

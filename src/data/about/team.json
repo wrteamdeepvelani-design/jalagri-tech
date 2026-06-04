@@ -1,0 +1,59 @@
+{
+  "background": "/images/home-3/team/team-bg.jpg",
+  "eyebrow": "our directors",
+  "headline": "Led by Decades of\nIndustry Experience",
+  "arrows": {
+    "prev": "/images/home-3/icon/02.svg",
+    "next": "/images/home-3/icon/04.svg"
+  },
+  "members": [
+    {
+      "image": "/images/home-3/team/01.jpg",
+      "name": "Mr. Jamandas V. Bachani",
+      "role": "Director — Legal & Finance",
+      "href": "/contact",
+      "socials": [
+        { "icon": "fa-facebook-f", "href": "#" },
+        { "icon": "fa-linkedin-in", "href": "#" },
+        { "icon": "fa-twitter", "href": "#" },
+        { "icon": "fa-youtube", "href": "#" }
+      ]
+    },
+    {
+      "image": "/images/home-3/team/02.jpg",
+      "name": "Mr. Parsotam V. Bachani",
+      "role": "Director — Irrigation & Landscape",
+      "href": "/contact",
+      "socials": [
+        { "icon": "fa-facebook-f", "href": "#" },
+        { "icon": "fa-linkedin-in", "href": "#" },
+        { "icon": "fa-twitter", "href": "#" },
+        { "icon": "fa-youtube", "href": "#" }
+      ]
+    },
+    {
+      "image": "/images/home-3/team/03.jpg",
+      "name": "Horticulture Team",
+      "role": "Landscape Architects & Engineers",
+      "href": "/contact",
+      "socials": [
+        { "icon": "fa-facebook-f", "href": "#" },
+        { "icon": "fa-linkedin-in", "href": "#" },
+        { "icon": "fa-twitter", "href": "#" },
+        { "icon": "fa-youtube", "href": "#" }
+      ]
+    },
+    {
+      "image": "/images/home-3/team/04.jpg",
+      "name": "Field Operations",
+      "role": "Skilled Workforce — Pan India",
+      "href": "/contact",
+      "socials": [
+        { "icon": "fa-facebook-f", "href": "#" },
+        { "icon": "fa-linkedin-in", "href": "#" },
+        { "icon": "fa-twitter", "href": "#" },
+        { "icon": "fa-youtube", "href": "#" }
+      ]
+    }
+  ]
+}

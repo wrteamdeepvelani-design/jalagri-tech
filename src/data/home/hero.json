@@ -1,0 +1,43 @@
+{
+  "slides": [
+    {
+      "background": "/images/hero/hero-banner.png",
+      "tagline": "",
+      "headline": "One Stop all Agriculture Solution",
+      "subheadline": "20+ years of expertise in irrigation, plantation, and landscaping across Kutch & Pan India.",
+      "ctas": [
+        { "label": "Get a Quote", "href": "/contact" },
+        { "label": "Our Services", "href": "/what-we-do/irrigation-and-landscaping" }
+      ]
+    },
+    {
+      "background": "/images/hero/hero-banner-2.png",
+      "tagline": "Smart Irrigation Solutions",
+      "headline": "Every Drop Counts, Every Field Grows",
+      "subheadline": "Drip, sprinkler & automated irrigation systems engineered to save water and maximize yield.",
+      "ctas": [
+        { "label": "Explore Irrigation", "href": "/what-we-do/irrigation-and-landscaping" },
+        { "label": "Get a Quote", "href": "/contact" }
+      ]
+    },
+    {
+      "background": "/images/hero/hero-banner-3.png",
+      "tagline": "Trusted by India's Top Brands",
+      "headline": "From Adani to Airports — Landscapes We Build",
+      "subheadline": "Premium landscaping & turn-key projects delivered for BSF, Indian Air Force, Adani, Welspun and more.",
+      "ctas": [
+        { "label": "View Our Projects", "href": "/projects" },
+        { "label": "Talk to Us", "href": "/contact" }
+      ]
+    }
+  ],
+  "differentiators": {
+    "title": "What Makes Us Different",
+    "items": [
+      "20+ Years Experience",
+      "Pan India Presence",
+      "Govt & Corporate Clients",
+      "Turn-Key Solutions"
+    ]
+  }
+}

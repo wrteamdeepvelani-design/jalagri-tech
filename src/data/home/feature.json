@@ -1,0 +1,25 @@
+{
+  "features": [
+    {
+      "shape": "/images/features/feature-2.png",
+      "icon": "/images/home-2/icon/07.svg",
+      "title": "Smart Irrigation",
+      "description": "Drip, sprinkler & automated systems engineered to save water and boost yield.",
+      "delay": ".3"
+    },
+    {
+      "shape": "/images/features/feature-2.png",
+      "icon": "/images/home-2/icon/08.svg",
+      "title": "Landscape & Plantation",
+      "description": "Premium garden design, Miyawaki forests, and turn-key plantation projects.",
+      "delay": ".5"
+    },
+    {
+      "shape": "/images/features/feature-2.png",
+      "icon": "/images/home-2/icon/09.svg",
+      "title": " Products & Supply",
+      "description": "Pipes, fittings, fertilizers, plants & in-house manufacturing — all under one roof.",
+      "delay": ".7"
+    }
+  ]
+}

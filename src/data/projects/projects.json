@@ -1,0 +1,244 @@
+{
+  "_description": "Real Jal Agritech project portfolio. Each project has 'card' (listing grid), 'seo' (/projects/[slug] metadata), 'detail' (case-study body). Detail copy is currently summarized — expand per project when full case studies are supplied.",
+  "pagination": {
+    "current": "01",
+    "pages": ["01", "02", "03"]
+  },
+  "projects": [
+    {
+      "slug": "smritivan-bhuj-memorial",
+      "card": {
+        "tag": "Miyawaki Forest",
+        "title": "Smritivan — Bhuj Earthquake Memorial",
+        "image": "/images/what-we-do/miyawaki/miyawaki-1.jpg"
+      },
+      "seo": {
+        "title": "Smritivan Memorial — Bhuj | Jal Agritech Projects",
+        "description": "World's largest Miyawaki-style afforestation and memorial landscape project on Bhujiyo Dungar hills, Bhuj — built as tribute to 2001 Gujarat earthquake victims.",
+        "keywords": "smritivan, bhuj, bhujiyo dungar, miyawaki, memorial, earthquake, gujarat, jal agritech"
+      },
+      "detail": {
+        "heroImage": "/images/what-we-do/miyawaki/miyawaki-1.jpg",
+        "title": "Smritivan — Earthquake Memorial & Miyawaki Forest",
+        "intro": [
+          "Smritivan in Bhuj is widely recognized as one of the world's largest Miyawaki-style afforestation and memorial landscape projects. Built on the historic Bhujiyo Dungar hills, the project combines ecological restoration, memorial architecture, water conservation, and native biodiversity development.",
+          "What was once barren, rocky terrain has been transformed through large-scale plantation of native species using dense afforestation techniques inspired by the Miyawaki method — honouring those who lost their lives in the devastating 2001 Gujarat earthquake."
+        ],
+        "thumbnails": [
+          "/images/what-we-do/miyawaki/miyawaki-2.jpg",
+          "/images/what-we-do/miyawaki/miyawaki-3.jpg"
+        ],
+        "midParagraph": "The project is notable because Miyawaki plantations are usually implemented on small urban plots, whereas Smritivan demonstrates how dense native afforestation principles can be adapted to a massive landscape-scale ecological restoration effort in semi-arid terrain.",
+        "subSections": [
+          { "title": "Scope of Work", "paragraph": "Dense native forest plantations designed for rapid ecological recovery, large-scale rainwater harvesting and watershed management systems, restoration of biodiversity with indigenous trees and shrubs adapted to Kutch's arid climate, and integration of memorial spaces, museums, viewing points, and educational exhibits into the landscape." },
+          { "title": "Outcome", "paragraph": "Improved microclimate and soil stabilization across the hill slopes, self-sustaining ecosystem of native trees, and a landmark public memorial that continues to honour earthquake victims while serving as a centre for environmental education." }
+        ],
+        "info": {
+          "title": "Project information",
+          "items": [
+            { "label": "Client:",         "value": "Gujarat State Disaster Management Authority" },
+            { "label": "Location:",       "value": "Bhujiyo Dungar Hills, Bhuj-Kutch, Gujarat" },
+            { "label": "Project Type:",   "value": "Miyawaki Afforestation + Memorial Landscape" },
+            { "label": "Scale:",          "value": "Hundreds of acres of dense native forest" },
+            { "label": "Significance:",   "value": "World's largest Miyawaki-style memorial project" }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "adani-township-mundra",
+      "card": {
+        "tag": "Corporate Township",
+        "title": "Adani Township — Mundra",
+        "image": "/images/what-we-do/landscaping/landscaping-1.jpg"
+      },
+      "seo": {
+        "title": "Adani Township Landscaping — Mundra | Jal Agritech Projects",
+        "description": "Turn-key landscape design, plantation, and irrigation for the Adani Township residential community in Mundra, Gujarat.",
+        "keywords": "adani township, mundra, corporate landscape, plantation, jal agritech"
+      },
+      "detail": {
+        "heroImage": "/images/what-we-do/landscaping/landscaping-1.jpg",
+        "title": "Adani Township — Residential Landscape & Plantation",
+        "intro": [
+          "Comprehensive landscape design and execution for the Adani Township residential community in Mundra. The brief required premium softscape and hardscape elements across common areas, parks, and pedestrian pathways — built to withstand Kutch's arid climate while providing genuinely usable green space for residents.",
+          "Jal Agritech delivered survey, design, irrigation engineering, planting, and post-handover maintenance under a single PO."
+        ],
+        "thumbnails": [
+          "/images/what-we-do/landscaping/landscaping-2.jpg",
+          "/images/what-we-do/landscaping/landscaping-3.jpg"
+        ],
+        "midParagraph": "Soft scaping focused on drought-tolerant native species mixed with ornamentals for visual impact; hardscape included paved walkways, seating zones, and feature planters integrated with the irrigation network.",
+        "subSections": [
+          { "title": "Scope of Work", "paragraph": "Site survey and master planting plan, automated drip + pop-up sprinkler irrigation, soft scaping with native + ornamental mix, hardscape paving and feature planters, plus an AMC for ongoing maintenance." },
+          { "title": "Outcome", "paragraph": "A self-sustaining township landscape that performs well in Mundra's climate with predictable water and maintenance budgets — handed over with a complete operations manual." }
+        ],
+        "info": {
+          "title": "Project information",
+          "items": [
+            { "label": "Client:",       "value": "Adani Group" },
+            { "label": "Location:",     "value": "Mundra, Kutch, Gujarat" },
+            { "label": "Project Type:", "value": "Corporate township landscape" },
+            { "label": "Services:",     "value": "Survey, design, irrigation, planting, maintenance" }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "lucknow-international-airport",
+      "card": {
+        "tag": "Airport Landscape",
+        "title": "Lucknow International Airport",
+        "image": "/images/what-we-do/projects/projects-5.jpg"
+      },
+      "seo": {
+        "title": "Lucknow Airport Landscape | Jal Agritech Projects",
+        "description": "Terminal-area landscape, plantation, and irrigation system design for Chaudhary Charan Singh International Airport, Lucknow.",
+        "keywords": "lucknow airport, ccsia, terminal landscape, airport plantation, jal agritech"
+      },
+      "detail": {
+        "heroImage": "/images/what-we-do/projects/projects-5.jpg",
+        "title": "Lucknow International Airport — Terminal Landscape",
+        "intro": [
+          "Terminal-area landscape design and execution for Chaudhary Charan Singh International Airport, Lucknow. The site demanded a low-maintenance, low-pollen palette that performs reliably in the high-traffic forecourt and arrival zones.",
+          "Jal Agritech handled species selection, drip-irrigation engineering, planting, and post-handover maintenance support."
+        ],
+        "thumbnails": [
+          "/images/what-we-do/projects/projects-6.jpg",
+          "/images/what-we-do/projects/projects-3.jpg"
+        ],
+        "midParagraph": "Airport landscapes need to look polished year-round while consuming minimal water and posing no safety / visibility hazards. Our planting plan addressed all three constraints with a drought-hardy palette and zoned drip irrigation.",
+        "subSections": [
+          { "title": "Scope of Work", "paragraph": "Site survey, low-allergen species selection, zoned drip irrigation system, planting and mulching, on-site supervision through commissioning." },
+          { "title": "Outcome", "paragraph": "A polished terminal landscape that meets aviation-grade visibility rules, requires minimal weekly maintenance, and consumes notably less water than the previous flood-irrigated lawn areas." }
+        ],
+        "info": {
+          "title": "Project information",
+          "items": [
+            { "label": "Client:",       "value": "Airports Authority of India / CCSIA" },
+            { "label": "Location:",     "value": "Lucknow, Uttar Pradesh" },
+            { "label": "Project Type:", "value": "Airport terminal landscape" },
+            { "label": "Services:",     "value": "Design, drip irrigation, planting, maintenance" }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "umed-bhavan-palace",
+      "card": {
+        "tag": "Heritage Landscape",
+        "title": "Umed Bhavan Palace",
+        "image": "/images/what-we-do/landscaping/landscaping-5.jpg"
+      },
+      "seo": {
+        "title": "Umed Bhavan Palace Landscape | Jal Agritech Projects",
+        "description": "Heritage palace gardens — landscape restoration, irrigation, and plant care for Umed Bhavan Palace estate.",
+        "keywords": "umed bhavan, palace landscape, heritage garden, irrigation, jal agritech"
+      },
+      "detail": {
+        "heroImage": "/images/what-we-do/landscaping/landscaping-5.jpg",
+        "title": "Umed Bhavan Palace — Heritage Garden Landscape",
+        "intro": [
+          "Landscape design, irrigation upgrade, and ongoing plant-care services for the Umed Bhavan Palace estate. Heritage sites carry particular constraints — installation must respect existing architecture, root systems, and sight-lines while improving water efficiency and overall plant health.",
+          "Our brief covered everything from garden master-planning to seasonal trimming schedules for mature trees."
+        ],
+        "thumbnails": [
+          "/images/what-we-do/landscaping/landscaping-6.jpg",
+          "/images/what-we-do/landscaping/landscaping-4.jpg"
+        ],
+        "midParagraph": "Heritage gardens reward careful, restrained intervention. We focused on protecting what was already valuable and upgrading the supporting infrastructure (irrigation, drainage, lighting) where it could deliver real, measurable improvement.",
+        "subSections": [
+          { "title": "Scope of Work", "paragraph": "Existing garden audit, heritage-sensitive design refresh, drip and sprinkler irrigation upgrade, drainage improvements, scheduled maintenance for mature trees and ornamentals." },
+          { "title": "Outcome", "paragraph": "A more water-efficient, lower-maintenance palace landscape that retains its heritage character while running on modern infrastructure underneath." }
+        ],
+        "info": {
+          "title": "Project information",
+          "items": [
+            { "label": "Client:",       "value": "Umed Bhavan Palace Estate" },
+            { "label": "Location:",     "value": "Rajasthan, India" },
+            { "label": "Project Type:", "value": "Heritage palace garden landscape" },
+            { "label": "Services:",     "value": "Design, irrigation upgrade, plant care, AMC" }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "jaipur-international-airport",
+      "card": {
+        "tag": "Airport Landscape",
+        "title": "Jaipur International Airport",
+        "image": "/images/what-we-do/projects/projects-3.jpg"
+      },
+      "seo": {
+        "title": "Jaipur Airport Landscape | Jal Agritech Projects",
+        "description": "Terminal-area landscape and irrigation system for Jaipur International Airport, Rajasthan.",
+        "keywords": "jaipur airport, terminal landscape, airport plantation, jal agritech"
+      },
+      "detail": {
+        "heroImage": "/images/what-we-do/projects/projects-3.jpg",
+        "title": "Jaipur International Airport — Terminal Landscape",
+        "intro": [
+          "Landscape design and execution for Jaipur International Airport's terminal forecourt and approach areas. Rajasthan's hot-dry climate demanded a drought-tolerant native palette with zoned drip irrigation throughout.",
+          "Jal Agritech delivered survey, design, installation, and a year-long handover support contract."
+        ],
+        "thumbnails": [
+          "/images/what-we-do/projects/projects-4.jpg",
+          "/images/what-we-do/projects/projects-1.jpg"
+        ],
+        "midParagraph": "Airports in arid zones face a tougher landscape brief — most ornamental species simply don't make it through Rajasthan summers without heavy irrigation. We selected native and naturalized species that thrive on minimal water input.",
+        "subSections": [
+          { "title": "Scope of Work", "paragraph": "Site survey, drought-tolerant species mix, zoned drip irrigation, soil amendment and mulching, post-installation supervision." },
+          { "title": "Outcome", "paragraph": "A terminal-grade landscape that holds up to Jaipur's summer heat with minimal water input and minimal seasonal failures." }
+        ],
+        "info": {
+          "title": "Project information",
+          "items": [
+            { "label": "Client:",       "value": "Airports Authority of India" },
+            { "label": "Location:",     "value": "Jaipur, Rajasthan" },
+            { "label": "Project Type:", "value": "Airport terminal landscape" },
+            { "label": "Services:",     "value": "Design, drip irrigation, planting" }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "guwahati-international-airport",
+      "card": {
+        "tag": "Airport Landscape",
+        "title": "Guwahati International Airport",
+        "image": "/images/what-we-do/projects/projects-2.webp"
+      },
+      "seo": {
+        "title": "Guwahati Airport Landscape | Jal Agritech Projects",
+        "description": "Landscape and plantation services for Lokpriya Gopinath Bordoloi International Airport, Guwahati.",
+        "keywords": "guwahati airport, lgbi airport, terminal landscape, airport plantation, jal agritech"
+      },
+      "detail": {
+        "heroImage": "/images/what-we-do/projects/projects-2.webp",
+        "title": "Guwahati International Airport — Terminal Landscape",
+        "intro": [
+          "Landscape and plantation services for Lokpriya Gopinath Bordoloi International Airport in Guwahati. Northeast India's high-rainfall climate calls for very different species and drainage strategies than the dry-zone airports — our planting plan reflected that.",
+          "Scope covered design, drainage and grading, planting, and ongoing supervision."
+        ],
+        "thumbnails": [
+          "/images/what-we-do/projects/projects-1.jpg",
+          "/images/what-we-do/projects/projects-5.jpg"
+        ],
+        "midParagraph": "Northeast airport landscapes deal with monsoon-grade rainfall and high humidity. Drainage and species rot-resistance become the primary design constraints, not water-efficiency.",
+        "subSections": [
+          { "title": "Scope of Work", "paragraph": "Site survey, drainage and grading plan, rot-resistant species selection, planting and mulching, post-monsoon care plan." },
+          { "title": "Outcome", "paragraph": "A landscape that survives Guwahati's monsoon season without major loss and looks polished year-round." }
+        ],
+        "info": {
+          "title": "Project information",
+          "items": [
+            { "label": "Client:",       "value": "Airports Authority of India / LGBI" },
+            { "label": "Location:",     "value": "Guwahati, Assam" },
+            { "label": "Project Type:", "value": "Airport terminal landscape" },
+            { "label": "Services:",     "value": "Design, drainage, planting, maintenance" }
+          ]
+        }
+      }
+    }
+  ]
+}

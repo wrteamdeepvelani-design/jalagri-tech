@@ -1,0 +1,33 @@
+{
+  "eyebrow": {
+    "icon": "/images/home-2/icon/04.svg",
+    "text": "About Us"
+  },
+  "headline": "Pioneers of Irrigation & Landscape in Kutch",
+  "description": "At Jal Agritech India Pvt Ltd, we bring 20+ years of expertise in irrigation, plantation, and landscape design. From pioneering work in Kutch–Gujarat to delivering turn-key projects for India's top corporates and government bodies, our team builds sustainable, end-to-end agriculture solutions.",
+  "cta": {
+    "label": "more about us",
+    "href": "/about"
+  },
+  "stats": [
+    {
+      "value": "20",
+      "suffix": "+",
+      "description": "Years Pan-India Operations"
+    },
+    {
+      "value": "30",
+      "suffix": "+",
+      "description": "Corporate & Govt Clients Served",
+      "modifier": "style-top"
+    },
+    {
+      "value": "10",
+      "suffix": "+",
+      "description": "Years Pan-India Operations"
+    }
+  ],
+  "tractorImage": "/images/about/float.png",
+  "paddyImage": "/images/about/videoimage.png",
+  "videoUrl": "https://www.youtube.com/watch?v=Cn4G2lZ_g2I"
+}

@@ -1,0 +1,255 @@
+{
+  "_description": "Each post has 'card' (listing grid card), 'seo' (/blog/[slug] metadata), 'detail' (full post body). sharedSidebar + sharedComments are pulled into every detail page so they stay consistent.",
+  "pagination": { "current": "01", "pages": ["01", "02", "03"] },
+  "sharedSidebar": {
+    "search": { "title": "Search", "placeholder": "Search here" },
+    "categories": {
+      "title": "All Categories",
+      "items": [
+        { "label": "Agriculture",        "count": "(08)" },
+        { "label": "Vegetable Farming",  "count": "(02)" },
+        { "label": "Economy Solution",   "count": "(10)" },
+        { "label": "Harvests Innovations","count": "(15)" },
+        { "label": "Organic Food",       "count": "(12)" },
+        { "label": "Fresh Vegetables",   "count": "(07)" }
+      ]
+    },
+    "recentPosts": {
+      "title": "Recent Post",
+      "items": [
+        { "image": "/images/inner-page/news/post-1.jpg", "title": "Fresh From the Farm: Organic Harvest", "date": "March 26, 2026" },
+        { "image": "/images/inner-page/news/post-2.jpg", "title": "Hands-On Farming Careful Crop Management", "date": "March 26, 2026" },
+        { "image": "/images/inner-page/news/post-3.jpg", "title": "Farm Fresh Harvest: Connecting with Nature's", "date": "March 26, 2026" }
+      ]
+    },
+    "popularTags": {
+      "title": "Popular Tags",
+      "tags": ["Agriculture", "dairy", "food", "organic", "ego", "Focus", "Harvest", "Farming"]
+    }
+  },
+  "sharedComments": {
+    "heading": "02 Comments",
+    "rating": 5,
+    "comments": [
+      {
+        "image": "/images/inner-page/news/comment-1.png",
+        "name": "Sohel Tanvir",
+        "date": "March 20, 2024 at 2:37 pm",
+        "body": "Neque porro est qui dolorem ipsum quia quaed inventor veritatis et quasi architecto var sed efficitur turpis gilla sed sit amet finibus eros. Lorem Ipsum is simply dummy",
+        "replyLabel": "Reply",
+        "lastBorder": false
+      },
+      {
+        "image": "/images/inner-page/news/comment-2.png",
+        "name": "Alex Flores",
+        "date": "March 20, 2024 at 2:37 pm",
+        "body": "Neque porro est qui dolorem ipsum quia quaed inventor veritatis et quasi architecto var sed efficitur turpis gilla sed sit amet finibus eros. Lorem Ipsum is simply dummy",
+        "replyLabel": "Reply",
+        "lastBorder": true
+      }
+    ],
+    "form": {
+      "title": "Leave a Comments",
+      "fields": [
+        { "type": "text",     "name": "name",    "id": "name",    "placeholder": "Your Name",  "col": "col-lg-6" },
+        { "type": "text",     "name": "email",   "id": "email2",  "placeholder": "Your Email", "col": "col-lg-6" },
+        { "type": "textarea", "name": "message", "id": "message", "placeholder": "Write Message", "col": "col-lg-12" }
+      ],
+      "submitLabel": "post comment"
+    }
+  },
+  "shareLabel": "Share:",
+  "socialShare": [
+    { "icon": "fa-facebook-f", "href": "#" },
+    { "icon": "fa-twitter",    "href": "#" },
+    { "icon": "fa-linkedin-in","href": "#" }
+  ],
+  "posts": [
+    {
+      "slug": "pride-of-harvest-farmers-lifetime-achievement",
+      "card": {
+        "title": "Lipsum has been the industry's standard dummy text",
+        "image": "/images/home-2/news/01.jpg",
+        "date": "22 Dec, 2026",
+        "comments": "25, Comments",
+        "excerpt": "We prioritize eco-friendly practices that protect natural resources and ensure long-term agricultural productivity for.",
+        "delay": ".3s"
+      },
+      "seo": {
+        "title": "The Pride of Harvest: A Farmer's Lifetime Achievement | Agriva",
+        "description": "Stories of dedication, sustainable farming, and rural communities — the women and men behind global agriculture.",
+        "keywords": "farming, agriculture, sustainable, organic"
+      },
+      "detail": {
+        "heroImage": "/images/inner-page/news/details-1.jpg",
+        "meta": { "author": "By Admin", "date": "18 Dec, 2026", "category": "Corporate" },
+        "title": "The Pride of Harvest: A Farmer's Lifetime Achievement",
+        "intro": [
+          "Women constitute a significant portion of the agricultural workforce globally, contributing immensely to food security and rural economies. Their dedication, farming practices are transforming agriculture and strengthening communities worldwide.",
+          "Modern farmers embrace eco-friendly methods that preserve soil health, conserve water, and minimize chemical use. This hands-on approach to cultivation ensures healthy crops while protecting the environment for future generations.",
+          "Women farmers are not just growing food—they're nurturing families, creating economic opportunities, and building resilient rural communities. Their work ensures food security while inspiring the next generation to value agriculture and sustainable living."
+        ],
+        "highlight": "Harvesting your own vegetables ensures maximum freshness, superior taste, and peak nutritional value that store-bought produce cannot match. Direct-from-farm food",
+        "midParagraph": "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros.",
+        "detailImages": ["/images/inner-page/news/details-2.jpg", "/images/inner-page/news/details-3.jpg"],
+        "outro": "Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore of magna aliqua. Ut enim ad minim veniam, made of owl the quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea dolor commodo consequat. Duis aute irure and dolor in reprehenderit. Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore of magna aliqua.",
+        "tags": ["News", "business", "marketing"]
+      }
+    },
+    {
+      "slug": "true-benefits-of-organic-for-your-family",
+      "card": {
+        "title": "The True Benefits of Choosing Organic for Your Family",
+        "image": "/images/home-2/news/02.jpg",
+        "date": "22 Dec, 2026",
+        "comments": "25, Comments",
+        "excerpt": "We prioritize eco-friendly practices that protect natural resources and ensure long-term agricultural productivity for.",
+        "delay": ".5s"
+      },
+      "seo": {
+        "title": "The True Benefits of Choosing Organic for Your Family | Agriva",
+        "description": "Why organic farming matters for nutrition, environment, and the families that depend on the food supply.",
+        "keywords": "organic, family, nutrition, sustainable farming"
+      },
+      "detail": {
+        "heroImage": "/images/inner-page/news/details-1.jpg",
+        "meta": { "author": "By Admin", "date": "18 Dec, 2026", "category": "Corporate" },
+        "title": "The True Benefits of Choosing Organic for Your Family",
+        "intro": [
+          "Women constitute a significant portion of the agricultural workforce globally, contributing immensely to food security and rural economies.",
+          "Modern farmers embrace eco-friendly methods that preserve soil health, conserve water, and minimize chemical use.",
+          "Women farmers are not just growing food—they're nurturing families, creating economic opportunities, and building resilient rural communities."
+        ],
+        "highlight": "Harvesting your own vegetables ensures maximum freshness, superior taste, and peak nutritional value that store-bought produce cannot match. Direct-from-farm food",
+        "midParagraph": "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna.",
+        "detailImages": ["/images/inner-page/news/details-2.jpg", "/images/inner-page/news/details-3.jpg"],
+        "outro": "Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore of magna aliqua.",
+        "tags": ["News", "business", "marketing"]
+      }
+    },
+    {
+      "slug": "behind-the-scenes-farm-to-home-freshness",
+      "card": {
+        "title": "Behind the Scenes: Ensuring Freshness from Farm to Your Home",
+        "image": "/images/home-2/news/03.jpg",
+        "date": "22 Dec, 2026",
+        "comments": "25, Comments",
+        "excerpt": "We prioritize eco-friendly practices that protect natural resources and ensure long-term agricultural productivity for.",
+        "delay": ".7s"
+      },
+      "seo": {
+        "title": "Behind the Scenes: Farm to Home Freshness | Agriva",
+        "description": "How modern farms keep produce fresh from field to fridge — logistics, cold chains, and quality control.",
+        "keywords": "freshness, supply chain, organic, farm"
+      },
+      "detail": {
+        "heroImage": "/images/inner-page/news/details-1.jpg",
+        "meta": { "author": "By Admin", "date": "18 Dec, 2026", "category": "Corporate" },
+        "title": "Behind the Scenes: Ensuring Freshness from Farm to Your Home",
+        "intro": [
+          "Women constitute a significant portion of the agricultural workforce globally.",
+          "Modern farmers embrace eco-friendly methods that preserve soil health.",
+          "Women farmers are not just growing food—they're nurturing families."
+        ],
+        "highlight": "Harvesting your own vegetables ensures maximum freshness, superior taste, and peak nutritional value.",
+        "midParagraph": "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
+        "detailImages": ["/images/inner-page/news/details-2.jpg", "/images/inner-page/news/details-3.jpg"],
+        "outro": "Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore of magna aliqua.",
+        "tags": ["News", "business", "marketing"]
+      }
+    },
+    {
+      "slug": "traditional-farming-wisdom-modern-agriculture",
+      "card": {
+        "title": "Bringing Traditional Farming Wisdom Into Modern Agriculture",
+        "image": "/images/home-3/team/08.jpg",
+        "date": "22 Dec, 2026",
+        "comments": "25, Comments",
+        "excerpt": "We prioritize eco-friendly practices that protect natural resources and ensure long-term agricultural productivity for.",
+        "delay": ".3s"
+      },
+      "seo": {
+        "title": "Traditional Farming Wisdom Meets Modern Agriculture | Agriva",
+        "description": "Bridging generations of farming knowledge with today's technology to build resilient food systems.",
+        "keywords": "traditional farming, modern agriculture, technology, sustainable"
+      },
+      "detail": {
+        "heroImage": "/images/inner-page/news/details-1.jpg",
+        "meta": { "author": "By Admin", "date": "18 Dec, 2026", "category": "Corporate" },
+        "title": "Bringing Traditional Farming Wisdom Into Modern Agriculture",
+        "intro": [
+          "Women constitute a significant portion of the agricultural workforce globally.",
+          "Modern farmers embrace eco-friendly methods that preserve soil health.",
+          "Women farmers are not just growing food—they're nurturing families."
+        ],
+        "highlight": "Harvesting your own vegetables ensures maximum freshness, superior taste, and peak nutritional value.",
+        "midParagraph": "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
+        "detailImages": ["/images/inner-page/news/details-2.jpg", "/images/inner-page/news/details-3.jpg"],
+        "outro": "Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore of magna aliqua.",
+        "tags": ["News", "business", "marketing"]
+      }
+    },
+    {
+      "slug": "natural-pest-control-crops-and-nature",
+      "card": {
+        "title": "Natural Pest Control That Protects Both Crops and Nature",
+        "image": "/images/home-3/team/09.jpg",
+        "date": "22 Dec, 2026",
+        "comments": "25, Comments",
+        "excerpt": "We prioritize eco-friendly practices that protect natural resources and ensure long-term agricultural productivity for.",
+        "delay": ".5s"
+      },
+      "seo": {
+        "title": "Natural Pest Control: Protect Crops and Nature | Agriva",
+        "description": "Integrated pest management strategies that protect yields without harming biodiversity.",
+        "keywords": "pest control, integrated pest management, biodiversity, organic"
+      },
+      "detail": {
+        "heroImage": "/images/inner-page/news/details-1.jpg",
+        "meta": { "author": "By Admin", "date": "18 Dec, 2026", "category": "Corporate" },
+        "title": "Natural Pest Control That Protects Both Crops and Nature",
+        "intro": [
+          "Women constitute a significant portion of the agricultural workforce globally.",
+          "Modern farmers embrace eco-friendly methods that preserve soil health.",
+          "Women farmers are not just growing food—they're nurturing families."
+        ],
+        "highlight": "Harvesting your own vegetables ensures maximum freshness, superior taste, and peak nutritional value.",
+        "midParagraph": "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
+        "detailImages": ["/images/inner-page/news/details-2.jpg", "/images/inner-page/news/details-3.jpg"],
+        "outro": "Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore of magna aliqua.",
+        "tags": ["News", "business", "marketing"]
+      }
+    },
+    {
+      "slug": "breaking-down-barriers-to-crop-insurance",
+      "card": {
+        "title": "Breaking Down Barriers to Crop Insurance",
+        "image": "/images/home-3/team/10.jpg",
+        "date": "22 Dec, 2026",
+        "comments": "25, Comments",
+        "excerpt": "We prioritize eco-friendly practices that protect natural resources and ensure long-term agricultural productivity for.",
+        "delay": ".7s"
+      },
+      "seo": {
+        "title": "Breaking Down Barriers to Crop Insurance | Agriva",
+        "description": "Why crop insurance matters and how farmers can access financial protection against climate and market risks.",
+        "keywords": "crop insurance, farm finance, climate risk, agriculture"
+      },
+      "detail": {
+        "heroImage": "/images/inner-page/news/details-1.jpg",
+        "meta": { "author": "By Admin", "date": "18 Dec, 2026", "category": "Corporate" },
+        "title": "Breaking Down Barriers to Crop Insurance",
+        "intro": [
+          "Women constitute a significant portion of the agricultural workforce globally.",
+          "Modern farmers embrace eco-friendly methods that preserve soil health.",
+          "Women farmers are not just growing food—they're nurturing families."
+        ],
+        "highlight": "Harvesting your own vegetables ensures maximum freshness, superior taste, and peak nutritional value.",
+        "midParagraph": "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
+        "detailImages": ["/images/inner-page/news/details-2.jpg", "/images/inner-page/news/details-3.jpg"],
+        "outro": "Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore of magna aliqua.",
+        "tags": ["News", "business", "marketing"]
+      }
+    }
+  ]
+}

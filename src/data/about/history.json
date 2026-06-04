@@ -1,0 +1,44 @@
+{
+  "shape": "/images/home-3/cabage-3.png",
+  "defaultImage": "/images/what-we-do/landscaping/landscaping-1.jpg",
+  "years": [
+    { "label": "2005", "image": "/images/what-we-do/landscaping/landscaping-1.jpg" },
+    { "label": "2015", "image": "/images/what-we-do/projects/projects-5.jpg" },
+    { "label": "2020", "image": "/images/what-we-do/miyawaki/miyawaki-1.jpg" },
+    { "label": "2025", "image": "/images/what-we-do/outlets/outlets-1.webp" }
+  ],
+  "eyebrow": "our story",
+  "headline": "Growing Excellence\nAcross India",
+  "tabs": [
+    {
+      "id": "about",
+      "label": "Our Story",
+      "active": true,
+      "title": "Built on 20 Years of Trust",
+      "paragraphs": [
+        "At Jal Agritech India Pvt Ltd, we work with the philosophy that farmers deserve a quality life. Context and sustainability are key considerations of our processes and business. We are passionate, driven, and unwilling to compromise on quality.",
+        "Being pioneers of irrigation and landscaping in the Kutch–Gujarat region, we have played a vital role in agricultural and landscape transformation across Kutch. For the last 10 years, we have been working Pan-India. We currently operate an Agriculture Mall in Bhachau-Kutch and are setting up a manufacturing unit in Bhuj-Kutch."
+      ]
+    },
+    {
+      "id": "vision",
+      "label": "Our Vision",
+      "active": false,
+      "title": "Pioneers of Change",
+      "paragraphs": [
+        "We aim to be the premier provider of top-notch plantation and irrigation services. Our dedication is to ensure complete client satisfaction by surpassing expectations with our focus on quality, affordability, and sustainability.",
+        "Our vision is to be pioneers of change by offering distinctive and sustainable products that foster a healthier ecosystem — enhancing our clients' quality of life with innovative designs that engage the senses and inspire the spirit."
+      ]
+    },
+    {
+      "id": "mission",
+      "label": "Our Mission",
+      "active": false,
+      "title": "Reach Every Farm in Kutch",
+      "paragraphs": [
+        "Our mission is to reach each and every farm of Kutch District. So we can help farmers get the best out of their soil by delivering best and genuine agri products to them. Through this, we help human life in Kutch, Gujarat, and all over India.",
+        "We also aim to motivate organic farming in the Kutch region so the soil of Kutch can remain fertile for upcoming generations. We have tied up with multinational giants like UPL Limited, Gharada Chemical India Ltd, and Insecticides India Limited to bring the best products available in the industry."
+      ]
+    }
+  ]
+}

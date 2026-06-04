@@ -1,0 +1,60 @@
+{
+  "seo": {
+    "title": "Contact Us | Jal Agritech India Pvt Ltd",
+    "description": "Get in touch with Jal Agritech for irrigation, landscape, and agriculture solutions. Bhuj-Kutch HQ serving clients pan-India.",
+    "keywords": "contact, jal agritech, bhuj, kutch, irrigation, agriculture contact"
+  },
+  "info": {
+    "eyebrow": "get in touch",
+    "headline": "Reach Out And Let's Build\nSomething Great",
+    "items": [
+      {
+        "icon": "/images/home-2/icon/10.svg",
+        "label": "call for details",
+        "value": "+91 98794 47395",
+        "href": "tel:+919879447395",
+        "delay": ".6s"
+      },
+      {
+        "icon": "/images/home-2/icon/11.svg",
+        "label": "send us email",
+        "value": "jalagritechindiapvtltd@gmail.com",
+        "href": "mailto:jalagritechindiapvtltd@gmail.com",
+        "delay": ".8s"
+      }
+    ],
+    "right": {
+      "description": "Over 20 years of expertise in irrigation, landscape design, and turn-key agriculture projects across Kutch and Pan India. Trusted by government bodies and India's top corporates.",
+      "addressLabel": "our address",
+      "address": "34, Time Square Empire, Mirzapar Road, Bhuj – Kutch 370001, Gujarat, India",
+      "delay": ".6s"
+    }
+  },
+  "form": {
+    "shapes": {
+      "left": "/images/inner-page/service/tree.png",
+      "maize": "/images/inner-page/service/maize.png"
+    },
+    "fields": [
+      { "label": "your Name",      "type": "text",     "name": "name",       "id": "name",    "placeholder": "adam gilcrist" },
+      { "label": "your email",     "type": "email",    "name": "Email",      "id": "email2",  "placeholder": "contact.adam@gmail.com" },
+      { "label": "contact number", "type": "text",     "name": "number",     "id": "number",  "placeholder": "+11 0321 456 9870" },
+      { "label": "subject",        "type": "text",     "name": "Subject",    "id": "jubject", "placeholder": "Subject" },
+      { "label": "Message",        "type": "textarea", "name": "conMessage", "id": "message", "placeholder": "write message. . ." }
+    ],
+    "submitLabel": "Send Message",
+    "map": {
+      "embedUrl": "https://maps.google.com/maps?q=34%2C+Time+Square+Empire%2C+Mirzapar+Road%2C+Bhuj+%E2%80%93+Kutch+370001%2C+Gujarat%2C+India&t=&z=15&ie=UTF8&iwloc=&output=embed",
+      "title": "Jal Agritech India Pvt Ltd — 34 Time Square Empire, Mirzapar Road, Bhuj-Kutch 370001"
+    }
+  },
+  "gallery": {
+    "images": [
+      "/images/home-3/drone/drone-4.jpg",
+      "/images/home-3/drone/drone-5.jpg",
+      "/images/home-3/drone/drone-6.jpg",
+      "/images/home-3/drone/drone-7.jpg"
+    ],
+    "dragLabel": "DRAG"
+  }
+}

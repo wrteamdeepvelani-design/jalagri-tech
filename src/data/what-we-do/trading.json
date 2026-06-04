@@ -1,0 +1,89 @@
+{
+  "_note": "PLACEHOLDER content — replace with real Trading category copy when supplied.",
+  "slug": "trading",
+  "title": "Trading",
+  "heroImage": "/images/inner-page/service/details.jpg",
+  "seo": {
+    "title": "Trading | Jal Agritech",
+    "description": "Jal Agritech trading division — pipes, fittings, fertilizers, seeds, and agriculture inputs supplied at scale.",
+    "keywords": "trading, pipes, fittings, fertilizers, seeds, agriculture supplies"
+  },
+  "gridCards": [
+    { "title": "Pipes & Fittings",      "image": "/images/inner-page/service/05.jpg", "anchor": "topic-0" },
+    { "title": "Fertilizers & Inputs",  "image": "/images/inner-page/service/06.jpg", "anchor": "topic-1" },
+    { "title": "Seeds & Plants",        "image": "/images/inner-page/service/07.jpg", "anchor": "topic-2" }
+  ],
+  "cards": [
+    {
+      "number": "01",
+      "icon": "/images/inner-page/icon/04.svg",
+      "title": "Pipes & Fittings",
+      "description": "PVC, HDPE, and GI pipes plus complete fitting range for irrigation and plumbing projects.",
+      "anchor": "topic-0",
+      "animation": "fadeInLeft",
+      "delay": ".2s"
+    },
+    {
+      "number": "02",
+      "icon": "/images/inner-page/icon/05.svg",
+      "title": "Fertilizers & Inputs",
+      "description": "Organic and chemical fertilizers, growth promoters, pesticides — bulk and retail supply.",
+      "anchor": "topic-1",
+      "animation": "fadeInUp",
+      "delay": ".4s"
+    },
+    {
+      "number": "03",
+      "icon": "/images/inner-page/icon/06.svg",
+      "title": "Seeds & Plants",
+      "description": "Hybrid seeds, sapling supply, and landscape-grade ornamental plants.",
+      "anchor": "topic-2",
+      "animation": "fadeInRight",
+      "delay": ".6s"
+    }
+  ],
+  "impact": {
+    "background": "/images/home-3/team/team-bg.jpg",
+    "title": "Bulk Supply,\nFair Pricing",
+    "items": [
+      { "icon": "/images/inner-page/icon/01.svg", "label": "Product SKUs",          "value": "1,200", "delay": ".4s" },
+      { "icon": "/images/inner-page/icon/02.svg", "label": "Tier-1 supplier tie-ups","value": "30",    "delay": ".6s" },
+      { "icon": "/images/inner-page/icon/03.svg", "label": "Bulk orders per year",  "value": "400",   "delay": ".8s" }
+    ]
+  },
+  "statistics": {
+    "image": "/images/inner-page/service/07.jpg",
+    "eyebrow": "supply that scales",
+    "headline": "One Partner For Every Input You Need.",
+    "description": "Our trading division consolidates pipes, fittings, fertilizers, seeds, and plants under a single PO — saving you procurement effort.",
+    "stats": [
+      { "value": "1,200","suffix": "+", "description": "SKUs in active catalog." },
+      { "value": "30",   "suffix": "+", "description": "Trusted brand partners." },
+      { "value": "7",    "suffix": "d", "description": "Pan-India delivery window." },
+      { "value": "100",  "suffix": "%", "description": "Genuine, traceable stock." }
+    ]
+  },
+  "topics": [
+    {
+      "title": "Pipes & Fittings",
+      "intro": [
+        "Placeholder text — replace with real content. Full range of PVC, HDPE, and GI pipes with matching fittings for irrigation and plumbing."
+      ],
+      "sections": []
+    },
+    {
+      "title": "Fertilizers & Inputs",
+      "intro": [
+        "Placeholder text — replace with real content. Organic and chemical fertilizers, growth promoters, and pesticides in retail and bulk packs."
+      ],
+      "sections": []
+    },
+    {
+      "title": "Seeds & Plants",
+      "intro": [
+        "Placeholder text — replace with real content. Hybrid seed varieties, nursery saplings, and landscape-grade ornamental plants."
+      ],
+      "sections": []
+    }
+  ]
+}

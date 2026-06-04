@@ -1,0 +1,22 @@
+{
+  "shape": "/images/home-3/chili-2.png",
+  "tractorImage": "/images/what-we-do/manufacturing/manufacturing-1.jpg",
+  "stats": [
+    {
+      "value": "20",
+      "suffix": "+",
+      "description": "Years of irrigation & landscape experience"
+    },
+    {
+      "value": "10",
+      "suffix": "+",
+      "description": "Years of Pan-India operations",
+      "modifier": "style-top"
+    },
+    {
+      "value": "4",
+      "suffix": "+",
+      "description": "Retail outlets & nurseries across India"
+    }
+  ]
+}

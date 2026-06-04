@@ -1,0 +1,30 @@
+{
+  "shape": "/images/home-3/cabage-2.png",
+  "eyebrow": "voices that matter",
+  "headline": "What Our Clients Say",
+  "leftBox": {
+    "background": "/images/what-we-do/landscaping/landscaping-1.jpg",
+    "personImage": "/images/home-3/testimonial.png",
+    "decorativeShape": "/images/home-3/radius-shape.png"
+  },
+  "quoteIcon": "/images/home-3/icon/09.svg",
+  "arrows": {
+    "prev": "/images/home-3/icon/02.svg",
+    "next": "/images/home-3/icon/04.svg"
+  },
+  "rating": 5,
+  "testimonials": [
+    {
+      "image": "/images/home-3/client-2.png",
+      "name": "Project Lead",
+      "role": "Government Sector Client",
+      "quote": "Jal Agritech delivered a turn-key landscape and irrigation system on schedule and under budget. Their team handled survey, design, installation, and post-handover support as a single accountable partner."
+    },
+    {
+      "image": "/images/home-3/client-2.png",
+      "name": "Facility Manager",
+      "role": "Corporate Township",
+      "quote": "20+ years of Kutch experience really shows. The plant selection and irrigation engineering hold up through summer heat and monsoon. Our AMC has paid for itself many times over."
+    }
+  ]
+}

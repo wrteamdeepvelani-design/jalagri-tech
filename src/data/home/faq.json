@@ -1,0 +1,50 @@
+{
+  "background": "/images/home-2/faq-bg.jpg",
+  "shape": "/images/home-2/maize-6.png",
+  "eyebrow": {
+    "icon": "/images/home-2/icon/04.svg",
+    "text": "Ask, Learn, and Grow With Us"
+  },
+  "headline": "Ask About Organic Farming Learn Farming Knowledge",
+  "progressBars": [
+    { "title": "Crop Yield Efficiency", "point": "90%" },
+    { "title": "Soil Health Index", "point": "80%", "modifier": "style-two" }
+  ],
+  "faqs": [
+    {
+      "id": "One",
+      "question": "When is the best time to grow maize?",
+      "answer": "Maize is best grown during warm seasons with adequate sunlight and water. the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.",
+      "delay": ".3s",
+      "expanded": true
+    },
+    {
+      "id": "Two",
+      "question": "Do you use organic farming methods?",
+      "answer": "Maize is best grown during warm seasons with adequate sunlight and water. the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.",
+      "delay": ".5s",
+      "expanded": false
+    },
+    {
+      "id": "three",
+      "question": "Do you supply maize in bulk?",
+      "answer": "Maize is best grown during warm seasons with adequate sunlight and water. the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.",
+      "delay": ".7s",
+      "expanded": false
+    },
+    {
+      "id": "four",
+      "question": "How do you ensure maize quality?",
+      "answer": "Maize is best grown during warm seasons with adequate sunlight and water. the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.",
+      "delay": ".3s",
+      "expanded": false
+    },
+    {
+      "id": "five",
+      "question": "How can I place an order?",
+      "answer": "Maize is best grown during warm seasons with adequate sunlight and water. the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.",
+      "delay": ".3s",
+      "expanded": false
+    }
+  ]
+}
