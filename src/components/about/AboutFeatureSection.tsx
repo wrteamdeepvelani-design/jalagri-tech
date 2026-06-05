@@ -10,6 +10,7 @@ type Feature = {
   image: string;
   icon: string;
   title: string;
+  description: string;
   href: string;
 };
 
@@ -33,7 +34,7 @@ export default function AboutFeatureSection() {
                   <h3>
                     <a href={f.href}>{f.title}</a>
                   </h3>
-                  <p>{data.description}</p>
+                  <p>{f.description}</p>
                   <a href={f.href} className="plus-icon style-theme">
                     <i className="fa-solid fa-plus"></i> <span>{data.readMoreLabel}</span>
                   </a>

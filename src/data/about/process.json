@@ -1,32 +1,35 @@
 {
-  "background": "/images/home-3/work-process-bg.png",
+  "background": "/images/about/work-process-bg.png",
   "eyebrow": "WHAT WE OFFER",
   "headline": "Services Designed for Real Farms",
-  "description": "From system design to crop disease consultancy — on-field expertise that helps farmers get the best from their soil.",
   "steps": [
     {
       "number": "01",
       "icon": "/images/home-3/icon/05.svg",
-      "title": "Drip Irrigation Development",
+      "title": "Irrigation System Design",
+      "description": "We survey your land, design custom drip and sprinkler systems, and handle full turnkey installation for farms of any size across India.",
       "delay": ".2"
     },
     {
       "number": "02",
       "icon": "/images/home-3/icon/06.svg",
-      "title": "Farm Crop Management",
+      "title": "Landscaping & Garden Development",
+      "description": "From corporate campuses to residential gardens, we craft stunning green spaces with sustainable, low-maintenance landscape designs.",
       "delay": ".4",
       "modifier": "card-style"
     },
     {
       "number": "03",
       "icon": "/images/home-3/icon/07.svg",
-      "title": "Farm Development",
+      "title": "Farm & Crop Development",
+      "description": "Expert horticulture and agronomy consultancy to maximise your yield with the right crops, soil management, and precision irrigation.",
       "delay": ".6"
     },
     {
       "number": "04",
       "icon": "/images/home-3/icon/08.svg",
-      "title": "Crop Disease Consultancy",
+      "title": "Supply & After-Sales Support",
+      "description": "Premium irrigation products, fertilizers, pesticides, and seeds — backed by on-field support from our retail outlets across Kutch.",
       "delay": ".8",
       "modifier": "card-style"
     }

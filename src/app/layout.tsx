@@ -88,6 +88,24 @@ export default function RootLayout({
           </div>
         </div>
 
+        {/* DOMContentLoaded shim — main.js wraps GSAP ScrollTrigger inits in
+            DOMContentLoaded listeners. With strategy="afterInteractive" that
+            event has already fired, so those callbacks never run. This shim
+            patches Document.prototype.addEventListener so any
+            DOMContentLoaded registration that happens after the event has
+            fired is immediately scheduled via setTimeout. */}
+        <Script id="dcl-shim" strategy="beforeInteractive">{`
+          (function(){
+            var _add = Document.prototype.addEventListener;
+            Document.prototype.addEventListener = function(type, fn, opts) {
+              if (type === 'DOMContentLoaded' && this.readyState !== 'loading') {
+                setTimeout(fn, 0); return;
+              }
+              return _add.call(this, type, fn, opts);
+            };
+          })();
+        `}</Script>
+
         {/* Theme scripts — load after page interactive, in the exact same
             order as the original index.html so plugin dependencies resolve. */}
         {themeScripts.map((src) => (

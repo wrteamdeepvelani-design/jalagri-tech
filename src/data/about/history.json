@@ -2,10 +2,10 @@
   "shape": "/images/home-3/cabage-3.png",
   "defaultImage": "/images/what-we-do/landscaping/landscaping-1.jpg",
   "years": [
-    { "label": "2005", "image": "/images/what-we-do/landscaping/landscaping-1.jpg" },
-    { "label": "2015", "image": "/images/what-we-do/projects/projects-5.jpg" },
-    { "label": "2020", "image": "/images/what-we-do/miyawaki/miyawaki-1.jpg" },
-    { "label": "2025", "image": "/images/what-we-do/outlets/outlets-1.webp" }
+    { "label": "2005", "image": "/images/about/history2005.png" },
+    { "label": "2015", "image": "/images/about/history2015.png" },
+    { "label": "2020", "image": "/images/about/history2020.png" },
+    { "label": "2025", "image": "/images/about/history2025.png" }
   ],
   "eyebrow": "our story",
   "headline": "Growing Excellence\nAcross India",

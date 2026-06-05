@@ -1,23 +1,25 @@
 {
-  "description": "Why farmers, corporates, and government bodies across India trust Jal Agritech with their irrigation and landscape projects.",
   "readMoreLabel": "Read More",
   "features": [
     {
-      "image": "/images/what-we-do/landscaping/landscaping-1.jpg",
+      "image": "/images/about/Sustainable.png",
       "icon": "/images/home-1/icon/05.svg",
-      "title": "Sustainability First",
+      "title": "Sustainable Engineering",
+      "description": "We build with native species, water-efficient drip systems, and eco-friendly practices that keep Kutch soil fertile for generations.",
       "href": "/about"
     },
     {
-      "image": "/images/what-we-do/outlets/outlets-1.webp",
+      "image": "/images/about/Farmers.png",
       "icon": "/images/home-1/icon/06.svg",
-      "title": "Farmer-First Approach",
+      "title": "Trusted by Farmers",
+      "description": "Quality products at affordable prices through our retail outlets, backed by on-field advice from horticulturists and irrigation engineers.",
       "href": "/about"
     },
     {
-      "image": "/images/what-we-do/manufacturing/manufacturing-1.jpg",
+      "image": "/images/about/Delivery.png",
       "icon": "/images/home-1/icon/07.svg",
-      "title": "End-to-End Delivery",
+      "title": "Turn-Key Delivery",
+      "description": "One accountable team for survey, design, installation, supply, and maintenance — turnkey projects delivered on time and on budget.",
       "href": "/about"
     }
   ]

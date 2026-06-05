@@ -38,11 +38,9 @@ export default function AboutTestimonialSection() {
                   data-wow-delay="100ms"
                   data-wow-duration="2500ms"
                 >
-                  <img src={data.leftBox.personImage} alt="img" />
+                  
                 </div>
-                <div className="shape">
-                  <img src={data.leftBox.decorativeShape} alt="img" />
-                </div>
+                
               </div>
             </div>
             <div className="col-lg-6">
@@ -54,9 +52,9 @@ export default function AboutTestimonialSection() {
                         <div className="content">
                           <div className="info-item">
                             <div className="info-text">
-                              <div className="client-image">
+                              {/* <div className="client-image">
                                 <img src={t.image} alt="img" />
-                              </div>
+                              </div> */}
                               <h3>{t.name}</h3>
                               <span>{t.role}</span>
                             </div>

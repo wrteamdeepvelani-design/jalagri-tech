@@ -10,6 +10,7 @@ type Step = {
   number: string;
   icon: string;
   title: string;
+  description: string;
   delay: string;
   modifier?: string;
 };
@@ -41,7 +42,7 @@ export default function WorkProcessSection() {
                   <span>{step.number}</span>
                 </div>
                 <h3 className="card-title">{step.title}</h3>
-                <p className="card-description">{data.description}</p>
+                <p className="card-description">{step.description}</p>
               </div>
             </div>
           ))}

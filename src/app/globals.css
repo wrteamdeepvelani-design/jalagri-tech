@@ -149,12 +149,30 @@
   object-position: center !important;
 }
 
+/* Swiper carousel card — match .service-bg-item fixed height (487px) so the
+   image card aligns with the feature card and service cards in the same row. */
+.service-section-2 .service-image-item .slider-thumb {
+  height: 487px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.service-section-2 .service-image-item .slider-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+
 /* Home project section — theme uses natural image dimensions for the
    left project cards, so different aspect ratios mean different card
    heights. Pin to 175px so all 4 cards line up at the same height. */
 .project-wrapper-2 .project-left-item .project-image {
   height: 175px;
   overflow: hidden;
+}
+.project-wrapper-2 .project-left-item .project-image:last-child {
+  margin-bottom: 0;
 }
 .project-wrapper-2 .project-left-item .project-image img {
   width: 100% !important;
@@ -173,9 +191,8 @@
   height: 100%;
 }
 .project-wrapper-2 .project-thumb-item .project-thumb {
-  height: auto !important;
-  flex: 1 1 auto;
-  min-height: 0;
+  height: 100% !important;
+  flex: 1;
 }
 
 /* Active card state — theme's main.js uses GSAP ScrollTrigger to set
@@ -192,13 +209,101 @@
   color: var(--theme2) !important;
 }
 
+/* FAQ inner section — main.css line 5341 sets accordion-item background to
+   var(--white) with 5-class specificity. We prefix every rule with the
+   section class .faq-inner-section (6 classes) so we win on SPECIFICITY,
+   not source order — Next.js 16 doesn't guarantee globals.css loads last. */
+.faq-inner-section .faq-wrapper-3 .faq-box .faq-items .accordion .accordion-item,
+.faq-inner-section .faq-wrapper-3 .faq-box .faq-items .accordion .accordion-item .accordion-collapse,
+.faq-inner-section .faq-wrapper-3 .faq-box .faq-items .accordion .accordion-item .accordion-body {
+  background-color: rgb(47, 47, 47) !important;
+  background: rgb(47, 47, 47) !important;
+}
+/* Closed button stays white so unselected questions are readable */
+.faq-inner-section .faq-wrapper-3 .faq-box .faq-items .accordion .accordion-button.collapsed {
+  background-color: #fff !important;
+  background: #fff !important;
+  color: var(--header) !important;
+}
+/* Open button matches the dark body */
+.faq-inner-section .faq-wrapper-3 .faq-box .faq-items .accordion .accordion-button:not(.collapsed) {
+  background-color: rgb(47, 47, 47) !important;
+  background: rgb(47, 47, 47) !important;
+  color: #fff !important;
+  box-shadow: none !important;
+}
+.faq-inner-section .faq-wrapper-3 .faq-box .faq-items .accordion .accordion-body,
+.faq-inner-section .faq-wrapper-3 .faq-box .faq-items .accordion .accordion-body p,
+.faq-inner-section .faq-wrapper-3 .faq-box .faq-items .accordion .accordion-body * {
+  color: #fff !important;
+}
+/* Kill main.css's `p { transition: all .4s }` so the answer text doesn't
+   flash a different color while the panel expands. */
+.faq-inner-section .faq-wrapper-3 .faq-box .faq-items .accordion .accordion-body p {
+  transition: none !important;
+}
+
+/* About testimonial — theme uses a tall PNG person-cutout for the left
+   box so it naturally fills the column. Our replacement is a landscape
+   photo, so pin the box to fill the column height (Bootstrap row already
+   stretches both cols equal) and cover-fit the image — height stays fixed
+   regardless of the photo's natural dimensions. */
+.testimonial-wrapper-3 .row {
+  align-items: stretch;
+}
+.testimonial-wrapper-3 .testimonial-bg-box {
+  position: relative;
+  height: 100%;
+  padding: 0 !important;
+  overflow: hidden;
+  border-radius: 10px;
+}
+/* Image is absolutely positioned so it never inflates the box height —
+   the box height is driven purely by the equal-height row (the card). */
+.testimonial-wrapper-3 .testimonial-bg-box .testimonial-man {
+  position: absolute !important;
+  inset: 0 !important;
+  height: 100% !important;
+  width: 100% !important;
+  margin: 0 !important;
+}
+.testimonial-wrapper-3 .testimonial-bg-box .testimonial-man img {
+  height: 100% !important;
+  width: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  border-radius: 10px;
+}
+/* Right card fills the equal-height row so image + card align exactly */
+.testimonial-wrapper-3 .testimonial-box {
+  height: 100% !important;
+}
+
+/* Work process section — light white overlay on top of the background
+   image so cards and text remain clearly readable. */
+.work-process-section {
+  position: relative;
+}
+.work-process-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.30);
+  z-index: 0;
+}
+.work-process-section > * {
+  position: relative;
+  z-index: 1;
+}
+
 /* About-page History — hide the .cabage-shape decorative leaf
    placeholder. The theme ships it as a 360x290 placeholder image
    (cabage-3.png) that's an absolutely positioned shape near the top
    of the section. Without a real Jal Agritech shape asset to swap in,
    suppress it so the dimension-placeholder text doesn't leak into
    the layout next to the headline. */
-.our-history-section-3 .cabage-shape {
+.our-history-section-3 .cabage-shape,
+.cabage-shape {
   display: none;
 }
 
@@ -209,21 +314,89 @@
    the section collapses to a tiny row. Pin a fixed height to match
    theme demo proportions; .history-image img already has width/height
    100% in main.css so it fills the box. */
+.our-history-wrapper {
+  min-height: 670px;
+}
 .our-history-wrapper .history-image {
-  height: 670px !important;
+  height: 750px !important;
   flex: 0 0 auto;
-  width: 50%;
-  max-width: 760px;
+  width: 48%;
+  max-width: 720px;
+  align-self: stretch;
 }
 .our-history-wrapper .history-image img {
   object-fit: cover !important;
+  object-position: center !important;
+}
+.our-history-wrapper .history-image .year-list {
+  top: 50px !important;
+  gap: 130px !important;
 }
 @media (max-width: 1399px) {
+  .our-history-wrapper {
+    min-height: unset;
+  }
   .our-history-wrapper .history-image {
     height: 480px !important;
     width: 100%;
     max-width: none;
   }
+}
+
+/* Counter section left float — driper.png renders at natural size which
+   is too large. Cap to 100px and nudge position to clear the stat numbers. */
+.counter-inner-section .chili-shape {
+  bottom: 20px !important;
+  left: 40px !important;
+}
+.counter-inner-section .chili-shape img {
+  width: 160px !important;
+  height: auto !important;
+}
+
+/* About page floating decorative shapes — constrain to match theme's
+   original small ornament size. The theme images were ~120px wide; our
+   custom image is larger so we pin it explicitly. */
+.about-section-3 .chili-shape img,
+.about-section-3 .tree-shape img {
+  width: 120px !important;
+  height: auto !important;
+}
+
+/* Brand/client logos — pin to a fixed 160×60 box so every logo,
+   regardless of its natural dimensions, renders at the same size.
+   object-fit: contain preserves aspect ratio inside the box.
+   Covers both home (.brand-section-2) and about (.brand-section-3). */
+.brand-section-2 .brand-img-1 img,
+.brand-section-3 .brand-img-1 img {
+  width: 160px !important;
+  height: 60px !important;
+  object-fit: contain !important;
+  object-position: center !important;
+}
+
+/* Letter-image divider ("JAL AGRITECH") — swap the theme's placeholder
+   text.jpg for the project image clipped inside the big letters. The
+   theme hard-codes background-position: 8% 836px tuned for its own image;
+   reset to cover/center so any image fills the letters. */
+.letter-image {
+  background-image: url(/images/about/textimage.png) !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+/* About feature cards — theme images vary in natural height, making the
+   cards uneven. Pin the image box to a fixed 340px so all three cards
+   line up; object-fit: cover crops any size cleanly. */
+.feature-section .feature-card-item .feature-image {
+  height: 340px !important;
+}
+.feature-section .feature-card-item .feature-image img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
 }
 
 /* Preloader safety-net — theme's main.js hides #agri-preloader on

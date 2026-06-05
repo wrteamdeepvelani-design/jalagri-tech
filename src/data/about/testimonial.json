@@ -3,9 +3,7 @@
   "eyebrow": "voices that matter",
   "headline": "What Our Clients Say",
   "leftBox": {
-    "background": "/images/what-we-do/landscaping/landscaping-1.jpg",
-    "personImage": "/images/home-3/testimonial.png",
-    "decorativeShape": "/images/home-3/radius-shape.png"
+    "background": "/images/about/testimonial-main.png"
   },
   "quoteIcon": "/images/home-3/icon/09.svg",
   "arrows": {

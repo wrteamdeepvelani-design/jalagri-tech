@@ -20,10 +20,10 @@ export default function AboutHeroSection() {
   return (
     <section className="about-section-3 section-padding fix">
       <div className="chili-shape float-bob-y">
-        <img src="/images/home-3/chili.png" alt="img" />
+        <img src="/images/about/tree-shape.png" alt="img" />
       </div>
       <div className="tree-shape float-bob-y">
-        <img src="/images/home-3/about-shape-2.png" alt="img" />
+        <img src="/images/about/tree-shape.png" alt="img" />
       </div>
       <div className="container">
         <div className="about-wrapper-3">

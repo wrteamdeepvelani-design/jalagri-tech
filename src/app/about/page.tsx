@@ -31,8 +31,8 @@ export default function AboutPage() {
       <CounterInnerSection />
       <OurHistorySection />
       <WorkProcessSection />
-      <TeamSection />
-      <FaqInnerSection />
+      {/* <TeamSection /> */}
+      {/* <FaqInnerSection /> */}
       <AboutTestimonialSection />
       <AboutBrandSection />
       <AboutFeatureSection />
