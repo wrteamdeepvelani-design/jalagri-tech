@@ -1,17 +1,28 @@
 {
-  "_note": "PLACEHOLDER content — replace with real Trading category copy when supplied.",
   "slug": "trading",
   "title": "Trading",
-  "heroImage": "/images/inner-page/service/details.jpg",
+  "heroImage": "/images/what-we-do/trading/hero.jpg",
   "seo": {
     "title": "Trading | Jal Agritech",
     "description": "Jal Agritech trading division — pipes, fittings, fertilizers, seeds, and agriculture inputs supplied at scale.",
     "keywords": "trading, pipes, fittings, fertilizers, seeds, agriculture supplies"
   },
   "gridCards": [
-    { "title": "Pipes & Fittings",      "image": "/images/inner-page/service/05.jpg", "anchor": "topic-0" },
-    { "title": "Fertilizers & Inputs",  "image": "/images/inner-page/service/06.jpg", "anchor": "topic-1" },
-    { "title": "Seeds & Plants",        "image": "/images/inner-page/service/07.jpg", "anchor": "topic-2" }
+    {
+      "title": "Pipes & Fittings",
+      "image": "/images/what-we-do/trading/grid-1.jpg",
+      "anchor": "topic-0"
+    },
+    {
+      "title": "Fertilizers & Inputs",
+      "image": "/images/what-we-do/trading/grid-2.jpg",
+      "anchor": "topic-1"
+    },
+    {
+      "title": "Seeds & Plants",
+      "image": "/images/what-we-do/trading/grid-3.jpg",
+      "anchor": "topic-2"
+    }
   ],
   "cards": [
     {
@@ -43,47 +54,117 @@
     }
   ],
   "impact": {
-    "background": "/images/home-3/team/team-bg.jpg",
+    "background": "/images/what-we-do/trading/impact.jpg",
     "title": "Bulk Supply,\nFair Pricing",
     "items": [
-      { "icon": "/images/inner-page/icon/01.svg", "label": "Product SKUs",          "value": "1,200", "delay": ".4s" },
-      { "icon": "/images/inner-page/icon/02.svg", "label": "Tier-1 supplier tie-ups","value": "30",    "delay": ".6s" },
-      { "icon": "/images/inner-page/icon/03.svg", "label": "Bulk orders per year",  "value": "400",   "delay": ".8s" }
+      {
+        "icon": "/images/inner-page/icon/01.svg",
+        "label": "Product SKUs",
+        "value": "1,200",
+        "delay": ".4s"
+      },
+      {
+        "icon": "/images/inner-page/icon/02.svg",
+        "label": "Tier-1 supplier tie-ups",
+        "value": "30",
+        "delay": ".6s"
+      },
+      {
+        "icon": "/images/inner-page/icon/03.svg",
+        "label": "Bulk orders per year",
+        "value": "400",
+        "delay": ".8s"
+      }
     ]
   },
   "statistics": {
-    "image": "/images/inner-page/service/07.jpg",
+    "image": "/images/what-we-do/trading/grid-2.jpg",
     "eyebrow": "supply that scales",
     "headline": "One Partner For Every Input You Need.",
     "description": "Our trading division consolidates pipes, fittings, fertilizers, seeds, and plants under a single PO — saving you procurement effort.",
     "stats": [
-      { "value": "1,200","suffix": "+", "description": "SKUs in active catalog." },
-      { "value": "30",   "suffix": "+", "description": "Trusted brand partners." },
-      { "value": "7",    "suffix": "d", "description": "Pan-India delivery window." },
-      { "value": "100",  "suffix": "%", "description": "Genuine, traceable stock." }
+      {
+        "value": "1,200",
+        "suffix": "+",
+        "description": "SKUs in active catalog."
+      },
+      {
+        "value": "30",
+        "suffix": "+",
+        "description": "Trusted brand partners."
+      },
+      {
+        "value": "7",
+        "suffix": "d",
+        "description": "Pan-India delivery window."
+      },
+      {
+        "value": "100",
+        "suffix": "%",
+        "description": "Genuine, traceable stock."
+      }
     ]
   },
   "topics": [
     {
       "title": "Pipes & Fittings",
       "intro": [
-        "Placeholder text — replace with real content. Full range of PVC, HDPE, and GI pipes with matching fittings for irrigation and plumbing."
+        "Our trading division supplies the complete piping backbone for irrigation, landscape, and plumbing projects — drip lateral pipe, PVC pipes and fittings, HDPE pipes and fittings, and electro-fusion fittings, all sourced from trusted manufacturers and stocked in retail and bulk quantities.",
+        "Whether you are running a single farm's drip network or a turn-key project across hundreds of acres, we match the right pipe class and fitting to your pressure, flow, and site conditions — and deliver it on time."
       ],
-      "sections": []
+      "sections": [
+        {
+          "title": "What We Stock",
+          "list": [
+            "Drip irrigation material (lateral pipe & fittings)",
+            "PVC pipes & PVC fittings",
+            "HDPE pipe & fittings",
+            "Electro-fusion fittings",
+            "Landscape irrigation products",
+            "Valves, connectors & accessories"
+          ]
+        }
+      ]
     },
     {
       "title": "Fertilizers & Inputs",
       "intro": [
-        "Placeholder text — replace with real content. Organic and chemical fertilizers, growth promoters, and pesticides in retail and bulk packs."
+        "We supply genuine, traceable fertilizers, pesticides, insecticides, and growth promoters in both retail and bulk packs. Through tie-ups with multinational giants like UPL Limited, Gharada Chemical India Ltd, and Insecticides India Limited, we bring the best products available in the industry directly to the farmers of Kutch and Gujarat.",
+        "Our on-field team advises on the right input, dose, and timing for your crop and soil — so every rupee spent on inputs returns real value at harvest."
       ],
-      "sections": []
+      "sections": [
+        {
+          "title": "Product Range",
+          "list": [
+            "Organic & chemical fertilizers",
+            "Pesticides & insecticides",
+            "Growth promoters & micronutrients",
+            "Crop-protection & disease-control inputs",
+            "Bulk and retail pack sizes",
+            "Brand tie-ups: UPL, Gharada, Insecticides India"
+          ]
+        }
+      ]
     },
     {
       "title": "Seeds & Plants",
       "intro": [
-        "Placeholder text — replace with real content. Hybrid seed varieties, nursery saplings, and landscape-grade ornamental plants."
+        "From hybrid seed varieties and nursery saplings to landscape-grade ornamental plants, our seeds and plants line covers everything a farm, garden, or project needs to get growing — backed by our own Neelkanth and Bholenath nurseries.",
+        "We focus on quality, genuine stock and sustainable, \"Green\" offerings, helping farmers get the best out of their soil for generations to come."
       ],
-      "sections": []
+      "sections": [
+        {
+          "title": "Available Categories",
+          "list": [
+            "Hybrid & high-yield seed varieties",
+            "Live plants & nursery saplings",
+            "Landscape-grade ornamental plants",
+            "Fruit, vegetable & fodder crop seeds",
+            "Pots, planters & growing media",
+            "Agricultural tools & tackles"
+          ]
+        }
+      ]
     }
   ]
 }

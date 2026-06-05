@@ -1,18 +1,34 @@
 {
   "slug": "services",
   "title": "Services",
-  "heroImage": "/images/what-we-do/projects/projects-1.jpg",
+  "heroImage": "/images/what-we-do/services/hero.jpg",
   "seo": {
     "title": "Professional Services — Survey, Design, Installation & Consultation | Jal Agritech",
     "description": "End-to-end professional services from Jal Agritech — site survey, landscape and irrigation design, turn-key installation, on-site supervision, and post-project consultation.",
     "keywords": "agriculture services, irrigation design, landscape design, project survey, turn-key installation, agriculture consultation, jal agritech services"
   },
-  "maskImage": "/images/home-2/service/image.png",
+  "maskImage": "/images/what-we-do/services/mask.jpg",
   "gridCards": [
-    { "title": "Survey & Site Assessment",  "image": "/images/what-we-do/landscaping/landscaping-1.jpg", "anchor": "topic-0" },
-    { "title": "Design & Planning",         "image": "/images/what-we-do/irrigation/irrigation-1.jpg",   "anchor": "topic-1" },
-    { "title": "Turn-Key Installation",     "image": "/images/what-we-do/projects/projects-1.jpg",       "anchor": "topic-2" },
-    { "title": "Consultation & Support",    "image": "/images/what-we-do/miyawaki/miyawaki-1.jpg",       "anchor": "topic-3" }
+    {
+      "title": "Survey & Site Assessment",
+      "image": "/images/what-we-do/services/grid-1.jpg",
+      "anchor": "topic-0"
+    },
+    {
+      "title": "Design & Planning",
+      "image": "/images/what-we-do/services/grid-2.jpg",
+      "anchor": "topic-1"
+    },
+    {
+      "title": "Turn-Key Installation",
+      "image": "/images/what-we-do/services/grid-3.jpg",
+      "anchor": "topic-2"
+    },
+    {
+      "title": "Consultation & Support",
+      "image": "/images/what-we-do/services/grid-4.jpg",
+      "anchor": "topic-3"
+    }
   ],
   "cards": [
     {
@@ -42,8 +58,8 @@
       ],
       "highlight": "Site survey, soil tests, water-source tracing, and existing-vegetation audit — captured into a single costed blueprint.",
       "thumbnails": [
-        "/images/what-we-do/landscaping/landscaping-1.jpg",
-        "/images/what-we-do/landscaping/landscaping-2.jpg"
+        "/images/what-we-do/services/t1-a.jpg",
+        "/images/what-we-do/services/t1-b.jpg"
       ],
       "sections": [
         {
@@ -65,8 +81,8 @@
         "Once the survey is in, our irrigation engineers and landscape architects translate the data into a working design — hydraulic plan, planting plan, and BOQ. We design for the climate, the budget, and the client's maintenance preferences (DIY vs AMC) from day one."
       ],
       "thumbnails": [
-        "/images/what-we-do/irrigation/irrigation-1.jpg",
-        "/images/what-we-do/irrigation/irrigation-2.jpg"
+        "/images/what-we-do/services/t2-a.jpg",
+        "/images/what-we-do/services/t2-b.jpg"
       ],
       "sections": [
         {
@@ -89,8 +105,8 @@
       ],
       "highlight": "Survey → design → install → supply → maintain. One team, one PO, one accountability line — saving you time, cost, and coordination headaches.",
       "thumbnails": [
-        "/images/what-we-do/projects/projects-3.jpg",
-        "/images/what-we-do/projects/projects-5.jpg"
+        "/images/what-we-do/services/t3-a.jpg",
+        "/images/what-we-do/services/t3-b.jpg"
       ],
       "sections": [
         {
@@ -112,8 +128,8 @@
         "For clients who already have a team but need expertise on a specific decision — crop choice, irrigation scheduling, Miyawaki species mix, drainage strategy — we offer paid consultation. Either as a fixed-scope advisory or as ongoing technical support."
       ],
       "thumbnails": [
-        "/images/what-we-do/miyawaki/miyawaki-1.jpg",
-        "/images/what-we-do/miyawaki/miyawaki-2.jpg"
+        "/images/what-we-do/services/t4-a.jpg",
+        "/images/what-we-do/services/t4-b.jpg"
       ],
       "sections": [
         {

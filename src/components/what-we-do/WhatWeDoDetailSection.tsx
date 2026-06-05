@@ -8,6 +8,7 @@
  */
 import Link from "next/link";
 import categoriesData from "@/data/what-we-do/categories.json";
+import StickySidebarPin from "@/components/what-we-do/StickySidebarPin";
 
 type Component = {
   name: string;
@@ -56,6 +57,7 @@ export default function WhatWeDoDetailSection({
 
   return (
     <section className="service-details-section fix section-padding">
+      <StickySidebarPin />
       <div className="container">
         <div className="service-details-wrapper">
           <div className="service-top-img fix">
@@ -204,18 +206,6 @@ export default function WhatWeDoDetailSection({
                       );
                     })}
                   </ul>
-                </div>
-                <div className="sidebar-widget-image wow fadeInUp" data-wow-delay=".5s">
-                  <img src={sidebar.promo.image} alt="img" />
-                  <div className="content">
-                    <h4>{sidebar.promo.title}</h4>
-                    <a href={sidebar.promo.ctaHref} className="theme-btn theme-btn-3">
-                      {sidebar.promo.ctaLabel}
-                    </a>
-                  </div>
-                  <div className="white-logo">
-                    <img src={sidebar.promo.logo} alt="img" />
-                  </div>
                 </div>
               </div>
             </div>

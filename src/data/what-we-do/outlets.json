@@ -1,18 +1,34 @@
 {
   "slug": "outlets",
   "title": "Outlets",
-  "heroImage": "/images/what-we-do/outlets/outlets-1.webp",
+  "heroImage": "/images/what-we-do/outlets/o-hero.jpg",
   "seo": {
     "title": "Our Outlets — Mall & Nurseries | Jal Agritech",
     "description": "Visit Jal Agritech outlets — Jal Mall (Bhachau), Bholenath Nursery (Bhuj), Nandini Nursery (Adas, Aanand), and Garden Care (Ayodhya). Walk-in support for irrigation, landscaping, plants and supplies.",
     "keywords": "outlets, jal mall bhachau, bholenath nursery bhuj, nandini nursery, garden care ayodhya, retail, dealer network"
   },
-  "maskImage": "/images/home-2/service/image.png",
+  "maskImage": "/images/what-we-do/outlets/mask.jpg",
   "gridCards": [
-    { "title": "Jal Mall — Bhachau",          "image": "/images/what-we-do/outlets/outlets-1.webp", "anchor": "topic-0" },
-    { "title": "Bholenath Nursery — Bhuj",    "image": "/images/what-we-do/outlets/outlets-2.webp", "anchor": "topic-1" },
-    { "title": "Nandini Nursery — Adas",      "image": "/images/what-we-do/outlets/outlets-7.webp", "anchor": "topic-2" },
-    { "title": "Garden Care — Ayodhya",       "image": "/images/what-we-do/outlets/outlets-4.webp", "anchor": "topic-3" }
+    {
+      "title": "Jal Mall — Bhachau",
+      "image": "/images/what-we-do/outlets/o-grid-1.jpg",
+      "anchor": "topic-0"
+    },
+    {
+      "title": "Bholenath Nursery — Bhuj",
+      "image": "/images/what-we-do/outlets/o-grid-2.jpg",
+      "anchor": "topic-1"
+    },
+    {
+      "title": "Nandini Nursery — Adas",
+      "image": "/images/what-we-do/outlets/o-grid-3.jpg",
+      "anchor": "topic-2"
+    },
+    {
+      "title": "Garden Care — Ayodhya",
+      "image": "/images/what-we-do/outlets/o-grid-4.jpg",
+      "anchor": "topic-3"
+    }
   ],
   "cards": [
     {
@@ -38,9 +54,24 @@
     "background": "/images/what-we-do/outlets/outlets-3.webp",
     "title": "Reach Where You Are",
     "items": [
-      { "icon": "/images/inner-page/icon/01.svg", "label": "Retail outlets",  "value": "4",  "delay": ".4s" },
-      { "icon": "/images/inner-page/icon/02.svg", "label": "States covered",  "value": "3",  "delay": ".6s" },
-      { "icon": "/images/inner-page/icon/03.svg", "label": "Plants in stock", "value": "300","delay": ".8s" }
+      {
+        "icon": "/images/inner-page/icon/01.svg",
+        "label": "Retail outlets",
+        "value": "4",
+        "delay": ".4s"
+      },
+      {
+        "icon": "/images/inner-page/icon/02.svg",
+        "label": "States covered",
+        "value": "3",
+        "delay": ".6s"
+      },
+      {
+        "icon": "/images/inner-page/icon/03.svg",
+        "label": "Plants in stock",
+        "value": "300",
+        "delay": ".8s"
+      }
     ]
   },
   "statistics": {
@@ -49,10 +80,26 @@
     "headline": "Walk-In Support Across Bhuj, Gujarat & Beyond.",
     "description": "Four Jal Agritech outlets serve as full-service points for plant supply, irrigation parts, and on-site advice — backed by our pan-India operations team.",
     "stats": [
-      { "value": "4", "suffix": "",  "description": "Owned outlets across Gujarat & UP." },
-      { "value": "20","suffix": "+", "description": "Years serving local communities." },
-      { "value": "48","suffix": "h", "description": "Average part-delivery window." },
-      { "value": "100","suffix": "%","description": "Genuine, traceable stock." }
+      {
+        "value": "4",
+        "suffix": "",
+        "description": "Owned outlets across Gujarat & UP."
+      },
+      {
+        "value": "20",
+        "suffix": "+",
+        "description": "Years serving local communities."
+      },
+      {
+        "value": "48",
+        "suffix": "h",
+        "description": "Average part-delivery window."
+      },
+      {
+        "value": "100",
+        "suffix": "%",
+        "description": "Genuine, traceable stock."
+      }
     ]
   },
   "topics": [
@@ -62,8 +109,8 @@
         "Jal Mall in Bhachau is our flagship retail outlet — a single destination for irrigation systems, plants, garden supplies, and on-the-spot expert advice. Whether you are a farmer planning a drip installation or a landscape architect sourcing materials, Jal Mall stocks the full range under one roof."
       ],
       "thumbnails": [
-        "/images/what-we-do/outlets/outlets-1.webp",
-        "/images/what-we-do/outlets/outlets-6.webp"
+        "/images/what-we-do/outlets/o-t1-a.jpg",
+        "/images/what-we-do/outlets/o-t1-b.jpg"
       ],
       "sections": []
     },
@@ -73,8 +120,8 @@
         "Bholenath Nursery in Bhuj specializes in native species and ornamental plants suited to Kutch's arid climate. From Miyawaki-ready saplings to landscape-grade specimens, the nursery serves both retail walk-ins and large project orders."
       ],
       "thumbnails": [
-        "/images/what-we-do/outlets/outlets-2.webp",
-        "/images/what-we-do/outlets/outlets-3.webp"
+        "/images/what-we-do/outlets/o-t2-a.jpg",
+        "/images/what-we-do/outlets/o-t2-b.jpg"
       ],
       "sections": []
     },
@@ -84,8 +131,8 @@
         "Nandini Nursery in Adas (Aanand district) extends our reach into central Gujarat. The outlet focuses on ornamental varieties, climbing plants, and seasonal flowering species for residential landscaping projects."
       ],
       "thumbnails": [
-        "/images/what-we-do/outlets/outlets-7.webp",
-        "/images/what-we-do/outlets/outlets-8.webp"
+        "/images/what-we-do/outlets/o-t3-a.jpg",
+        "/images/what-we-do/outlets/o-t3-b.jpg"
       ],
       "sections": []
     },
@@ -95,8 +142,8 @@
         "Garden Care in Ayodhya marks our Uttar Pradesh footprint — supplying plants, irrigation kits, and garden maintenance services to a market with growing demand for premium landscape work."
       ],
       "thumbnails": [
-        "/images/what-we-do/outlets/outlets-4.webp",
-        "/images/what-we-do/outlets/outlets-5.webp"
+        "/images/what-we-do/outlets/o-t4-a.jpg",
+        "/images/what-we-do/outlets/o-t4-b.jpg"
       ],
       "sections": []
     }

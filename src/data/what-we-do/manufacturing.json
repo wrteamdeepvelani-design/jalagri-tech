@@ -1,13 +1,13 @@
 {
   "slug": "manufacturing",
   "title": "Manufacturing",
-  "heroImage": "/images/what-we-do/manufacturing/manufacturing-1.jpg",
+  "heroImage": "/images/what-we-do/manufacturing/m-hero.jpg",
   "seo": {
     "title": "Manufacturing — Joint Venture with Inoventive Filaments | Jal Agritech",
     "description": "Jal Agritech's manufacturing arm operates as a Business Channel Partner with Inoventive Filaments Pvt Ltd, producing PET wire, agriculture nets, and shade nets at scale.",
     "keywords": "manufacturing, inoventive filaments, PET wire, agriculture nets, shade nets, channel partner, jal agritech"
   },
-  "maskImage": "/images/home-2/service/image.png",
+  "maskImage": "/images/what-we-do/manufacturing/mask.jpg",
   "cards": [
     {
       "number": "01",
@@ -41,21 +41,52 @@
     "background": "/images/what-we-do/manufacturing/manufacturing-2.jpg",
     "title": "Manufactured In-House,\nDelivered Pan-India",
     "items": [
-      { "icon": "/images/inner-page/icon/01.svg", "label": "Production lines",      "value": "6",   "delay": ".4s" },
-      { "icon": "/images/inner-page/icon/02.svg", "label": "Tons produced per year","value": "2,500","delay": ".6s" },
-      { "icon": "/images/inner-page/icon/03.svg", "label": "Quality certifications","value": "4",   "delay": ".8s" }
+      {
+        "icon": "/images/inner-page/icon/01.svg",
+        "label": "Production lines",
+        "value": "6",
+        "delay": ".4s"
+      },
+      {
+        "icon": "/images/inner-page/icon/02.svg",
+        "label": "Tons produced per year",
+        "value": "2,500",
+        "delay": ".6s"
+      },
+      {
+        "icon": "/images/inner-page/icon/03.svg",
+        "label": "Quality certifications",
+        "value": "4",
+        "delay": ".8s"
+      }
     ]
   },
   "statistics": {
-    "image": "/images/what-we-do/manufacturing/manufacturing-3.jpg",
+    "image": "/images/what-we-do/manufacturing/m-stats.jpg",
     "eyebrow": "built to specification",
     "headline": "Quality You Can Trace To The Loom.",
     "description": "Our manufacturing partnership with Inoventive Filaments gives complete control over raw materials, weave specs, and finishing — so every shipment matches the order exactly.",
     "stats": [
-      { "value": "100", "suffix": "%", "description": "In-house JV production." },
-      { "value": "5",   "suffix": "+", "description": "Years average product life." },
-      { "value": "99",  "suffix": "%", "description": "On-spec delivery rate." },
-      { "value": "ISO", "suffix": "",  "description": "Certified production processes." }
+      {
+        "value": "100",
+        "suffix": "%",
+        "description": "In-house JV production."
+      },
+      {
+        "value": "5",
+        "suffix": "+",
+        "description": "Years average product life."
+      },
+      {
+        "value": "99",
+        "suffix": "%",
+        "description": "On-spec delivery rate."
+      },
+      {
+        "value": "ISO",
+        "suffix": "",
+        "description": "Certified production processes."
+      }
     ]
   },
   "topics": [
@@ -65,8 +96,8 @@
         "Our PET wire division produces drawn and extruded PET wire used as the base filament for agriculture nets, industrial netting, and specialty woven products. PET wire offers excellent UV resistance, dimensional stability, and tensile strength — making it the preferred filament for outdoor agricultural applications."
       ],
       "thumbnails": [
-        "/images/what-we-do/manufacturing/manufacturing-1.jpg",
-        "/images/what-we-do/manufacturing/manufacturing-2.jpg"
+        "/images/what-we-do/manufacturing/m-t1-a.jpg",
+        "/images/what-we-do/manufacturing/m-t1-b.jpg"
       ],
       "sections": []
     },
@@ -76,8 +107,8 @@
         "Shade nets, insect-protection nets, and bird nets manufactured to greenhouse and open-field specifications. Mesh density, UV stabilization, and edge reinforcement are customized per crop and per project."
       ],
       "thumbnails": [
-        "/images/what-we-do/manufacturing/manufacturing-3.jpg",
-        "/images/what-we-do/manufacturing/manufacturing-4.jpg"
+        "/images/what-we-do/manufacturing/m-t2-a.jpg",
+        "/images/what-we-do/manufacturing/m-t2-b.jpg"
       ],
       "sections": []
     },
@@ -87,8 +118,8 @@
         "Jal Agritech operates as a Business Channel Partner with Inoventive Filaments Pvt Ltd through a joint venture arrangement. This partnership pools manufacturing capacity, R&D, and distribution networks — giving Jal Agritech the scale to fulfill large industrial and agricultural orders while maintaining ISO-certified quality control across the supply chain."
       ],
       "thumbnails": [
-        "/images/what-we-do/manufacturing/manufacturing-2.jpg",
-        "/images/what-we-do/manufacturing/manufacturing-4.jpg"
+        "/images/what-we-do/manufacturing/m-t3-a.jpg",
+        "/images/what-we-do/manufacturing/m-t3-b.jpg"
       ],
       "sections": []
     }

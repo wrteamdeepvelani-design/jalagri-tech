@@ -26,15 +26,15 @@
   --body: #fff;
   --black: #000;
   --white: #fff;
-  --theme: #C8433A;
-  --theme2: #F5D83E;
-  --theme3: #11A21B;
-  --header: #2F2F2F;
-  --text: #50624A;
-  --border: #02060A;
-  --bg: #F5F6F4;
-  --bg2: #50624A;
-  --bg3: #F5F6F4;
+  --theme: #c8433a;
+  --theme2: #f5d83e;
+  --theme3: #11a21b;
+  --header: #2f2f2f;
+  --text: #50624a;
+  --border: #02060a;
+  --bg: #f5f6f4;
+  --bg2: #50624a;
+  --bg3: #f5f6f4;
   --box-shadow: 0px 1px 14px 0px rgba(0, 0, 0, 0.13);
 }
 
@@ -98,7 +98,8 @@
   left: 0;
   top: 0;
 }
-.hero-2 .hero-portfolio-revealing-slide.hero-video-active
+.hero-2
+  .hero-portfolio-revealing-slide.hero-video-active
   .hero-portfolio-revealing-slide-inner {
   position: absolute;
   inset: 0;
@@ -202,10 +203,19 @@
    This CSS makes :hover give the same yellow accent so cards still feel
    responsive even when the scroll-pin path doesn't fire. The inline
    style set by main.js (when it does fire) still overrides this. */
-.project-wrapper-2 .project-left-item .project-image:hover .project-content span {
+.project-wrapper-2
+  .project-left-item
+  .project-image:hover
+  .project-content
+  span {
   background-color: var(--theme2) !important;
 }
-.project-wrapper-2 .project-left-item .project-image:hover .project-content h3 a {
+.project-wrapper-2
+  .project-left-item
+  .project-image:hover
+  .project-content
+  h3
+  a {
   color: var(--theme2) !important;
 }
 
@@ -213,33 +223,83 @@
    var(--white) with 5-class specificity. We prefix every rule with the
    section class .faq-inner-section (6 classes) so we win on SPECIFICITY,
    not source order — Next.js 16 doesn't guarantee globals.css loads last. */
-.faq-inner-section .faq-wrapper-3 .faq-box .faq-items .accordion .accordion-item,
-.faq-inner-section .faq-wrapper-3 .faq-box .faq-items .accordion .accordion-item .accordion-collapse,
-.faq-inner-section .faq-wrapper-3 .faq-box .faq-items .accordion .accordion-item .accordion-body {
+.faq-inner-section
+  .faq-wrapper-3
+  .faq-box
+  .faq-items
+  .accordion
+  .accordion-item,
+.faq-inner-section
+  .faq-wrapper-3
+  .faq-box
+  .faq-items
+  .accordion
+  .accordion-item
+  .accordion-collapse,
+.faq-inner-section
+  .faq-wrapper-3
+  .faq-box
+  .faq-items
+  .accordion
+  .accordion-item
+  .accordion-body {
   background-color: rgb(47, 47, 47) !important;
   background: rgb(47, 47, 47) !important;
 }
 /* Closed button stays white so unselected questions are readable */
-.faq-inner-section .faq-wrapper-3 .faq-box .faq-items .accordion .accordion-button.collapsed {
+.faq-inner-section
+  .faq-wrapper-3
+  .faq-box
+  .faq-items
+  .accordion
+  .accordion-button.collapsed {
   background-color: #fff !important;
   background: #fff !important;
   color: var(--header) !important;
 }
 /* Open button matches the dark body */
-.faq-inner-section .faq-wrapper-3 .faq-box .faq-items .accordion .accordion-button:not(.collapsed) {
+.faq-inner-section
+  .faq-wrapper-3
+  .faq-box
+  .faq-items
+  .accordion
+  .accordion-button:not(.collapsed) {
   background-color: rgb(47, 47, 47) !important;
   background: rgb(47, 47, 47) !important;
   color: #fff !important;
   box-shadow: none !important;
 }
-.faq-inner-section .faq-wrapper-3 .faq-box .faq-items .accordion .accordion-body,
-.faq-inner-section .faq-wrapper-3 .faq-box .faq-items .accordion .accordion-body p,
-.faq-inner-section .faq-wrapper-3 .faq-box .faq-items .accordion .accordion-body * {
+.faq-inner-section
+  .faq-wrapper-3
+  .faq-box
+  .faq-items
+  .accordion
+  .accordion-body,
+.faq-inner-section
+  .faq-wrapper-3
+  .faq-box
+  .faq-items
+  .accordion
+  .accordion-body
+  p,
+.faq-inner-section
+  .faq-wrapper-3
+  .faq-box
+  .faq-items
+  .accordion
+  .accordion-body
+  * {
   color: #fff !important;
 }
 /* Kill main.css's `p { transition: all .4s }` so the answer text doesn't
    flash a different color while the panel expands. */
-.faq-inner-section .faq-wrapper-3 .faq-box .faq-items .accordion .accordion-body p {
+.faq-inner-section
+  .faq-wrapper-3
+  .faq-box
+  .faq-items
+  .accordion
+  .accordion-body
+  p {
   transition: none !important;
 }
 
@@ -288,7 +348,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(255, 255, 255, 0.30);
+  background: rgba(255, 255, 255, 0.3);
   z-index: 0;
 }
 .work-process-section > * {
@@ -373,6 +433,114 @@
   height: 60px !important;
   object-fit: contain !important;
   object-position: center !important;
+}
+
+/* What-we-do grid cards (ServiceGridSection, .service-section-4) — same
+   .service-card-items-2 markup as the home page but a different section
+   class, so the home fix doesn't reach it. Pin the card image to a fixed
+   height + cover so all grid cards line up regardless of photo size. */
+.service-section-4 .service-card-items-2 .service-image {
+  height: 220px !important;
+  overflow: hidden !important;
+  border-radius: 10px;
+}
+.service-section-4 .service-card-items-2 .service-image img {
+  width: 100% !important;
+  height: 220px !important;
+  object-fit: cover !important;
+  object-position: center !important;
+}
+
+/* What-we-do cards (number cards + grid cards in .service-section-4) —
+   make every card fill its equal-height row so cards with longer text
+   don't leave the others short. The column becomes a flex container; the
+   card stretches to full height and width inside it. */
+.service-section-4 .row > [class*="col-"] {
+  display: flex;
+}
+.service-section-4 .service-box-items-3,
+.service-section-4 .service-card-items-2 {
+  height: 100%;
+  width: 100%;
+}
+
+/* What-we-do statistics — keep the left image the SAME height as the right
+   stats grid no matter the image's natural size. The column is a flex
+   container so the image box stretches to the row height; the <img> is
+   absolutely positioned so it contributes ZERO height (a big/tall image
+   can't inflate the row) and cover-fits the stretched box. */
+.our-statistics-wrapper .row {
+  align-items: stretch;
+}
+.our-statistics-wrapper .row > [class*="col-"]:first-child {
+  display: flex;
+}
+.our-statistics-wrapper .our-statistics-image {
+  position: relative;
+  width: 100%;
+  min-height: 320px;
+  overflow: hidden;
+}
+.our-statistics-wrapper .our-statistics-image img {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+}
+
+/* Sidebar promo card — image removed, so render a solid dark-green card
+   sized by its own content (title + CTA). The theme positions .content
+   absolutely (for overlaying an image); make it static so the card height
+   follows the text, and drop the theme's dark image-overlay ::before. */
+.service-details-sidebar .sidebar-widget-image {
+  height: auto;
+  background-color: var(--bg2);
+  border-radius: 8px;
+  padding: 30px;
+}
+.service-details-sidebar .sidebar-widget-image::before {
+  display: none;
+}
+.service-details-sidebar .sidebar-widget-image .content {
+  position: static;
+  padding: 0;
+}
+
+/* Service-detail sidebar — the theme's .sticky-style (position: sticky)
+   can't work inside ScrollSmoother's transformed content, so we pin it with
+   ScrollTrigger instead (StickySidebarPin.tsx). Neutralise the broken sticky
+   so ScrollTrigger has clean control of the element's positioning. */
+.service-details-sidebar.sticky-style {
+  position: static;
+  top: auto;
+}
+
+/* Service-detail parallax images — the data-speed parallax transforms each
+   image, but the containers have no overflow clip or fixed height, so a
+   moved image overflows its box and paints over the heading below it.
+   Clip the containers + give them a fixed height + cover-fit so the
+   parallax stays contained and never overlaps text. */
+.service-details-wrapper .service-top-img {
+  height: 460px;
+  overflow: hidden;
+}
+.service-details-wrapper .service-top-img img {
+  object-fit: cover !important;
+  object-position: center !important;
+}
+.service-details-wrapper .service-details-content .thumb {
+  height: 300px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+.service-details-wrapper .service-details-content .thumb img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  border-radius: 12px;
 }
 
 /* Letter-image divider ("JAL AGRITECH") — swap the theme's placeholder
