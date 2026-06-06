@@ -1,32 +1,26 @@
 /**
- * DroneSpecificationSection — theme markup from contact.html lines 532-556.
- * Horizontal drag gallery at bottom of contact page. .gallery-wrapper
- * + .drag-circle drag interaction wired by main.js.
+ * DroneSpecificationSection — bottom-of-contact showcase strip.
+ * Replaced the theme's manual drag gallery with a continuous auto-scrolling
+ * marquee (CSS-only, pauses on hover). Images are rendered twice so the
+ * loop is seamless. Uses .agri-marquee classes (not .gallery-wrapper) so
+ * main.js's drag init skips it.
  */
 import data from "@/data/contact/contact.json";
 
 export default function DroneSpecificationSection() {
   const gallery = data.gallery;
+  // Duplicate the set so the -50% scroll loops seamlessly.
+  const loop = [...gallery.images, ...gallery.images];
 
   return (
     <div className="drone-specification-section section-padding fix">
-      <div className="gallery-wrapper mt-0">
-        <div className="gallery-track">
-          {gallery.images.map((src) => (
-            <div key={src} className="gallery-item">
+      <div className="agri-marquee">
+        <div className="agri-marquee-track">
+          {loop.map((src, i) => (
+            <div key={i} className="agri-marquee-item" aria-hidden={i >= gallery.images.length}>
               <img src={src} alt="img" />
             </div>
           ))}
-        </div>
-        {/* Floating Circle */}
-        <div className="drag-circle">
-          <span className="arrow left">
-            <i className="fa-solid fa-chevron-left"></i>
-          </span>
-          <span className="text">{gallery.dragLabel}</span>
-          <span className="arrow right">
-            <i className="fa-solid fa-chevron-right"></i>
-          </span>
         </div>
       </div>
     </div>

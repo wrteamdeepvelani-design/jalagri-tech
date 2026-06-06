@@ -4,8 +4,27 @@
     const $documentOn = $(document);
     const $windowOn = $(window);
   
-    $documentOn.ready( function() {
-  
+    var __themeBooted = false;
+
+    function initThemePage() {
+
+      var firstRun = !__themeBooted;
+      __themeBooted = true;
+      // On Next.js client navigation the page DOM is swapped but main.js is
+      // not re-loaded. initThemePage() re-runs the PAGE-level inits (WOW,
+      // swipers, counters, text-anim, accordion, scroll anims) on every
+      // route change, while the LAYOUT-level inits below (mobile menu,
+      // sticky header, cursor, back-to-top, ScrollSmoother) run only once,
+      // guarded by `firstRun`. Stale page ScrollTriggers are killed first so
+      // they don't accumulate (ScrollSmoother's own trigger is preserved).
+      if (!firstRun && window.ScrollTrigger) {
+        window.ScrollTrigger.getAll().forEach(function (t) {
+          if (!t.vars || t.vars.id !== "ScrollSmoother") t.kill();
+        });
+      }
+
+      if (firstRun) {
+
       /* ================================
        Mobile Menu Js Start
     ================================ */
@@ -108,7 +127,8 @@
 		$("body").removeClass("overflow-hidden");
 	});
 
-      
+      } // end firstRun — region 1 (mobile menu, offcanvas, sticky header, search)
+
        /* ================================
        Video & Image Popup Js Start
     ================================ */
@@ -911,6 +931,8 @@
         });
     }
 
+    if (firstRun) {
+
     /* ================================
         Mouse Cursor Animation Js Start
     ================================ */
@@ -1000,7 +1022,29 @@
             normalizeScroll: false,
             ignoreMobileResize: true,
         });
+
+        // Anchor-link fix for ScrollSmoother.
+        // Native <a href="#id"> clicks set document.scrollTop, which puts
+        // ScrollSmoother's transform-based scroll out of sync → stuck scroll,
+        // broken sidebar pin, infinite overscroll, white screen.
+        // Intercept every in-page anchor click and route it through
+        // smoother.scrollTo() so the scroller stays fully in sync.
+        // Uses event delegation (document) + namespace so it registers once
+        // and is easy to remove. Falls through when smoother is unavailable
+        // (mobile / no smooth-wrapper) so native anchor still works.
+        $(document).on('click.smootherAnchor', 'a[href^="#"]', function (e) {
+            var href = $(this).attr('href');
+            if (!href || href === '#') return;
+            var target = document.querySelector(href);
+            if (!target) return;
+            var sm = ScrollSmoother.get();
+            if (!sm) return;
+            e.preventDefault();
+            sm.scrollTo(target, true, 'top 80px');
+        });
     }
+
+    } // end firstRun — region 2 (cursor, back-to-top, ScrollSmoother)
 
      /* ================================
        Sticky Js Start
@@ -1524,13 +1568,21 @@
 
 
     
-    }); // End Document Ready Function
+    // Page-level scroll animations — re-run on every navigation.
+    initYearChangeAnim();
+    initImageTrailAnim();
+    initGallerySlide();
 
-   
+    } // End initThemePage
 
+    // Run once on first load…
+    $documentOn.ready( initThemePage );
+    // …and expose so the Next.js <ThemeReinit> component can re-run page
+    // inits on each client-side route change.
+    window.__initThemePage = initThemePage;
 
     // Year Change ANimatoin
-    document.addEventListener("DOMContentLoaded", function () {
+    function initYearChangeAnim() {
 
     gsap.registerPlugin(ScrollTrigger);
 
@@ -1576,12 +1628,10 @@
         }
     });
 
-    });
+    } // End initYearChangeAnim
 
-
-    
   // Image Trail ANimatoin
-    document.addEventListener("DOMContentLoaded", () => {
+    function initImageTrailAnim() {
 
     const sections = document.querySelectorAll(".image-trail-animation");
     if (!sections.length) return;
@@ -1685,13 +1735,12 @@
 
         new ImageTrail();
     });
-    });
-
+    } // End initImageTrailAnim
 
     /* ================================
        Mous Slide Js Start
     ================================ */
-    document.addEventListener('DOMContentLoaded', () => {
+    function initGallerySlide() {
     const galleryWrapper = document.querySelector('.gallery-wrapper');
     if (!galleryWrapper) return; 
 
@@ -1731,7 +1780,7 @@
     galleryWrapper.addEventListener('mouseleave', () => {
         lastCursorX = null;
     });
-});
+    } // End initGallerySlide
 
 
     window.addEventListener("load", function () {

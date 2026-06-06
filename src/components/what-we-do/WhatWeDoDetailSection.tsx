@@ -93,7 +93,12 @@ export default function WhatWeDoDetailSection({
                         {topic.thumbnails.map((src, i) => (
                           <div key={i} className="col-lg-6">
                             <div className="thumb">
-                              <img data-speed=".8" src={src} alt="img" />
+                              {/* No data-speed here: the ScrollSmoother
+                                  parallax sets inline transforms/height on the
+                                  img and fights the fixed 300px thumb box,
+                                  making the height track the source image.
+                                  Plain img → CSS controls it, always 300px. */}
+                              <img src={src} alt="img" />
                             </div>
                           </div>
                         ))}

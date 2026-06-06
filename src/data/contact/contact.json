@@ -32,8 +32,8 @@
   },
   "form": {
     "shapes": {
-      "left": "/images/inner-page/service/tree.png",
-      "maize": "/images/inner-page/service/maize.png"
+      "left": "/images/contact/leaf.png",
+      "maize": "/images/contact/plant.png"
     },
     "fields": [
       { "label": "your Name",      "type": "text",     "name": "name",       "id": "name",    "placeholder": "adam gilcrist" },
@@ -53,7 +53,9 @@
       "/images/home-3/drone/drone-4.jpg",
       "/images/home-3/drone/drone-5.jpg",
       "/images/home-3/drone/drone-6.jpg",
-      "/images/home-3/drone/drone-7.jpg"
+      "/images/home-3/drone/drone-7.jpg",
+      "/images/home-3/drone/drone-8.jpg",
+      "/images/home-3/drone/drone-9.jpg"
     ],
     "dragLabel": "DRAG"
   }

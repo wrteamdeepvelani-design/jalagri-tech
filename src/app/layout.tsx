@@ -22,6 +22,7 @@ import SearchModal from "@/components/layout/SearchModal";
 import Preloader from "@/components/shared/Preloader";
 import CustomCursor from "@/components/shared/CustomCursor";
 import BackToTop from "@/components/shared/BackToTop";
+import ThemeReinit from "@/components/shared/ThemeReinit";
 
 export const metadata: Metadata = {
   title: "Agriva - Agriculture Organic Farm",
@@ -76,6 +77,7 @@ export default function RootLayout({
       </head>
       <body>
         <Preloader />
+        <ThemeReinit />
         <BackToTop />
         <CustomCursor />
         <OffcanvasSidebar />

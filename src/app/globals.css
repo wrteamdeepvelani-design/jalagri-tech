@@ -543,6 +543,92 @@
   border-radius: 12px;
 }
 
+/* Contact floating shapes — theme's originals were small ornaments; our
+   replacements are full-size photos, so pin them to a compact decorative
+   size. They're already hidden below 1600px by main.css. Constrain both the
+   wrapper and the img so a large source can't blow out the layout. */
+.contact-section .left-shape,
+.contact-section .maize-shape {
+  max-width: 240px !important;
+  z-index: -1 !important;
+}
+.contact-section .left-shape img {
+  width: 220px !important;
+  height: auto !important;
+  max-height: 320px !important;
+  object-fit: contain !important;
+}
+.contact-section .maize-shape img {
+  width: 200px !important;
+  height: auto !important;
+  max-height: 320px !important;
+  object-fit: contain !important;
+}
+
+/* Contact info items — the theme lays phone + email side by side with a huge
+   78px gap, which cramps our longer real values: the phone number wraps onto
+   two lines, the 44x44 icon circles get squished (no flex-shrink in the
+   theme), and the long email crowds the address. Stack the left items
+   vertically so each gets the full column width with even spacing, and lock
+   every icon to a fixed, non-shrinking circle. The address keeps wrapping
+   normally (it must) since this only forces the icon, not the text. */
+.contact-info-wrapper .contact-info-left-content .info-icon-item {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 28px;
+}
+.contact-info-wrapper .icon-item {
+  align-items: flex-start;
+}
+.contact-info-wrapper .icon-item .icon {
+  flex-shrink: 0;
+}
+.contact-info-wrapper .contact-info-left-content .info-icon-item .icon-item .cont h3 {
+  white-space: nowrap;
+}
+
+/* Contact showcase marquee — continuous auto-scroll (no manual drag).
+   The track holds two copies of the images and slides -50% for a seamless
+   loop; it pauses on hover. Uniform cards via object-fit: cover. */
+.drone-specification-section .agri-marquee {
+  width: 100%;
+  overflow: hidden;
+}
+.drone-specification-section .agri-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: agri-marquee-scroll 45s linear infinite;
+}
+.drone-specification-section .agri-marquee:hover .agri-marquee-track {
+  animation-play-state: paused;
+}
+.drone-specification-section .agri-marquee-item {
+  min-width: 460px;
+  width: 460px;
+  margin: 0 10px;
+}
+.drone-specification-section .agri-marquee-item img {
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+  display: block;
+}
+@keyframes agri-marquee-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@media (max-width: 575px) {
+  .drone-specification-section .agri-marquee-item {
+    min-width: 300px;
+    width: 300px;
+  }
+  .drone-specification-section .agri-marquee-item img {
+    height: 240px;
+  }
+}
+
 /* Letter-image divider ("JAL AGRITECH") — swap the theme's placeholder
    text.jpg for the project image clipped inside the big letters. The
    theme hard-codes background-position: 8% 836px tuned for its own image;
