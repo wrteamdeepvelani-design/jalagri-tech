@@ -5,6 +5,7 @@
  * → CSS keyframes. All wired by the theme assets in layout.tsx.
  */
 import data from "@/data/about/about-hero.json";
+import ReadMoreText from "./ReadMoreText";
 
 type ImageItem = {
   src: string;
@@ -41,7 +42,7 @@ export default function AboutHeroSection() {
                     ))}
                   </h2>
                 </div>
-                <p className="text">{data.description}</p>
+                <ReadMoreText text={data.description} />
                 <div className="about-image-item">
                   {images.map((img, i) => (
                     <div key={i} className="about-image">

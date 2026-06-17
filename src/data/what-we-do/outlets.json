@@ -4,37 +4,42 @@
   "heroImage": "/images/what-we-do/outlets/o-hero.jpg",
   "seo": {
     "title": "Our Outlets — Mall & Nurseries | Jal Agritech",
-    "description": "Visit Jal Agritech outlets — Jal Mall (Bhachau), Bholenath Nursery (Bhuj), Nandini Nursery (Adas, Aanand), and Garden Care (Ayodhya). Walk-in support for irrigation, landscaping, plants and supplies.",
-    "keywords": "outlets, jal mall bhachau, bholenath nursery bhuj, nandini nursery, garden care ayodhya, retail, dealer network"
+    "description": "Visit Jal Agritech outlets — Jal Agro Mall (Bhachau, Kutch), Neelkanth Nursery (Bhuj), Bholenath Nursery (Adas, Anand), Boond Agritech (Unnao, UP), and Garden Care (Ayodhya, UP). Walk-in support for irrigation, landscaping, plants and supplies.",
+    "keywords": "outlets, jal agro mall bhachau, neelkanth nursery bhuj, bholenath nursery adas anand, boond agritech unnao, garden care ayodhya, retail, nursery, dealer network"
   },
   "maskImage": "/images/what-we-do/outlets/mask.jpg",
   "gridCards": [
     {
-      "title": "Jal Mall — Bhachau",
+      "title": "Jal Agro Mall — Bhachau, Kutch",
       "image": "/images/what-we-do/outlets/o-grid-1.jpg",
       "anchor": "topic-0"
     },
     {
-      "title": "Bholenath Nursery — Bhuj",
+      "title": "Neelkanth Nursery — Bhuj",
       "image": "/images/what-we-do/outlets/o-grid-2.jpg",
       "anchor": "topic-1"
     },
     {
-      "title": "Nandini Nursery — Adas",
+      "title": "Bholenath Nursery — Adas, Anand",
       "image": "/images/what-we-do/outlets/o-grid-3.jpg",
       "anchor": "topic-2"
     },
     {
-      "title": "Garden Care — Ayodhya",
+      "title": "Boond Agritech — Unnao, Uttar Pradesh",
       "image": "/images/what-we-do/outlets/o-grid-4.jpg",
       "anchor": "topic-3"
+    },
+    {
+      "title": "Garden Care — Ayodhya, Uttar Pradesh",
+      "image": "/images/what-we-do/outlets/o-grid-1.jpg",
+      "anchor": "topic-4"
     }
   ],
   "cards": [
     {
       "number": "01",
       "icon": "/images/inner-page/icon/04.svg",
-      "title": "Jal Mall — Bhachau",
+      "title": "Jal Agro Mall — Bhachau",
       "description": "Flagship retail mall stocking irrigation systems, plants, and complete project supplies.",
       "anchor": "topic-0",
       "animation": "fadeInLeft",
@@ -43,7 +48,7 @@
     {
       "number": "02",
       "icon": "/images/inner-page/icon/05.svg",
-      "title": "Bholenath Nursery — Bhuj",
+      "title": "Neelkanth Nursery — Bhuj",
       "description": "Native species, ornamentals, and landscape-grade plants — adapted to Kutch's climate.",
       "anchor": "topic-1",
       "animation": "fadeInRight",
@@ -57,13 +62,13 @@
       {
         "icon": "/images/inner-page/icon/01.svg",
         "label": "Retail outlets",
-        "value": "4",
+        "value": "5",
         "delay": ".4s"
       },
       {
         "icon": "/images/inner-page/icon/02.svg",
         "label": "States covered",
-        "value": "3",
+        "value": "2",
         "delay": ".6s"
       },
       {
@@ -78,10 +83,10 @@
     "image": "/images/what-we-do/outlets/outlets-5.webp",
     "eyebrow": "local presence",
     "headline": "Walk-In Support Across Bhuj, Gujarat & Beyond.",
-    "description": "Four Jal Agritech outlets serve as full-service points for plant supply, irrigation parts, and on-site advice — backed by our pan-India operations team.",
+    "description": "Five Jal Agritech outlets serve as full-service points for plant supply, irrigation parts, and on-site advice — backed by our pan-India operations team.",
     "stats": [
       {
-        "value": "4",
+        "value": "5",
         "suffix": "",
         "description": "Owned outlets across Gujarat & UP."
       },
@@ -104,9 +109,12 @@
   },
   "topics": [
     {
-      "title": "Jal Mall — Bhachau",
+      "title": "Jal Agro Mall — Bhachau, Kutch",
       "intro": [
-        "Jal Mall in Bhachau is our flagship retail outlet — a single destination for irrigation systems, plants, garden supplies, and on-the-spot expert advice. Whether you are a farmer planning a drip installation or a landscape architect sourcing materials, Jal Mall stocks the full range under one roof."
+        "Jal Agro Mall was established with the vision of creating a one-stop destination for all agricultural needs by bringing together a comprehensive range of farming products, technologies, and services under one roof. Our objective is to empower farmers across Kutch and Gujarat with high-quality, reliable, and innovative solutions that enhance productivity, optimize resource utilization, and improve farm profitability.",
+        "We are dedicated to supporting the farming community by providing premium agricultural inputs, modern irrigation solutions, expert technical guidance, and advanced farming technologies. Our focus is to help farmers achieve higher yields, improve soil health, conserve water resources, and adopt sustainable agricultural practices that contribute to long-term success and a better quality of life.",
+        "To ensure access to the best products and services, we have partnered with leading manufacturers and trusted brands in irrigation systems, seeds, fertilizers, crop protection products, farm machinery, automation technologies, landscaping solutions, and other allied agricultural sectors.",
+        "Backed by expert consultation, quality assurance, and dedicated customer support, JAL Agro Mall has become a trusted partner for farmers, helping them embrace modern agriculture and achieve sustainable growth across Kutch, Gujarat, and beyond."
       ],
       "thumbnails": [
         "/images/what-we-do/outlets/o-t1-a.jpg",
@@ -115,9 +123,12 @@
       "sections": []
     },
     {
-      "title": "Bholenath Nursery — Bhuj",
+      "title": "Neelkanth Nursery — Bhuj",
       "intro": [
-        "Bholenath Nursery in Bhuj specializes in native species and ornamental plants suited to Kutch's arid climate. From Miyawaki-ready saplings to landscape-grade specimens, the nursery serves both retail walk-ins and large project orders."
+        "Neelkanth Nursery, located in Bhuj, was established with the vision of providing high-quality live plants, pots, planters, gardening tools, and landscaping essentials for residential, commercial, institutional, and corporate projects across Kutch.",
+        "We are committed to offering a diverse range of healthy plants, ornamental species, avenue trees, flowering plants, indoor and outdoor plants, decorative planters, gardening accessories, and horticultural products that enhance the beauty, functionality, and sustainability of every space. Our focus is on delivering superior-quality products, expert horticultural guidance, and dependable service to homeowners, landscape professionals, businesses, institutions, and corporate clients.",
+        "With a passion for greenery and environmental stewardship, Neelkanth Nursery actively supports landscaping, plantation, urban greening, and environmental development initiatives throughout the region. By combining quality products with dedicated customer support and technical expertise, we help create vibrant, healthy, and aesthetically appealing environments that contribute to a greener and more sustainable future.",
+        "Through our extensive product range, professional services, and commitment to excellence, Neelkanth Nursery strives to be the preferred destination for all gardening, plantation, and landscaping requirements across Kutch and Gujarat."
       ],
       "thumbnails": [
         "/images/what-we-do/outlets/o-t2-a.jpg",
@@ -126,9 +137,12 @@
       "sections": []
     },
     {
-      "title": "Nandini Nursery — Adas, Aanand",
+      "title": "Bholenath Nursery — Adas, Anand, Gujarat",
       "intro": [
-        "Nandini Nursery in Adas (Aanand district) extends our reach into central Gujarat. The outlet focuses on ornamental varieties, climbing plants, and seasonal flowering species for residential landscaping projects."
+        "Bholenath Nursery, located in Adas, Anand, Gujarat, was established with the vision of providing high-quality live plants, pots, planters, gardening tools, and landscaping essentials for residential, commercial, institutional, and corporate projects across Gujarat and neighbouring states.",
+        "We are committed to offering a diverse range of healthy plants, ornamental species, avenue trees, flowering plants, indoor and outdoor plants, decorative planters, gardening accessories, and horticultural products that enhance the beauty, functionality, and sustainability of every landscape. Our focus is on delivering superior-quality products, expert horticultural guidance, and dependable service to homeowners, landscape professionals, businesses, institutions, and corporate clients.",
+        "With a strong commitment to environmental stewardship and sustainable landscaping, Bholenath Nursery supports plantation drives, urban greening initiatives, landscape development projects, ecological restoration programs, and large-scale afforestation efforts. Our experienced team works closely with clients to provide customized solutions that meet project requirements while promoting long-term plant health and environmental sustainability.",
+        "Backed by extensive nursery infrastructure, quality plant material, and efficient logistics, Bholenath Nursery serves clients not only across Gujarat but also throughout 10–15 neighbouring states in India. Through quality products, professional expertise, and dedicated customer support, we strive to be a trusted partner and preferred destination for gardening, plantation, landscaping, and environmental development projects nationwide."
       ],
       "thumbnails": [
         "/images/what-we-do/outlets/o-t3-a.jpg",
@@ -137,13 +151,28 @@
       "sections": []
     },
     {
-      "title": "Garden Care — Ayodhya",
+      "title": "Boond Agritech — Unnao, Uttar Pradesh",
       "intro": [
-        "Garden Care in Ayodhya marks our Uttar Pradesh footprint — supplying plants, irrigation kits, and garden maintenance services to a market with growing demand for premium landscape work."
+        "Bund Agritech, located in Unnao, Uttar Pradesh, is our sister concern and serves as an important center for irrigation, landscaping, plantation, and agricultural development activities. The farm is dedicated to implementing modern irrigation technologies, sustainable landscaping practices, and large-scale plantation projects that promote efficient resource utilization and environmental sustainability.",
+        "Through Bund Agritech, we undertake the cultivation and maintenance of a wide variety of live plants, ornamental species, avenue trees, and landscape materials, supporting projects across residential, commercial, institutional, corporate, and government sectors. The facility also serves as a demonstration and development site for advanced irrigation systems, horticultural practices, and landscape management techniques.",
+        "With a strong focus on quality, innovation, and sustainability, Bund Agritech contributes to our mission of delivering integrated agriculture, irrigation, landscaping, and environmental solutions while supporting green development initiatives across the region."
       ],
       "thumbnails": [
         "/images/what-we-do/outlets/o-t4-a.jpg",
         "/images/what-we-do/outlets/o-t4-b.jpg"
+      ],
+      "sections": []
+    },
+    {
+      "title": "Garden Care — Ayodhya, Uttar Pradesh",
+      "intro": [
+        "Garden Care, located in Ayodhya, Uttar Pradesh, is our sister concern specializing in nursery development, live plant production, pots, planters, and allied horticultural products. The facility is dedicated to cultivating and supplying a wide variety of high-quality plants, ornamental species, flowering plants, avenue trees, indoor and outdoor plants, and decorative landscaping materials to meet the diverse needs of residential, commercial, institutional, corporate, and government projects.",
+        "With a strong focus on quality, plant health, and customer satisfaction, Garden Care offers an extensive range of decorative pots, planters, gardening accessories, and horticultural products that enhance the beauty and functionality of indoor and outdoor spaces. The nursery serves as a reliable source of quality planting material and landscape products, supporting landscaping, plantation, urban greening, and environmental development initiatives.",
+        "Through professional horticultural practices, sustainable cultivation methods, and dedicated customer support, Garden Care contributes to our mission of creating greener, healthier, and more aesthetically appealing environments while serving clients across Uttar Pradesh and neighbouring regions."
+      ],
+      "thumbnails": [
+        "/images/what-we-do/outlets/o-t1-a.jpg",
+        "/images/what-we-do/outlets/o-t1-b.jpg"
       ],
       "sections": []
     }

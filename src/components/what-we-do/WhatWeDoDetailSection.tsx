@@ -20,6 +20,7 @@ type Spec = { label: string; value: string };
 type Section = {
   title: string;
   intro?: string;
+  paragraphs?: string[];
   list?: string[];
   components?: Component[];
   specs?: Spec[];
@@ -109,6 +110,11 @@ export default function WhatWeDoDetailSection({
                       <div key={si} className="mt-5">
                         <h3>{section.title}</h3>
                         {section.intro && <p className="mt-3">{section.intro}</p>}
+                        {section.paragraphs?.map((para, pi) => (
+                          <p key={pi} className="mt-3">
+                            {para}
+                          </p>
+                        ))}
 
                         {section.list && (
                           <div className="service-list-items mt-3">

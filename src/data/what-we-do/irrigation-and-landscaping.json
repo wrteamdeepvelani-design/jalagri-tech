@@ -5,14 +5,14 @@
   "seo": {
     "title": "Irrigation and Landscaping | Jal Agritech",
     "description": "Automated irrigation, rain gun systems, landscape softscaping & hardscaping, Miyawaki forests, and vertical gardens — built for Indian farms, gardens, and commercial landscapes by Jal Agritech.",
-    "keywords": "irrigation, landscaping, drip irrigation, rain gun, sprinkler, automated irrigation, fountains, miyawaki, vertical garden, smritivan, bhuj, kutch"
+    "keywords": "irrigation, landscaping, drip irrigation, rain gun, sprinkler, automated irrigation, fountains, miyawaki, vertical garden, terrace garden, dust suppression, smritivan, bhuj, kutch"
   },
   "cards": [
     {
       "number": "01",
       "icon": "/images/inner-page/icon/04.svg",
-      "title": "Automated Irrigation",
-      "description": "Smart controllers, soil + weather sensors, micro-drip, and pop-up sprinklers — fully hands-free water management.",
+      "title": "Landscape Projects",
+      "description": "Softscaping, hardscaping, and specialty services for residential, commercial, and agricultural projects.",
       "anchor": "topic-0",
       "animation": "fadeInLeft",
       "delay": ".2s"
@@ -20,8 +20,8 @@
     {
       "number": "02",
       "icon": "/images/inner-page/icon/05.svg",
-      "title": "Rain Gun Irrigation",
-      "description": "High-discharge sprinklers with 27–60 m radius. Rainfall-like coverage for sugarcane, wheat, maize, and large landscapes.",
+      "title": "Vertical Gardens",
+      "description": "Living walls for urban spaces — modular systems, hydroponic walls, and DIY-friendly pocket installations.",
       "anchor": "topic-1",
       "animation": "fadeInUp",
       "delay": ".3s"
@@ -29,8 +29,8 @@
     {
       "number": "03",
       "icon": "/images/inner-page/icon/06.svg",
-      "title": "Landscape Fountains",
-      "description": "Garden and patio fountain projects — pots, upcycled features, and tiered cascading designs.",
+      "title": "Miyawaki Forests",
+      "description": "Dense native afforestation that grows 10× faster than conventional plantations — proven at Smritivan, Bhuj.",
       "anchor": "topic-2",
       "animation": "fadeInUp",
       "delay": ".4s"
@@ -38,8 +38,8 @@
     {
       "number": "04",
       "icon": "/images/inner-page/icon/07.svg",
-      "title": "Landscaping Services",
-      "description": "Softscaping, hardscaping, and specialty services for residential, commercial, and agricultural projects.",
+      "title": "Terrace Gardens",
+      "description": "India's second-largest terrace garden at Smritivan, Bhuj — waterproofing, drainage, rainwater harvesting & automated fertigation.",
       "anchor": "topic-3",
       "animation": "fadeInUp",
       "delay": ".5s"
@@ -47,8 +47,8 @@
     {
       "number": "05",
       "icon": "/images/inner-page/icon/08.svg",
-      "title": "Miyawaki Forests",
-      "description": "Dense native afforestation that grows 10× faster than conventional plantations — proven at Smritivan, Bhuj.",
+      "title": "Atomization Irrigation",
+      "description": "Smart controllers, soil + weather sensors, micro-drip, and pop-up sprinklers — fully hands-free water management.",
       "anchor": "topic-4",
       "animation": "fadeInUp",
       "delay": ".6s"
@@ -56,11 +56,29 @@
     {
       "number": "06",
       "icon": "/images/inner-page/icon/09.svg",
-      "title": "Vertical Gardens",
-      "description": "Living walls for urban spaces — modular systems, hydroponic walls, and DIY-friendly pocket installations.",
+      "title": "Rain Gun Irrigation",
+      "description": "High-discharge sprinklers with 27–60 m radius. Rainfall-like coverage for sugarcane, wheat, maize, and large landscapes.",
       "anchor": "topic-5",
-      "animation": "fadeInRight",
+      "animation": "fadeInUp",
       "delay": ".7s"
+    },
+    {
+      "number": "07",
+      "icon": "/images/inner-page/icon/04.svg",
+      "title": "Dust Separation",
+      "description": "Dust suppression, soil & rock erosion control for industrial, mining, and infrastructure sites — sprinklers, hydroseeding & green belts.",
+      "anchor": "topic-6",
+      "animation": "fadeInUp",
+      "delay": ".8s"
+    },
+    {
+      "number": "08",
+      "icon": "/images/inner-page/icon/05.svg",
+      "title": "Fountains",
+      "description": "Garden and patio fountain projects — pots, upcycled features, and tiered cascading designs.",
+      "anchor": "topic-7",
+      "animation": "fadeInRight",
+      "delay": ".9s"
     }
   ],
   "impact": {
@@ -86,7 +104,199 @@
   },
   "topics": [
     {
-      "title": "Automation and Irrigation & Landscaping Solutions",
+      "title": "Landscape Projects",
+      "intro": [
+        "Landscaping work is broadly categorized into two main components: softscaping (living elements like plants and turf) and hardscaping (non-living structural elements like patios and walls). These components are executed through different types of services, ranging from initial design and physical installation to ongoing maintenance and specialty projects.",
+        "Landscaping work is generally divided into three major categories: Softscaping, Hardscaping, and Maintenance & Specialty Services. Each category plays an important role in creating attractive, functional, and sustainable outdoor spaces."
+      ],
+      "highlight": "A balanced combination of softscaping and hardscaping creates a durable, attractive, and functional outdoor environment for residential, commercial, and agricultural projects.",
+      "thumbnails": [
+        "/images/what-we-do/landscaping/landscaping-8.png",
+        "/images/what-we-do/landscaping/landscaping-7.png"
+      ],
+      "sections": [
+        {
+          "title": "Softscaping Services",
+          "intro": "Softscaping focuses on the living and natural elements of landscaping, enhancing the beauty and environmental value of outdoor areas.",
+          "components": [
+            { "name": "Landscape Design", "description": "Planning garden layouts, selecting suitable plants, and creating planting schemes according to local climate and soil conditions.", "bullets": [] },
+            { "name": "Planting & Installation", "description": "Installing lawns, trees, shrubs, flowers, hedges, and vegetable gardens.", "bullets": [] },
+            { "name": "Tree & Shrub Care", "description": "Pruning, trimming, pest and disease management, tree removal, and stump grinding.", "bullets": [] },
+            { "name": "Turf & Lawn Care", "description": "Lawn mowing, fertilization, aeration, weed control, and turf maintenance for healthy green landscapes.", "bullets": [] }
+          ]
+        },
+        {
+          "title": "Hardscaping Services",
+          "intro": "Hardscaping includes the non-living structural components that provide functionality, accessibility, and long-term durability.",
+          "components": [
+            { "name": "Paving & Walkways", "description": "Construction of patios, pathways, driveways, and sitting areas using concrete, pavers, stone, brick, or gravel.", "bullets": [] },
+            { "name": "Retaining Walls", "description": "Structural walls built to prevent soil erosion and support terraced landscaping on slopes.", "bullets": [] },
+            { "name": "Outdoor Living Structures", "description": "Installation of pergolas, gazebos, decks, seating spaces, and outdoor kitchens.", "bullets": [] },
+            { "name": "Water Features & Fountains", "description": "Creating ponds, waterfalls, fountains, and decorative water elements.", "bullets": [] }
+          ]
+        },
+        {
+          "title": "Maintenance & Specialty Services",
+          "intro": "These services ensure the landscape remains healthy, clean, safe, and visually appealing throughout the year.",
+          "components": [
+            { "name": "General Landscape Maintenance", "description": "Seasonal clean-up, mulching, trimming, leaf removal, and routine garden care.", "bullets": [] },
+            { "name": "Drainage & Grading", "description": "Land levelling and drainage system installation to prevent waterlogging and soil erosion.", "bullets": [] },
+            { "name": "Landscape Lighting", "description": "Installing outdoor lighting systems for aesthetics, pathway visibility, and security.", "bullets": [] }
+          ]
+        },
+        {
+          "title": "Importance of Professional Landscaping",
+          "intro": "Professional landscaping improves:",
+          "list": [
+            "Property appearance and value",
+            "Water management and soil protection",
+            "Outdoor comfort and usability",
+            "Environmental sustainability",
+            "Long-term maintenance efficiency"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Vertical Gardens",
+      "intro": [
+        "Vertical gardens, also known as green walls or living walls, are designed to grow plants upward on a wall or specially built structure rather than outward on the ground. They maximize space in urban environments, insulate buildings, and improve both indoor and outdoor air quality."
+      ],
+      "highlight": "Living walls maximize space in urban environments, insulate buildings, and improve both indoor and outdoor air quality.",
+      "thumbnails": [
+        "/images/what-we-do/landscaping/landscaping-3.png",
+        "/images/what-we-do/landscaping/landscaping-4.png"
+      ],
+      "sections": [
+        {
+          "title": "Common Vertical Garden Systems",
+          "components": [
+            { "name": "Modular Systems", "description": "Interlocking grid panels or plastic modules pre-filled with potting soil or specialized grow media. Perfect for herbs and easy to maintain.", "bullets": [] },
+            { "name": "Pockets and Pouches", "description": "Durable, breathable felt or geotextile fabric, stapled or mounted directly onto walls. Lightweight and highly adaptable for DIY projects.", "bullets": [] },
+            { "name": "Trellis and Tower Systems", "description": "Stackable planters or wire trellises ideal for climbing plants, vining vegetables (tomatoes, cucumbers), and cascading florals.", "bullets": [] },
+            { "name": "Hydroponic Walls", "description": "Soil-free systems that use nutrient-rich water circulating through the roots. Lighter and ideal for indoor commercial or high-end residential setups.", "bullets": [] }
+          ]
+        },
+        {
+          "title": "Steps to Build a Living Wall",
+          "components": [
+            { "name": "Assess the Location", "description": "Choose a wall that matches the light requirements of your intended plants. Ensure the structural wall can support the weight of wet soil and plants.", "bullets": [] },
+            { "name": "Install Waterproofing", "description": "Protect the mounting wall from moisture damage. For large outdoor or indoor walls, install a waterproof backer board or plastic moisture barrier.", "bullets": [] },
+            { "name": "Set Up the Frame", "description": "Anchor a sturdy framework — iron rack or treated wood — to the wall.", "bullets": [] },
+            { "name": "Choose Your Media", "description": "For fabric or hanging pocket systems, choose a lightweight, moisture-retentive medium like Sphagnum moss, which is excellent at preventing rot.", "bullets": [] },
+            { "name": "Install Irrigation", "description": "Gravity-fed drip irrigation is best for vertical gardens. Place a water reservoir at the top to trickle down, with a drainage tray at the bottom to prevent waterlogging.", "bullets": [] }
+          ]
+        },
+        {
+          "title": "Best Plant Selections",
+          "intro": "Selecting the right plants depends highly on your local climate and sunlight exposure:",
+          "components": [
+            { "name": "For Sunny Spots", "description": "Succulents, rosemary, thyme, lavender, and sedum thrive in high sunlight and handle heat well.", "bullets": [] },
+            { "name": "For Shady or Indoor Spots", "description": "Ferns, pothos, peace lilies, and monstera do exceptionally well in lower-light environments.", "bullets": [] },
+            { "name": "For Cascading & Textures", "description": "Spider plants, creeping jenny, and sweet potato vines provide beautiful drape and fill in gaps quickly.", "bullets": [] }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Miyawaki Forests",
+      "intro": [
+        "The Miyawaki method is a Japanese afforestation technique that creates dense, native forests that grow up to 10 times faster than conventional plantations. Developed by Akira Miyawaki, this method involves planting a diverse mix of native species very close together in multiple layers, including shrubs, sub-trees, and canopy trees.",
+        "The close plantation density encourages rapid growth through natural competition for sunlight, while the use of indigenous species helps restore local biodiversity and ecological balance. Within just 2 to 3 years, the plantation begins developing into a self-sustaining mini forest that requires minimal maintenance."
+      ],
+      "highlight": "Smritivan in Bhuj — built on the Bhujiyo Dungar hills as a 2001 earthquake memorial — is widely recognized as one of the world's largest Miyawaki-style afforestation projects.",
+      "thumbnails": [
+        "/images/what-we-do/miyawaki/miyawaki-1.png",
+        "/images/what-we-do/miyawaki/miyawaki-2.png"
+      ],
+      "sections": [
+        {
+          "title": "Environmental Benefits",
+          "intro": "Miyawaki forests offer several environmental benefits, including:",
+          "list": [
+            "Improved air quality",
+            "Increased groundwater retention",
+            "Reduction in urban heat",
+            "Enhanced biodiversity",
+            "Carbon absorption and climate resilience"
+          ]
+        },
+        {
+          "title": "Core Principles",
+          "intro": "The method is rooted in natural reforestation and relies on three main concepts:",
+          "components": [
+            { "name": "Native Species Only", "description": "Utilizes trees, shrubs, and groundcovers that naturally thrive in the local climate and soil.", "bullets": [] },
+            { "name": "High-Density Planting", "description": "Plants 3 to 5 saplings per square meter to encourage vertical growth and force roots downward as plants compete for sunlight.", "bullets": [] },
+            { "name": "Layered Ecosystem", "description": "Replicates a natural, multi-tiered forest consisting of shrubs, sub-trees, main trees, and canopy trees.", "bullets": [] }
+          ]
+        },
+        {
+          "title": "Key Benefits",
+          "components": [
+            { "name": "Rapid Growth", "description": "Grows a mature-looking mini-forest in a fraction of the time it takes conventional forests — maturity in 20-30 years instead of hundreds.", "bullets": [] },
+            { "name": "High Biodiversity", "description": "Supports a significantly higher variety of birds, insects, and microorganisms than traditional monoculture plantations.", "bullets": [] },
+            { "name": "Self-Sustaining", "description": "Requires human intervention (watering and weeding) for only the first 2-3 years, after which the forest canopy becomes dense enough to shade out weeds and lock in moisture.", "bullets": [] },
+            { "name": "Climate Resilience", "description": "Highly effective in urban areas, acting as powerful carbon sinks and offering protection against extreme heat, storms, and noise.", "bullets": [] }
+          ]
+        },
+        {
+          "title": "Smritivan — Bhuj's Landmark Miyawaki Project",
+          "intro": "Located near Bhuj, Smritivan at Bhujiyo Dungar hills is widely recognized as one of the world's largest Miyawaki-style afforestation and memorial landscape projects. Built as a tribute to the victims of the 2001 Gujarat earthquake, what was once barren rocky terrain has been transformed through large-scale plantation of native species.",
+          "list": [
+            "Dense native forest plantations designed for rapid ecological recovery",
+            "Large-scale rainwater harvesting and watershed management systems",
+            "Restoration of biodiversity with indigenous trees and shrubs adapted to Kutch's arid climate",
+            "Memorial spaces, museums, viewing points, and educational exhibits integrated into the landscape",
+            "Improved microclimate and soil stabilization across the hill slopes"
+          ]
+        }
+      ],
+      "outro": "Smritivan demonstrates how dense native afforestation principles can be adapted to massive landscape-scale ecological restoration in semi-arid terrain — usually Miyawaki plantations are implemented on small urban plots."
+    },
+    {
+      "title": "Terrace Gardens",
+      "intro": [
+        "Our company successfully completed India's second-largest terrace gardening project at the prestigious Smritivan Earthquake Memorial & Museum, Bhuj–Kutch, Gujarat. This landmark green infrastructure project demonstrates our expertise in large-scale landscape development, sustainable horticulture, irrigation systems, and innovative environmental solutions.",
+        "Or a shorter version:",
+        "Proudly executed India's second-largest terrace gardening project at the renowned Smritivan Earthquake Memorial & Museum, Bhuj–Kutch, showcasing our excellence in landscaping, irrigation, and sustainable green development."
+      ],
+      "thumbnails": [
+        "/images/what-we-do/landscaping/landscaping-7.png",
+        "/images/what-we-do/landscaping/landscaping-8.png"
+      ],
+      "sections": [
+        {
+          "title": "Key Achievement",
+          "list": [
+            "Successfully completed India's second-largest terrace gardening project at Smritivan Earthquake Memorial & Museum, Bhuj–Kutch.",
+            "Designed and executed large-scale terrace landscaping with advanced irrigation and horticultural solutions.",
+            "Contributed to the development of one of Gujarat's most iconic environmental and memorial destinations."
+          ]
+        },
+        {
+          "title": "Specialized Waterproofing & Rainwater Harvesting Works at Smritivan Terrace Garden Project",
+          "paragraphs": [
+            "As part of the prestigious terrace gardening project at Smritivan Earthquake Memorial & Museum, Bhuj–Kutch, our company successfully executed critical waterproofing and rainwater harvesting works that formed the foundation for the long-term durability, sustainability, and environmental performance of the terrace landscape.",
+            "The scope included Integral Cement-Based Waterproofing Treatment for roofs, terraces, balconies, and landscaped deck areas. The treatment comprised meticulous surface preparation, application of cement slurry mixed with waterproofing compounds, installation of fiberglass reinforcement cloth with specified overlaps, and protective cementitious layers designed to provide superior resistance against water ingress.",
+            "To further enhance waterproofing performance, APP (Atactic Polypropylene Polymer) Modified Prefabricated 5-Layer, 3 mm Thick Waterproofing Membrane reinforced with non-woven polyester mat was installed over a bitumen primer coat, ensuring long-term protection against seepage, moisture penetration, and structural deterioration.",
+            "In addition, our team implemented an efficient rainwater harvesting and drainage management system to facilitate the collection, conveyance, and sustainable utilization of rainwater. This system contributes to water conservation, reduces surface runoff, and supports the environmental objectives of the project.",
+            "These specialized waterproofing and rainwater harvesting works played a vital role in protecting the terrace garden infrastructure, preserving structural integrity, enhancing water sustainability, and ensuring the long-term success of one of India's landmark terrace landscaping projects.",
+            "Following the waterproofing treatment, a comprehensive drainage and protection system was installed comprising 40 mm thick HDPE Drain Cells with a minimum compressive strength of 1000 kN/m², minimum surface void area of 60%, and internal void area of 90%, laid in accordance with the manufacturer's specifications. To ensure effective drainage, soil retention, and erosion control, a 700 GSM Coir-Based Geotextile conforming to IS 15868 (Part 1 to 6) was provided over erosion-prone slopes and embankments as per IS 15872:2009, securely anchored using stainless steel staples at specified intervals. Additionally, a 250 GSM non-woven Filter Geotextile Membrane made of 100% polypropylene with 2 mm thickness was installed as a separation and filtration layer, preventing soil migration while facilitating free movement of water. This integrated drainage and geotextile system ensured efficient stormwater management, slope stabilization, root-zone protection, and long-term sustainability of the terrace landscape.",
+            "Following the completion of the waterproofing, drainage, and geotextile protection systems, carefully selected landscape plantations were established across the terrace garden. The plantation works included a diverse mix of ornamental shrubs, ground covers, cacti, succulents, native species, and forest species selected for their aesthetic value, adaptability to local climatic conditions, ecological significance, and low maintenance requirements. The planting design was developed to create vibrant and visually appealing green spaces while enhancing biodiversity, improving microclimatic conditions, minimizing soil erosion, and promoting long-term environmental sustainability. The integration of specialized waterproofing, advanced drainage infrastructure, rainwater management systems, and scientifically planned plantation techniques ensured the successful development of a resilient, self-sustaining, and environmentally responsible terrace landscape."
+          ]
+        },
+        {
+          "title": "Weather-Based Automated Irrigation and Fertigation System",
+          "paragraphs": [
+            "To ensure efficient water and nutrient management, the project incorporated a state-of-the-art Weather-Based Automated Irrigation and Fertigation System. The system utilizes real-time weather data and environmental parameters to automatically regulate irrigation schedules and fertilizer application, optimizing water consumption, improving plant health, and enhancing overall landscape sustainability.",
+            "The automated system was designed to deliver precise quantities of water and nutrients to different plantation zones, including shrubs, ground covers, cacti, succulents, native species, and forest vegetation, based on their specific requirements. This intelligent approach minimizes water wastage, reduces operational costs, and promotes healthy plant growth throughout the landscape.",
+            "In addition to the design, supply, installation, and commissioning of the automation system, the project also includes comprehensive Operation and Maintenance (O&M) services for a period of five years. This ensures continuous monitoring, preventive maintenance, system optimization, replacement of defective components as required, and sustained performance of the irrigation and fertigation infrastructure, thereby safeguarding the long-term success of the terrace landscape."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Atomization Irrigation",
       "intro": [
         "Automating your irrigation and landscaping work means using smart controllers, sensors, and efficient watering systems to manage irrigation automatically. This modern, hands-free approach can reduce water waste by up to 50%, improve plant health, and eliminate the need for constant manual watering.",
         "Modern automated irrigation and landscaping systems are designed to suit farms, gardens, lawns, parks, and plantation projects. These systems can be customized according to the site condition, plant type, and water requirement."
@@ -206,6 +416,19 @@
       ]
     },
     {
+      "title": "Dust Suppression, Soil Erosion & Rock Erosion Control Projects",
+      "intro": [
+        "We have successfully executed specialized projects focused on dust suppression, soil erosion control, and rock erosion stabilization across industrial, infrastructure, mining, environmental, and land development sectors.",
+        "Our solutions are designed to minimize airborne dust, prevent soil degradation, stabilize slopes and exposed surfaces, and protect landforms from the adverse effects of wind and water erosion. By utilizing advanced irrigation systems, hydroseeding, vegetation establishment, geotextiles, erosion control measures, and sustainable environmental engineering practices, we help improve site safety, environmental compliance, and long-term land stability.",
+        "We have also successfully undertaken dust suppression and erosion control projects for coal mines, coal handling plants, conveyor belt systems, mining corridors, and surrounding road networks. These projects were implemented to control fugitive dust emissions, improve air quality, reduce environmental impact, enhance worker safety, and ensure compliance with environmental regulations. Our solutions include sprinkler-based dust suppression systems, misting systems, green belt development, hydroseeding, slope stabilization, and vegetation-based erosion control measures tailored to challenging mining and industrial environments.",
+        "These projects contribute to environmental conservation, improved air quality, reduced land degradation, enhanced site aesthetics, and sustainable ecosystem development. With extensive experience in mining, industrial, commercial, government, and infrastructure sectors, we deliver customized dust control and erosion management solutions that provide long-term environmental and operational benefits."
+      ],
+      "thumbnails": [
+        "/images/what-we-do/irrigation/irrigation-3.jpg",
+        "/images/what-we-do/irrigation/irrigation-4.jpg"
+      ]
+    },
+    {
       "title": "Fountains",
       "intro": [
         "A 'Fountains Project' could refer to a few different concepts depending on whether you are interested in DIY landscaping, commercial musical fountains, or scientific physics experiments."
@@ -221,156 +444,6 @@
             { "name": "Planter or Ceramic Pot Fountain", "description": "This involves stacking two to three different sized pots, running a submersible water pump through them, and sealing the gaps to create a tiered, cascading effect.", "bullets": [] },
             { "name": "Upcycled Features", "description": "Many builders use discarded items like old tires, terracotta pots, or repurposed sinks to create rustic, budget-friendly waterfalls.", "bullets": [] },
             { "name": "Essential Materials", "description": "You will need a submersible pump, PVC tubing or flexible hose, waterproof sealant, and a basin reservoir lined with a pond liner or geo-textile fabric.", "bullets": [] }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Landscaping Components and Services",
-      "intro": [
-        "Landscaping work is broadly categorized into two main components: softscaping (living elements like plants and turf) and hardscaping (non-living structural elements like patios and walls). These components are executed through different types of services, ranging from initial design and physical installation to ongoing maintenance and specialty projects.",
-        "Landscaping work is generally divided into three major categories: Softscaping, Hardscaping, and Maintenance & Specialty Services. Each category plays an important role in creating attractive, functional, and sustainable outdoor spaces."
-      ],
-      "highlight": "A balanced combination of softscaping and hardscaping creates a durable, attractive, and functional outdoor environment for residential, commercial, and agricultural projects.",
-      "thumbnails": [
-        "/images/what-we-do/landscaping/landscaping-8.png",
-        "/images/what-we-do/landscaping/landscaping-7.png"
-      ],
-      "sections": [
-        {
-          "title": "Softscaping Services",
-          "intro": "Softscaping focuses on the living and natural elements of landscaping, enhancing the beauty and environmental value of outdoor areas.",
-          "components": [
-            { "name": "Landscape Design", "description": "Planning garden layouts, selecting suitable plants, and creating planting schemes according to local climate and soil conditions.", "bullets": [] },
-            { "name": "Planting & Installation", "description": "Installing lawns, trees, shrubs, flowers, hedges, and vegetable gardens.", "bullets": [] },
-            { "name": "Tree & Shrub Care", "description": "Pruning, trimming, pest and disease management, tree removal, and stump grinding.", "bullets": [] },
-            { "name": "Turf & Lawn Care", "description": "Lawn mowing, fertilization, aeration, weed control, and turf maintenance for healthy green landscapes.", "bullets": [] }
-          ]
-        },
-        {
-          "title": "Hardscaping Services",
-          "intro": "Hardscaping includes the non-living structural components that provide functionality, accessibility, and long-term durability.",
-          "components": [
-            { "name": "Paving & Walkways", "description": "Construction of patios, pathways, driveways, and sitting areas using concrete, pavers, stone, brick, or gravel.", "bullets": [] },
-            { "name": "Retaining Walls", "description": "Structural walls built to prevent soil erosion and support terraced landscaping on slopes.", "bullets": [] },
-            { "name": "Outdoor Living Structures", "description": "Installation of pergolas, gazebos, decks, seating spaces, and outdoor kitchens.", "bullets": [] },
-            { "name": "Water Features & Fountains", "description": "Creating ponds, waterfalls, fountains, and decorative water elements.", "bullets": [] }
-          ]
-        },
-        {
-          "title": "Maintenance & Specialty Services",
-          "intro": "These services ensure the landscape remains healthy, clean, safe, and visually appealing throughout the year.",
-          "components": [
-            { "name": "General Landscape Maintenance", "description": "Seasonal clean-up, mulching, trimming, leaf removal, and routine garden care.", "bullets": [] },
-            { "name": "Drainage & Grading", "description": "Land levelling and drainage system installation to prevent waterlogging and soil erosion.", "bullets": [] },
-            { "name": "Landscape Lighting", "description": "Installing outdoor lighting systems for aesthetics, pathway visibility, and security.", "bullets": [] }
-          ]
-        },
-        {
-          "title": "Importance of Professional Landscaping",
-          "intro": "Professional landscaping improves:",
-          "list": [
-            "Property appearance and value",
-            "Water management and soil protection",
-            "Outdoor comfort and usability",
-            "Environmental sustainability",
-            "Long-term maintenance efficiency"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Tropical Forest (Miyawaki)",
-      "intro": [
-        "The Miyawaki method is a Japanese afforestation technique that creates dense, native forests that grow up to 10 times faster than conventional plantations. Developed by Akira Miyawaki, this method involves planting a diverse mix of native species very close together in multiple layers, including shrubs, sub-trees, and canopy trees.",
-        "The close plantation density encourages rapid growth through natural competition for sunlight, while the use of indigenous species helps restore local biodiversity and ecological balance. Within just 2 to 3 years, the plantation begins developing into a self-sustaining mini forest that requires minimal maintenance."
-      ],
-      "highlight": "Smritivan in Bhuj — built on the Bhujiyo Dungar hills as a 2001 earthquake memorial — is widely recognized as one of the world's largest Miyawaki-style afforestation projects.",
-      "thumbnails": [
-        "/images/what-we-do/miyawaki/miyawaki-1.png",
-        "/images/what-we-do/miyawaki/miyawaki-2.png"
-      ],
-      "sections": [
-        {
-          "title": "Environmental Benefits",
-          "intro": "Miyawaki forests offer several environmental benefits, including:",
-          "list": [
-            "Improved air quality",
-            "Increased groundwater retention",
-            "Reduction in urban heat",
-            "Enhanced biodiversity",
-            "Carbon absorption and climate resilience"
-          ]
-        },
-        {
-          "title": "Core Principles",
-          "intro": "The method is rooted in natural reforestation and relies on three main concepts:",
-          "components": [
-            { "name": "Native Species Only", "description": "Utilizes trees, shrubs, and groundcovers that naturally thrive in the local climate and soil.", "bullets": [] },
-            { "name": "High-Density Planting", "description": "Plants 3 to 5 saplings per square meter to encourage vertical growth and force roots downward as plants compete for sunlight.", "bullets": [] },
-            { "name": "Layered Ecosystem", "description": "Replicates a natural, multi-tiered forest consisting of shrubs, sub-trees, main trees, and canopy trees.", "bullets": [] }
-          ]
-        },
-        {
-          "title": "Key Benefits",
-          "components": [
-            { "name": "Rapid Growth", "description": "Grows a mature-looking mini-forest in a fraction of the time it takes conventional forests — maturity in 20-30 years instead of hundreds.", "bullets": [] },
-            { "name": "High Biodiversity", "description": "Supports a significantly higher variety of birds, insects, and microorganisms than traditional monoculture plantations.", "bullets": [] },
-            { "name": "Self-Sustaining", "description": "Requires human intervention (watering and weeding) for only the first 2-3 years, after which the forest canopy becomes dense enough to shade out weeds and lock in moisture.", "bullets": [] },
-            { "name": "Climate Resilience", "description": "Highly effective in urban areas, acting as powerful carbon sinks and offering protection against extreme heat, storms, and noise.", "bullets": [] }
-          ]
-        },
-        {
-          "title": "Smritivan — Bhuj's Landmark Miyawaki Project",
-          "intro": "Located near Bhuj, Smritivan at Bhujiyo Dungar hills is widely recognized as one of the world's largest Miyawaki-style afforestation and memorial landscape projects. Built as a tribute to the victims of the 2001 Gujarat earthquake, what was once barren rocky terrain has been transformed through large-scale plantation of native species.",
-          "list": [
-            "Dense native forest plantations designed for rapid ecological recovery",
-            "Large-scale rainwater harvesting and watershed management systems",
-            "Restoration of biodiversity with indigenous trees and shrubs adapted to Kutch's arid climate",
-            "Memorial spaces, museums, viewing points, and educational exhibits integrated into the landscape",
-            "Improved microclimate and soil stabilization across the hill slopes"
-          ]
-        }
-      ],
-      "outro": "Smritivan demonstrates how dense native afforestation principles can be adapted to massive landscape-scale ecological restoration in semi-arid terrain — usually Miyawaki plantations are implemented on small urban plots."
-    },
-    {
-      "title": "Vertical Gardens",
-      "intro": [
-        "Vertical gardens, also known as green walls or living walls, are designed to grow plants upward on a wall or specially built structure rather than outward on the ground. They maximize space in urban environments, insulate buildings, and improve both indoor and outdoor air quality."
-      ],
-      "highlight": "Living walls maximize space in urban environments, insulate buildings, and improve both indoor and outdoor air quality.",
-      "thumbnails": [
-        "/images/what-we-do/landscaping/landscaping-3.png",
-        "/images/what-we-do/landscaping/landscaping-4.png"
-      ],
-      "sections": [
-        {
-          "title": "Common Vertical Garden Systems",
-          "components": [
-            { "name": "Modular Systems", "description": "Interlocking grid panels or plastic modules pre-filled with potting soil or specialized grow media. Perfect for herbs and easy to maintain.", "bullets": [] },
-            { "name": "Pockets and Pouches", "description": "Durable, breathable felt or geotextile fabric, stapled or mounted directly onto walls. Lightweight and highly adaptable for DIY projects.", "bullets": [] },
-            { "name": "Trellis and Tower Systems", "description": "Stackable planters or wire trellises ideal for climbing plants, vining vegetables (tomatoes, cucumbers), and cascading florals.", "bullets": [] },
-            { "name": "Hydroponic Walls", "description": "Soil-free systems that use nutrient-rich water circulating through the roots. Lighter and ideal for indoor commercial or high-end residential setups.", "bullets": [] }
-          ]
-        },
-        {
-          "title": "Steps to Build a Living Wall",
-          "components": [
-            { "name": "Assess the Location", "description": "Choose a wall that matches the light requirements of your intended plants. Ensure the structural wall can support the weight of wet soil and plants.", "bullets": [] },
-            { "name": "Install Waterproofing", "description": "Protect the mounting wall from moisture damage. For large outdoor or indoor walls, install a waterproof backer board or plastic moisture barrier.", "bullets": [] },
-            { "name": "Set Up the Frame", "description": "Anchor a sturdy framework — iron rack or treated wood — to the wall.", "bullets": [] },
-            { "name": "Choose Your Media", "description": "For fabric or hanging pocket systems, choose a lightweight, moisture-retentive medium like Sphagnum moss, which is excellent at preventing rot.", "bullets": [] },
-            { "name": "Install Irrigation", "description": "Gravity-fed drip irrigation is best for vertical gardens. Place a water reservoir at the top to trickle down, with a drainage tray at the bottom to prevent waterlogging.", "bullets": [] }
-          ]
-        },
-        {
-          "title": "Best Plant Selections",
-          "intro": "Selecting the right plants depends highly on your local climate and sunlight exposure:",
-          "components": [
-            { "name": "For Sunny Spots", "description": "Succulents, rosemary, thyme, lavender, and sedum thrive in high sunlight and handle heat well.", "bullets": [] },
-            { "name": "For Shady or Indoor Spots", "description": "Ferns, pothos, peace lilies, and monstera do exceptionally well in lower-light environments.", "bullets": [] },
-            { "name": "For Cascading & Textures", "description": "Spider plants, creeping jenny, and sweet potato vines provide beautiful drape and fill in gaps quickly.", "bullets": [] }
           ]
         }
       ]

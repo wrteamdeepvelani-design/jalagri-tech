@@ -669,3 +669,66 @@
     pointer-events: none;
   }
 }
+
+/* Read More toggle in about-hero description */
+.read-more-btn {
+  display: inline;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--theme);
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.read-more-btn:hover {
+  color: var(--theme2);
+  text-decoration: underline;
+}
+
+/* Our History tabs — client copy varies a lot per tab (Story is long,
+   Vision short). Pin the content column to the image height (750px) so all
+   three tabs render the section at the SAME height, and let the long tab
+   copy scroll inside instead of overflowing past the image. min-height:0 is
+   required so the flex child can shrink enough to enable its own scroll.
+   The theme centers both columns vertically (align-items:center); force the
+   text column to top-align with the image so the copy starts at the top. */
+.our-history-wrapper {
+  align-items: flex-start !important;
+}
+.our-history-wrapper .our-history-content {
+  height: 750px;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.our-history-wrapper .our-history-content .tab-content {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  padding-right: 12px;
+}
+.our-history-wrapper .our-history-content .tab-content::-webkit-scrollbar {
+  width: 6px;
+}
+.our-history-wrapper .our-history-content .tab-content::-webkit-scrollbar-thumb {
+  background: var(--theme3);
+  border-radius: 6px;
+}
+.our-history-wrapper .our-history-content .tab-content::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.06);
+  border-radius: 6px;
+}
+.our-history-wrapper .our-history-content .tab-content {
+  scrollbar-width: thin;
+  scrollbar-color: var(--theme3) rgba(0, 0, 0, 0.06);
+}
+@media (max-width: 1399px) {
+  .our-history-wrapper .our-history-content {
+    height: auto;
+  }
+  .our-history-wrapper .our-history-content .tab-content {
+    max-height: 360px;
+  }
+}
