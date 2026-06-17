@@ -16,12 +16,12 @@
     {
       "title": "Fertilizers & Inputs",
       "image": "/images/what-we-do/trading/fertilizer.webp",
-      "anchor": "topic-1"
+      "anchor": "topic-0"
     },
     {
       "title": "Seeds & Plants",
       "image": "/images/what-we-do/trading/grid-3.jpg",
-      "anchor": "topic-2"
+      "anchor": "topic-0"
     }
   ],
   "cards": [
@@ -107,64 +107,38 @@
   },
   "topics": [
     {
-      "title": "Pipes & Fittings",
+      "title": "Trading",
       "intro": [
-        "Our trading division supplies the complete piping backbone for irrigation, landscape, and plumbing projects — drip lateral pipe, PVC pipes and fittings, HDPE pipes and fittings, and electro-fusion fittings, all sourced from trusted manufacturers and stocked in retail and bulk quantities.",
-        "Whether you are running a single farm's drip network or a turn-key project across hundreds of acres, we match the right pipe class and fitting to your pressure, flow, and site conditions — and deliver it on time."
+        "Our company is engaged in the trading and supply of a comprehensive range of products for agriculture, irrigation, landscaping, horticulture, and environmental development projects. We source and deliver high-quality products from leading manufacturers to meet the diverse requirements of farmers, contractors, government departments, corporate clients, institutions, and landscape professionals."
       ],
       "sections": [
         {
-          "title": "What We Stock",
+          "title": "Our Product Portfolio",
+          "intro": "Our product portfolio includes:",
           "list": [
-            "Drip irrigation material (lateral pipe & fittings)",
-            "PVC pipes & PVC fittings",
-            "HDPE pipe & fittings",
-            "Electro-fusion fittings",
-            "Landscape irrigation products",
-            "Valves, connectors & accessories"
+            "Automation Irrigation Systems",
+            "Drip Irrigation Systems",
+            "Sprinkler Irrigation Systems",
+            "Lateral Pipes and Fittings",
+            "PVC Pipes and Fittings",
+            "HDPE Pipes and Fittings",
+            "HDPE Electrofusion Fittings",
+            "Compression Fittings and Irrigation Accessories",
+            "Water Filtration and Fertigation Systems",
+            "Pumps, Valves, and Control Equipment",
+            "Garden Pots and Decorative Planters",
+            "Live Plants and Nursery Products",
+            "Fertilizers and Plant Nutrients",
+            "Pesticides and Crop Protection Products",
+            "Agricultural Seeds",
+            "Gardening Tools and Equipment",
+            "Agricultural Tools and Tackles",
+            "Landscape Materials and Accessories",
+            "Polyester Wire, Nets, Ropes & Barbed Wires"
           ]
         }
-      ]
-    },
-    {
-      "title": "Fertilizers & Inputs",
-      "intro": [
-        "We supply genuine, traceable fertilizers, pesticides, insecticides, and growth promoters in both retail and bulk packs. Through tie-ups with multinational giants like UPL Limited, Gharada Chemical India Ltd, and Insecticides India Limited, we bring the best products available in the industry directly to the farmers of Kutch and Gujarat.",
-        "Our on-field team advises on the right input, dose, and timing for your crop and soil — so every rupee spent on inputs returns real value at harvest."
       ],
-      "sections": [
-        {
-          "title": "Product Range",
-          "list": [
-            "Organic & chemical fertilizers",
-            "Pesticides & insecticides",
-            "Growth promoters & micronutrients",
-            "Crop-protection & disease-control inputs",
-            "Bulk and retail pack sizes",
-            "Brand tie-ups: UPL, Gharada, Insecticides India"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Seeds & Plants",
-      "intro": [
-        "From hybrid seed varieties and nursery saplings to landscape-grade ornamental plants, our seeds and plants line covers everything a farm, garden, or project needs to get growing — backed by our own Neelkanth and Bholenath nurseries.",
-        "We focus on quality, genuine stock and sustainable, \"Green\" offerings, helping farmers get the best out of their soil for generations to come."
-      ],
-      "sections": [
-        {
-          "title": "Available Categories",
-          "list": [
-            "Hybrid & high-yield seed varieties",
-            "Live plants & nursery saplings",
-            "Landscape-grade ornamental plants",
-            "Fruit, vegetable & fodder crop seeds",
-            "Pots, planters & growing media",
-            "Agricultural tools & tackles"
-          ]
-        }
-      ]
+      "outro": "With a strong distribution network and strategic partnerships with reputed manufacturers and brands, we ensure the availability of quality products, competitive pricing, timely delivery, and reliable technical support. Our commitment is to provide complete and cost-effective solutions that enhance agricultural productivity, water-use efficiency, landscape development, and environmental sustainability across India."
     }
   ]
 }

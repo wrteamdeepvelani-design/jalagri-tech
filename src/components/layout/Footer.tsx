@@ -46,7 +46,7 @@ export default function Footer() {
         <div className="footer-top-item">
           <div className="footer-logo wow fadeInUp" data-wow-delay=".2s">
             <Link href="/">
-              <img src="/images/logo/white-logo.svg" alt={COMPANY.name} />
+              <img src="/images/logo/logo.png" alt={COMPANY.name} />
             </Link>
           </div>
           <div className="footer-right-item">

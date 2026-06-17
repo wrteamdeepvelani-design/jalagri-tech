@@ -20,7 +20,7 @@ export default function SearchModal() {
                 <div className="search_top d-flex align-items-center">
                   <div className="search_logo">
                     <Link href="/">
-                      <img src="/images/logo/white-logo.svg" alt="logo" />
+                      <img src="/images/logo/logo.png" alt="logo" />
                     </Link>
                   </div>
                   <div className="search_close">

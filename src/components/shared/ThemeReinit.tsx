@@ -2,18 +2,26 @@
 
 /**
  * ThemeReinit — re-runs the theme's page-level jQuery/GSAP inits on every
- * Next.js client-side navigation.
+ * Next.js client-side navigation AND keeps GSAP ScrollTrigger positions
+ * correct as the layout settles.
  *
- * The vendored main.js runs all its inits once inside $(document).ready,
- * which only fires on a full page load. App-Router navigation swaps the page
- * DOM without reloading, so WOW animations, Swiper sliders, counters, the
- * GSAP text-anim, accordions and the scroll animations never re-initialize.
+ * Why the extra refresh machinery:
+ * Almost every animation on this site is GSAP ScrollTrigger driven (heading
+ * `text-anim`, `tp_fade_anim` reveals, `scale-animation`, ScrollSmoother
+ * parallax `effects`). ScrollTrigger caches each trigger's start/end SCROLL
+ * positions when it's created. Those positions are only correct if the page
+ * is at its final height at that moment — but images load late, web fonts
+ * swap, and client-rendered content appears after init, all of which change
+ * the height. Stale positions = triggers fire at the wrong scroll point or
+ * never fire, which is the classic "animation doesn't work until I refresh".
  *
- * main.js was refactored to expose window.__initThemePage() — a re-callable
- * function that re-runs only the PAGE-level inits (layout-level inits like
- * ScrollSmoother, the sticky header and the mobile menu stay one-time, and
- * stale page ScrollTriggers are killed before re-init). This component calls
- * it after each route change.
+ * Fixes applied here:
+ *   1. main.js exposes window.__initThemePage() — re-run page-level inits on
+ *      each route change (layout-level inits stay one-time inside main.js).
+ *   2. ScrollTrigger.refresh() is called at every point the layout can settle:
+ *      window 'load' (images), document.fonts.ready (fonts), several delays
+ *      after each navigation, and — most importantly — via a ResizeObserver
+ *      on #smooth-content so ANY height change auto-corrects positions.
  */
 import { usePathname } from "next/navigation";
 import { useEffect, useRef } from "react";
@@ -26,36 +34,82 @@ declare global {
   }
 }
 
+function refreshScrollTrigger() {
+  window.ScrollTrigger?.refresh();
+}
+
 export default function ThemeReinit() {
   const pathname = usePathname();
   const isFirst = useRef(true);
 
+  // One-time: recompute ScrollTrigger positions whenever the layout settles
+  // or the content height changes. This is what stops the intermittent
+  // "works only after a refresh" behavior across the whole site.
   useEffect(() => {
-    // main.js already runs initThemePage() on the first load via
-    // $(document).ready, so skip the initial mount — only re-run on
-    // subsequent navigations.
+    // After images finish loading.
+    window.addEventListener("load", refreshScrollTrigger);
+
+    // After web fonts swap (text reflow changes element heights).
+    try {
+      (document as any).fonts?.ready
+        .then(refreshScrollTrigger)
+        .catch(() => {});
+    } catch {
+      /* fonts API unavailable — ignore */
+    }
+
+    // Auto-refresh on ANY content height change (lazy images, async client
+    // content, expanding sections). Debounced to one refresh per frame.
+    let raf = 0;
+    let resizeObserver: ResizeObserver | undefined;
+    const content = document.getElementById("smooth-content");
+    if (content && typeof ResizeObserver !== "undefined") {
+      resizeObserver = new ResizeObserver(() => {
+        cancelAnimationFrame(raf);
+        raf = requestAnimationFrame(refreshScrollTrigger);
+      });
+      resizeObserver.observe(content);
+    }
+
+    return () => {
+      window.removeEventListener("load", refreshScrollTrigger);
+      cancelAnimationFrame(raf);
+      resizeObserver?.disconnect();
+    };
+  }, []);
+
+  // Per-navigation: re-run page inits, then refresh at a few settle points.
+  useEffect(() => {
+    const timers: number[] = [];
+    const refreshAtSettlePoints = () => {
+      [0, 150, 400, 800].forEach((delay) =>
+        timers.push(window.setTimeout(refreshScrollTrigger, delay))
+      );
+    };
+
+    // main.js runs initThemePage() on the first load via $(document).ready,
+    // so on the initial mount we only need to schedule extra refreshes (for
+    // late images/fonts) — not re-run the inits.
     if (isFirst.current) {
       isFirst.current = false;
-      return;
+      refreshAtSettlePoints();
+      return () => timers.forEach(clearTimeout);
     }
 
     let tries = 0;
-    let timer: number;
     const run = () => {
       if (typeof window.__initThemePage === "function") {
         window.__initThemePage();
-        // Recalculate ScrollSmoother / ScrollTrigger positions for the new
-        // page's height once the new DOM has settled.
-        window.ScrollTrigger?.refresh();
-      } else if (tries++ < 40) {
+        refreshAtSettlePoints();
+      } else if (tries++ < 60) {
         // main.js (afterInteractive) may not have loaded yet on a fast nav.
-        timer = window.setTimeout(run, 100);
+        timers.push(window.setTimeout(run, 100));
       }
     };
     // Small delay so the new page DOM is committed before re-init.
-    timer = window.setTimeout(run, 120);
+    timers.push(window.setTimeout(run, 120));
 
-    return () => window.clearTimeout(timer);
+    return () => timers.forEach(clearTimeout);
   }, [pathname]);
 
   return null;

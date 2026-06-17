@@ -3,17 +3,17 @@
   "title": "Manufacturing",
   "heroImage": "/images/what-we-do/manufacturing/m-hero.jpg",
   "seo": {
-    "title": "Manufacturing — Joint Venture with Inoventive Filaments | Jal Agritech",
-    "description": "Jal Agritech's manufacturing arm operates as a Business Channel Partner with Inoventive Filaments Pvt Ltd, producing PET wire, agriculture nets, and shade nets at scale.",
-    "keywords": "manufacturing, inoventive filaments, PET wire, agriculture nets, shade nets, channel partner, jal agritech"
+    "title": "Manufacturing — India's First Polyester Barbed Wire | Jal Agritech",
+    "description": "Jal Agritech's R&D-driven manufacturing arm produces Polyester Synthetic Wire, GI Wire, and India's first Polyester Barbed Wire — in channel partnership with Innovative Filament Private Limited.",
+    "keywords": "manufacturing, polyester barbed wire, polyester synthetic wire, GI wire, fencing solutions, innovative filament private limited, jal agritech"
   },
   "maskImage": "/images/what-we-do/manufacturing/mask.jpg",
   "cards": [
     {
       "number": "01",
       "icon": "/images/inner-page/icon/04.svg",
-      "title": "PET Wire Products",
-      "description": "Drawn and extruded PET wire — for filament weaving, agriculture nets, and industrial applications.",
+      "title": "Innovation in Advanced Fencing Solutions",
+      "description": "India's first Polyester Barbed Wire — corrosion-resistant, durable fencing developed in-house through R&D.",
       "anchor": "topic-0",
       "animation": "fadeInLeft",
       "delay": ".2s"
@@ -21,8 +21,8 @@
     {
       "number": "02",
       "icon": "/images/inner-page/icon/05.svg",
-      "title": "Agriculture Nets",
-      "description": "Shade nets, insect-protection nets, and bird nets manufactured to greenhouse and field specs.",
+      "title": "Strategic Business Partnership",
+      "description": "Channel partnership with Innovative Filament Private Limited — Polyester Wire Nets, Ropes & Barbed Wire since 2025.",
       "anchor": "topic-1",
       "animation": "fadeInUp",
       "delay": ".4s"
@@ -30,8 +30,8 @@
     {
       "number": "03",
       "icon": "/images/inner-page/icon/06.svg",
-      "title": "Business Channel Partner",
-      "description": "Operating as a Business Channel Partner of Inoventive Filaments Pvt Ltd — joint capacity for large orders.",
+      "title": "Future Growth & Brand Vision",
+      "description": "Building Polyester Barbed Wire into a trusted national brand across agriculture, industry & infrastructure.",
       "anchor": "topic-2",
       "animation": "fadeInRight",
       "delay": ".6s"
@@ -65,7 +65,7 @@
     "image": "/images/what-we-do/manufacturing/m-stats.jpg",
     "eyebrow": "built to specification",
     "headline": "Quality You Can Trace To The Loom.",
-    "description": "Our manufacturing partnership with Inoventive Filaments gives complete control over raw materials, weave specs, and finishing — so every shipment matches the order exactly.",
+    "description": "Our manufacturing partnership with Innovative Filament Private Limited gives complete control over raw materials, weave specs, and finishing — so every shipment matches the order exactly.",
     "stats": [
       {
         "value": "100",
@@ -91,9 +91,12 @@
   },
   "topics": [
     {
-      "title": "PET Wire Products",
+      "title": "Innovation in Advanced Fencing Solutions",
       "intro": [
-        "Our PET wire division produces drawn and extruded PET wire used as the base filament for agriculture nets, industrial netting, and specialty woven products. PET wire offers excellent UV resistance, dimensional stability, and tensile strength — making it the preferred filament for outdoor agricultural applications."
+        "Despite being a young and dynamic R&D-driven company, we have rapidly established ourselves as innovators in the field of fencing and agricultural infrastructure solutions. Within just two years of our research and development journey, we have successfully developed and commenced manufacturing of Polyester Synthetic Wire, GI Wire, and advanced fencing products designed for durability, sustainability, and long-term performance.",
+        "Our most significant achievement is the development and commercialization of Polyester Barbed Wire, an innovative fencing solution that is being introduced for the first time in India. This breakthrough product combines the strength and durability of high-performance polyester materials with the functionality of conventional barbed wire, offering superior resistance to corrosion, weathering, and environmental degradation.",
+        "The introduction of India's first Polyester Barbed Wire reflects our commitment to research, innovation, and indigenous product development. Through continuous R&D and advanced manufacturing practices, we aim to create cost-effective, sustainable, and high-quality fencing solutions for agriculture, infrastructure, industrial, and environmental applications across India.",
+        "This pioneering achievement marks an important milestone in our vision of building a strong, technology-driven manufacturing ecosystem and establishing a nationally recognized brand in advanced fencing and protection systems."
       ],
       "thumbnails": [
         "/images/what-we-do/manufacturing/m-t1-a.jpg",
@@ -102,9 +105,12 @@
       "sections": []
     },
     {
-      "title": "Agriculture Nets",
+      "title": "Strategic Business Partnership",
       "intro": [
-        "Shade nets, insect-protection nets, and bird nets manufactured to greenhouse and open-field specifications. Mesh density, UV stabilization, and edge reinforcement are customized per crop and per project."
+        "We work together as business channel partners through Jal Agritech India Private Limited and Innovative Filament Private Limited, combining our expertise to deliver innovative and high-quality products for agricultural, industrial, and infrastructure applications.",
+        "Innovative Filament Private Limited is a leading manufacturer of Polyester Wire Nets and Ropes, known for producing durable, high-strength, and weather-resistant products for diverse industry requirements. Through this strategic collaboration, both companies leverage their technical capabilities, manufacturing expertise, and market reach to develop innovative solutions for customers across India.",
+        "As part of our commitment to continuous innovation and product development, we commenced the manufacturing of Polyester Barbed Wire in 2025. This advanced fencing solution offers several advantages over conventional materials, including corrosion resistance, durability, low maintenance requirements, lightweight installation, and long service life, making it suitable for agricultural, industrial, commercial, and environmental protection applications.",
+        "This partnership reflects our shared vision of delivering sustainable, cost-effective, and technologically advanced products that meet the evolving needs of our customers while contributing to the growth of modern agriculture, infrastructure, and environmental development sectors."
       ],
       "thumbnails": [
         "/images/what-we-do/manufacturing/m-t2-a.jpg",
@@ -113,9 +119,11 @@
       "sections": []
     },
     {
-      "title": "Business Channel Partner — Inoventive Filaments Pvt Ltd",
+      "title": "Future Growth & Brand Vision",
       "intro": [
-        "Jal Agritech operates as a Business Channel Partner with Inoventive Filaments Pvt Ltd through a joint venture arrangement. This partnership pools manufacturing capacity, R&D, and distribution networks — giving Jal Agritech the scale to fulfill large industrial and agricultural orders while maintaining ISO-certified quality control across the supply chain."
+        "As part of our long-term growth strategy, Jal Agritech India Private Limited aims to further develop and establish Polyester Barbed Wire as a recognized and trusted brand in the agricultural, industrial, infrastructure, and environmental sectors.",
+        "Building upon our collaboration with Innovative Filament Private Limited, we are committed to continuous product innovation, quality enhancement, and market expansion. Our vision is to position Polyester Barbed Wire as a sustainable, durable, and cost-effective alternative to conventional fencing products, offering superior performance, corrosion resistance, low maintenance, and long service life.",
+        "Through strategic branding, technological advancements, expanded distribution networks, and customer-focused solutions, Jal Agritech India Private Limited aspires to create a strong national presence for this product and establish it as a preferred fencing solution across India. Our goal is to build a brand synonymous with quality, reliability, innovation, and sustainability, contributing to the advancement of modern agriculture, infrastructure, and environmental protection."
       ],
       "thumbnails": [
         "/images/what-we-do/manufacturing/m-t3-a.jpg",

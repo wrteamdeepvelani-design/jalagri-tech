@@ -1,17 +1,52 @@
+"use client";
+
 import Link from "next/link";
+import { useState } from "react";
 
 /**
- * OffcanvasSidebar — static markup matching the theme's offcanvas exactly.
- * Open/close, mobile menu population, and link-click behavior are all
- * handled by the theme's main.js (jQuery + meanmenu plugin):
- *   - `$('.sidebar__toggle').click` adds `info-open` to `.offcanvas__info`
- *   - `$('.offcanvas__close, .offcanvas__overlay').click` removes it
- *   - `$('#mobile-menu').meanmenu({ meanMenuContainer: '.mobile-menu' })`
- *     clones the desktop nav into the empty `.mobile-menu` div below.
+ * OffcanvasSidebar — mobile slide-in panel.
  *
- * Do NOT add React state here — main.js manages the classes via jQuery.
+ * The mobile nav is rendered HERE in React (not cloned by meanmenu). The
+ * theme originally let jquery.meanmenu clone the desktop #mobile-menu into
+ * this panel, but that fought React hydration: meanmenu mutated the DOM,
+ * then the client components re-rendered and clobbered it — leaving the
+ * desktop nav visible and this panel empty at <=1199px. We replicate
+ * meanmenu's exact DOM (.mean-container > .mean-bar > .mean-nav) so the
+ * existing meanmenu.css styling applies unchanged, and drive the submenu +
+ * close behavior with React.
+ *
+ * Open/close is still toggled by main.js (now delegated on document, so it
+ * survives client re-renders): .sidebar__toggle adds .info-open /
+ * .overlay-open; .offcanvas__close / .offcanvas__overlay remove them.
  */
+
+const navItems = [
+  { label: "Home", href: "/" },
+  { label: "About Us", href: "/about" },
+  {
+    label: "What We Do",
+    href: "#",
+    submenu: [
+      { label: "Irrigation and Landscaping", href: "/what-we-do/irrigation-and-landscaping" },
+      { label: "Services", href: "/what-we-do/services" },
+      { label: "Maintenance", href: "/what-we-do/maintenance" },
+      { label: "Outlets", href: "/what-we-do/outlets" },
+      { label: "Manufacturing", href: "/what-we-do/manufacturing" },
+      { label: "Trading", href: "/what-we-do/trading" },
+    ],
+  },
+  { label: "Our Projects", href: "/projects" },
+  { label: "Contact Us", href: "/contact" },
+];
+
+function closeOffcanvas() {
+  document.querySelector(".offcanvas__info")?.classList.remove("info-open");
+  document.querySelector(".offcanvas__overlay")?.classList.remove("overlay-open");
+}
+
 export default function OffcanvasSidebar() {
+  const [openSubmenu, setOpenSubmenu] = useState(false);
+
   return (
     <>
       <div className="fix-area">
@@ -20,8 +55,8 @@ export default function OffcanvasSidebar() {
             <div className="offcanvas__content">
               <div className="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
                 <div className="offcanvas__logo">
-                  <Link href="/">
-                    <img src="/images/logo/theme-logo.svg" alt="logo" />
+                  <Link href="/" onClick={closeOffcanvas}>
+                    <img src="/images/logo/logo.png" alt="logo" />
                   </Link>
                 </div>
                 <div className="offcanvas__close">
@@ -30,12 +65,58 @@ export default function OffcanvasSidebar() {
                   </button>
                 </div>
               </div>
-              <p className="text d-none d-xl-block">
-                Nullam dignissim, ante scelerisque the is euismod fermentum odio
-                sem semper the is erat, a feugiat leo urna eget eros. Duis Aenean
-                a imperdiet risus.
-              </p>
-              <div className="mobile-menu fix mb-3"></div>
+
+              {/* Mobile navigation — mirrors meanmenu's DOM so meanmenu.css
+                  styles it; submenu open/close handled by React state. */}
+              <div className="mobile-menu mean-container fix mb-3">
+                <div className="mean-bar">
+                  <nav className="mean-nav" role="navigation">
+                    <ul>
+                      {navItems.map((item) =>
+                        item.submenu ? (
+                          <li key={item.label}>
+                            <Link
+                              href={item.href}
+                              onClick={(e) => e.preventDefault()}
+                            >
+                              {item.label}
+                            </Link>
+                            <a
+                              className={`mean-expand${openSubmenu ? " mean-clicked" : ""}`}
+                              href="#"
+                              onClick={(e) => {
+                                e.preventDefault();
+                                setOpenSubmenu((v) => !v);
+                              }}
+                            >
+                              <i className="far fa-plus"></i>
+                            </a>
+                            <ul
+                              className="submenu"
+                              style={{ display: openSubmenu ? "block" : "none" }}
+                            >
+                              {item.submenu.map((sub) => (
+                                <li key={sub.href}>
+                                  <Link href={sub.href} onClick={closeOffcanvas}>
+                                    {sub.label}
+                                  </Link>
+                                </li>
+                              ))}
+                            </ul>
+                          </li>
+                        ) : (
+                          <li key={item.label}>
+                            <Link href={item.href} onClick={closeOffcanvas}>
+                              {item.label}
+                            </Link>
+                          </li>
+                        )
+                      )}
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+
               <div className="offcanvas__contact d-xl-block">
                 <h4 className="d-xl-block">Contact Info</h4>
                 <ul className="d-xl-block">
@@ -44,7 +125,13 @@ export default function OffcanvasSidebar() {
                       <i className="fal fa-map-marker-alt"></i>
                     </div>
                     <div className="offcanvas__contact-text">
-                      <a href="#">Main Street, Melbourne, Australia</a>
+                      <a
+                        href="https://maps.google.com/maps?q=34%2C+Time+Square+Empire%2C+Mirzapar+Road%2C+Bhuj+%E2%80%93+Kutch+370001%2C+Gujarat%2C+India"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        34, Time Square Empire, Mirzapar Road, Bhuj – Kutch 370001, Gujarat, India
+                      </a>
                     </div>
                   </li>
                   <li className="d-flex align-items-center">
@@ -52,15 +139,9 @@ export default function OffcanvasSidebar() {
                       <i className="fal fa-envelope"></i>
                     </div>
                     <div className="offcanvas__contact-text">
-                      <a href="mailto:info@example.com">info@example.com</a>
-                    </div>
-                  </li>
-                  <li className="d-flex align-items-center">
-                    <div className="offcanvas__contact-icon style-2 mr-15">
-                      <i className="fal fa-clock"></i>
-                    </div>
-                    <div className="offcanvas__contact-text">
-                      <a href="#">Mon-Friday, 09am - 05pm</a>
+                      <a href="mailto:jalagritechindiapvtltd@gmail.com">
+                        jalagritechindiapvtltd@gmail.com
+                      </a>
                     </div>
                   </li>
                   <li className="d-flex align-items-center">
@@ -68,7 +149,7 @@ export default function OffcanvasSidebar() {
                       <i className="far fa-phone"></i>
                     </div>
                     <div className="offcanvas__contact-text">
-                      <a href="tel:+11002345909">+1100 2345 909</a>
+                      <a href="tel:+919879447395">+91 98794 47395</a>
                     </div>
                   </li>
                 </ul>

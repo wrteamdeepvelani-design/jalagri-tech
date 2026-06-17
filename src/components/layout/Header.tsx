@@ -89,10 +89,10 @@ export default function Header() {
               <div className="header-left">
                 <div className="logo">
                   <Link href="/" className="header-logo">
-                    <img src="/images/logo/white-logo.svg" alt="Agriva" />
+                    <img src="/images/logo/logo.png" alt="Agriva" />
                   </Link>
                   <Link href="/" className="header-logo-2">
-                    <img src="/images/logo/black-logo-2.svg" alt="Agriva" />
+                    <img src="/images/logo/logo.png" alt="Agriva" />
                   </Link>
                 </div>
               </div>
@@ -145,10 +145,10 @@ export default function Header() {
             <div className="header-left">
               <div className="logo">
                 <Link href="/" className="header-logo">
-                  <img src="/images/logo/white-logo-2.svg" alt="Agriva" />
+                  <img src="/images/logo/logo.png" alt="Agriva" />
                 </Link>
                 <Link href="/" className="header-logo-2">
-                  <img src="/images/logo/logo-5.svg" alt="Agriva" />
+                  <img src="/images/logo/logo.png" alt="Agriva" />
                 </Link>
               </div>
             </div>

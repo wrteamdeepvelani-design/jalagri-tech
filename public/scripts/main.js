@@ -29,11 +29,11 @@
        Mobile Menu Js Start
     ================================ */
     
-      $('#mobile-menu').meanmenu({
-        meanMenuContainer: '.mobile-menu',
-        meanScreenWidth: "1199",
-        meanExpand: ['<i class="far fa-plus"></i>'],
-    });
+      // NOTE: The #mobile-menu mobile nav is now rendered directly in React
+      // (OffcanvasSidebar.tsx) instead of being cloned by meanmenu. Running
+      // meanmenu here fought React hydration — meanmenu mutated the DOM, then
+      // the client component re-rendered and clobbered it, leaving the desktop
+      // nav visible and the offcanvas empty at <=1199px. React owns it now.
 
        $('#mobile-menus').meanmenu({
         meanMenuContainer: '.mobile-menus',
@@ -55,8 +55,9 @@
         Sidebar Toggle & Sticky Item Logic
         ================================ */
 
-        // Open offcanvas
-        $(".sidebar__toggle").on("click", function () {
+        // Open offcanvas — DELEGATED on document so the handler survives the
+        // React (use client) Header re-rendering its .sidebar__toggle button.
+        $documentOn.on("click", ".sidebar__toggle", function () {
         $(".offcanvas__info").addClass("info-open");
         $(".offcanvas__overlay").addClass("overlay-open");
 
@@ -64,8 +65,8 @@
         $(".sidebar-sticky-item").fadeOut().removeClass("active");
         });
 
-        // Close offcanvas
-        $(".offcanvas__close, .offcanvas__overlay").on("click", function () {
+        // Close offcanvas — delegated for the same reason.
+        $documentOn.on("click", ".offcanvas__close, .offcanvas__overlay", function () {
         $(".offcanvas__info").removeClass("info-open");
         $(".offcanvas__overlay").removeClass("overlay-open");
 
@@ -110,18 +111,20 @@
 
       ////////////////////////////////////////////////////
 	// 05. Search Js
-	$(".search_btn").on("click", function () {
+	// Delegated on document so handlers survive the React client Header /
+	// SearchModal re-rendering their .search_btn / overlay elements.
+	$documentOn.on("click", ".search_btn", function () {
 		$(".search_popup").addClass("search-opened");
 		$(".search-popup-overlay").addClass("search-popup-overlay-open");
 		$("body").addClass("overflow-hidden");
 	});
 
-	$(".search_close_btn").on("click", function () {
+	$documentOn.on("click", ".search_close_btn, .search_close", function () {
 		$(".search_popup").removeClass("search-opened");
 		$(".search-popup-overlay").removeClass("search-popup-overlay-open");
 		$("body").removeClass("overflow-hidden");
 	});
-	$(".search-popup-overlay").on("click", function () {
+	$documentOn.on("click", ".search-popup-overlay", function () {
 		$(".search_popup").removeClass("search-opened");
 		$(this).removeClass("search-popup-overlay-open");
 		$("body").removeClass("overflow-hidden");

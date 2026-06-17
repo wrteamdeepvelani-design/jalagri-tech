@@ -20,6 +20,11 @@ export default function AboutFeatureSection() {
   return (
     <section className="feature-section section-padding fix pb-0">
       <div className="container">
+        <div className="section-title text-center mx-auto">
+          <span className="sub-title-3">{data.eyebrow}</span>
+          <h2 className="text-anim">{data.heading}</h2>
+          <p className="mt-3">{data.description}</p>
+        </div>
         <div className="row g-4">
           {features.map((f) => (
             <div key={f.title} className="col-xl-4 col-lg-6 col-md-6">

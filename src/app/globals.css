@@ -732,3 +732,81 @@
     max-height: 360px;
   }
 }
+
+/* Logo sizing — the theme shipped small SVG logos with no width/height in
+   CSS, so it relied on each SVG's intrinsic size. We swapped to logo.png
+   (a large, tall raster), which renders full-size without a constraint.
+   Pin a sensible height across every logo slot; width auto keeps aspect. */
+.logo .header-logo img,
+.logo .header-logo-2 img {
+  height: 90px;
+  width: auto;
+  object-fit: contain;
+}
+.footer-logo img {
+  height: 100px;
+  width: auto;
+  object-fit: contain;
+}
+.offcanvas__logo img,
+.search_wrapper .search_top .search_logo img {
+  height: 70px;
+  width: auto;
+  object-fit: contain;
+}
+/* The taller portrait logo needs vertical breathing room in the bar so it
+   doesn't crowd the nav — trim the theme's default logo padding. */
+/* .header-main .header-left .logo {
+  padding: 8px 0;
+} */
+/* Inner-page header is a compact green bar — the 90px logo overflows it
+   top & bottom. Pin a smaller height there so the logo sits inside the bar. */
+.header-inner .logo .header-logo img,
+.header-inner .logo .header-logo-2 img {
+  height: 56px;
+}
+.header-inner .header-left .logo {
+  padding: 0;
+}
+
+/* Mobile nav breakpoint — meanmenu used to hide the desktop nav at <=1199px
+   by mutating #mobile-menu inline. We render the mobile menu in React now and
+   no longer run meanmenu on it, so hide the desktop nav wrapper here instead.
+   At <=1199px the hamburger opens the React-rendered offcanvas menu. */
+@media (max-width: 1199px) {
+  .header-1 .header-main .mean__menu-wrapper {
+    display: none !important;
+  }
+}
+
+/* About "Why Agriva" heading — centered section title above the feature
+   cards. Constrain the description width and add space before the cards. */
+.feature-section .section-title {
+  max-width: 680px;
+  margin-bottom: 50px;
+}
+.feature-section .section-title p {
+  color: var(--text);
+}
+
+/* Statistics stat cards — theme sizes each card to its text (flex with
+   space-between, no width), so the 2x2 grid is ragged and rows differ in
+   height. Force equal-width columns + equal-height rows for a clean grid. */
+.our-statistics-wrapper .our-statistics-content .our-statistics-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: stretch;
+}
+.our-statistics-wrapper .our-statistics-content .our-statistics-card .statistics-card {
+  width: auto;
+  margin-top: 0;
+}
+.our-statistics-wrapper .our-statistics-content .our-statistics-card .statistics-card p {
+  max-width: none;
+}
+@media (max-width: 575px) {
+  .our-statistics-wrapper .our-statistics-content .our-statistics-card {
+    grid-template-columns: 1fr;
+  }
+}
