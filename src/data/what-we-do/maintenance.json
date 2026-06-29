@@ -3,9 +3,9 @@
   "title": "Maintenance",
   "heroImage": "/images/what-we-do/maintenance/hero.jpg",
   "seo": {
-    "title": "Maintenance & Specialty Services | Jal Agritech",
-    "description": "AMC, on-call repairs, landscape upkeep, drainage and lighting maintenance — keeping your irrigation systems and landscapes healthy year-round.",
-    "keywords": "maintenance, AMC, landscape maintenance, irrigation upkeep, drainage, grading, landscape lighting, on-call repairs, jal agritech"
+    "title": "Maintenance Services — AMC, On-Call Repairs & Landscape Upkeep | Jal Agritech",
+    "description": "Annual Maintenance Contracts, on-call repairs, general landscape maintenance, and drainage & grading — keeping your irrigation systems and landscapes healthy year-round.",
+    "keywords": "maintenance, AMC, annual maintenance contract, on-call repairs, landscape maintenance, drainage, grading, irrigation upkeep, jal agritech"
   },
   "impact": {
     "background": "/images/what-we-do/maintenance/impact.jpg",
@@ -63,30 +63,18 @@
     {
       "title": "Annual Maintenance Contracts (AMC)",
       "intro": [
-        "Comprehensive AMC packages cover scheduled servicing, replacement of consumables, and priority emergency response. We tailor the plan to the system size, climate, and crop cycle — so the contract pays for itself through avoided downtime and longer system life."
+        "Our Annual Maintenance Contract (AMC) services ensure the long-term performance, reliability, and efficiency of irrigation systems, landscapes, Miyawaki, fountains, and environmental infrastructure. Through scheduled inspections, preventive maintenance, system testing, repairs, component replacement, and technical support, we help minimize downtime and extend the lifespan of project assets. Our dedicated maintenance team ensures that all systems operate at optimal efficiency while preserving the health, appearance, and sustainability of the project throughout the year."
       ],
-      "highlight": "98% first-visit fix rate across active AMC sites — the contract pays for itself through avoided downtime.",
       "thumbnails": [
         "/images/what-we-do/maintenance/t1-a.jpg",
         "/images/what-we-do/maintenance/t1-b.jpg"
       ],
-      "sections": [
-        {
-          "title": "What an AMC Covers",
-          "list": [
-            "Scheduled servicing of pumps, controllers, valves, and filters",
-            "Replacement of consumables (drippers, sprinklers, gaskets)",
-            "Priority emergency response within agreed SLA",
-            "Annual system health audit + performance report",
-            "Discounted spares and add-on works"
-          ]
-        }
-      ]
+      "sections": []
     },
     {
       "title": "On-Call Repairs",
       "intro": [
-        "Pay-per-visit emergency service for non-AMC clients with same-day response in Kutch and next-day response across major Gujarat districts. Common call-outs include pump failures, controller resets, leak repair, and storm-damage recovery."
+        "We provide prompt and reliable on-call repair services to address unexpected breakdowns, system malfunctions, and operational issues. Our experienced technical team responds quickly to diagnose problems, perform necessary repairs, and restore system functionality with minimal downtime. Whether for irrigation systems, landscaping infrastructure, fountains, pumps, automation controls, or related equipment, we ensure efficient troubleshooting and timely solutions to maintain uninterrupted performance and operational efficiency."
       ],
       "thumbnails": [
         "/images/what-we-do/maintenance/t2-a.jpg",
@@ -97,60 +85,24 @@
     {
       "title": "General Landscape Maintenance",
       "intro": [
-        "Routine garden care that keeps soft and hard landscapes looking sharp and operating safely throughout the year. Our crews handle the seasonal cycle from spring cleanup to monsoon prep to winter trim-back."
+        "Our General Landscape Maintenance services are designed to preserve the health, beauty, and functionality of outdoor spaces throughout the year. Services include lawn care, pruning, trimming, weeding, fertilization, plant health management, irrigation system monitoring, pest and disease control, seasonal planting, and overall site upkeep. With a focus on sustainability and horticultural best practices, our skilled team ensures that landscapes remain vibrant, safe, and aesthetically appealing while promoting long-term plant health and environmental well-being."
       ],
-      "highlight": "Seasonal clean-up, mulching, trimming, leaf removal, and routine garden care — handled on a fixed monthly schedule.",
       "thumbnails": [
         "/images/what-we-do/maintenance/t3-a.jpg",
         "/images/what-we-do/maintenance/t3-b.jpg"
       ],
-      "sections": [
-        {
-          "title": "Included Maintenance Tasks",
-          "list": [
-            "Seasonal clean-up and debris removal",
-            "Mulching for moisture retention and weed control",
-            "Trimming, pruning, and dead-wood removal",
-            "Leaf removal and pathway clearing",
-            "Routine garden care and plant health checks",
-            "Pest and disease scouting"
-          ]
-        }
-      ]
+      "sections": []
     },
     {
       "title": "Drainage & Grading",
       "intro": [
-        "Land levelling and drainage system installation prevent waterlogging and soil erosion — issues that quietly destroy landscapes and irrigation networks if left unaddressed. We design grading and sub-surface drainage that work in combination with the planting plan."
+        "Our Drainage & Grading services ensure proper land shaping and water management to protect landscapes, infrastructure, and agricultural areas from erosion, waterlogging, and runoff issues. Through precise site grading, contouring, slope stabilization, surface and subsurface drainage systems, and stormwater management solutions, we create efficient water flow patterns that enhance site functionality, improve soil health, and support long-term sustainability. Our solutions are tailored to site-specific conditions, ensuring optimal performance and environmental compliance."
       ],
       "thumbnails": [
         "/images/what-we-do/maintenance/t4-a.jpg",
         "/images/what-we-do/maintenance/t4-b.jpg"
       ],
       "sections": []
-    },
-    {
-      "title": "Landscape Lighting Maintenance",
-      "intro": [
-        "Outdoor lighting needs more attention than indoor fixtures — UV exposure, monsoon ingress, and insect debris all shorten driver life. Our maintenance plan covers cleaning, lamp replacement, driver swaps, and seasonal re-aiming for path and accent lights."
-      ],
-      "thumbnails": [
-        "/images/what-we-do/maintenance/t5-a.jpg",
-        "/images/what-we-do/maintenance/t5-b.jpg"
-      ],
-      "sections": [
-        {
-          "title": "Maintenance Scope for Outdoor Lighting",
-          "list": [
-            "Quarterly cleaning of lenses and reflectors",
-            "Lamp and LED replacement on schedule",
-            "Driver and transformer health checks",
-            "Cable and connection inspection",
-            "Seasonal re-aiming for path and accent lights",
-            "Sensor and timer programming updates"
-          ]
-        }
-      ]
     }
   ]
 }

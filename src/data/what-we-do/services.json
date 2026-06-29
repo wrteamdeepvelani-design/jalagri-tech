@@ -4,8 +4,8 @@
   "heroImage": "/images/what-we-do/services/hero.jpg",
   "seo": {
     "title": "Professional Services — Survey, Design, Installation & Consultation | Jal Agritech",
-    "description": "End-to-end professional services from Jal Agritech — site survey, landscape and irrigation design, turn-key installation, on-site supervision, and post-project consultation.",
-    "keywords": "agriculture services, irrigation design, landscape design, project survey, turn-key installation, agriculture consultation, jal agritech services"
+    "description": "End-to-end professional services from Jal Agritech — site survey, landscape and irrigation design, turn-key installation, and consultation & support.",
+    "keywords": "agriculture services, irrigation design, landscape design, project survey, turn-key installation, consultation, jal agritech services"
   },
   "maskImage": "/images/what-we-do/services/mask.jpg",
   "gridCards": [
@@ -34,8 +34,8 @@
     {
       "number": "01",
       "icon": "/images/inner-page/icon/04.svg",
-      "title": "Survey & Design",
-      "description": "Site assessment, soil testing, plant selection, and complete project blueprint preparation.",
+      "title": "Survey & Site Assessment",
+      "description": "Detailed survey of site conditions, topography, soil, water, drainage, and project requirements.",
       "anchor": "topic-0",
       "animation": "fadeInLeft",
       "delay": ".2s"
@@ -44,7 +44,7 @@
       "number": "02",
       "icon": "/images/inner-page/icon/05.svg",
       "title": "Turn-Key Installation",
-      "description": "Single-vendor installation of irrigation, landscape, and plantation systems with quality materials.",
+      "description": "Every stage managed — procurement, logistics, installation, testing, and commissioning.",
       "anchor": "topic-2",
       "animation": "fadeInRight",
       "delay": ".4s"
@@ -54,96 +54,46 @@
     {
       "title": "Survey & Site Assessment",
       "intro": [
-        "Every project starts with a structured site visit. Our team measures elevation, traces the water source, tests soil at multiple depths, surveys existing plant life, and notes constraints (overhead lines, root barriers, drainage paths). The output is a fully costed project blueprint — not a rough quote."
+        "A detailed survey and site assessment are conducted to evaluate existing site conditions, topography, soil characteristics, water availability, drainage patterns, vegetation, and project requirements. This process helps identify opportunities and constraints, ensuring the development of efficient, sustainable, and cost-effective irrigation, landscaping, and environmental solutions tailored to the specific needs of the project. The collected data serves as the foundation for accurate planning, design, and successful project execution."
       ],
-      "highlight": "Site survey, soil tests, water-source tracing, and existing-vegetation audit — captured into a single costed blueprint.",
       "thumbnails": [
         "/images/what-we-do/services/t1-a.jpg",
         "/images/what-we-do/services/t1-b.jpg"
       ],
-      "sections": [
-        {
-          "title": "What's Included in a Site Survey",
-          "list": [
-            "Topographic survey with elevation and slope readings",
-            "Soil testing at multiple depths (texture, pH, nutrients)",
-            "Water-source tracing and pressure measurement",
-            "Existing vegetation audit and species mapping",
-            "Obstruction and utility mapping (cables, pipes, root barriers)",
-            "Site photography and CAD-ready measurements"
-          ]
-        }
-      ]
+      "sections": []
     },
     {
       "title": "Design & Planning",
       "intro": [
-        "Once the survey is in, our irrigation engineers and landscape architects translate the data into a working design — hydraulic plan, planting plan, and BOQ. We design for the climate, the budget, and the client's maintenance preferences (DIY vs AMC) from day one."
+        "Our Design & Planning process focuses on developing efficient, sustainable, and customized solutions based on detailed site assessments and client requirements. This includes conceptual design, layout planning, hydraulic calculations, irrigation network design, planting schemes, landscape master planning, material selection, and project scheduling. By integrating technical expertise, innovative approaches, and environmental considerations, we ensure that every project is optimized for performance, aesthetics, resource efficiency, and long-term sustainability."
       ],
       "thumbnails": [
         "/images/what-we-do/services/t2-a.jpg",
         "/images/what-we-do/services/t2-b.jpg"
       ],
-      "sections": [
-        {
-          "title": "Design Deliverables",
-          "list": [
-            "Hydraulic layout with pipe sizing and pressure calculations",
-            "Planting plan with species selection and density",
-            "Hardscape detail drawings (paving, walls, structures)",
-            "Lighting and electrical layout",
-            "Itemized BOQ with brand-wise costing",
-            "Phased construction schedule"
-          ]
-        }
-      ]
+      "sections": []
     },
     {
       "title": "Turn-Key Installation",
       "intro": [
-        "We handle everything from civil work to commissioning under a single PO — no juggling sub-contractors. Our crews bring trained supervisors, calibrated equipment, and standard QA checklists to every site. The handover includes a working demonstration and an operations manual."
+        "We provide complete turn-key installation services, managing every stage of project execution from procurement and logistics to installation, testing, and commissioning. Our experienced team ensures the seamless implementation of irrigation systems, landscaping works, water features, environmental projects, and related infrastructure in accordance with approved designs and quality standards. With a focus on safety, efficiency, and timely delivery, we provide fully operational solutions that meet client requirements and ensure long-term performance and reliability."
       ],
-      "highlight": "Survey → design → install → supply → maintain. One team, one PO, one accountability line — saving you time, cost, and coordination headaches.",
       "thumbnails": [
         "/images/what-we-do/services/t3-a.jpg",
         "/images/what-we-do/services/t3-b.jpg"
       ],
-      "sections": [
-        {
-          "title": "Scope of a Turn-Key Project",
-          "list": [
-            "Civil work — trenching, foundations, retaining walls",
-            "Mainline and lateral pipe installation",
-            "Pump, filter, and controller commissioning",
-            "Sprinkler and dripper placement with flow balancing",
-            "Planting, mulching, and initial irrigation",
-            "Documentation, operations manual, and walkthrough"
-          ]
-        }
-      ]
+      "sections": []
     },
     {
       "title": "Consultation & Support",
       "intro": [
-        "For clients who already have a team but need expertise on a specific decision — crop choice, irrigation scheduling, Miyawaki species mix, drainage strategy — we offer paid consultation. Either as a fixed-scope advisory or as ongoing technical support."
+        "We provide expert consultation and continuous support throughout every stage of the project lifecycle. Our team offers technical guidance, project planning assistance, system optimization, troubleshooting, and operational recommendations to ensure maximum efficiency and performance. From initial concept development to post-installation support and maintenance, we work closely with clients to address their needs, deliver practical solutions, and ensure the long-term success and sustainability of their irrigation, agriculture, landscaping, and environmental projects."
       ],
       "thumbnails": [
         "/images/what-we-do/services/t4-a.jpg",
         "/images/what-we-do/services/t4-b.jpg"
       ],
-      "sections": [
-        {
-          "title": "Common Consultation Engagements",
-          "list": [
-            "Crop and species selection for new sites",
-            "Irrigation scheduling and water-budget planning",
-            "Miyawaki species mix and density planning",
-            "Drainage and grading strategy review",
-            "Audit of existing irrigation systems",
-            "Project-management advisory for large landscape builds"
-          ]
-        }
-      ]
+      "sections": []
     }
   ]
 }
