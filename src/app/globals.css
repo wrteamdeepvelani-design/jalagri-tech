@@ -810,3 +810,35 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* Home feature cards — the theme gives the card no height, so each one
+   shrinks to its own copy and the card with the longest description runs
+   taller than its neighbours. The bootstrap columns already stretch to a
+   shared height; filling the column is all that's needed. Height only —
+   do NOT make the card a flex container: .masking-shape is an inline-block
+   that would stretch to the card width, distorting the mask and dragging
+   the absolutely-centred icon out of it. */
+.feature-section-2 .feature-box-item-2 {
+  height: 100%;
+}
+
+/* About section-title-area — the theme gives neither column a width and
+   relies on hard-coded <br> tags in the heading and paragraph to balance
+   them, so whichever side has more text takes the room and the other
+   collapses. Our copy comes from about.json without those breaks, so a
+   long description squeezed the heading to one word per line. Pin the
+   split instead of letting content decide it. Scoped to >=992px: below
+   that the theme already wraps this to a single stacked column. */
+@media (min-width: 992px) {
+  .about-section-2 .section-title-area {
+    gap: 60px;
+  }
+  .about-section-2 .section-title-area .section-title {
+    flex: 0 0 auto;
+    width: 40%;
+  }
+  .about-section-2 .section-title-area .content {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+}

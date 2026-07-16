@@ -4,21 +4,21 @@
       "shape": "/images/features/feature-2.png",
       "icon": "/images/home-2/icon/07.svg",
       "title": "Smart Irrigation",
-      "description": "Drip, sprinkler & automated systems engineered to save water and boost yield.",
+      "description": "Drip, sprinkler, and fully automated irrigation systems engineered to maximize water efficiency, reduce labour, and improve crop productivity. Our smart irrigation solutions deliver the right amount of water at the right time, helping conserve resources while boosting yield and ensuring healthy plant growth.",
       "delay": ".3"
     },
     {
       "shape": "/images/features/feature-2.png",
       "icon": "/images/home-2/icon/08.svg",
       "title": "Landscape & Plantation",
-      "description": "Premium garden design, Miyawaki forests, and turn-key plantation projects.",
+      "description": "Premium landscape design, Miyawaki forests, and turnkey plantation solutions that transform spaces into sustainable, thriving green environments. From concept and execution to long-term maintenance, we deliver aesthetically pleasing landscapes with ecological and lasting value.",
       "delay": ".5"
     },
     {
       "shape": "/images/features/feature-2.png",
       "icon": "/images/home-2/icon/09.svg",
-      "title": " Products & Supply",
-      "description": "Pipes, fittings, fertilizers, plants & in-house manufacturing — all under one roof.",
+      "title": "Agriculture Products Supply & Services",
+      "description": "We offer a complete range of irrigation products, pipes, fittings, fertilizers, plants, planters, and agricultural essentials, backed by our in-house manufacturing capabilities. From product supply to technical support, we provide reliable, high-quality solutions—all under one roof for seamless project execution.",
       "delay": ".7"
     }
   ]
