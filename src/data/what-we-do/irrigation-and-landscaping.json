@@ -85,9 +85,24 @@
     "background": "/images/what-we-do/landscaping/landscaping-1.jpg",
     "title": "Our Irrigation Work\nAt a Glance",
     "items": [
-      { "icon": "/images/inner-page/icon/01.svg", "label": "Acres covered",         "value": "5,000",     "delay": ".4s" },
-      { "icon": "/images/inner-page/icon/02.svg", "label": "Liters saved annually", "value": "1,200,000", "delay": ".6s" },
-      { "icon": "/images/inner-page/icon/03.svg", "label": "Projects delivered",    "value": "250",       "delay": ".8s" }
+      {
+        "icon": "/images/inner-page/icon/01.svg",
+        "label": "Acres covered",
+        "value": "5,000",
+        "delay": ".4s"
+      },
+      {
+        "icon": "/images/inner-page/icon/02.svg",
+        "label": "Liters saved annually",
+        "value": "1,200,000",
+        "delay": ".6s"
+      },
+      {
+        "icon": "/images/inner-page/icon/03.svg",
+        "label": "Projects delivered",
+        "value": "250",
+        "delay": ".8s"
+      }
     ]
   },
   "statistics": {
@@ -96,10 +111,26 @@
     "headline": "Smart Irrigation Delivers Measurable Results.",
     "description": "Our automated and high-coverage irrigation systems are engineered around four performance pillars — water efficiency, energy savings, plant survival, and yield gains.",
     "stats": [
-      { "value": "50", "suffix": "%", "description": "Water saved versus flood irrigation." },
-      { "value": "25", "suffix": "%", "description": "Energy consumption reduction." },
-      { "value": "99", "suffix": "%", "description": "Plant survival in supervised projects." },
-      { "value": "30", "suffix": "%", "description": "Average yield increase reported by clients." }
+      {
+        "value": "50",
+        "suffix": "%",
+        "description": "Water saved versus flood irrigation."
+      },
+      {
+        "value": "25",
+        "suffix": "%",
+        "description": "Energy consumption reduction."
+      },
+      {
+        "value": "99",
+        "suffix": "%",
+        "description": "Plant survival in supervised projects."
+      },
+      {
+        "value": "30",
+        "suffix": "%",
+        "description": "Average yield increase reported by clients."
+      }
     ]
   },
   "topics": [
@@ -119,29 +150,73 @@
           "title": "Softscaping Services",
           "intro": "Softscaping focuses on the living and natural elements of landscaping, enhancing the beauty and environmental value of outdoor areas.",
           "components": [
-            { "name": "Landscape Design", "description": "Planning garden layouts, selecting suitable plants, and creating planting schemes according to local climate and soil conditions.", "bullets": [] },
-            { "name": "Planting & Installation", "description": "Installing lawns, trees, shrubs, flowers, hedges, and vegetable gardens.", "bullets": [] },
-            { "name": "Tree & Shrub Care", "description": "Pruning, trimming, pest and disease management, tree removal, and stump grinding.", "bullets": [] },
-            { "name": "Turf & Lawn Care", "description": "Lawn mowing, fertilization, aeration, weed control, and turf maintenance for healthy green landscapes.", "bullets": [] }
+            {
+              "name": "Landscape Design",
+              "description": "Planning garden layouts, selecting suitable plants, and creating planting schemes according to local climate and soil conditions.",
+              "bullets": []
+            },
+            {
+              "name": "Planting & Installation",
+              "description": "Installing lawns, trees, shrubs, flowers, hedges, and vegetable gardens.",
+              "bullets": []
+            },
+            {
+              "name": "Tree & Shrub Care",
+              "description": "Pruning, trimming, pest and disease management, tree removal, and stump grinding.",
+              "bullets": []
+            },
+            {
+              "name": "Turf & Lawn Care",
+              "description": "Lawn mowing, fertilization, aeration, weed control, and turf maintenance for healthy green landscapes.",
+              "bullets": []
+            }
           ]
         },
         {
           "title": "Hardscaping Services",
           "intro": "Hardscaping includes the non-living structural components that provide functionality, accessibility, and long-term durability.",
           "components": [
-            { "name": "Paving & Walkways", "description": "Construction of patios, pathways, driveways, and sitting areas using concrete, pavers, stone, brick, or gravel.", "bullets": [] },
-            { "name": "Retaining Walls", "description": "Structural walls built to prevent soil erosion and support terraced landscaping on slopes.", "bullets": [] },
-            { "name": "Outdoor Living Structures", "description": "Installation of pergolas, gazebos, decks, seating spaces, and outdoor kitchens.", "bullets": [] },
-            { "name": "Water Features & Fountains", "description": "Creating ponds, waterfalls, fountains, and decorative water elements.", "bullets": [] }
+            {
+              "name": "Paving & Walkways",
+              "description": "Construction of patios, pathways, driveways, and sitting areas using concrete, pavers, stone, brick, or gravel.",
+              "bullets": []
+            },
+            {
+              "name": "Retaining Walls",
+              "description": "Structural walls built to prevent soil erosion and support terraced landscaping on slopes.",
+              "bullets": []
+            },
+            {
+              "name": "Outdoor Living Structures",
+              "description": "Installation of pergolas, gazebos, decks, seating spaces, and outdoor kitchens.",
+              "bullets": []
+            },
+            {
+              "name": "Water Features & Fountains",
+              "description": "Creating ponds, waterfalls, fountains, and decorative water elements.",
+              "bullets": []
+            }
           ]
         },
         {
           "title": "Maintenance & Specialty Services",
           "intro": "These services ensure the landscape remains healthy, clean, safe, and visually appealing throughout the year.",
           "components": [
-            { "name": "General Landscape Maintenance", "description": "Seasonal clean-up, mulching, trimming, leaf removal, and routine garden care.", "bullets": [] },
-            { "name": "Drainage & Grading", "description": "Land levelling and drainage system installation to prevent waterlogging and soil erosion.", "bullets": [] },
-            { "name": "Landscape Lighting", "description": "Installing outdoor lighting systems for aesthetics, pathway visibility, and security.", "bullets": [] }
+            {
+              "name": "General Landscape Maintenance",
+              "description": "Seasonal clean-up, mulching, trimming, leaf removal, and routine garden care.",
+              "bullets": []
+            },
+            {
+              "name": "Drainage & Grading",
+              "description": "Land levelling and drainage system installation to prevent waterlogging and soil erosion.",
+              "bullets": []
+            },
+            {
+              "name": "Landscape Lighting",
+              "description": "Installing outdoor lighting systems for aesthetics, pathway visibility, and security.",
+              "bullets": []
+            }
           ]
         },
         {
@@ -164,36 +239,84 @@
       ],
       "highlight": "Living walls maximize space in urban environments, insulate buildings, and improve both indoor and outdoor air quality.",
       "thumbnails": [
-        "/images/what-we-do/landscaping/landscaping-3.png",
-        "/images/what-we-do/landscaping/landscaping-4.png"
+        "/images/projects/vertical-with-fountain-welspun/vertical-with-fountain-welspun-02.jpg",
+        "/images/projects/vertical-with-fountain-welspun/vertical-with-fountain-welspun-03.jpg"
       ],
       "sections": [
         {
           "title": "Common Vertical Garden Systems",
           "components": [
-            { "name": "Modular Systems", "description": "Interlocking grid panels or plastic modules pre-filled with potting soil or specialized grow media. Perfect for herbs and easy to maintain.", "bullets": [] },
-            { "name": "Pockets and Pouches", "description": "Durable, breathable felt or geotextile fabric, stapled or mounted directly onto walls. Lightweight and highly adaptable for DIY projects.", "bullets": [] },
-            { "name": "Trellis and Tower Systems", "description": "Stackable planters or wire trellises ideal for climbing plants, vining vegetables (tomatoes, cucumbers), and cascading florals.", "bullets": [] },
-            { "name": "Hydroponic Walls", "description": "Soil-free systems that use nutrient-rich water circulating through the roots. Lighter and ideal for indoor commercial or high-end residential setups.", "bullets": [] }
+            {
+              "name": "Modular Systems",
+              "description": "Interlocking grid panels or plastic modules pre-filled with potting soil or specialized grow media. Perfect for herbs and easy to maintain.",
+              "bullets": []
+            },
+            {
+              "name": "Pockets and Pouches",
+              "description": "Durable, breathable felt or geotextile fabric, stapled or mounted directly onto walls. Lightweight and highly adaptable for DIY projects.",
+              "bullets": []
+            },
+            {
+              "name": "Trellis and Tower Systems",
+              "description": "Stackable planters or wire trellises ideal for climbing plants, vining vegetables (tomatoes, cucumbers), and cascading florals.",
+              "bullets": []
+            },
+            {
+              "name": "Hydroponic Walls",
+              "description": "Soil-free systems that use nutrient-rich water circulating through the roots. Lighter and ideal for indoor commercial or high-end residential setups.",
+              "bullets": []
+            }
           ]
         },
         {
           "title": "Steps to Build a Living Wall",
           "components": [
-            { "name": "Assess the Location", "description": "Choose a wall that matches the light requirements of your intended plants. Ensure the structural wall can support the weight of wet soil and plants.", "bullets": [] },
-            { "name": "Install Waterproofing", "description": "Protect the mounting wall from moisture damage. For large outdoor or indoor walls, install a waterproof backer board or plastic moisture barrier.", "bullets": [] },
-            { "name": "Set Up the Frame", "description": "Anchor a sturdy framework — iron rack or treated wood — to the wall.", "bullets": [] },
-            { "name": "Choose Your Media", "description": "For fabric or hanging pocket systems, choose a lightweight, moisture-retentive medium like Sphagnum moss, which is excellent at preventing rot.", "bullets": [] },
-            { "name": "Install Irrigation", "description": "Gravity-fed drip irrigation is best for vertical gardens. Place a water reservoir at the top to trickle down, with a drainage tray at the bottom to prevent waterlogging.", "bullets": [] }
+            {
+              "name": "Assess the Location",
+              "description": "Choose a wall that matches the light requirements of your intended plants. Ensure the structural wall can support the weight of wet soil and plants.",
+              "bullets": []
+            },
+            {
+              "name": "Install Waterproofing",
+              "description": "Protect the mounting wall from moisture damage. For large outdoor or indoor walls, install a waterproof backer board or plastic moisture barrier.",
+              "bullets": []
+            },
+            {
+              "name": "Set Up the Frame",
+              "description": "Anchor a sturdy framework — iron rack or treated wood — to the wall.",
+              "bullets": []
+            },
+            {
+              "name": "Choose Your Media",
+              "description": "For fabric or hanging pocket systems, choose a lightweight, moisture-retentive medium like Sphagnum moss, which is excellent at preventing rot.",
+              "bullets": []
+            },
+            {
+              "name": "Install Irrigation",
+              "description": "Gravity-fed drip irrigation is best for vertical gardens. Place a water reservoir at the top to trickle down, with a drainage tray at the bottom to prevent waterlogging.",
+              "bullets": []
+            }
           ]
         },
         {
           "title": "Best Plant Selections",
           "intro": "Selecting the right plants depends highly on your local climate and sunlight exposure:",
           "components": [
-            { "name": "For Sunny Spots", "description": "Succulents, rosemary, thyme, lavender, and sedum thrive in high sunlight and handle heat well.", "bullets": [] },
-            { "name": "For Shady or Indoor Spots", "description": "Ferns, pothos, peace lilies, and monstera do exceptionally well in lower-light environments.", "bullets": [] },
-            { "name": "For Cascading & Textures", "description": "Spider plants, creeping jenny, and sweet potato vines provide beautiful drape and fill in gaps quickly.", "bullets": [] }
+            {
+              "name": "For Sunny Spots",
+              "description": "Succulents, rosemary, thyme, lavender, and sedum thrive in high sunlight and handle heat well.",
+              "bullets": []
+            },
+            {
+              "name": "For Shady or Indoor Spots",
+              "description": "Ferns, pothos, peace lilies, and monstera do exceptionally well in lower-light environments.",
+              "bullets": []
+            },
+            {
+              "name": "For Cascading & Textures",
+              "description": "Spider plants, creeping jenny, and sweet potato vines provide beautiful drape and fill in gaps quickly.",
+              "bullets": []
+            }
           ]
         }
       ]
@@ -225,18 +348,46 @@
           "title": "Core Principles",
           "intro": "The method is rooted in natural reforestation and relies on three main concepts:",
           "components": [
-            { "name": "Native Species Only", "description": "Utilizes trees, shrubs, and groundcovers that naturally thrive in the local climate and soil.", "bullets": [] },
-            { "name": "High-Density Planting", "description": "Plants 3 to 5 saplings per square meter to encourage vertical growth and force roots downward as plants compete for sunlight.", "bullets": [] },
-            { "name": "Layered Ecosystem", "description": "Replicates a natural, multi-tiered forest consisting of shrubs, sub-trees, main trees, and canopy trees.", "bullets": [] }
+            {
+              "name": "Native Species Only",
+              "description": "Utilizes trees, shrubs, and groundcovers that naturally thrive in the local climate and soil.",
+              "bullets": []
+            },
+            {
+              "name": "High-Density Planting",
+              "description": "Plants 3 to 5 saplings per square meter to encourage vertical growth and force roots downward as plants compete for sunlight.",
+              "bullets": []
+            },
+            {
+              "name": "Layered Ecosystem",
+              "description": "Replicates a natural, multi-tiered forest consisting of shrubs, sub-trees, main trees, and canopy trees.",
+              "bullets": []
+            }
           ]
         },
         {
           "title": "Key Benefits",
           "components": [
-            { "name": "Rapid Growth", "description": "Grows a mature-looking mini-forest in a fraction of the time it takes conventional forests — maturity in 20-30 years instead of hundreds.", "bullets": [] },
-            { "name": "High Biodiversity", "description": "Supports a significantly higher variety of birds, insects, and microorganisms than traditional monoculture plantations.", "bullets": [] },
-            { "name": "Self-Sustaining", "description": "Requires human intervention (watering and weeding) for only the first 2-3 years, after which the forest canopy becomes dense enough to shade out weeds and lock in moisture.", "bullets": [] },
-            { "name": "Climate Resilience", "description": "Highly effective in urban areas, acting as powerful carbon sinks and offering protection against extreme heat, storms, and noise.", "bullets": [] }
+            {
+              "name": "Rapid Growth",
+              "description": "Grows a mature-looking mini-forest in a fraction of the time it takes conventional forests — maturity in 20-30 years instead of hundreds.",
+              "bullets": []
+            },
+            {
+              "name": "High Biodiversity",
+              "description": "Supports a significantly higher variety of birds, insects, and microorganisms than traditional monoculture plantations.",
+              "bullets": []
+            },
+            {
+              "name": "Self-Sustaining",
+              "description": "Requires human intervention (watering and weeding) for only the first 2-3 years, after which the forest canopy becomes dense enough to shade out weeds and lock in moisture.",
+              "bullets": []
+            },
+            {
+              "name": "Climate Resilience",
+              "description": "Highly effective in urban areas, acting as powerful carbon sinks and offering protection against extreme heat, storms, and noise.",
+              "bullets": []
+            }
           ]
         },
         {
@@ -256,9 +407,7 @@
     {
       "title": "Terrace Gardens",
       "intro": [
-        "Our company successfully completed India's second-largest terrace gardening project at the prestigious Smritivan Earthquake Memorial & Museum, Bhuj–Kutch, Gujarat. This landmark green infrastructure project demonstrates our expertise in large-scale landscape development, sustainable horticulture, irrigation systems, and innovative environmental solutions.",
-        "Or a shorter version:",
-        "Proudly executed India's second-largest terrace gardening project at the renowned Smritivan Earthquake Memorial & Museum, Bhuj–Kutch, showcasing our excellence in landscaping, irrigation, and sustainable green development."
+        "Our company successfully completed India's second-largest terrace gardening project at the prestigious Smritivan Earthquake Memorial & Museum, Bhuj–Kutch, Gujarat. This landmark green infrastructure project demonstrates our expertise in large-scale landscape development, sustainable horticulture, irrigation systems, and innovative environmental solutions."
       ],
       "thumbnails": [
         "/images/what-we-do/landscaping/landscaping-7.png",
@@ -333,13 +482,23 @@
             {
               "name": "Micro-Drip Irrigation & Bubblers",
               "description": "Micro-drip systems and bubblers are ideal for:",
-              "bullets": ["Trees", "Shrubs", "Flower beds", "Miyawaki plantations"],
+              "bullets": [
+                "Trees",
+                "Shrubs",
+                "Flower beds",
+                "Miyawaki plantations"
+              ],
               "footer": "These systems deliver water directly to the root zone at a slow and controlled rate, reducing evaporation and runoff losses."
             },
             {
               "name": "Pop-Up Sprinkler Systems",
               "description": "Pop-up sprinklers are suitable for:",
-              "bullets": ["Lawns", "Turf areas", "Landscaped gardens", "Open green spaces"],
+              "bullets": [
+                "Lawns",
+                "Turf areas",
+                "Landscaped gardens",
+                "Open green spaces"
+              ],
               "footer": "The sprinklers remain hidden underground and automatically pop up during irrigation operation, ensuring efficient and uniform watering coverage."
             }
           ]
@@ -384,33 +543,70 @@
           "title": "Common Applications",
           "intro": "Rain gun systems are highly effective for:",
           "list": [
-            "Sugarcane", "Wheat", "Maize", "Fodder crops", "Groundnut",
-            "Cotton", "Large lawns and landscaping", "Miyawaki plantation irrigation",
+            "Sugarcane",
+            "Wheat",
+            "Maize",
+            "Fodder crops",
+            "Groundnut",
+            "Cotton",
+            "Large lawns and landscaping",
+            "Miyawaki plantation irrigation",
             "Dust suppression in industrial areas"
           ]
         },
         {
           "title": "Key Specifications and Requirements",
           "specs": [
-            { "label": "Operating Pressure", "value": "Requires high pressure ranging from 2.0 to 7.5 kg/cm²." },
-            { "label": "Flow Rate & Coverage", "value": "Discharge rates typically range from 3 to 30 liters per second (lps). One setup can often irrigate roughly half an acre in under 2 hours." },
-            { "label": "Adjustability", "value": "Most systems allow you to set the sweep angle from partial circles (e.g., 90° or 180° for edges) to full 360° continuous rotation." }
+            {
+              "label": "Operating Pressure",
+              "value": "Requires high pressure ranging from 2.0 to 7.5 kg/cm²."
+            },
+            {
+              "label": "Flow Rate & Coverage",
+              "value": "Discharge rates typically range from 3 to 30 liters per second (lps). One setup can often irrigate roughly half an acre in under 2 hours."
+            },
+            {
+              "label": "Adjustability",
+              "value": "Most systems allow you to set the sweep angle from partial circles (e.g., 90° or 180° for edges) to full 360° continuous rotation."
+            }
           ]
         },
         {
           "title": "Advantages",
           "components": [
-            { "name": "Water Efficiency", "description": "Consumes up to 50% less water than traditional surface or flood irrigation.", "bullets": [] },
-            { "name": "Crop Health", "description": "The 'rain' effect clears dust off crop leaves, accelerating photosynthesis and naturally preventing certain pest and insect attacks.", "bullets": [] },
-            { "name": "Labor & Cost", "description": "Reduces the need to lay down dense network piping across expansive, uninterrupted fields.", "bullets": [] },
-            { "name": "Chemical Application", "description": "Easily allows for the broadcast distribution of liquid fertilizers and pesticides alongside regular watering.", "bullets": [] }
+            {
+              "name": "Water Efficiency",
+              "description": "Consumes up to 50% less water than traditional surface or flood irrigation.",
+              "bullets": []
+            },
+            {
+              "name": "Crop Health",
+              "description": "The 'rain' effect clears dust off crop leaves, accelerating photosynthesis and naturally preventing certain pest and insect attacks.",
+              "bullets": []
+            },
+            {
+              "name": "Labor & Cost",
+              "description": "Reduces the need to lay down dense network piping across expansive, uninterrupted fields.",
+              "bullets": []
+            },
+            {
+              "name": "Chemical Application",
+              "description": "Easily allows for the broadcast distribution of liquid fertilizers and pesticides alongside regular watering.",
+              "bullets": []
+            }
           ]
         },
         {
           "title": "Limitations",
           "specs": [
-            { "label": "Pressure Dependency", "value": "Requires robust pumping systems. If water pressure drops, the system will not throw water to its full radius or rotate properly." },
-            { "label": "Land Constraints", "value": "Better suited for broad field crops. Because of the heavy droplet size and wide radius, it is not ideal for delicate, precise, plant-level irrigation." }
+            {
+              "label": "Pressure Dependency",
+              "value": "Requires robust pumping systems. If water pressure drops, the system will not throw water to its full radius or rotate properly."
+            },
+            {
+              "label": "Land Constraints",
+              "value": "Better suited for broad field crops. Because of the heavy droplet size and wide radius, it is not ideal for delicate, precise, plant-level irrigation."
+            }
           ]
         }
       ]
@@ -434,16 +630,28 @@
         "A 'Fountains Project' could refer to a few different concepts depending on whether you are interested in DIY landscaping, commercial musical fountains, or scientific physics experiments."
       ],
       "thumbnails": [
-        "/images/what-we-do/landscaping/fountain.png",
-        "/images/what-we-do/landscaping/fountain1.png"
+        "/images/projects/fountain/fountain-02.jpg",
+        "/images/projects/fountain/fountain-03.jpg"
       ],
       "sections": [
         {
           "title": "DIY Garden & Patio Fountain Projects",
           "components": [
-            { "name": "Planter or Ceramic Pot Fountain", "description": "This involves stacking two to three different sized pots, running a submersible water pump through them, and sealing the gaps to create a tiered, cascading effect.", "bullets": [] },
-            { "name": "Upcycled Features", "description": "Many builders use discarded items like old tires, terracotta pots, or repurposed sinks to create rustic, budget-friendly waterfalls.", "bullets": [] },
-            { "name": "Essential Materials", "description": "You will need a submersible pump, PVC tubing or flexible hose, waterproof sealant, and a basin reservoir lined with a pond liner or geo-textile fabric.", "bullets": [] }
+            {
+              "name": "Planter or Ceramic Pot Fountain",
+              "description": "This involves stacking two to three different sized pots, running a submersible water pump through them, and sealing the gaps to create a tiered, cascading effect.",
+              "bullets": []
+            },
+            {
+              "name": "Upcycled Features",
+              "description": "Many builders use discarded items like old tires, terracotta pots, or repurposed sinks to create rustic, budget-friendly waterfalls.",
+              "bullets": []
+            },
+            {
+              "name": "Essential Materials",
+              "description": "You will need a submersible pump, PVC tubing or flexible hose, waterproof sealant, and a basin reservoir lined with a pond liner or geo-textile fabric.",
+              "bullets": []
+            }
           ]
         }
       ]

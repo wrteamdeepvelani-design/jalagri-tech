@@ -10,6 +10,8 @@ type ServiceCard = {
   title: string;
   delay: string;
   href?: string;
+  tags: string[];
+  description: string;
 };
 
 export default function ServiceSection() {
@@ -64,11 +66,11 @@ export default function ServiceSection() {
               <div className="service-card-items-2">
                 <div className="top-content">
                   <div className="tag-list">
-                    {data.tags.map((tag) => (
+                    {c.tags.map((tag) => (
                       <span key={tag}>{tag}</span>
                     ))}
                   </div>
-                  <p>{data.cardDescription}</p>
+                  <p>{c.description}</p>
                 </div>
                 <div className="service-image">
                   <img src={c.image} alt="img" />

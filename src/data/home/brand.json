@@ -1,32 +1,116 @@
 {
-  "slides": [
-    ["/images/clients/bsf.png", "/images/clients/bsf.png"],
-    ["/images/clients/indian-air-force.png", "/images/clients/indian-air-force.png"],
-    ["/images/clients/bkt.png", "/images/clients/bkt.png"],
-    ["/images/clients/tata-power.png", "/images/clients/tata-power.png"],
-    ["/images/clients/welspun.png", "/images/clients/welspun.png"],
-    ["/images/clients/welspun-corp.png", "/images/clients/welspun-corp.png"],
-    ["/images/clients/adani-ports.png", "/images/clients/adani-ports.png"],
-    ["/images/clients/adani-power.png", "/images/clients/adani-power.png"],
-    ["/images/clients/adani-enterprises.png", "/images/clients/adani-enterprises.png"],
-    ["/images/clients/adani-green-energy.png", "/images/clients/adani-green-energy.png"],
-    ["/images/clients/adani-wilmar.png", "/images/clients/adani-wilmar.png"],
-    ["/images/clients/adani-solar.png", "/images/clients/adani-solar.png"],
-    ["/images/clients/adani-dhamra-port.png", "/images/clients/adani-dhamra-port.png"],
-    ["/images/clients/adanihealth.jpg", "/images/clients/adanihealth.jpg"],
-    ["/images/clients/acc.png", "/images/clients/acc.png"],
-    ["/images/clients/ambuja-cement.png", "/images/clients/ambuja-cement.png"],
-    ["/images/clients/jindal.png", "/images/clients/jindal.png"],
-    ["/images/clients/lucknow-airport.png", "/images/clients/lucknow-airport.png"],
-    ["/images/clients/jaipur-airport.png", "/images/clients/jaipur-airport.png"],
-    ["/images/clients/guwahati-airport.png", "/images/clients/guwahati-airport.png"],
-    ["/images/clients/electrotherm.png", "/images/clients/electrotherm.png"],
-    ["/images/clients/nilkanth-steel.png", "/images/clients/nilkanth-steel.png"],
-    ["/images/clients/agrocel.svg", "/images/clients/agrocel.svg"],
-    ["/images/clients/veerayatan.png", "/images/clients/veerayatan.png"],
-    ["/images/clients/opg-energy.png", "/images/clients/opg-energy.png"],
-    ["/images/clients/smritivan.png", "/images/clients/smritivan.png"],
-    ["/images/clients/time-square-club.png", "/images/clients/time-square-club.png"],
-    ["/images/clients/kachchh-university.png", "/images/clients/kachchh-university.png"]
+  "clients": [
+    {
+      "name": "Border Security Force",
+      "logo": "/images/clients/bsf.png"
+    },
+    {
+      "name": "Indian Air Force",
+      "logo": "/images/clients/indian-air-force.png"
+    },
+    {
+      "name": "Balkrishna Industries (BKT)",
+      "logo": "/images/clients/bkt.png"
+    },
+    {
+      "name": "Tata Power",
+      "logo": "/images/clients/tata-power.png"
+    },
+    {
+      "name": "Welspun India",
+      "logo": "/images/clients/welspun.png"
+    },
+    {
+      "name": "Welspun Corp",
+      "logo": "/images/clients/welspun-corp.png"
+    },
+    {
+      "name": "Adani Ports & SEZ",
+      "logo": "/images/clients/adani-ports.png"
+    },
+    {
+      "name": "Adani Power",
+      "logo": "/images/clients/adani-power.png"
+    },
+    {
+      "name": "Adani Enterprises",
+      "logo": "/images/clients/adani-enterprises.png"
+    },
+    {
+      "name": "Adani Green Energy",
+      "logo": "/images/clients/adani-green-energy.png"
+    },
+    {
+      "name": "Adani Wilmar",
+      "logo": "/images/clients/adani-wilmar.png"
+    },
+    {
+      "name": "Adani Solar",
+      "logo": "/images/clients/adani-solar.png"
+    },
+    {
+      "name": "Dhamra Port",
+      "logo": "/images/clients/adani-dhamra-port.png"
+    },
+    {
+      "name": "G.K. General Hospital (GAIMS)",
+      "logo": "/images/clients/adanihealth.jpg"
+    },
+    {
+      "name": "ACC Limited",
+      "logo": "/images/clients/acc.png"
+    },
+    {
+      "name": "Ambuja Cement",
+      "logo": "/images/clients/ambuja-cement.png"
+    },
+    {
+      "name": "Jindal Saw",
+      "logo": "/images/clients/jindal.png"
+    },
+    {
+      "name": "Lucknow International Airport",
+      "logo": "/images/clients/lucknow-airport.png"
+    },
+    {
+      "name": "Jaipur International Airport",
+      "logo": "/images/clients/jaipur-airport.png"
+    },
+    {
+      "name": "Guwahati International Airport",
+      "logo": "/images/clients/guwahati-airport.png"
+    },
+    {
+      "name": "Electrotherm (India)",
+      "logo": "/images/clients/electrotherm.png"
+    },
+    {
+      "name": "Nilkanth Steel",
+      "logo": "/images/clients/nilkanth-steel.png"
+    },
+    {
+      "name": "Agrocel Industries",
+      "logo": "/images/clients/agrocel.svg"
+    },
+    {
+      "name": "Veerayatan Vidyapith",
+      "logo": "/images/clients/veerayatan.png"
+    },
+    {
+      "name": "OPGS Power Gujarat",
+      "logo": "/images/clients/opg-energy.png"
+    },
+    {
+      "name": "Smritivan Memorial",
+      "logo": "/images/clients/smritivan.png"
+    },
+    {
+      "name": "Time Square Empire",
+      "logo": "/images/clients/time-square-club.png"
+    },
+    {
+      "name": "Kutch University",
+      "logo": "/images/clients/kachchh-university.png"
+    }
   ]
 }

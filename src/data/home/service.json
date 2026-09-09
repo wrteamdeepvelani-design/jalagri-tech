@@ -7,34 +7,59 @@
       "text": "what we do"
     },
     "headline": "Complete Agriculture\nSolutions",
-    "cta": { "label": "view all services", "href": "/what-we-do/irrigation-and-landscaping" }
+    "cta": {
+      "label": "view all services",
+      "href": "/what-we-do/irrigation-and-landscaping"
+    }
   },
-  "tags": ["Turn-Key", "Pan-India", "Govt & Corporate"],
-  "cardDescription": "20+ years of irrigation, landscape, and agriculture expertise — delivered end-to-end across India.",
   "cards": [
     {
       "image": "/images/what-we-do/irrigation/irrigation-1.jpg",
       "title": "Irrigation & Landscaping",
       "href": "/what-we-do/irrigation-and-landscaping",
-      "delay": ".5"
+      "delay": ".5",
+      "tags": [
+        "Drip & Sprinkler",
+        "Rain Gun",
+        "Miyawaki"
+      ],
+      "description": "Automated irrigation, rain gun systems, softscaping and hardscaping, Miyawaki forests, and vertical gardens."
     },
     {
       "image": "/images/what-we-do/landscaping/landscaping-2.jpg",
       "title": "Maintenance & Upkeep",
       "href": "/what-we-do/maintenance",
-      "delay": ".7"
+      "delay": ".7",
+      "tags": [
+        "AMC",
+        "On-Call Repairs",
+        "Drainage"
+      ],
+      "description": "Annual Maintenance Contracts, on-call repairs, landscape upkeep, and drainage & grading — healthy systems year-round."
     },
     {
       "image": "/images/what-we-do/outlets/outlets-1.webp",
       "title": "Outlets & Nurseries",
       "href": "/what-we-do/outlets",
-      "delay": ".3"
+      "delay": ".3",
+      "tags": [
+        "5 Outlets",
+        "Gujarat & UP",
+        "Walk-In"
+      ],
+      "description": "Jal Agro Mall, Neelkanth, Bholenath, Boondh Agritech and Garden Care — plants, irrigation parts and on-site advice."
     },
     {
       "image": "/images/what-we-do/manufacturing/manufacturing-1.jpg",
       "title": "Manufacturing",
       "href": "/what-we-do/manufacturing",
-      "delay": ".5"
+      "delay": ".5",
+      "tags": [
+        "R&D-Driven",
+        "India's First",
+        "Polyester Wire"
+      ],
+      "description": "Polyester Synthetic Wire, GI Wire, and India's first Polyester Barbed Wire — made with Innovative Filament Pvt Ltd."
     }
   ],
   "carousel": {

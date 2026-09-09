@@ -1,7 +1,7 @@
 /**
  * Project detail page (/projects/[slug]) — Next.js 16 dynamic route.
  * Same pattern as services/[slug]:
- *   - generateStaticParams pre-builds all 6 project routes at build time
+ *   - generateStaticParams pre-builds every project route at build time
  *   - generateMetadata feeds per-project SEO from the JSON's seo field
  *   - Page renders Breadcrumb + ProjectDetailSection with the matched project
  */

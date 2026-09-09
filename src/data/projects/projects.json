@@ -1,85 +1,59 @@
 {
-  "_description": "Real Jal Agritech project portfolio. Each project has 'card' (listing grid), 'seo' (/projects/[slug] metadata), 'detail' (case-study body). Detail copy is currently summarized — expand per project when full case studies are supplied.",
-  "pagination": {
-    "current": "01",
-    "pages": ["01", "02", "03"]
-  },
+  "_description": "Real Jal Agritech / Omnath Irrigation project portfolio, sourced from the Omnath Irrigation 2026 client profile. Each project has 'card' (listing grid), 'seo' (/projects/[slug] metadata), 'detail' (case-study body). Ordered by richness of available source detail — most complete projects first.",
   "projects": [
     {
       "slug": "smritivan-bhuj-memorial",
       "card": {
-        "tag": "Miyawaki Forest",
+        "tag": "Terrace Garden & Miyawaki Forest",
         "title": "Smritivan — Bhuj Earthquake Memorial",
-        "image": "/images/what-we-do/miyawaki/miyawaki-1.jpg"
+        "image": "/images/projects/bhujio/bhujio-05.jpg"
       },
       "seo": {
         "title": "Smritivan Memorial — Bhuj | Jal Agritech Projects",
-        "description": "World's largest Miyawaki-style afforestation and memorial landscape project on Bhujiyo Dungar hills, Bhuj — built as tribute to 2001 Gujarat earthquake victims.",
-        "keywords": "smritivan, bhuj, bhujiyo dungar, miyawaki, memorial, earthquake, gujarat, jal agritech"
+        "description": "India's second-largest terrace garden, landscaping, automated irrigation and Miyawaki forest plantation at Smritivan Earthquake Memorial, Bhuj-Kutch.",
+        "keywords": "smritivan, bhuj, bhujiyo dungar, miyawaki, memorial, earthquake, terrace garden, gujarat, jal agritech"
       },
       "detail": {
-        "heroImage": "/images/what-we-do/miyawaki/miyawaki-1.jpg",
-        "title": "Smritivan — Earthquake Memorial & Miyawaki Forest",
+        "heroImage": "/images/projects/bhujio/bhujio-05.jpg",
+        "title": "Smritivan — Earthquake Memorial, Terrace Garden & Miyawaki Forest",
         "intro": [
           "Smritivan in Bhuj is widely recognized as one of the world's largest Miyawaki-style afforestation and memorial landscape projects. Built on the historic Bhujiyo Dungar hills, the project combines ecological restoration, memorial architecture, water conservation, and native biodiversity development.",
-          "What was once barren, rocky terrain has been transformed through large-scale plantation of native species using dense afforestation techniques inspired by the Miyawaki method — honouring those who lost their lives in the devastating 2001 Gujarat earthquake."
+          "Jal Agritech executed India's second-largest terrace gardening project at the site — covering landscaping, automated irrigation, and Miyawaki forest plantation — in 2022, and continues to provide ongoing maintenance service."
         ],
         "thumbnails": [
-          "/images/what-we-do/miyawaki/miyawaki-2.jpg",
-          "/images/what-we-do/miyawaki/miyawaki-3.jpg"
+          "/images/projects/bhujio/bhujio-12.jpg",
+          "/images/projects/bhujio/bhujio-20.jpg"
         ],
         "midParagraph": "The project is notable because Miyawaki plantations are usually implemented on small urban plots, whereas Smritivan demonstrates how dense native afforestation principles can be adapted to a massive landscape-scale ecological restoration effort in semi-arid terrain.",
         "subSections": [
-          { "title": "Scope of Work", "paragraph": "Dense native forest plantations designed for rapid ecological recovery, large-scale rainwater harvesting and watershed management systems, restoration of biodiversity with indigenous trees and shrubs adapted to Kutch's arid climate, and integration of memorial spaces, museums, viewing points, and educational exhibits into the landscape." },
-          { "title": "Outcome", "paragraph": "Improved microclimate and soil stabilization across the hill slopes, self-sustaining ecosystem of native trees, and a landmark public memorial that continues to honour earthquake victims while serving as a centre for environmental education." }
+          {
+            "title": "Scope of Work",
+            "paragraph": "India's second-largest terrace garden, dense native Miyawaki forest plantation, automated irrigation system design and installation, large-scale rainwater harvesting and watershed management, and restoration of biodiversity with indigenous species adapted to Kutch's arid climate."
+          },
+          {
+            "title": "Outcome",
+            "paragraph": "Completed in 2022 — a self-sustaining terrace garden and forest landscape at one of Gujarat's most iconic memorial destinations, with Jal Agritech continuing to provide maintenance service."
+          }
         ],
         "info": {
           "title": "Project information",
           "items": [
-            { "label": "Client:",         "value": "Gujarat State Disaster Management Authority" },
-            { "label": "Location:",       "value": "Bhujiyo Dungar Hills, Bhuj-Kutch, Gujarat" },
-            { "label": "Project Type:",   "value": "Miyawaki Afforestation + Memorial Landscape" },
-            { "label": "Scale:",          "value": "Hundreds of acres of dense native forest" },
-            { "label": "Significance:",   "value": "World's largest Miyawaki-style memorial project" }
-          ]
-        }
-      }
-    },
-    {
-      "slug": "adani-township-mundra",
-      "card": {
-        "tag": "Corporate Township",
-        "title": "Adani Township — Mundra",
-        "image": "/images/what-we-do/landscaping/landscaping-1.jpg"
-      },
-      "seo": {
-        "title": "Adani Township Landscaping — Mundra | Jal Agritech Projects",
-        "description": "Turn-key landscape design, plantation, and irrigation for the Adani Township residential community in Mundra, Gujarat.",
-        "keywords": "adani township, mundra, corporate landscape, plantation, jal agritech"
-      },
-      "detail": {
-        "heroImage": "/images/what-we-do/landscaping/landscaping-1.jpg",
-        "title": "Adani Township — Residential Landscape & Plantation",
-        "intro": [
-          "Comprehensive landscape design and execution for the Adani Township residential community in Mundra. The brief required premium softscape and hardscape elements across common areas, parks, and pedestrian pathways — built to withstand Kutch's arid climate while providing genuinely usable green space for residents.",
-          "Jal Agritech delivered survey, design, irrigation engineering, planting, and post-handover maintenance under a single PO."
-        ],
-        "thumbnails": [
-          "/images/what-we-do/landscaping/landscaping-2.jpg",
-          "/images/what-we-do/landscaping/landscaping-3.jpg"
-        ],
-        "midParagraph": "Soft scaping focused on drought-tolerant native species mixed with ornamentals for visual impact; hardscape included paved walkways, seating zones, and feature planters integrated with the irrigation network.",
-        "subSections": [
-          { "title": "Scope of Work", "paragraph": "Site survey and master planting plan, automated drip + pop-up sprinkler irrigation, soft scaping with native + ornamental mix, hardscape paving and feature planters, plus an AMC for ongoing maintenance." },
-          { "title": "Outcome", "paragraph": "A self-sustaining township landscape that performs well in Mundra's climate with predictable water and maintenance budgets — handed over with a complete operations manual." }
-        ],
-        "info": {
-          "title": "Project information",
-          "items": [
-            { "label": "Client:",       "value": "Adani Group" },
-            { "label": "Location:",     "value": "Mundra, Kutch, Gujarat" },
-            { "label": "Project Type:", "value": "Corporate township landscape" },
-            { "label": "Services:",     "value": "Survey, design, irrigation, planting, maintenance" }
+            {
+              "label": "Location:",
+              "value": "Bhujiyo Dungar Hills, Bhuj-Kutch, Gujarat"
+            },
+            {
+              "label": "Project Type:",
+              "value": "Terrace garden + Miyawaki afforestation + memorial landscape"
+            },
+            {
+              "label": "Year:",
+              "value": "2022, ongoing maintenance"
+            },
+            {
+              "label": "Significance:",
+              "value": "India's second-largest terrace garden; world's largest Miyawaki-style memorial project"
+            }
           ]
         }
       }
@@ -89,153 +63,2461 @@
       "card": {
         "tag": "Airport Landscape",
         "title": "Lucknow International Airport",
-        "image": "/images/what-we-do/projects/projects-5.jpg"
+        "image": "/images/projects/lucknow-airport/lucknow-airport-01.jpg"
       },
       "seo": {
         "title": "Lucknow Airport Landscape | Jal Agritech Projects",
-        "description": "Terminal-area landscape, plantation, and irrigation system design for Chaudhary Charan Singh International Airport, Lucknow.",
-        "keywords": "lucknow airport, ccsia, terminal landscape, airport plantation, jal agritech"
+        "description": "Supply, installation, testing and commissioning of a centralized automation irrigation system at Chaudhary Charan Singh International Airport, Lucknow.",
+        "keywords": "lucknow airport, ccsia, terminal landscape, automation irrigation, jal agritech"
       },
       "detail": {
-        "heroImage": "/images/what-we-do/projects/projects-5.jpg",
-        "title": "Lucknow International Airport — Terminal Landscape",
+        "heroImage": "/images/projects/lucknow-airport/lucknow-airport-01.jpg",
+        "title": "Lucknow International Airport — Terminal-1 Automation Irrigation",
         "intro": [
-          "Terminal-area landscape design and execution for Chaudhary Charan Singh International Airport, Lucknow. The site demanded a low-maintenance, low-pollen palette that performs reliably in the high-traffic forecourt and arrival zones.",
-          "Jal Agritech handled species selection, drip-irrigation engineering, planting, and post-handover maintenance support."
+          "Supply, installation, testing, and commissioning of a landscape-centralized automation irrigation system at Terminal-1, Chaudhary Charan Singh International Airport, Lucknow, completed in 2022.",
+          "Jal Agritech continues to engage with the airport on further landscape development."
         ],
         "thumbnails": [
-          "/images/what-we-do/projects/projects-6.jpg",
-          "/images/what-we-do/projects/projects-3.jpg"
+          "/images/projects/lucknow-airport/lucknow-airport-02.jpg",
+          "/images/projects/lucknow-airport/lucknow-airport-03.jpg"
         ],
-        "midParagraph": "Airport landscapes need to look polished year-round while consuming minimal water and posing no safety / visibility hazards. Our planting plan addressed all three constraints with a drought-hardy palette and zoned drip irrigation.",
+        "midParagraph": "Airport terminals need irrigation infrastructure that runs reliably and centrally, without manual intervention across high-traffic forecourt and arrival zones.",
         "subSections": [
-          { "title": "Scope of Work", "paragraph": "Site survey, low-allergen species selection, zoned drip irrigation system, planting and mulching, on-site supervision through commissioning." },
-          { "title": "Outcome", "paragraph": "A polished terminal landscape that meets aviation-grade visibility rules, requires minimal weekly maintenance, and consumes notably less water than the previous flood-irrigated lawn areas." }
+          {
+            "title": "Scope of Work",
+            "paragraph": "Supply, installation, testing, and commissioning of a centralized automation irrigation system for the Terminal-1 landscape."
+          },
+          {
+            "title": "Outcome",
+            "paragraph": "System commissioned in 2022; ongoing engagement with the airport for further development."
+          }
         ],
         "info": {
           "title": "Project information",
           "items": [
-            { "label": "Client:",       "value": "Airports Authority of India / CCSIA" },
-            { "label": "Location:",     "value": "Lucknow, Uttar Pradesh" },
-            { "label": "Project Type:", "value": "Airport terminal landscape" },
-            { "label": "Services:",     "value": "Design, drip irrigation, planting, maintenance" }
+            {
+              "label": "Client:",
+              "value": "Lucknow International Airport Ltd."
+            },
+            {
+              "label": "Location:",
+              "value": "Terminal-1, Lucknow, Uttar Pradesh"
+            },
+            {
+              "label": "Project Type:",
+              "value": "Centralized automation irrigation"
+            },
+            {
+              "label": "Year:",
+              "value": "2022"
+            }
           ]
         }
       }
     },
     {
-      "slug": "umed-bhavan-palace",
+      "slug": "adani-green-energy-khavda",
+      "card": {
+        "tag": "Solar Park Irrigation",
+        "title": "Adani Green Energy — Khavda Solar Park",
+        "image": "/images/projects/misc/misc-01.jpg"
+      },
+      "seo": {
+        "title": "Adani Green Energy Khavda Solar Park Irrigation | Jal Agritech Projects",
+        "description": "Automation-based irrigation system for Adani Green Energy Twenty-Four A Limited at Khavda, Bhuj — India's largest solar energy generation park.",
+        "keywords": "adani green energy, khavda, solar park, automation irrigation, bhuj, jal agritech"
+      },
+      "detail": {
+        "heroImage": "/images/projects/misc/misc-01.jpg",
+        "title": "Adani Green Energy — Khavda Solar Park Irrigation",
+        "intro": [
+          "Automation-based irrigation system delivered for Adani Green Energy Twenty-Four A Limited at Khavda, Taluka Bhuj — the site of India's largest solar energy generation park.",
+          "Commissioned in 2024, with further irrigation work ongoing at the same site."
+        ],
+        "thumbnails": [
+          "/images/projects/misc/misc-02.jpg",
+          "/images/projects/misc/misc-03.jpg"
+        ],
+        "midParagraph": "Large-scale renewable energy sites need dependable, low-maintenance greening to control dust and stabilize soil around solar infrastructure — automation keeps water use predictable across a site of this scale.",
+        "subSections": [
+          {
+            "title": "Scope of Work",
+            "paragraph": "Design and installation of a complete automation-based irrigation system for the solar park's green cover."
+          },
+          {
+            "title": "Outcome",
+            "paragraph": "Fully automated irrigation system commissioned in 2024; Jal Agritech continues additional irrigation work at the same site."
+          }
+        ],
+        "info": {
+          "title": "Project information",
+          "items": [
+            {
+              "label": "Client:",
+              "value": "Adani Green Energy Twenty-Four A Limited"
+            },
+            {
+              "label": "Location:",
+              "value": "Khavda, Taluka Bhuj, Gujarat"
+            },
+            {
+              "label": "Project Type:",
+              "value": "Solar park automated irrigation"
+            },
+            {
+              "label": "Year:",
+              "value": "2024"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "adani-infra-godda-thermal-power",
+      "card": {
+        "tag": "Industrial Irrigation",
+        "title": "Adani Infra — Godda Thermal Power Project",
+        "image": "/images/projects/misc/misc-04.jpg"
+      },
+      "seo": {
+        "title": "Adani Infra Godda Thermal Power Irrigation | Jal Agritech Projects",
+        "description": "Drip irrigation system laid for Adani Infra (India) Ltd.'s 2x800 MW Ultra Supercritical Coal-Based Thermal Power Project, Godda, Jharkhand.",
+        "keywords": "adani infra, godda, thermal power, drip irrigation, jharkhand, jal agritech"
+      },
+      "detail": {
+        "heroImage": "/images/projects/misc/misc-04.jpg",
+        "title": "Adani Infra — Godda Thermal Power Project Irrigation",
+        "intro": [
+          "Drip irrigation system laid for Adani Infra (India) Ltd.'s 2x800 MW Ultra Supercritical Coal-Based Thermal Power Project at Motia village, Godda district, Jharkhand.",
+          "Work was carried out in 2022, and Jal Agritech continues to execute further irrigation projects at the same location."
+        ],
+        "thumbnails": [
+          "/images/projects/misc/misc-05.jpg",
+          "/images/projects/misc/misc-06.jpg"
+        ],
+        "midParagraph": "Industrial power-plant sites need reliable green-belt irrigation for dust suppression and site stabilization alongside operational infrastructure.",
+        "subSections": [
+          {
+            "title": "Scope of Work",
+            "paragraph": "Laying of drip irrigation system across the thermal power project site."
+          },
+          {
+            "title": "Outcome",
+            "paragraph": "Irrigation system completed in 2022, with ongoing engagement for additional project work at the same site."
+          }
+        ],
+        "info": {
+          "title": "Project information",
+          "items": [
+            {
+              "label": "Client:",
+              "value": "Adani Infra (India) Ltd."
+            },
+            {
+              "label": "Location:",
+              "value": "Motia, Godda, Jharkhand"
+            },
+            {
+              "label": "Project Type:",
+              "value": "Industrial site drip irrigation"
+            },
+            {
+              "label": "Year:",
+              "value": "2022"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "kutch-copper-automation-irrigation",
+      "card": {
+        "tag": "Industrial Landscape",
+        "title": "Kutch Copper — Automation Irrigation",
+        "image": "/images/projects/misc/misc-07.jpg"
+      },
+      "seo": {
+        "title": "Kutch Copper Automation Irrigation | Jal Agritech Projects",
+        "description": "Complete automation-based irrigation system developed for Kutch Copper Ltd. across a 40-acre site at Sircha & Navinal, Taluka Mundra, Kutch.",
+        "keywords": "kutch copper, mundra, automation irrigation, industrial landscape, jal agritech"
+      },
+      "detail": {
+        "heroImage": "/images/projects/misc/misc-07.jpg",
+        "title": "Kutch Copper — 40-Acre Automation Irrigation",
+        "intro": [
+          "Complete automation-based irrigation system developed for Kutch Copper Ltd. across a 40-acre site at Sircha & Navinal villages, Taluka Mundra, Kutch."
+        ],
+        "thumbnails": [
+          "/images/projects/misc/misc-08.jpg",
+          "/images/projects/misc/misc-09.jpg"
+        ],
+        "midParagraph": "A site of this scale needs zoned, automated control to keep water use efficient and consistent across the full green-cover footprint.",
+        "subSections": [
+          {
+            "title": "Scope of Work",
+            "paragraph": "Design and installation of a complete automated irrigation system across the 40-acre site."
+          },
+          {
+            "title": "Outcome",
+            "paragraph": "Fully automated irrigation system delivered and operational across the site."
+          }
+        ],
+        "info": {
+          "title": "Project information",
+          "items": [
+            {
+              "label": "Client:",
+              "value": "Kutch Copper Ltd."
+            },
+            {
+              "label": "Location:",
+              "value": "Sircha & Navinal, Taluka Mundra, Kutch"
+            },
+            {
+              "label": "Project Type:",
+              "value": "Industrial automated irrigation"
+            },
+            {
+              "label": "Scale:",
+              "value": "40 acres"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "welspun-flooring-cricket-ground",
+      "card": {
+        "tag": "Rain Gun Irrigation",
+        "title": "Welspun Flooring — Cricket Ground",
+        "image": "/images/projects/misc/misc-10.jpg"
+      },
+      "seo": {
+        "title": "Welspun Flooring Cricket Ground Rain Gun Irrigation | Jal Agritech Projects",
+        "description": "Rain gun-based irrigation system for a cricket ground project at Welspun Flooring Ltd., Khiratabad, Hyderabad.",
+        "keywords": "welspun flooring, rain gun irrigation, cricket ground, hyderabad, jal agritech"
+      },
+      "detail": {
+        "heroImage": "/images/projects/misc/misc-10.jpg",
+        "title": "Welspun Flooring — Cricket Ground Rain Gun Irrigation",
+        "intro": [
+          "Rain gun-based irrigation system delivered for a cricket ground project at Welspun Flooring Ltd., Khiratabad, Hyderabad — completed in 2024.",
+          "Jal Agritech has served Welspun Flooring since 2019, providing drip and garden irrigation with ongoing after-sales support."
+        ],
+        "thumbnails": [
+          "/images/projects/misc/misc-11.jpg",
+          "/images/projects/misc/misc-12.jpg"
+        ],
+        "midParagraph": "Cricket grounds need uniform, high-coverage watering that mimics natural rainfall without damaging turf — rain gun systems are built for exactly that kind of large, open playing surface.",
+        "subSections": [
+          {
+            "title": "Scope of Work",
+            "paragraph": "Rain gun irrigation system design and installation for the cricket ground, alongside continued drip and garden irrigation service across the wider site."
+          },
+          {
+            "title": "Outcome",
+            "paragraph": "Cricket ground rain gun irrigation project completed in 2024, on top of an ongoing service relationship since 2019."
+          }
+        ],
+        "info": {
+          "title": "Project information",
+          "items": [
+            {
+              "label": "Client:",
+              "value": "Welspun Flooring Ltd."
+            },
+            {
+              "label": "Location:",
+              "value": "Khiratabad, Hyderabad, Telangana"
+            },
+            {
+              "label": "Project Type:",
+              "value": "Rain gun irrigation — cricket ground"
+            },
+            {
+              "label": "Year:",
+              "value": "2024"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "bsf-lakhpat",
+      "card": {
+        "tag": "Government & Defence",
+        "title": "BSF Lakhpat — Irrigation & Plantation",
+        "image": "/images/projects/bsf/bsf-05.jpg"
+      },
+      "seo": {
+        "title": "BSF Lakhpat Irrigation & Plantation | Jal Agritech Projects",
+        "description": "Irrigation and plantation project executed for the Border Security Force at Lakhpat, Kutch, tested and handed over for operation and maintenance.",
+        "keywords": "bsf, lakhpat, irrigation, plantation, kutch, jal agritech"
+      },
+      "detail": {
+        "heroImage": "/images/projects/bsf/bsf-05.jpg",
+        "title": "BSF Lakhpat — Irrigation & Plantation",
+        "intro": [
+          "Irrigation and plantation project executed for the Border Security Force (BSF) at Lakhpat, Kutch.",
+          "The system was successfully tested and formally handed over to BSF for operation and maintenance."
+        ],
+        "thumbnails": [
+          "/images/projects/bsf/bsf-12.jpg",
+          "/images/projects/bsf/bsf-20.jpg"
+        ],
+        "midParagraph": "Defence-sector sites require irrigation infrastructure that's simple to operate and maintain once handed over to on-site personnel, not just at commissioning.",
+        "subSections": [
+          {
+            "title": "Scope of Work",
+            "paragraph": "Irrigation and plantation project design, installation, and testing for the BSF Lakhpat site."
+          },
+          {
+            "title": "Outcome",
+            "paragraph": "Project successfully tested and handed over to BSF for independent operation and maintenance."
+          }
+        ],
+        "info": {
+          "title": "Project information",
+          "items": [
+            {
+              "label": "Client:",
+              "value": "Border Security Force (BSF)"
+            },
+            {
+              "label": "Location:",
+              "value": "Lakhpat, Kutch, Gujarat"
+            },
+            {
+              "label": "Project Type:",
+              "value": "Irrigation & plantation"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "bhavesh-lucky-agro-farm",
+      "card": {
+        "tag": "Large-Scale Agriculture",
+        "title": "Bhavesh Lucky Agro Farm & Group",
+        "image": "/images/projects/misc/misc-13.jpg"
+      },
+      "seo": {
+        "title": "Bhavesh Lucky Agro Farm Irrigation | Jal Agritech Projects",
+        "description": "Garden, landscaping, and drip-garden irrigation across 4,500+ acres for Bhavesh Lucky Agro Farm & Group, Nakhatrana-Abdasa-Lakhpat, Kutch.",
+        "keywords": "bhavesh lucky agro farm, drip irrigation, agriculture, kutch, jal agritech"
+      },
+      "detail": {
+        "heroImage": "/images/projects/misc/misc-13.jpg",
+        "title": "Bhavesh Lucky Agro Farm & Group — Large-Scale Irrigation",
+        "intro": [
+          "Garden, landscaping, and drip-garden irrigation delivered across more than 4,500 acres for Bhavesh Lucky Agro Farm & Group, spanning villages in Nakhatrana, Abdasa, and Lakhpat talukas, Kutch.",
+          "Work began in 2011 and continues to date, with ongoing after-sales service."
+        ],
+        "thumbnails": [
+          "/images/projects/misc/misc-14.jpg",
+          "/images/projects/misc/misc-15.jpg"
+        ],
+        "midParagraph": "Agricultural irrigation at this scale — thousands of acres across multiple villages — depends on dependable, low-maintenance infrastructure that can run consistently over years without constant intervention.",
+        "subSections": [
+          {
+            "title": "Scope of Work",
+            "paragraph": "Garden, landscaping, and drip-garden irrigation system installation across the farm group's land holdings."
+          },
+          {
+            "title": "Outcome",
+            "paragraph": "Over 4,500 acres under active irrigation since 2011, with continued after-sales support."
+          }
+        ],
+        "info": {
+          "title": "Project information",
+          "items": [
+            {
+              "label": "Client:",
+              "value": "Bhavesh Lucky Agro Farm & Group"
+            },
+            {
+              "label": "Location:",
+              "value": "Nakhatrana, Abdasa & Lakhpat talukas, Kutch, Gujarat"
+            },
+            {
+              "label": "Project Type:",
+              "value": "Large-scale agricultural irrigation"
+            },
+            {
+              "label": "Scale:",
+              "value": "4,500+ acres"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "time-square-empire-township",
+      "card": {
+        "tag": "Corporate Township",
+        "title": "Time Square Empire — Township Landscape",
+        "image": "/images/projects/misc/misc-16.jpg"
+      },
+      "seo": {
+        "title": "Time Square Empire Township Landscape | Jal Agritech Projects",
+        "description": "Garden landscape and irrigation for Time Square Empire Pvt. Ltd.'s 125-acre residential township, Sedata, Bhuj.",
+        "keywords": "time square empire, township, landscape, bhuj, jal agritech"
+      },
+      "detail": {
+        "heroImage": "/images/projects/misc/misc-16.jpg",
+        "title": "Time Square Empire — Township Landscape",
+        "intro": [
+          "Garden landscape and irrigation delivered for Time Square Empire Pvt. Ltd.'s residential township — \"The Villa\" — spanning 125 acres at Sedata, Bhuj."
+        ],
+        "thumbnails": [
+          "/images/projects/misc/misc-17.jpg",
+          "/images/projects/misc/misc-18.jpg"
+        ],
+        "midParagraph": "A township-scale residential landscape needs consistent green cover across common areas and pathways, run efficiently across a large footprint.",
+        "subSections": [
+          {
+            "title": "Scope of Work",
+            "paragraph": "Garden landscape design and irrigation system installation across the 125-acre township."
+          },
+          {
+            "title": "Outcome",
+            "paragraph": "Landscape and irrigation infrastructure operational across the township, with continued service to date."
+          }
+        ],
+        "info": {
+          "title": "Project information",
+          "items": [
+            {
+              "label": "Client:",
+              "value": "Time Square Empire Pvt. Ltd."
+            },
+            {
+              "label": "Location:",
+              "value": "Sedata, Bhuj, Kutch, Gujarat"
+            },
+            {
+              "label": "Project Type:",
+              "value": "Township landscape & irrigation"
+            },
+            {
+              "label": "Scale:",
+              "value": "125 acres"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "skylark-infra-bangalore-ring-road",
+      "card": {
+        "tag": "Infrastructure Irrigation",
+        "title": "Skylark Infra — Bangalore Ring Road",
+        "image": "/images/projects/misc/misc-19.jpg"
+      },
+      "seo": {
+        "title": "Skylark Infra Bangalore Ring Road Irrigation | Jal Agritech Projects",
+        "description": "Drip irrigation system development for the Bangalore Ring Road project of the National Highway Authority of India, with Skylark Infra Engineering Pvt. Ltd.",
+        "keywords": "skylark infra, bangalore ring road, nhai, drip irrigation, jal agritech"
+      },
+      "detail": {
+        "heroImage": "/images/projects/misc/misc-19.jpg",
+        "title": "Skylark Infra — Bangalore Ring Road Irrigation",
+        "intro": [
+          "Drip irrigation system development for the Bangalore Ring Road project of the National Highway Authority of India, undertaken with Skylark Infra Engineering Pvt. Ltd.",
+          "Work commenced in 2024 and is running through 2027."
+        ],
+        "thumbnails": [
+          "/images/projects/misc/misc-20.jpg",
+          "/images/projects/misc/misc-21.jpg"
+        ],
+        "midParagraph": "Highway-corridor greening needs irrigation infrastructure that holds up over a multi-year construction and maintenance timeline across a long, linear site.",
+        "subSections": [
+          {
+            "title": "Scope of Work",
+            "paragraph": "Drip irrigation system development for green-belt planting along the ring road corridor."
+          },
+          {
+            "title": "Outcome",
+            "paragraph": "Project running from 2024 through 2027."
+          }
+        ],
+        "info": {
+          "title": "Project information",
+          "items": [
+            {
+              "label": "Client:",
+              "value": "Skylark Infra Engineering Pvt. Ltd. / NHAI"
+            },
+            {
+              "label": "Location:",
+              "value": "Bangalore, Karnataka"
+            },
+            {
+              "label": "Project Type:",
+              "value": "Highway corridor drip irrigation"
+            },
+            {
+              "label": "Year:",
+              "value": "2024–2027"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "adani-ports-sez-mundra",
+      "card": {
+        "tag": "Port Landscape",
+        "title": "Adani Ports & SEZ — Mundra",
+        "image": "/images/projects/misc/misc-22.jpg"
+      },
+      "seo": {
+        "title": "Adani Ports & SEZ Mundra Irrigation | Jal Agritech Projects",
+        "description": "Drip and garden irrigation for Adani Ports & SEZ Limited at Mundra, Kutch — running since 2010 with after-sales service.",
+        "keywords": "adani ports, sez, mundra, drip irrigation, port landscape, jal agritech"
+      },
+      "detail": {
+        "heroImage": "/images/projects/misc/misc-22.jpg",
+        "title": "Adani Ports & SEZ — Mundra",
+        "intro": [
+          "Drip irrigation and garden irrigation delivered for Adani Ports & SEZ Limited at village Mundra, Taluka Mundra — an ongoing engagement since 2010, including after-sales service."
+        ],
+        "thumbnails": [
+          "/images/projects/misc/misc-23.jpg",
+          "/images/projects/misc/misc-24.jpg"
+        ],
+        "midParagraph": "Port-side green cover has to survive constant dust, salt air, and heavy vehicle traffic — irrigation infrastructure here is built for durability first.",
+        "subSections": [
+          {
+            "title": "Scope of Work",
+            "paragraph": "Drip irrigation and garden irrigation system installation across the port site."
+          },
+          {
+            "title": "Outcome",
+            "paragraph": "Active irrigation infrastructure running since 2010, with continued after-sales support."
+          }
+        ],
+        "info": {
+          "title": "Project information",
+          "items": [
+            {
+              "label": "Client:",
+              "value": "Adani Ports & SEZ Limited"
+            },
+            {
+              "label": "Location:",
+              "value": "Mundra, Kutch, Gujarat"
+            },
+            {
+              "label": "Project Type:",
+              "value": "Port site drip & garden irrigation"
+            },
+            {
+              "label": "Year:",
+              "value": "2010 – ongoing"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "adani-power-mundra",
+      "card": {
+        "tag": "Power Plant Irrigation",
+        "title": "Adani Power — Mundra",
+        "image": "/images/projects/misc/misc-25.jpg"
+      },
+      "seo": {
+        "title": "Adani Power Mundra Irrigation | Jal Agritech Projects",
+        "description": "Drip and garden irrigation for Adani Power Limited at Siracha & Tunda, Taluka Mundra — running since 2011 with after-sales service.",
+        "keywords": "adani power, mundra, siracha, tunda, drip irrigation, jal agritech"
+      },
+      "detail": {
+        "heroImage": "/images/projects/misc/misc-25.jpg",
+        "title": "Adani Power — Mundra",
+        "intro": [
+          "Drip irrigation and garden irrigation delivered for Adani Power Limited at Siracha & Tunda villages, Taluka Mundra — running since 2011 with after-sales service."
+        ],
+        "thumbnails": [
+          "/images/projects/misc/misc-26.jpg",
+          "/images/projects/misc/misc-27.jpg"
+        ],
+        "midParagraph": "Thermal power sites need consistent green-belt irrigation to manage dust and support plant landscaping year-round.",
+        "subSections": [
+          {
+            "title": "Scope of Work",
+            "paragraph": "Drip irrigation and garden irrigation system installation across the power plant site."
+          },
+          {
+            "title": "Outcome",
+            "paragraph": "Active irrigation infrastructure running since 2011, with continued after-sales support."
+          }
+        ],
+        "info": {
+          "title": "Project information",
+          "items": [
+            {
+              "label": "Client:",
+              "value": "Adani Power Limited"
+            },
+            {
+              "label": "Location:",
+              "value": "Siracha & Tunda, Taluka Mundra, Kutch"
+            },
+            {
+              "label": "Project Type:",
+              "value": "Power plant drip & garden irrigation"
+            },
+            {
+              "label": "Year:",
+              "value": "2011 – ongoing"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "pmc-projects-wandh-mundra",
+      "card": {
+        "tag": "Industrial Irrigation",
+        "title": "PMC Projects — Wandh, Mundra",
+        "image": "/images/projects/misc/misc-28.jpg"
+      },
+      "seo": {
+        "title": "PMC Projects Wandh Mundra Irrigation | Jal Agritech Projects",
+        "description": "Drip and garden irrigation for PMC Projects (India) Pvt. Ltd. at Wandh, Taluka Mundra — running since 2016 with after-sales service.",
+        "keywords": "pmc projects, wandh, mundra, drip irrigation, jal agritech"
+      },
+      "detail": {
+        "heroImage": "/images/projects/misc/misc-28.jpg",
+        "title": "PMC Projects — Wandh, Mundra",
+        "intro": [
+          "Drip irrigation and garden irrigation delivered for PMC Projects (India) Pvt. Ltd. at Wandh village, Taluka Mundra — running since 2016 with after-sales service."
+        ],
+        "thumbnails": [
+          "/images/projects/misc/misc-29.jpg",
+          "/images/projects/misc/misc-30.jpg"
+        ],
+        "midParagraph": "Industrial project sites in the Mundra belt share the same core need: irrigation infrastructure that keeps running with minimal upkeep.",
+        "subSections": [
+          {
+            "title": "Scope of Work",
+            "paragraph": "Drip irrigation and garden irrigation system installation at the Wandh-Mundra site."
+          },
+          {
+            "title": "Outcome",
+            "paragraph": "Active irrigation infrastructure running since 2016, with continued after-sales support."
+          }
+        ],
+        "info": {
+          "title": "Project information",
+          "items": [
+            {
+              "label": "Client:",
+              "value": "PMC Projects (India) Pvt. Ltd."
+            },
+            {
+              "label": "Location:",
+              "value": "Wandh, Taluka Mundra, Kutch"
+            },
+            {
+              "label": "Project Type:",
+              "value": "Industrial drip & garden irrigation"
+            },
+            {
+              "label": "Year:",
+              "value": "2016 – ongoing"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "adani-mundra-solar",
+      "card": {
+        "tag": "Solar Site Irrigation",
+        "title": "Adani Mundra Solar — Wandh",
+        "image": "/images/projects/misc/misc-31.jpg"
+      },
+      "seo": {
+        "title": "Adani Mundra Solar Irrigation | Jal Agritech Projects",
+        "description": "Drip and garden irrigation for Adani (Mundra) Solar Pvt. Ltd. at Wandh, Taluka Mundra — running since 2016 with after-sales service.",
+        "keywords": "adani solar, mundra, wandh, drip irrigation, solar site, jal agritech"
+      },
+      "detail": {
+        "heroImage": "/images/projects/misc/misc-31.jpg",
+        "title": "Adani Mundra Solar — Wandh, Mundra",
+        "intro": [
+          "Drip irrigation and garden irrigation delivered for Adani (Mundra) Solar Pvt. Ltd. at Wandh village, Taluka Mundra — running since 2016 with after-sales service."
+        ],
+        "thumbnails": [
+          "/images/projects/misc/misc-32.jpg",
+          "/images/projects/misc/misc-33.jpg"
+        ],
+        "midParagraph": "Solar installations need low-maintenance green cover that doesn't compete with the site's operational footprint.",
+        "subSections": [
+          {
+            "title": "Scope of Work",
+            "paragraph": "Drip irrigation and garden irrigation system installation at the solar site."
+          },
+          {
+            "title": "Outcome",
+            "paragraph": "Active irrigation infrastructure running since 2016, with continued after-sales support."
+          }
+        ],
+        "info": {
+          "title": "Project information",
+          "items": [
+            {
+              "label": "Client:",
+              "value": "Adani (Mundra) Solar Pvt. Ltd."
+            },
+            {
+              "label": "Location:",
+              "value": "Wandh, Taluka Mundra, Kutch"
+            },
+            {
+              "label": "Project Type:",
+              "value": "Solar site drip & garden irrigation"
+            },
+            {
+              "label": "Year:",
+              "value": "2016 – ongoing"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "mundra-solar-techno-park",
+      "card": {
+        "tag": "Solar Site Irrigation",
+        "title": "Mundra Solar Techno Park — Wandh",
+        "image": "/images/projects/misc/misc-34.jpg"
+      },
+      "seo": {
+        "title": "Mundra Solar Techno Park Irrigation | Jal Agritech Projects",
+        "description": "Drip and garden irrigation for Mundra Solar Techno Park Pvt. Ltd. at Wandh, Taluka Mundra — running since 2016 with after-sales service.",
+        "keywords": "mundra solar techno park, wandh, drip irrigation, jal agritech"
+      },
+      "detail": {
+        "heroImage": "/images/projects/misc/misc-34.jpg",
+        "title": "Mundra Solar Techno Park — Wandh, Mundra",
+        "intro": [
+          "Drip irrigation and garden irrigation delivered for Mundra Solar Techno Park Pvt. Ltd. at Wandh village, Taluka Mundra — running since 2016 with after-sales service."
+        ],
+        "thumbnails": [
+          "/images/projects/misc/misc-35.jpg",
+          "/images/projects/misc/misc-36.jpg"
+        ],
+        "midParagraph": "Consistent irrigation coverage across a techno park campus keeps landscaped zones healthy alongside industrial operations.",
+        "subSections": [
+          {
+            "title": "Scope of Work",
+            "paragraph": "Drip irrigation and garden irrigation system installation across the techno park."
+          },
+          {
+            "title": "Outcome",
+            "paragraph": "Active irrigation infrastructure running since 2016, with continued after-sales support."
+          }
+        ],
+        "info": {
+          "title": "Project information",
+          "items": [
+            {
+              "label": "Client:",
+              "value": "Mundra Solar Techno Park Pvt. Ltd."
+            },
+            {
+              "label": "Location:",
+              "value": "Wandh, Taluka Mundra, Kutch"
+            },
+            {
+              "label": "Project Type:",
+              "value": "Industrial drip & garden irrigation"
+            },
+            {
+              "label": "Year:",
+              "value": "2016 – ongoing"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "howe-engg-projects-wandh-mundra",
+      "card": {
+        "tag": "Industrial Irrigation",
+        "title": "Howe Engg. Projects — Wandh",
+        "image": "/images/projects/misc/misc-37.jpg"
+      },
+      "seo": {
+        "title": "Howe Engg. Projects Wandh Mundra Irrigation | Jal Agritech Projects",
+        "description": "Drip and garden irrigation for Howe Engg. Projects (I) Pvt. Ltd. at Wandh, Taluka Mundra — running since 2016 with after-sales service.",
+        "keywords": "howe engineering, wandh, mundra, drip irrigation, jal agritech"
+      },
+      "detail": {
+        "heroImage": "/images/projects/misc/misc-37.jpg",
+        "title": "Howe Engg. Projects — Wandh, Mundra",
+        "intro": [
+          "Drip irrigation and garden irrigation delivered for Howe Engg. Projects (I) Pvt. Ltd. at Wandh village, Taluka Mundra — running since 2016 with after-sales service."
+        ],
+        "thumbnails": [
+          "/images/projects/misc/misc-38.jpg",
+          "/images/projects/misc/misc-39.jpg"
+        ],
+        "midParagraph": "Engineering project sites benefit from irrigation systems installed once and left to run with minimal intervention.",
+        "subSections": [
+          {
+            "title": "Scope of Work",
+            "paragraph": "Drip irrigation and garden irrigation system installation at the Wandh-Mundra site."
+          },
+          {
+            "title": "Outcome",
+            "paragraph": "Active irrigation infrastructure running since 2016, with continued after-sales support."
+          }
+        ],
+        "info": {
+          "title": "Project information",
+          "items": [
+            {
+              "label": "Client:",
+              "value": "Howe Engg. Projects (I) Pvt. Ltd."
+            },
+            {
+              "label": "Location:",
+              "value": "Wandh, Taluka Mundra, Kutch"
+            },
+            {
+              "label": "Project Type:",
+              "value": "Industrial drip & garden irrigation"
+            },
+            {
+              "label": "Year:",
+              "value": "2016 – ongoing"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "adani-enterprises-bita-abdasa",
+      "card": {
+        "tag": "Industrial Irrigation",
+        "title": "Adani Enterprises — Bita, Abdasa",
+        "image": "/images/projects/misc/misc-40.jpg"
+      },
+      "seo": {
+        "title": "Adani Enterprises Bita Abdasa Irrigation | Jal Agritech Projects",
+        "description": "Drip and garden irrigation for Adani Enterprises Limited at Bita, Taluka Abdasa, Kutch — running since 2012 with after-sales service.",
+        "keywords": "adani enterprises, bita, abdasa, drip irrigation, kutch, jal agritech"
+      },
+      "detail": {
+        "heroImage": "/images/projects/misc/misc-40.jpg",
+        "title": "Adani Enterprises — Bita, Abdasa",
+        "intro": [
+          "Drip irrigation and garden irrigation delivered for Adani Enterprises Limited at village Bita, Taluka Abdasa — running since 2012 with after-sales service."
+        ],
+        "thumbnails": [
+          "/images/projects/misc/misc-41.jpg",
+          "/images/projects/misc/misc-42.jpg"
+        ],
+        "midParagraph": "Long-running enterprise sites like this rely on irrigation infrastructure that has been maintained and serviced continuously over more than a decade.",
+        "subSections": [
+          {
+            "title": "Scope of Work",
+            "paragraph": "Drip irrigation and garden irrigation system installation at the Bita, Abdasa site."
+          },
+          {
+            "title": "Outcome",
+            "paragraph": "Active irrigation infrastructure running since 2012, with continued after-sales support."
+          }
+        ],
+        "info": {
+          "title": "Project information",
+          "items": [
+            {
+              "label": "Client:",
+              "value": "Adani Enterprises Limited"
+            },
+            {
+              "label": "Location:",
+              "value": "Bita, Taluka Abdasa, Kutch"
+            },
+            {
+              "label": "Project Type:",
+              "value": "Industrial drip & garden irrigation"
+            },
+            {
+              "label": "Year:",
+              "value": "2012 – ongoing"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "adani-power-rajasthan-kota",
+      "card": {
+        "tag": "Power Plant Irrigation",
+        "title": "Adani Power Rajasthan — Kawai, Kota",
+        "image": "/images/projects/misc/misc-43.jpg"
+      },
+      "seo": {
+        "title": "Adani Power Rajasthan Kawai Irrigation | Jal Agritech Projects",
+        "description": "Drip and garden irrigation for Adani Power Rajasthan Limited at Kawai, Baran, Kota — running since 2013 with after-sales service.",
+        "keywords": "adani power rajasthan, kawai, kota, baran, drip irrigation, jal agritech"
+      },
+      "detail": {
+        "heroImage": "/images/projects/misc/misc-43.jpg",
+        "title": "Adani Power Rajasthan — Kawai, Kota",
+        "intro": [
+          "Drip irrigation and garden irrigation delivered for Adani Power Rajasthan Limited at Kawai village, Tehsil Baran, District Kota, Rajasthan — running since 2013 with after-sales service."
+        ],
+        "thumbnails": [
+          "/images/projects/misc/misc-44.jpg",
+          "/images/projects/misc/misc-45.jpg"
+        ],
+        "midParagraph": "Power plant landscaping outside Gujarat follows the same delivery model: install, commission, and keep servicing over the long term.",
+        "subSections": [
+          {
+            "title": "Scope of Work",
+            "paragraph": "Drip irrigation and garden irrigation system installation across the power plant site."
+          },
+          {
+            "title": "Outcome",
+            "paragraph": "Active irrigation infrastructure running since 2013, with continued after-sales support."
+          }
+        ],
+        "info": {
+          "title": "Project information",
+          "items": [
+            {
+              "label": "Client:",
+              "value": "Adani Power Rajasthan Limited"
+            },
+            {
+              "label": "Location:",
+              "value": "Kawai, Tehsil Baran, Kota, Rajasthan"
+            },
+            {
+              "label": "Project Type:",
+              "value": "Power plant drip & garden irrigation"
+            },
+            {
+              "label": "Year:",
+              "value": "2013 – ongoing"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "adani-power-haryana",
+      "card": {
+        "tag": "Power Plant Irrigation",
+        "title": "Adani Power — Kanina, Haryana",
+        "image": "/images/projects/misc/misc-46.jpg"
+      },
+      "seo": {
+        "title": "Adani Power Kanina Haryana Irrigation | Jal Agritech Projects",
+        "description": "Drip and garden irrigation for Adani Power Limited at Agiyari/Kheri Talvana, Kanina, Mahendragarh, Haryana — running since December 2014.",
+        "keywords": "adani power, kanina, mahendragarh, haryana, drip irrigation, jal agritech"
+      },
+      "detail": {
+        "heroImage": "/images/projects/misc/misc-46.jpg",
+        "title": "Adani Power — Kanina, Haryana",
+        "intro": [
+          "Drip irrigation and garden irrigation delivered for Adani Power Limited at Agiyari/Kheri Talvana villages, Tehsil Kanina, District Mahendragarh, Haryana — work began December 2014, with after-sales service continuing since."
+        ],
+        "thumbnails": [
+          "/images/projects/misc/misc-47.jpg",
+          "/images/projects/misc/misc-48.jpg"
+        ],
+        "midParagraph": "This site extended Jal Agritech's power-plant irrigation work further north, applying the same drip and garden irrigation approach used across the Adani portfolio.",
+        "subSections": [
+          {
+            "title": "Scope of Work",
+            "paragraph": "Drip irrigation and garden irrigation system installation across the power plant site."
+          },
+          {
+            "title": "Outcome",
+            "paragraph": "Active irrigation infrastructure running since December 2014, with continued after-sales support."
+          }
+        ],
+        "info": {
+          "title": "Project information",
+          "items": [
+            {
+              "label": "Client:",
+              "value": "Adani Power Limited"
+            },
+            {
+              "label": "Location:",
+              "value": "Agiyari / Kheri Talvana, Kanina, Mahendragarh, Haryana"
+            },
+            {
+              "label": "Project Type:",
+              "value": "Power plant drip & garden irrigation"
+            },
+            {
+              "label": "Year:",
+              "value": "2014 – ongoing"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "adani-hajira-ports-surat",
+      "card": {
+        "tag": "Port Landscape",
+        "title": "Adani Hajira Ports — Surat",
+        "image": "/images/projects/misc/misc-49.jpg"
+      },
+      "seo": {
+        "title": "Adani Hajira Ports Surat Irrigation | Jal Agritech Projects",
+        "description": "Drip and garden irrigation for Adani Hajira Ports Private Limited at Hajira, Surat — running since July 2014.",
+        "keywords": "adani hajira ports, surat, hajira, drip irrigation, port, jal agritech"
+      },
+      "detail": {
+        "heroImage": "/images/projects/misc/misc-49.jpg",
+        "title": "Adani Hajira Ports — Surat",
+        "intro": [
+          "Drip irrigation and garden irrigation delivered for Adani Hajira Ports Private Limited at Hajira village, Taluka Surat, Gujarat — work started July 2014 and continues to date."
+        ],
+        "thumbnails": [
+          "/images/projects/misc/misc-50.jpg",
+          "/images/projects/misc/misc-51.jpg"
+        ],
+        "midParagraph": "Port sites along the Gujarat coast share the same irrigation demands as Mundra — resilience against dust, salt, and constant operational traffic.",
+        "subSections": [
+          {
+            "title": "Scope of Work",
+            "paragraph": "Drip irrigation and garden irrigation system installation across the port site."
+          },
+          {
+            "title": "Outcome",
+            "paragraph": "Active irrigation infrastructure running since July 2014, continuing to date."
+          }
+        ],
+        "info": {
+          "title": "Project information",
+          "items": [
+            {
+              "label": "Client:",
+              "value": "Adani Hajira Ports Private Limited"
+            },
+            {
+              "label": "Location:",
+              "value": "Hajira, Surat, Gujarat"
+            },
+            {
+              "label": "Project Type:",
+              "value": "Port site drip & garden irrigation"
+            },
+            {
+              "label": "Year:",
+              "value": "2014 – ongoing"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "adani-petronet-dahej-ports",
+      "card": {
+        "tag": "Port Landscape",
+        "title": "Adani Petronet — Dahej Ports",
+        "image": "/images/projects/misc/misc-52.jpg"
+      },
+      "seo": {
+        "title": "Adani Petronet Dahej Ports Irrigation | Jal Agritech Projects",
+        "description": "Drip and garden irrigation for Adani Petronet (Dahej) Ports Private Limited at Dahej, Ankleshwar — running since July 2014.",
+        "keywords": "adani petronet, dahej, ankleshwar, port irrigation, jal agritech"
+      },
+      "detail": {
+        "heroImage": "/images/projects/misc/misc-52.jpg",
+        "title": "Adani Petronet — Dahej Ports",
+        "intro": [
+          "Drip irrigation and garden irrigation delivered for Adani Petronet (Dahej) Ports Private Limited at Dahej village, Taluka Ankleshwar, Gujarat — work started July 2014 and continues to date."
+        ],
+        "thumbnails": [
+          "/images/projects/misc/misc-53.jpg",
+          "/images/projects/misc/misc-54.jpg"
+        ],
+        "midParagraph": "A companion project to the Hajira port work, delivered on the same drip and garden irrigation model.",
+        "subSections": [
+          {
+            "title": "Scope of Work",
+            "paragraph": "Drip irrigation and garden irrigation system installation across the port site."
+          },
+          {
+            "title": "Outcome",
+            "paragraph": "Active irrigation infrastructure running since July 2014, continuing to date."
+          }
+        ],
+        "info": {
+          "title": "Project information",
+          "items": [
+            {
+              "label": "Client:",
+              "value": "Adani Petronet (Dahej) Ports Private Limited"
+            },
+            {
+              "label": "Location:",
+              "value": "Dahej, Ankleshwar, Gujarat"
+            },
+            {
+              "label": "Project Type:",
+              "value": "Port site drip & garden irrigation"
+            },
+            {
+              "label": "Year:",
+              "value": "2014 – ongoing"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "adani-enterprises-chhattisgarh",
+      "card": {
+        "tag": "Industrial Irrigation",
+        "title": "Adani Enterprises — Parsa-Kante",
+        "image": "/images/projects/misc/misc-55.jpg"
+      },
+      "seo": {
+        "title": "Adani Enterprises Chhattisgarh Irrigation | Jal Agritech Projects",
+        "description": "Drip and garden irrigation for Adani Enterprises Limited at Parsa-Kante, Ambikapur, Bilaspur, Chhattisgarh — running since 2016.",
+        "keywords": "adani enterprises, parsa kante, chhattisgarh, bilaspur, drip irrigation, jal agritech"
+      },
+      "detail": {
+        "heroImage": "/images/projects/misc/misc-55.jpg",
+        "title": "Adani Enterprises — Parsa-Kante, Chhattisgarh",
+        "intro": [
+          "Drip irrigation and garden irrigation delivered for Adani Enterprises Limited at Parsa-Kante village, Taluka Ambikapur, District Bilaspur, Chhattisgarh — running since 2016 with after-sales service."
+        ],
+        "thumbnails": [
+          "/images/projects/misc/misc-56.jpg",
+          "/images/projects/misc/misc-57.jpg"
+        ],
+        "midParagraph": "This project carried Jal Agritech's Adani Enterprises relationship into Chhattisgarh, applying the same proven irrigation approach.",
+        "subSections": [
+          {
+            "title": "Scope of Work",
+            "paragraph": "Drip irrigation and garden irrigation system installation at the site."
+          },
+          {
+            "title": "Outcome",
+            "paragraph": "Active irrigation infrastructure running since 2016, with continued after-sales support."
+          }
+        ],
+        "info": {
+          "title": "Project information",
+          "items": [
+            {
+              "label": "Client:",
+              "value": "Adani Enterprises Limited"
+            },
+            {
+              "label": "Location:",
+              "value": "Parsa-Kante, Ambikapur, Bilaspur, Chhattisgarh"
+            },
+            {
+              "label": "Project Type:",
+              "value": "Industrial drip & garden irrigation"
+            },
+            {
+              "label": "Year:",
+              "value": "2016 – ongoing"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "adani-kandla-bulk-terminal",
+      "card": {
+        "tag": "Port Landscape",
+        "title": "Adani Kandla Bulk Terminal — Tuna",
+        "image": "/images/projects/misc/misc-58.jpg"
+      },
+      "seo": {
+        "title": "Adani Kandla Bulk Terminal Irrigation | Jal Agritech Projects",
+        "description": "Drip and garden irrigation for Adani Kandla Bulk Terminal Private Limited at Tuna, Gandhidham, Kutch — started July 2015.",
+        "keywords": "adani kandla bulk terminal, tuna, gandhidham, kutch, drip irrigation, jal agritech"
+      },
+      "detail": {
+        "heroImage": "/images/projects/misc/misc-58.jpg",
+        "title": "Adani Kandla Bulk Terminal — Tuna, Gandhidham",
+        "intro": [
+          "Drip irrigation and garden irrigation delivered for Adani Kandla Bulk Terminal Private Limited at Tuna village, Taluka Gandhidham, Kutch — work started in July 2015."
+        ],
+        "thumbnails": [
+          "/images/projects/misc/misc-59.jpg",
+          "/images/projects/misc/misc-60.jpg"
+        ],
+        "midParagraph": "Bulk terminal operations generate heavy dust — consistent irrigation-fed green cover helps control it around the working port area.",
+        "subSections": [
+          {
+            "title": "Scope of Work",
+            "paragraph": "Drip irrigation and garden irrigation system installation across the terminal site."
+          },
+          {
+            "title": "Outcome",
+            "paragraph": "Active irrigation infrastructure running since July 2015."
+          }
+        ],
+        "info": {
+          "title": "Project information",
+          "items": [
+            {
+              "label": "Client:",
+              "value": "Adani Kandla Bulk Terminal Private Limited"
+            },
+            {
+              "label": "Location:",
+              "value": "Tuna, Taluka Gandhidham, Kutch"
+            },
+            {
+              "label": "Project Type:",
+              "value": "Port terminal drip & garden irrigation"
+            },
+            {
+              "label": "Year:",
+              "value": "2015 – ongoing"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "adani-power-maharashtra-tirora",
+      "card": {
+        "tag": "Power Plant Irrigation",
+        "title": "Adani Power Maharashtra — Tirora",
+        "image": "/images/projects/misc/misc-61.jpg"
+      },
+      "seo": {
+        "title": "Adani Power Maharashtra Tirora Irrigation | Jal Agritech Projects",
+        "description": "Irrigation system developed for Adani Power Maharashtra Ltd. at Tirora MIDC, Gondia, Maharashtra in 2022.",
+        "keywords": "adani power maharashtra, tirora, gondia, irrigation, jal agritech"
+      },
+      "detail": {
+        "heroImage": "/images/projects/misc/misc-61.jpg",
+        "title": "Adani Power Maharashtra — Tirora, Gondia",
+        "intro": [
+          "Irrigation system developed for Adani Power Maharashtra Ltd. at Tirora MIDC, District Gondia, Maharashtra, in 2022 — Jal Agritech continues doing business with the site to date."
+        ],
+        "thumbnails": [
+          "/images/projects/misc/misc-62.jpg",
+          "/images/projects/misc/misc-63.jpg"
+        ],
+        "midParagraph": "Bringing the same power-plant irrigation approach into Maharashtra, the Tirora site has stayed an active, ongoing relationship since commissioning.",
+        "subSections": [
+          {
+            "title": "Scope of Work",
+            "paragraph": "Irrigation system design and development for the power plant site."
+          },
+          {
+            "title": "Outcome",
+            "paragraph": "System developed in 2022; active business relationship continuing to date."
+          }
+        ],
+        "info": {
+          "title": "Project information",
+          "items": [
+            {
+              "label": "Client:",
+              "value": "Adani Power Maharashtra Ltd."
+            },
+            {
+              "label": "Location:",
+              "value": "Tirora MIDC, Gondia, Maharashtra"
+            },
+            {
+              "label": "Project Type:",
+              "value": "Power plant irrigation"
+            },
+            {
+              "label": "Year:",
+              "value": "2022 – ongoing"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "adani-infra-missile-complex-hyderabad",
+      "card": {
+        "tag": "Defence Irrigation",
+        "title": "Adani Infra — Missile Complex, Hyderabad",
+        "image": "/images/projects/misc/misc-64.jpg"
+      },
+      "seo": {
+        "title": "Adani Infra Missile Complex Hyderabad Irrigation | Jal Agritech Projects",
+        "description": "Irrigation work completed for Adani Infra (India) Ltd. at the Missile Complex, Mamidipalli, Rangareddy, Hyderabad in 2024.",
+        "keywords": "adani infra, missile complex, hyderabad, rangareddy, defence irrigation, jal agritech"
+      },
+      "detail": {
+        "heroImage": "/images/projects/misc/misc-64.jpg",
+        "title": "Adani Infra — Missile Complex, Hyderabad",
+        "intro": [
+          "Irrigation work completed for Adani Infra (India) Ltd. at their Missile Complex site, village Mamidipalli, District Rangareddy, Hyderabad, Telangana, in 2024."
+        ],
+        "thumbnails": [
+          "/images/projects/misc/misc-65.jpg",
+          "/images/projects/misc/misc-66.jpg"
+        ],
+        "midParagraph": "Defence-manufacturing sites need irrigation delivered cleanly and on schedule, with minimal disruption to a sensitive operational site.",
+        "subSections": [
+          {
+            "title": "Scope of Work",
+            "paragraph": "Irrigation system design and installation across the missile complex site."
+          },
+          {
+            "title": "Outcome",
+            "paragraph": "Irrigation work completed in 2024."
+          }
+        ],
+        "info": {
+          "title": "Project information",
+          "items": [
+            {
+              "label": "Client:",
+              "value": "Adani Infra (India) Ltd."
+            },
+            {
+              "label": "Location:",
+              "value": "Mamidipalli, Rangareddy, Hyderabad, Telangana"
+            },
+            {
+              "label": "Project Type:",
+              "value": "Defence-site irrigation"
+            },
+            {
+              "label": "Year:",
+              "value": "2024"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "adani-wilmar-multi-site",
+      "card": {
+        "tag": "Multi-Site Irrigation",
+        "title": "Adani Wilmar — Multi-Site Irrigation",
+        "image": "/images/projects/misc/misc-67.jpg"
+      },
+      "seo": {
+        "title": "Adani Wilmar Multi-Site Irrigation | Jal Agritech Projects",
+        "description": "Irrigation projects across six Adani Wilmar Ltd. sites in Rajasthan, Madhya Pradesh, Telangana, Andhra Pradesh and Gujarat during 2023-24.",
+        "keywords": "adani wilmar, bundi, neemuch, kakinada, mantralayam, kadi, irrigation, jal agritech"
+      },
+      "detail": {
+        "heroImage": "/images/projects/misc/misc-67.jpg",
+        "title": "Adani Wilmar — Multi-Site Irrigation",
+        "intro": [
+          "Irrigation projects developed across multiple Adani Wilmar Ltd. sites during 2023–24: Bundi (Rajasthan), Neemuch & Sujjalpur (Madhya Pradesh), Kakinada (Telangana), Mantralayam (Andhra Pradesh), Pragpar-Mundra (Gujarat), and the Kadi plant in Mehsana (Gujarat)."
+        ],
+        "thumbnails": [
+          "/images/projects/website-photos/website-photos-01.webp",
+          "/images/projects/website-photos/website-photos-02.jpg"
+        ],
+        "midParagraph": "Rolling out irrigation across six sites in a single year meant standardizing the approach so each plant could be commissioned on a consistent, repeatable timeline.",
+        "subSections": [
+          {
+            "title": "Scope of Work",
+            "paragraph": "Irrigation system design and installation across six Adani Wilmar plant locations spanning four states."
+          },
+          {
+            "title": "Outcome",
+            "paragraph": "All six sites commissioned during 2023–24."
+          }
+        ],
+        "info": {
+          "title": "Project information",
+          "items": [
+            {
+              "label": "Client:",
+              "value": "Adani Wilmar Ltd."
+            },
+            {
+              "label": "Location:",
+              "value": "Rajasthan, Madhya Pradesh, Telangana, Andhra Pradesh & Gujarat (6 sites)"
+            },
+            {
+              "label": "Project Type:",
+              "value": "Multi-site industrial irrigation"
+            },
+            {
+              "label": "Year:",
+              "value": "2023 – 2024"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "adani-estate-management-ahmedabad",
+      "card": {
+        "tag": "Corporate Landscape & Fountain",
+        "title": "Adani Estate Management — Atreco House",
+        "image": "/images/projects/website-photos/website-photos-03.jpg"
+      },
+      "seo": {
+        "title": "Adani Estate Management Atreco House Landscape | Jal Agritech Projects",
+        "description": "Irrigation, landscaping and fountain works with maintenance for Adani Estate Management Pvt Ltd. at Atreco House, CBD Shantigram, Ahmedabad.",
+        "keywords": "adani estate management, atreco house, shantigram, ahmedabad, fountain, landscaping, jal agritech"
+      },
+      "detail": {
+        "heroImage": "/images/projects/website-photos/website-photos-03.jpg",
+        "title": "Adani Estate Management — Atreco House, Ahmedabad",
+        "intro": [
+          "Irrigation, landscaping, and fountain installation delivered for Adani Estate Management Pvt Ltd. at \"Atreco House,\" CBD Shantigram, near Vaishnodevi Circle, S.G. Highway, Ahmedabad — with maintenance running through 2026–27."
+        ],
+        "thumbnails": [
+          "/images/projects/website-photos/website-photos-04.jpg",
+          "/images/projects/website-photos/website-photos-05.jpg"
+        ],
+        "midParagraph": "A CBD corporate address calls for landscaping and water features finished to a premium standard, backed by an active maintenance contract.",
+        "subSections": [
+          {
+            "title": "Scope of Work",
+            "paragraph": "Irrigation system, landscaping, and fountain installation for the Atreco House site."
+          },
+          {
+            "title": "Outcome",
+            "paragraph": "Site complete and under active maintenance contract through 2026–27."
+          }
+        ],
+        "info": {
+          "title": "Project information",
+          "items": [
+            {
+              "label": "Client:",
+              "value": "Adani Estate Management Pvt Ltd."
+            },
+            {
+              "label": "Location:",
+              "value": "CBD Shantigram, S.G. Highway, Ahmedabad, Gujarat"
+            },
+            {
+              "label": "Project Type:",
+              "value": "Corporate landscape, irrigation & fountain"
+            },
+            {
+              "label": "Year:",
+              "value": "2026 – 27 (maintenance running)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "acc-vijayraghavgarh-ametha",
+      "card": {
+        "tag": "Industrial Landscape",
+        "title": "ACC Ltd — Vijayraghavgarh, Ametha",
+        "image": "/images/projects/website-photos/website-photos-06.jpg"
+      },
+      "seo": {
+        "title": "ACC Ltd Ametha Landscape & Irrigation | Jal Agritech Projects",
+        "description": "Garden landscape and irrigation for ACC Ltd. at Vijayraghavgarh, Ametha, Madhya Pradesh — running 2024 to 2027.",
+        "keywords": "acc ltd, vijayraghavgarh, ametha, madhya pradesh, landscape, irrigation, jal agritech"
+      },
+      "detail": {
+        "heroImage": "/images/projects/website-photos/website-photos-06.jpg",
+        "title": "ACC Ltd — Vijayraghavgarh, Ametha",
+        "intro": [
+          "Garden landscape and irrigation delivered for ACC Ltd. at Tehsil Vijayraghavgarh, Ametha, Madhya Pradesh, running from 2024 through 2027."
+        ],
+        "thumbnails": [
+          "/images/projects/website-photos/website-photos-07.jpg",
+          "/images/projects/website-photos/website-photos-08.jpg"
+        ],
+        "midParagraph": "Cement plant sites need durable, low-maintenance landscaping that can be serviced consistently across a multi-year contract.",
+        "subSections": [
+          {
+            "title": "Scope of Work",
+            "paragraph": "Garden landscape design and irrigation system installation across the ACC plant site."
+          },
+          {
+            "title": "Outcome",
+            "paragraph": "Contract running from 2024 through 2027."
+          }
+        ],
+        "info": {
+          "title": "Project information",
+          "items": [
+            {
+              "label": "Client:",
+              "value": "ACC Ltd."
+            },
+            {
+              "label": "Location:",
+              "value": "Vijayraghavgarh, Ametha, Madhya Pradesh"
+            },
+            {
+              "label": "Project Type:",
+              "value": "Industrial garden landscape & irrigation"
+            },
+            {
+              "label": "Year:",
+              "value": "2024 – 2027"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "acc-sonebhadra-up",
+      "card": {
+        "tag": "Green Belt Development",
+        "title": "ACC Ltd — Salaibanwa, Sonebhadra",
+        "image": "/images/projects/website-photos/website-photos-09.jpg"
+      },
+      "seo": {
+        "title": "ACC Salaibanwa Green Belt Development | Jal Agritech Projects",
+        "description": "Green belt and landscape development with maintenance for ACC Ltd. at Panari, Sonebhadra, Uttar Pradesh — running 2026-27.",
+        "keywords": "acc ltd, salaibanwa, sonebhadra, green belt, landscape development, jal agritech"
+      },
+      "detail": {
+        "heroImage": "/images/projects/website-photos/website-photos-09.jpg",
+        "title": "ACC Ltd — Salaibanwa, Sonebhadra",
+        "intro": [
+          "Green belt and landscape development, with supply and maintenance services, delivered for ACC Ltd. at village Panari, Kota 56 Tola, Paraspani, District Sonebhadra, Uttar Pradesh — running through 2026–27."
+        ],
+        "thumbnails": [
+          "/images/projects/website-photos/website-photos-10.jpg",
+          "/images/projects/website-photos/website-photos-11.jpg"
+        ],
+        "midParagraph": "Green belt work around a cement facility supports environmental compliance while giving the site a maintained, presentable perimeter.",
+        "subSections": [
+          {
+            "title": "Scope of Work",
+            "paragraph": "Supply and services for green belt and landscape development and maintenance at ACC Salaibanwa."
+          },
+          {
+            "title": "Outcome",
+            "paragraph": "Contract running through 2026–27."
+          }
+        ],
+        "info": {
+          "title": "Project information",
+          "items": [
+            {
+              "label": "Client:",
+              "value": "ACC Ltd."
+            },
+            {
+              "label": "Location:",
+              "value": "Panari, Sonebhadra, Uttar Pradesh"
+            },
+            {
+              "label": "Project Type:",
+              "value": "Green belt & landscape development"
+            },
+            {
+              "label": "Year:",
+              "value": "2026 – 27"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "adani-defence-systems-kanpur",
+      "card": {
+        "tag": "Defence Corridor Landscape",
+        "title": "Adani Defence Systems — Kanpur Node",
+        "image": "/images/projects/website-photos/website-photos-12.jpg"
+      },
+      "seo": {
+        "title": "Adani Defence Systems Kanpur Landscape | Jal Agritech Projects",
+        "description": "Garden landscape and irrigation for Adani Defence Systems and Technologies Ltd. at the Kanpur Node, Defence Corridor — 2020 to 2026.",
+        "keywords": "adani defence systems, kanpur node, defence corridor, barai garh, landscape, jal agritech"
+      },
+      "detail": {
+        "heroImage": "/images/projects/website-photos/website-photos-12.jpg",
+        "title": "Adani Defence Systems — Kanpur Node",
+        "intro": [
+          "Garden landscape and irrigation delivered for Adani Defence Systems and Technologies Ltd. at the Kanpur Node, Defence Corridor, Barai Garh, Kanpur, Uttar Pradesh — running from 2020 through 2026."
+        ],
+        "thumbnails": [
+          "/images/projects/website-photos/website-photos-13.jpg",
+          "/images/projects/website-photos/website-photos-14.jpg"
+        ],
+        "midParagraph": "Defence corridor sites combine strict access requirements with a need for landscaping that holds up over a long operational contract.",
+        "subSections": [
+          {
+            "title": "Scope of Work",
+            "paragraph": "Garden landscape design and irrigation system installation across the defence corridor site."
+          },
+          {
+            "title": "Outcome",
+            "paragraph": "Contract running from 2020 through 2026."
+          }
+        ],
+        "info": {
+          "title": "Project information",
+          "items": [
+            {
+              "label": "Client:",
+              "value": "Adani Defence Systems and Technologies Ltd."
+            },
+            {
+              "label": "Location:",
+              "value": "Kanpur Node, Defence Corridor, Barai Garh, Kanpur, Uttar Pradesh"
+            },
+            {
+              "label": "Project Type:",
+              "value": "Defence-site garden landscape & irrigation"
+            },
+            {
+              "label": "Year:",
+              "value": "2020 – 2026"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "welspun-india-anjar",
+      "card": {
+        "tag": "Industrial Irrigation",
+        "title": "Welspun India — Anjar, Kutch",
+        "image": "/images/projects/vertical-with-fountain-welspun/vertical-with-fountain-welspun-05.jpg"
+      },
+      "seo": {
+        "title": "Welspun India Anjar Irrigation | Jal Agritech Projects",
+        "description": "Drip and garden irrigation for Welspun (India) Pvt. Ltd. at Varsamedi, Taluka Anjar, Kutch — running since 2016.",
+        "keywords": "welspun india, varsamedi, anjar, kutch, drip irrigation, jal agritech"
+      },
+      "detail": {
+        "heroImage": "/images/projects/vertical-with-fountain-welspun/vertical-with-fountain-welspun-05.jpg",
+        "title": "Welspun India — Anjar, Kutch",
+        "intro": [
+          "Drip irrigation and garden irrigation delivered for Welspun (India) Pvt. Ltd. at Varsamedi village, Taluka Anjar, Kutch — running since 2016 with after-sales service."
+        ],
+        "thumbnails": [
+          "/images/projects/vertical-with-fountain-welspun/vertical-with-fountain-welspun-12.jpg",
+          "/images/projects/vertical-with-fountain-welspun/vertical-with-fountain-welspun-20.jpg"
+        ],
+        "midParagraph": "The Welspun Anjar site was the starting point for Jal Agritech's broader relationship with the Welspun Group across multiple entities in the same location.",
+        "subSections": [
+          {
+            "title": "Scope of Work",
+            "paragraph": "Drip irrigation and garden irrigation system installation at the Anjar site."
+          },
+          {
+            "title": "Outcome",
+            "paragraph": "Active irrigation infrastructure running since 2016, with continued after-sales support."
+          }
+        ],
+        "info": {
+          "title": "Project information",
+          "items": [
+            {
+              "label": "Client:",
+              "value": "Welspun (India) Pvt. Ltd."
+            },
+            {
+              "label": "Location:",
+              "value": "Varsamedi, Taluka Anjar, Kutch"
+            },
+            {
+              "label": "Project Type:",
+              "value": "Industrial drip & garden irrigation"
+            },
+            {
+              "label": "Year:",
+              "value": "2016 – ongoing"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "electrotherm-samkhiyali",
+      "card": {
+        "tag": "Industrial Irrigation",
+        "title": "Electrotherm (India) — Samkhiyali",
+        "image": "/images/projects/website-photos/website-photos-15.jpg"
+      },
+      "seo": {
+        "title": "Electrotherm Samkhiyali Irrigation | Jal Agritech Projects",
+        "description": "Drip and garden irrigation for Electrotherm (India) Ltd. Steel Division at Samkhiyali, Taluka Bachau, Kutch — running since 2014.",
+        "keywords": "electrotherm, samkhiyali, bachau, steel, drip irrigation, jal agritech"
+      },
+      "detail": {
+        "heroImage": "/images/projects/website-photos/website-photos-15.jpg",
+        "title": "Electrotherm (India) — Samkhiyali, Kutch",
+        "intro": [
+          "Drip irrigation and garden irrigation delivered for Electrotherm (India) Ltd., Steel Division, at village Samkhiyali, Taluka Bachau, Kutch — running since 2014 with after-sales service."
+        ],
+        "thumbnails": [
+          "/images/projects/website-photos/website-photos-16.jpg",
+          "/images/projects/website-photos/website-photos-17.jpg"
+        ],
+        "midParagraph": "Steel plant sites in the Bachau belt need irrigation infrastructure that can handle heavy industrial conditions with minimal downtime.",
+        "subSections": [
+          {
+            "title": "Scope of Work",
+            "paragraph": "Drip irrigation and garden irrigation system installation at the steel division site."
+          },
+          {
+            "title": "Outcome",
+            "paragraph": "Active irrigation infrastructure running since 2014, with continued after-sales support."
+          }
+        ],
+        "info": {
+          "title": "Project information",
+          "items": [
+            {
+              "label": "Client:",
+              "value": "Electrotherm (India) Ltd. — Steel Division"
+            },
+            {
+              "label": "Location:",
+              "value": "Samkhiyali, Taluka Bachau, Kutch"
+            },
+            {
+              "label": "Project Type:",
+              "value": "Industrial drip & garden irrigation"
+            },
+            {
+              "label": "Year:",
+              "value": "2014 – ongoing"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "tata-power-mundra",
+      "card": {
+        "tag": "Power Plant Landscape",
+        "title": "Tata Power — Mundra",
+        "image": "/images/projects/website-photos/website-photos-18.jpg"
+      },
+      "seo": {
+        "title": "Tata Power Mundra Landscape & Irrigation | Jal Agritech Projects",
+        "description": "Garden, landscaping and drip irrigation for Tata Power Limited at Siracha & Tuda, Taluka Mundra — running since 2015.",
+        "keywords": "tata power, mundra, siracha, tuda, landscaping, drip irrigation, jal agritech"
+      },
+      "detail": {
+        "heroImage": "/images/projects/website-photos/website-photos-18.jpg",
+        "title": "Tata Power — Mundra",
+        "intro": [
+          "Garden, landscaping, drip irrigation, and garden irrigation delivered for Tata Power Limited at Siracha & Tuda villages, Taluka Mundra — running since 2015 with after-sales service."
+        ],
+        "thumbnails": [
+          "/images/projects/website-photos/website-photos-19.jpg",
+          "/images/projects/website-photos/website-photos-20.jpg"
+        ],
+        "midParagraph": "A full landscaping-plus-irrigation scope, not just irrigation alone, delivered for one of the larger power plants in the Mundra industrial belt.",
+        "subSections": [
+          {
+            "title": "Scope of Work",
+            "paragraph": "Garden, landscaping, and drip/garden irrigation system installation across the power plant site."
+          },
+          {
+            "title": "Outcome",
+            "paragraph": "Active landscape and irrigation infrastructure running since 2015, with continued after-sales support."
+          }
+        ],
+        "info": {
+          "title": "Project information",
+          "items": [
+            {
+              "label": "Client:",
+              "value": "Tata Power Limited"
+            },
+            {
+              "label": "Location:",
+              "value": "Siracha & Tuda, Taluka Mundra, Kutch"
+            },
+            {
+              "label": "Project Type:",
+              "value": "Power plant landscape & irrigation"
+            },
+            {
+              "label": "Year:",
+              "value": "2015 – ongoing"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "balkrishna-industries-bkt-bhuj",
+      "card": {
+        "tag": "Industrial Supply & Irrigation",
+        "title": "Balkrishna Industries (BKT) — Paddher",
+        "image": "/images/projects/website-photos/website-photos-21.jpg"
+      },
+      "seo": {
+        "title": "Balkrishna Industries BKT Bhuj Irrigation | Jal Agritech Projects",
+        "description": "Irrigation work and ongoing irrigation & horticultural material supply for Balkrishna Industries Limited (BKT) at Paddher, Bhuj.",
+        "keywords": "balkrishna industries, bkt, paddher, bhuj, irrigation, material supply, jal agritech"
+      },
+      "detail": {
+        "heroImage": "/images/projects/website-photos/website-photos-21.jpg",
+        "title": "Balkrishna Industries (BKT) — Paddher, Bhuj",
+        "intro": [
+          "Irrigation work completed in the project setup phase for Balkrishna Industries Limited (BKT) at village Paddher, Taluka Bhuj, Kutch.",
+          "Jal Agritech now regularly supplies irrigation and horticultural material to the site."
+        ],
+        "thumbnails": [
+          "/images/projects/website-photos/website-photos-22.jpg",
+          "/images/projects/website-photos/website-photos-23.jpg"
+        ],
+        "midParagraph": "Beyond the original installation, this relationship has continued as a standing supply arrangement rather than a one-time project.",
+        "subSections": [
+          {
+            "title": "Scope of Work",
+            "paragraph": "Irrigation system installation during project setup, plus ongoing irrigation and horticultural material supply."
+          },
+          {
+            "title": "Outcome",
+            "paragraph": "Irrigation infrastructure installed; regular material supply relationship continues."
+          }
+        ],
+        "info": {
+          "title": "Project information",
+          "items": [
+            {
+              "label": "Client:",
+              "value": "Balkrishna Industries Limited (BKT)"
+            },
+            {
+              "label": "Location:",
+              "value": "Paddher, Taluka Bhuj, Kutch"
+            },
+            {
+              "label": "Project Type:",
+              "value": "Industrial irrigation + ongoing material supply"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "man-industries-khedoi-anjar",
+      "card": {
+        "tag": "Industrial Irrigation",
+        "title": "Man Industries — Khedoi, Anjar",
+        "image": "/images/projects/misc/misc-01.jpg"
+      },
+      "seo": {
+        "title": "Man Industries Khedoi Anjar Irrigation | Jal Agritech Projects",
+        "description": "Two irrigation projects completed for Man Industries Ltd. at Khedoi, Taluka Anjar, Kutch in 2022.",
+        "keywords": "man industries, khedoi, anjar, kutch, irrigation, jal agritech"
+      },
+      "detail": {
+        "heroImage": "/images/projects/misc/misc-01.jpg",
+        "title": "Man Industries — Khedoi, Anjar",
+        "intro": [
+          "Two irrigation projects completed for Man Industries Ltd. at village Khedoi, Taluka Anjar, Kutch, in 2022 — covering the providing and fixing of the irrigation system."
+        ],
+        "thumbnails": [
+          "/images/projects/misc/misc-02.jpg",
+          "/images/projects/misc/misc-03.jpg"
+        ],
+        "midParagraph": "Delivered as two distinct project phases at the same site within the same year.",
+        "subSections": [
+          {
+            "title": "Scope of Work",
+            "paragraph": "Providing and fixing of irrigation system across two project phases."
+          },
+          {
+            "title": "Outcome",
+            "paragraph": "Both projects completed in 2022."
+          }
+        ],
+        "info": {
+          "title": "Project information",
+          "items": [
+            {
+              "label": "Client:",
+              "value": "Man Industries Ltd."
+            },
+            {
+              "label": "Location:",
+              "value": "Khedoi, Taluka Anjar, Kutch"
+            },
+            {
+              "label": "Project Type:",
+              "value": "Industrial irrigation"
+            },
+            {
+              "label": "Year:",
+              "value": "2022"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "agrocel-industries-bhujodi",
+      "card": {
+        "tag": "Turnkey Automation Irrigation",
+        "title": "Agrocel Industries — Bhujodi",
+        "image": "/images/projects/misc/misc-04.jpg"
+      },
+      "seo": {
+        "title": "Agrocel Industries Bhujodi Automation Irrigation | Jal Agritech Projects",
+        "description": "Turnkey complete automated irrigation system for Agrocel Industries Private Limited's head office at Bhujodi, Bhuj.",
+        "keywords": "agrocel industries, bhujodi, bhuj, turnkey, automated irrigation, jal agritech"
+      },
+      "detail": {
+        "heroImage": "/images/projects/misc/misc-04.jpg",
+        "title": "Agrocel Industries — Bhujodi, Bhuj",
+        "intro": [
+          "Turnkey project for a complete automated irrigation system underway for Agrocel Industries Private Limited's head office at village Bhujodi, Bhuj."
+        ],
+        "thumbnails": [
+          "/images/projects/misc/misc-05.jpg",
+          "/images/projects/misc/misc-06.jpg"
+        ],
+        "midParagraph": "A full turnkey scope for the client's own head office site, covering the complete automation build rather than a partial supply.",
+        "subSections": [
+          {
+            "title": "Scope of Work",
+            "paragraph": "Turnkey design and installation of a complete automated irrigation system for the head office site."
+          },
+          {
+            "title": "Outcome",
+            "paragraph": "Project underway at the Bhujodi head office."
+          }
+        ],
+        "info": {
+          "title": "Project information",
+          "items": [
+            {
+              "label": "Client:",
+              "value": "Agrocel Industries Private Limited"
+            },
+            {
+              "label": "Location:",
+              "value": "Bhujodi, Bhuj, Kutch"
+            },
+            {
+              "label": "Project Type:",
+              "value": "Turnkey automated irrigation"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "opgs-power-gujarat-mundra",
+      "card": {
+        "tag": "Power Plant Irrigation",
+        "title": "OPGS Power Gujarat — Bhadreshwer",
+        "image": "/images/projects/misc/misc-07.jpg"
+      },
+      "seo": {
+        "title": "OPGS Power Gujarat Bhadreshwer Irrigation | Jal Agritech Projects",
+        "description": "Phased irrigation installation for OPGS Power Gujarat Pvt. Ltd. at Bhadreshwer, Taluka Mundra, Kutch.",
+        "keywords": "opgs power, bhadreshwer, mundra, kutch, irrigation, jal agritech"
+      },
+      "detail": {
+        "heroImage": "/images/projects/misc/misc-07.jpg",
+        "title": "OPGS Power Gujarat — Bhadreshwer, Mundra",
+        "intro": [
+          "Irrigation installation successfully completed for the first phase at OPGS Power Gujarat Pvt. Ltd., village Bhadreshwer, Taluka Mundra — with a second phase ready pending approval."
+        ],
+        "thumbnails": [
+          "/images/projects/misc/misc-08.jpg",
+          "/images/projects/misc/misc-09.jpg"
+        ],
+        "midParagraph": "A phased power-plant irrigation rollout, with the first stage already delivered and proven before the second is greenlit.",
+        "subSections": [
+          {
+            "title": "Scope of Work",
+            "paragraph": "Irrigation installation for the power plant site, delivered in phases."
+          },
+          {
+            "title": "Outcome",
+            "paragraph": "First project successfully completed; second phase ready and awaiting approval."
+          }
+        ],
+        "info": {
+          "title": "Project information",
+          "items": [
+            {
+              "label": "Client:",
+              "value": "OPGS Power Gujarat Pvt. Ltd."
+            },
+            {
+              "label": "Location:",
+              "value": "Bhadreshwer, Taluka Mundra, Kutch"
+            },
+            {
+              "label": "Project Type:",
+              "value": "Power plant irrigation"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "german-green-steel-power-samakhiyali",
+      "card": {
+        "tag": "Industrial Irrigation",
+        "title": "German Green Steel & Power — Samakhiyali",
+        "image": "/images/projects/misc/misc-10.jpg"
+      },
+      "seo": {
+        "title": "German Green Steel and Power Samakhiyali Irrigation | Jal Agritech Projects",
+        "description": "Irrigation work completed for German Green Steel and Power Limited at Samakhiyali, Taluka Bhachau, Kutch in 2024.",
+        "keywords": "german green steel, samakhiyali, bhachau, kutch, irrigation, jal agritech"
+      },
+      "detail": {
+        "heroImage": "/images/projects/misc/misc-10.jpg",
+        "title": "German Green Steel and Power — Samakhiyali, Bhachau",
+        "intro": [
+          "Irrigation work completed for German Green Steel and Power Limited at village Samakhiyali, Taluka Bhachau, Kutch, in 2024."
+        ],
+        "thumbnails": [
+          "/images/projects/misc/misc-11.jpg",
+          "/images/projects/misc/misc-12.jpg"
+        ],
+        "midParagraph": "A newer entrant to the Bhachau industrial belt, brought onto the same irrigation delivery model used across the region.",
+        "subSections": [
+          {
+            "title": "Scope of Work",
+            "paragraph": "Irrigation system design and installation across the plant site."
+          },
+          {
+            "title": "Outcome",
+            "paragraph": "Irrigation work completed in 2024."
+          }
+        ],
+        "info": {
+          "title": "Project information",
+          "items": [
+            {
+              "label": "Client:",
+              "value": "German Green Steel and Power Limited"
+            },
+            {
+              "label": "Location:",
+              "value": "Samakhiyali, Taluka Bhachau, Kutch"
+            },
+            {
+              "label": "Project Type:",
+              "value": "Industrial irrigation"
+            },
+            {
+              "label": "Year:",
+              "value": "2024"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "venus-pipes-tubes-dhaneti",
+      "card": {
+        "tag": "Industrial Landscape",
+        "title": "Venus Pipes and Tubes — Dhaneti",
+        "image": "/images/projects/misc/misc-13.jpg"
+      },
+      "seo": {
+        "title": "Venus Pipes and Tubes Dhaneti Landscape & Irrigation | Jal Agritech Projects",
+        "description": "Garden landscape and automated irrigation installation for Venus Pipes and Tubes Ltd. at Dhaneti, Bhuj — 2023-24.",
+        "keywords": "venus pipes and tubes, dhaneti, bhuj, automated irrigation, landscape, jal agritech"
+      },
+      "detail": {
+        "heroImage": "/images/projects/misc/misc-13.jpg",
+        "title": "Venus Pipes and Tubes — Dhaneti, Bhuj",
+        "intro": [
+          "Garden landscape and automated irrigation system installation completed for Venus Pipes and Tubes Ltd. at village Dhaneti, Taluka Bhuj, Kutch, during 2023–24."
+        ],
+        "thumbnails": [
+          "/images/projects/misc/misc-14.jpg",
+          "/images/projects/misc/misc-15.jpg"
+        ],
+        "midParagraph": "A combined landscaping-and-automation scope, delivered as a single project across one financial year.",
+        "subSections": [
+          {
+            "title": "Scope of Work",
+            "paragraph": "Garden landscape design and automated irrigation system installation."
+          },
+          {
+            "title": "Outcome",
+            "paragraph": "Work completed during 2023–24."
+          }
+        ],
+        "info": {
+          "title": "Project information",
+          "items": [
+            {
+              "label": "Client:",
+              "value": "Venus Pipes and Tubes Ltd."
+            },
+            {
+              "label": "Location:",
+              "value": "Dhaneti, Taluka Bhuj, Kutch"
+            },
+            {
+              "label": "Project Type:",
+              "value": "Industrial landscape & automated irrigation"
+            },
+            {
+              "label": "Year:",
+              "value": "2023 – 2024"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "indian-air-force-bhuj",
+      "card": {
+        "tag": "Government & Defence",
+        "title": "Indian Air Force — Bhuj",
+        "image": "/images/projects/misc/misc-16.jpg"
+      },
+      "seo": {
+        "title": "Indian Air Force Bhuj Irrigation | Jal Agritech Projects",
+        "description": "Drip and garden irrigation delivered for the Indian Air Force at Bhuj, Kutch in October 2015.",
+        "keywords": "indian air force, bhuj, kutch, drip irrigation, defence, jal agritech"
+      },
+      "detail": {
+        "heroImage": "/images/projects/misc/misc-16.jpg",
+        "title": "Indian Air Force — Bhuj",
+        "intro": [
+          "Drip irrigation and garden irrigation delivered for the Indian Air Force at village Bhuj, Taluka Bhuj, in October 2015."
+        ],
+        "thumbnails": [
+          "/images/projects/misc/misc-17.jpg",
+          "/images/projects/misc/misc-18.jpg"
+        ],
+        "midParagraph": "One of two Indian Air Force stations in Kutch served directly by Jal Agritech.",
+        "subSections": [
+          {
+            "title": "Scope of Work",
+            "paragraph": "Drip irrigation and garden irrigation system installation at the Bhuj station."
+          },
+          {
+            "title": "Outcome",
+            "paragraph": "Work completed in October 2015."
+          }
+        ],
+        "info": {
+          "title": "Project information",
+          "items": [
+            {
+              "label": "Client:",
+              "value": "Indian Air Force"
+            },
+            {
+              "label": "Location:",
+              "value": "Bhuj, Kutch, Gujarat"
+            },
+            {
+              "label": "Project Type:",
+              "value": "Defence-site drip & garden irrigation"
+            },
+            {
+              "label": "Year:",
+              "value": "2015"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "indian-air-force-naliya",
+      "card": {
+        "tag": "Government & Defence",
+        "title": "Indian Air Force — Bhanada, Naliya",
+        "image": "/images/projects/misc/misc-19.jpg"
+      },
+      "seo": {
+        "title": "Indian Air Force Naliya Irrigation | Jal Agritech Projects",
+        "description": "Drip and garden irrigation delivered for the Indian Air Force at Bhanada, Taluka Naliya, Kutch in March 2016.",
+        "keywords": "indian air force, bhanada, naliya, kutch, drip irrigation, defence, jal agritech"
+      },
+      "detail": {
+        "heroImage": "/images/projects/misc/misc-19.jpg",
+        "title": "Indian Air Force — Bhanada, Naliya",
+        "intro": [
+          "Drip irrigation and garden irrigation delivered for the Indian Air Force at village Bhanada, Taluka Naliya, Kutch, in March 2016."
+        ],
+        "thumbnails": [
+          "/images/projects/misc/misc-20.jpg",
+          "/images/projects/misc/misc-21.jpg"
+        ],
+        "midParagraph": "The second of two Indian Air Force stations served directly by Jal Agritech in Kutch.",
+        "subSections": [
+          {
+            "title": "Scope of Work",
+            "paragraph": "Drip irrigation and garden irrigation system installation at the Naliya station."
+          },
+          {
+            "title": "Outcome",
+            "paragraph": "Work completed in March 2016."
+          }
+        ],
+        "info": {
+          "title": "Project information",
+          "items": [
+            {
+              "label": "Client:",
+              "value": "Indian Air Force"
+            },
+            {
+              "label": "Location:",
+              "value": "Bhanada, Taluka Naliya, Kutch"
+            },
+            {
+              "label": "Project Type:",
+              "value": "Defence-site drip & garden irrigation"
+            },
+            {
+              "label": "Year:",
+              "value": "2016"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "ayachi-palace-gandhidham",
       "card": {
         "tag": "Heritage Landscape",
-        "title": "Umed Bhavan Palace",
-        "image": "/images/what-we-do/landscaping/landscaping-5.jpg"
+        "title": "Ayachi Palace — Gandhidham",
+        "image": "/images/projects/misc/misc-22.jpg"
       },
       "seo": {
-        "title": "Umed Bhavan Palace Landscape | Jal Agritech Projects",
-        "description": "Heritage palace gardens — landscape restoration, irrigation, and plant care for Umed Bhavan Palace estate.",
-        "keywords": "umed bhavan, palace landscape, heritage garden, irrigation, jal agritech"
+        "title": "Ayachi Palace Gandhidham Irrigation | Jal Agritech Projects",
+        "description": "Drip, garden and atomization irrigation for Ayachi Palace at Gandhidham, Kutch — running since 2014.",
+        "keywords": "ayachi palace, gandhidham, atomization, misting, drip irrigation, jal agritech"
       },
       "detail": {
-        "heroImage": "/images/what-we-do/landscaping/landscaping-5.jpg",
-        "title": "Umed Bhavan Palace — Heritage Garden Landscape",
+        "heroImage": "/images/projects/misc/misc-22.jpg",
+        "title": "Ayachi Palace — Gandhidham",
         "intro": [
-          "Landscape design, irrigation upgrade, and ongoing plant-care services for the Umed Bhavan Palace estate. Heritage sites carry particular constraints — installation must respect existing architecture, root systems, and sight-lines while improving water efficiency and overall plant health.",
-          "Our brief covered everything from garden master-planning to seasonal trimming schedules for mature trees."
+          "Drip irrigation and garden irrigation, including an atomization (misting) system, delivered for Ayachi Palace at village Gandhidham, Taluka Gandhidham, Kutch — running since 2014 with after-sales service."
         ],
         "thumbnails": [
-          "/images/what-we-do/landscaping/landscaping-6.jpg",
-          "/images/what-we-do/landscaping/landscaping-4.jpg"
+          "/images/projects/misc/misc-23.jpg",
+          "/images/projects/misc/misc-24.jpg"
         ],
-        "midParagraph": "Heritage gardens reward careful, restrained intervention. We focused on protecting what was already valuable and upgrading the supporting infrastructure (irrigation, drainage, lighting) where it could deliver real, measurable improvement.",
+        "midParagraph": "A heritage property brief that combined standard drip and garden irrigation with an atomization misting system for finer environmental control.",
         "subSections": [
-          { "title": "Scope of Work", "paragraph": "Existing garden audit, heritage-sensitive design refresh, drip and sprinkler irrigation upgrade, drainage improvements, scheduled maintenance for mature trees and ornamentals." },
-          { "title": "Outcome", "paragraph": "A more water-efficient, lower-maintenance palace landscape that retains its heritage character while running on modern infrastructure underneath." }
+          {
+            "title": "Scope of Work",
+            "paragraph": "Drip irrigation, garden irrigation, and atomization system installation across the palace grounds."
+          },
+          {
+            "title": "Outcome",
+            "paragraph": "Active irrigation infrastructure running since 2014, with continued after-sales support."
+          }
         ],
         "info": {
           "title": "Project information",
           "items": [
-            { "label": "Client:",       "value": "Umed Bhavan Palace Estate" },
-            { "label": "Location:",     "value": "Rajasthan, India" },
-            { "label": "Project Type:", "value": "Heritage palace garden landscape" },
-            { "label": "Services:",     "value": "Design, irrigation upgrade, plant care, AMC" }
+            {
+              "label": "Client:",
+              "value": "Ayachi Palace"
+            },
+            {
+              "label": "Location:",
+              "value": "Gandhidham, Kutch, Gujarat"
+            },
+            {
+              "label": "Project Type:",
+              "value": "Heritage landscape + atomization irrigation"
+            },
+            {
+              "label": "Year:",
+              "value": "2014 – ongoing"
+            }
           ]
         }
       }
     },
     {
-      "slug": "jaipur-international-airport",
+      "slug": "bhavesh-lucky-agro-farm-1800-acre",
       "card": {
-        "tag": "Airport Landscape",
-        "title": "Jaipur International Airport",
-        "image": "/images/what-we-do/projects/projects-3.jpg"
+        "tag": "Large-Scale Agriculture",
+        "title": "Bhavesh Lucky Agro Farm — 1,800 Acres",
+        "image": "/images/projects/misc/misc-25.jpg"
       },
       "seo": {
-        "title": "Jaipur Airport Landscape | Jal Agritech Projects",
-        "description": "Terminal-area landscape and irrigation system for Jaipur International Airport, Rajasthan.",
-        "keywords": "jaipur airport, terminal landscape, airport plantation, jal agritech"
+        "title": "Bhavesh Lucky Agro Farm 1800 Acre Irrigation | Jal Agritech Projects",
+        "description": "Drip and garden irrigation across 1,800+ acres for Bhavesh Lucky Agro Farm & Group in Bhuj and Abdasa talukas, Kutch — 2010 to 2012.",
+        "keywords": "bhavesh lucky agro farm, drip irrigation, bhuj, abdasa, agriculture, jal agritech"
       },
       "detail": {
-        "heroImage": "/images/what-we-do/projects/projects-3.jpg",
-        "title": "Jaipur International Airport — Terminal Landscape",
+        "heroImage": "/images/projects/misc/misc-25.jpg",
+        "title": "Bhavesh Lucky Agro Farm & Group — 1,800 Acres",
         "intro": [
-          "Landscape design and execution for Jaipur International Airport's terminal forecourt and approach areas. Rajasthan's hot-dry climate demanded a drought-tolerant native palette with zoned drip irrigation throughout.",
-          "Jal Agritech delivered survey, design, installation, and a year-long handover support contract."
+          "Drip irrigation and garden irrigation delivered across more than 1,800 acres for Bhavesh Lucky Agro Farm & Group, spanning villages in Bhuj and Abdasa talukas, Kutch, between 2010 and 2012, with after-sales service."
         ],
         "thumbnails": [
-          "/images/what-we-do/projects/projects-4.jpg",
-          "/images/what-we-do/projects/projects-1.jpg"
+          "/images/projects/misc/misc-26.jpg",
+          "/images/projects/misc/misc-27.jpg"
         ],
-        "midParagraph": "Airports in arid zones face a tougher landscape brief — most ornamental species simply don't make it through Rajasthan summers without heavy irrigation. We selected native and naturalized species that thrive on minimal water input.",
+        "midParagraph": "An earlier, separate phase of Jal Agritech's long-running relationship with the Bhavesh Lucky Agro Farm & Group, ahead of the larger 4,500-acre expansion that followed.",
         "subSections": [
-          { "title": "Scope of Work", "paragraph": "Site survey, drought-tolerant species mix, zoned drip irrigation, soil amendment and mulching, post-installation supervision." },
-          { "title": "Outcome", "paragraph": "A terminal-grade landscape that holds up to Jaipur's summer heat with minimal water input and minimal seasonal failures." }
+          {
+            "title": "Scope of Work",
+            "paragraph": "Drip irrigation and garden irrigation system installation across the farm group's land holdings."
+          },
+          {
+            "title": "Outcome",
+            "paragraph": "Over 1,800 acres brought under irrigation between 2010 and 2012, with continued after-sales support."
+          }
         ],
         "info": {
           "title": "Project information",
           "items": [
-            { "label": "Client:",       "value": "Airports Authority of India" },
-            { "label": "Location:",     "value": "Jaipur, Rajasthan" },
-            { "label": "Project Type:", "value": "Airport terminal landscape" },
-            { "label": "Services:",     "value": "Design, drip irrigation, planting" }
+            {
+              "label": "Client:",
+              "value": "Bhavesh Lucky Agro Farm & Group"
+            },
+            {
+              "label": "Location:",
+              "value": "Bhuj & Abdasa talukas, Kutch, Gujarat"
+            },
+            {
+              "label": "Project Type:",
+              "value": "Large-scale agricultural irrigation"
+            },
+            {
+              "label": "Scale:",
+              "value": "1,800+ acres"
+            },
+            {
+              "label": "Year:",
+              "value": "2010 – 2012"
+            }
           ]
         }
       }
     },
     {
-      "slug": "guwahati-international-airport",
+      "slug": "bjp-group-mandvi-abdasa",
       "card": {
-        "tag": "Airport Landscape",
-        "title": "Guwahati International Airport",
-        "image": "/images/what-we-do/projects/projects-2.webp"
+        "tag": "Large-Scale Agriculture",
+        "title": "BJP & Group — Mandvi & Abdasa",
+        "image": "/images/projects/misc/misc-28.jpg"
       },
       "seo": {
-        "title": "Guwahati Airport Landscape | Jal Agritech Projects",
-        "description": "Landscape and plantation services for Lokpriya Gopinath Bordoloi International Airport, Guwahati.",
-        "keywords": "guwahati airport, lgbi airport, terminal landscape, airport plantation, jal agritech"
+        "title": "BJP & Group Mandvi Abdasa Irrigation | Jal Agritech Projects",
+        "description": "Drip and garden irrigation across 850+ acres for BJP & Group in Mandvi and Abdasa talukas, Kutch — 2012 to 2014.",
+        "keywords": "bjp group, mandvi, abdasa, drip irrigation, agriculture, kutch, jal agritech"
       },
       "detail": {
-        "heroImage": "/images/what-we-do/projects/projects-2.webp",
-        "title": "Guwahati International Airport — Terminal Landscape",
+        "heroImage": "/images/projects/misc/misc-28.jpg",
+        "title": "BJP & Group — Mandvi & Abdasa",
         "intro": [
-          "Landscape and plantation services for Lokpriya Gopinath Bordoloi International Airport in Guwahati. Northeast India's high-rainfall climate calls for very different species and drainage strategies than the dry-zone airports — our planting plan reflected that.",
-          "Scope covered design, drainage and grading, planting, and ongoing supervision."
+          "Drip irrigation and garden irrigation delivered across more than 850 acres for BJP & Group, spanning villages in Mandvi and Abdasa talukas, Kutch, between 2012 and 2014, with after-sales service."
         ],
         "thumbnails": [
-          "/images/what-we-do/projects/projects-1.jpg",
-          "/images/what-we-do/projects/projects-5.jpg"
+          "/images/projects/misc/misc-29.jpg",
+          "/images/projects/misc/misc-30.jpg"
         ],
-        "midParagraph": "Northeast airport landscapes deal with monsoon-grade rainfall and high humidity. Drainage and species rot-resistance become the primary design constraints, not water-efficiency.",
+        "midParagraph": "A mid-sized agricultural irrigation rollout completed over a two-year window across two talukas.",
         "subSections": [
-          { "title": "Scope of Work", "paragraph": "Site survey, drainage and grading plan, rot-resistant species selection, planting and mulching, post-monsoon care plan." },
-          { "title": "Outcome", "paragraph": "A landscape that survives Guwahati's monsoon season without major loss and looks polished year-round." }
+          {
+            "title": "Scope of Work",
+            "paragraph": "Drip irrigation and garden irrigation system installation across the group's land holdings."
+          },
+          {
+            "title": "Outcome",
+            "paragraph": "Over 850 acres brought under irrigation between 2012 and 2014, with continued after-sales support."
+          }
         ],
         "info": {
           "title": "Project information",
           "items": [
-            { "label": "Client:",       "value": "Airports Authority of India / LGBI" },
-            { "label": "Location:",     "value": "Guwahati, Assam" },
-            { "label": "Project Type:", "value": "Airport terminal landscape" },
-            { "label": "Services:",     "value": "Design, drainage, planting, maintenance" }
+            {
+              "label": "Client:",
+              "value": "BJP & Group"
+            },
+            {
+              "label": "Location:",
+              "value": "Mandvi & Abdasa talukas, Kutch, Gujarat"
+            },
+            {
+              "label": "Project Type:",
+              "value": "Large-scale agricultural irrigation"
+            },
+            {
+              "label": "Scale:",
+              "value": "850+ acres"
+            },
+            {
+              "label": "Year:",
+              "value": "2012 – 2014"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "veerayatan-vidyapith-mandvi",
+      "card": {
+        "tag": "Institutional Landscape",
+        "title": "Veerayatan Vidyapith — Haripar-Jakhaniya",
+        "image": "/images/projects/misc/misc-31.jpg"
+      },
+      "seo": {
+        "title": "Veerayatan Vidyapith Garden Irrigation | Jal Agritech Projects",
+        "description": "12-acre garden irrigation for Veerayatan Vidyapith at Haripar-Jakhaniya, Taluka Mandvi, Kutch.",
+        "keywords": "veerayatan vidyapith, haripar, jakhaniya, mandvi, garden irrigation, jal agritech"
+      },
+      "detail": {
+        "heroImage": "/images/projects/misc/misc-31.jpg",
+        "title": "Veerayatan Vidyapith — Haripar-Jakhaniya",
+        "intro": [
+          "Garden irrigation work recently started across 12 acres for Veerayatan Vidyapith at Haripar-Jakhaniya, Taluka Mandvi, Kutch."
+        ],
+        "thumbnails": [
+          "/images/projects/misc/misc-32.jpg",
+          "/images/projects/misc/misc-33.jpg"
+        ],
+        "midParagraph": "An institutional campus project, brought on as one of Jal Agritech's more recent engagements.",
+        "subSections": [
+          {
+            "title": "Scope of Work",
+            "paragraph": "Garden irrigation system installation across the 12-acre campus."
+          },
+          {
+            "title": "Outcome",
+            "paragraph": "Work recently started at the site."
+          }
+        ],
+        "info": {
+          "title": "Project information",
+          "items": [
+            {
+              "label": "Client:",
+              "value": "Veerayatan Vidyapith"
+            },
+            {
+              "label": "Location:",
+              "value": "Haripar-Jakhaniya, Taluka Mandvi, Kutch"
+            },
+            {
+              "label": "Project Type:",
+              "value": "Institutional garden irrigation"
+            },
+            {
+              "label": "Scale:",
+              "value": "12 acres"
+            }
           ]
         }
       }

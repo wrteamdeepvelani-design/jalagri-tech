@@ -4,7 +4,7 @@
       "background": "/images/hero/hero-banner.png",
       "tagline": "",
       "headline": "One Stop all Agriculture Solution",
-      "subheadline": "20+ years of expertise in irrigation, plantation, and landscaping across Kutch & Pan India.",
+      "subheadline": "15+ years of expertise in irrigation, plantation, and landscaping across Kutch & Pan India.",
       "ctas": [
         { "label": "Get a Quote", "href": "/contact" },
         { "label": "Our Services", "href": "/what-we-do/irrigation-and-landscaping" }
@@ -34,7 +34,7 @@
   "differentiators": {
     "title": "What Makes Us Different",
     "items": [
-      "20+ Years Experience",
+      "15+ Years Experience",
       "Pan India Presence",
       "Govt & Corporate Clients",
       "Turn-Key Solutions"

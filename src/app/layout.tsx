@@ -18,7 +18,6 @@ import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import OffcanvasSidebar from "@/components/layout/OffcanvasSidebar";
-import SearchModal from "@/components/layout/SearchModal";
 import Preloader from "@/components/shared/Preloader";
 import CustomCursor from "@/components/shared/CustomCursor";
 import BackToTop from "@/components/shared/BackToTop";
@@ -82,7 +81,6 @@ export default function RootLayout({
         <CustomCursor />
         <OffcanvasSidebar />
         <Header />
-        <SearchModal />
         <div id="smooth-wrapper">
           <div id="smooth-content">
             {children}

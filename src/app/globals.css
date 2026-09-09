@@ -769,13 +769,33 @@
   padding: 0;
 }
 
-/* Mobile nav breakpoint — meanmenu used to hide the desktop nav at <=1199px
-   by mutating #mobile-menu inline. We render the mobile menu in React now and
-   no longer run meanmenu on it, so hide the desktop nav wrapper here instead.
-   At <=1199px the hamburger opens the React-rendered offcanvas menu. */
-@media (max-width: 1199px) {
+/* Mobile nav breakpoint — meanmenu used to hide the desktop nav by mutating
+   #mobile-menu inline. We render the mobile menu in React now and no longer
+   run meanmenu on it, so hide the desktop nav wrapper here instead. Laptops
+   keep the inline navbar; only tablet/mobile (<=991px) fall back to the
+   hamburger + React-rendered offcanvas menu. */
+@media (max-width: 991px) {
   .header-1 .header-main .mean__menu-wrapper {
     display: none !important;
+  }
+}
+
+/* Laptop range — tighten the navbar; the theme already hides the phone
+   number and CTA button below 1400px, which keeps this band uncrowded. */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .header-main .main-menu ul li {
+    margin-inline-end: 22px;
+  }
+  .header-main .main-menu ul li a {
+    font-size: 15px;
+  }
+}
+
+/* Theme hides the CTA below 1400px. With the navbar inline from 1200px up
+   there is room for it, so bring it back across that range. */
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .header-main .header-right .header-btn .header-button {
+    display: block;
   }
 }
 
@@ -840,5 +860,113 @@
   .about-section-2 .section-title-area .content {
     flex: 1 1 0;
     min-width: 0;
+  }
+}
+
+/* Breadcrumb banner — main.css sets `background-image: none !important` below
+   1400px and shows a .top-image <img> instead (whose theme asset we don't
+   ship). We render no .top-image, so restore the background at every width;
+   the !important is required to outrank the theme's own. */
+div.breadcrumb-wrapper.bg-cover {
+  background-image: var(--breadcrumb-image) !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Client cards — logo above the client name. Replaces the theme's bare
+   .brand-box-1 logo strip (two stacked images swapped on hover). Slides sit
+   inside the theme's .brand-slider Swiper, so cards stretch to equal height. */
+/* Swiper clips at its own box; pad the track so the hover shadow renders. */
+.brand-slider {
+  padding: 10px 6px 18px;
+}
+.brand-slider .swiper-slide {
+  height: auto;
+}
+.client-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 14px;
+  padding: 24px 18px 20px;
+  background: var(--white);
+  border: 1px solid rgba(17, 162, 27, 0.14);
+  border-radius: 14px;
+  text-align: center;
+  transition: box-shadow 0.35s ease, border-color 0.35s ease, background 0.35s ease;
+}
+.client-card__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 66px;
+}
+.client-card__logo img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  /* Muted by default so the row reads as one system; true colour on hover. */
+  filter: grayscale(100%);
+  opacity: 0.65;
+  transition: filter 0.35s ease, opacity 0.35s ease;
+}
+.client-card__name {
+  margin: 0;
+  font-family: "Instrument Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--text);
+  transition: color 0.35s ease;
+}
+/* Emphasis without movement — a lift would escape the Swiper's clipped box
+   and slide under neighbouring slides, which stack above it. */
+.client-card:hover {
+  border-color: rgba(17, 162, 27, 0.55);
+  box-shadow: 0 6px 18px rgba(17, 162, 27, 0.12);
+}
+.client-card:hover .client-card__logo img {
+  filter: grayscale(0);
+  opacity: 1;
+}
+.client-card:hover .client-card__name {
+  color: var(--theme3);
+}
+@media (max-width: 767px) {
+  .client-card {
+    padding: 20px 14px 16px;
+    gap: 12px;
+  }
+  .client-card__logo {
+    height: 54px;
+  }
+  .client-card__name {
+    font-size: 13px;
+  }
+}
+
+/* Service card tag pills — flex items were shrinking, so labels like
+   "R&D-Driven" broke across two lines inside the capsule. Keep each pill
+   intact and let the row wrap between pills instead. */
+.service-card-items-2 .top-content .tag-list {
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.service-card-items-2 .top-content .tag-list span {
+  flex: 0 0 auto;
+  white-space: nowrap;
+  font-size: 14px;
+  padding: 3px 12px;
+}
+@media (max-width: 1399px) {
+  .service-card-items-2 .top-content .tag-list span {
+    font-size: 13px;
+    padding: 3px 10px;
   }
 }
