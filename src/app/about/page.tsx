@@ -18,6 +18,7 @@ import AboutBrandSection from "@/components/about/AboutBrandSection";
 import AboutFeatureSection from "@/components/about/AboutFeatureSection";
 import LetterImageSection from "@/components/about/LetterImageSection";
 
+
 export const metadata = {
   title: "About Us - Agriva",
   description: "Agriva - Agriculture Farming Template",
