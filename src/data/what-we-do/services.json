@@ -7,7 +7,6 @@
     "description": "End-to-end professional services from Jal Agritech — site survey, landscape and irrigation design, turn-key installation, and consultation & support.",
     "keywords": "agriculture services, irrigation design, landscape design, project survey, turn-key installation, consultation, jal agritech services"
   },
-  "maskImage": "/images/what-we-do/services/mask.jpg",
   "gridCards": [
     {
       "title": "Survey & Site Assessment",
@@ -16,7 +15,7 @@
     },
     {
       "title": "Design & Planning",
-      "image": "/images/what-we-do/services/grid-2.jpg",
+      "image": "/images/what-we-do/services/t2-a.jpg",
       "anchor": "topic-1"
     },
     {
@@ -57,8 +56,7 @@
         "A detailed survey and site assessment are conducted to evaluate existing site conditions, topography, soil characteristics, water availability, drainage patterns, vegetation, and project requirements. This process helps identify opportunities and constraints, ensuring the development of efficient, sustainable, and cost-effective irrigation, landscaping, and environmental solutions tailored to the specific needs of the project. The collected data serves as the foundation for accurate planning, design, and successful project execution."
       ],
       "thumbnails": [
-        "/images/what-we-do/services/t1-a.jpg",
-        "/images/what-we-do/services/t1-b.jpg"
+        "/images/what-we-do/services/t1-a.jpg"
       ],
       "sections": []
     },
@@ -79,8 +77,7 @@
         "We provide complete turn-key installation services, managing every stage of project execution from procurement and logistics to installation, testing, and commissioning. Our experienced team ensures the seamless implementation of irrigation systems, landscaping works, water features, environmental projects, and related infrastructure in accordance with approved designs and quality standards. With a focus on safety, efficiency, and timely delivery, we provide fully operational solutions that meet client requirements and ensure long-term performance and reliability."
       ],
       "thumbnails": [
-        "/images/what-we-do/services/t3-a.jpg",
-        "/images/what-we-do/services/t3-b.jpg"
+        "/images/what-we-do/services/t3-a.jpg"
       ],
       "sections": []
     },
@@ -89,10 +86,7 @@
       "intro": [
         "We provide expert consultation and continuous support throughout every stage of the project lifecycle. Our team offers technical guidance, project planning assistance, system optimization, troubleshooting, and operational recommendations to ensure maximum efficiency and performance. From initial concept development to post-installation support and maintenance, we work closely with clients to address their needs, deliver practical solutions, and ensure the long-term success and sustainability of their irrigation, agriculture, landscaping, and environmental projects."
       ],
-      "thumbnails": [
-        "/images/what-we-do/services/t4-a.jpg",
-        "/images/what-we-do/services/t4-b.jpg"
-      ],
+      "thumbnails": [],
       "sections": []
     }
   ]

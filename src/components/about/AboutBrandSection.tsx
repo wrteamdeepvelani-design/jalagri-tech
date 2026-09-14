@@ -6,7 +6,7 @@
  */
 import data from "@/data/about/brand.json";
 
-type Client = { name: string; logo: string };
+type Client = { name: string; logo: string; onDark?: boolean };
 
 export default function AboutBrandSection() {
   const clients = data.clients as Client[];
@@ -20,7 +20,12 @@ export default function AboutBrandSection() {
             {clients.map((client) => (
               <div key={client.name + client.logo} className="swiper-slide">
                 <div className="client-card">
-                  <div className="client-card__logo">
+                  <div
+                    className={
+                      "client-card__logo" +
+                      (client.onDark ? " client-card__logo--on-dark" : "")
+                    }
+                  >
                     <img src={client.logo} alt={client.name} />
                   </div>
                   <p className="client-card__name">{client.name}</p>

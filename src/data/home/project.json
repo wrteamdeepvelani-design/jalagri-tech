@@ -10,31 +10,31 @@
   ],
   "projects": [
     {
-      "thumb": "/images/projects/bhujio/bhujio-05.jpg",
+      "thumb": "/images/projects/cards/smritivan-bhuj-memorial.jpg",
       "title": "Smritivan — Bhuj Earthquake Memorial",
       "href": "/projects/smritivan-bhuj-memorial"
     },
     {
-      "thumb": "/images/projects/lucknow-airport/lucknow-airport-01.jpg",
+      "thumb": "/images/projects/cards/lucknow-international-airport.jpg",
       "title": "Lucknow International Airport",
       "href": "/projects/lucknow-international-airport"
     },
     {
-      "thumb": "/images/projects/misc/misc-01.jpg",
+      "thumb": "/images/projects/cards/adani-green-energy-khavda.jpg",
       "title": "Adani Green Energy — Khavda Solar Park",
       "href": "/projects/adani-green-energy-khavda"
     },
     {
-      "thumb": "/images/projects/misc/misc-07.jpg",
+      "thumb": "/images/projects/cards/kutch-copper-automation-irrigation.jpg",
       "title": "Kutch Copper — Automation Irrigation",
       "href": "/projects/kutch-copper-automation-irrigation"
     }
   ],
   "thumbnails": [
-    "/images/projects/bhujio/bhujio-12.jpg",
-    "/images/projects/lucknow-airport/lucknow-airport-02.jpg",
-    "/images/projects/misc/misc-02.jpg",
-    "/images/projects/misc/misc-08.jpg"
+    "/images/projects/cards/smritivan-bhuj-memorial.jpg",
+    "/images/projects/cards/lucknow-international-airport.jpg",
+    "/images/projects/cards/adani-green-energy-khavda.jpg",
+    "/images/projects/cards/kutch-copper-automation-irrigation.jpg"
   ],
   "counterLabel": "01"
 }

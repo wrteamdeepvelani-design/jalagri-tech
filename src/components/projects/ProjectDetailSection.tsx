@@ -48,15 +48,22 @@ export default function ProjectDetailSection({ project }: { project: Project }) 
                 {detail.intro[1] && (
                   <p className="mt-3 mb-4">{detail.intro[1]}</p>
                 )}
-                <div className="row g-4">
-                  {detail.thumbnails.map((src, i) => (
-                    <div key={i} className="col-lg-6">
-                      <div className="thumb">
-                        <img data-speed=".8" src={src} alt="img" />
+                {/* Only projects with their own site photography carry
+                    thumbnails; the rest render none rather than filler. */}
+                {detail.thumbnails.length > 0 && (
+                  <div className="row g-4">
+                    {detail.thumbnails.map((src, i) => (
+                      <div
+                        key={i}
+                        className={detail.thumbnails.length === 1 ? "col-12" : "col-lg-6"}
+                      >
+                        <div className="thumb">
+                          <img data-speed=".8" src={src} alt={project.card.title} />
+                        </div>
                       </div>
-                    </div>
-                  ))}
-                </div>
+                    ))}
+                  </div>
+                )}
                 <p className="mt-4 mb-4">{detail.midParagraph}</p>
                 {detail.subSections.map((s, i) => (
                   <div key={i}>

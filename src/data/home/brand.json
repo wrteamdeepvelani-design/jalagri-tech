@@ -5,7 +5,11 @@
       "logo": "/images/clients/bsf.png"
     },
     {
-      "name": "Indian Air Force",
+      "name": "Indian Air Force — Bhuj",
+      "logo": "/images/clients/indian-air-force.png"
+    },
+    {
+      "name": "Indian Air Force — Naliya",
       "logo": "/images/clients/indian-air-force.png"
     },
     {
@@ -26,14 +30,31 @@
     },
     {
       "name": "Adani Ports & SEZ",
-      "logo": "/images/clients/adani-ports.png"
+      "logo": "/images/clients/adani-ports.png",
+      "onDark": true
     },
     {
-      "name": "Adani Power",
+      "name": "Adani Power — Mundra",
       "logo": "/images/clients/adani-power.png"
     },
     {
-      "name": "Adani Enterprises",
+      "name": "Adani Power — Kawai, Kota",
+      "logo": "/images/clients/adani-power.png"
+    },
+    {
+      "name": "Adani Power — Kanina, Haryana",
+      "logo": "/images/clients/adani-power.png"
+    },
+    {
+      "name": "Adani Power — Tirora, Maharashtra",
+      "logo": "/images/clients/adani-power.png"
+    },
+    {
+      "name": "Adani Enterprises — Bita, Abdasa",
+      "logo": "/images/clients/adani-enterprises.png"
+    },
+    {
+      "name": "Adani Enterprises — Parsa-Kante",
       "logo": "/images/clients/adani-enterprises.png"
     },
     {
@@ -50,14 +71,20 @@
     },
     {
       "name": "Dhamra Port",
-      "logo": "/images/clients/adani-dhamra-port.png"
+      "logo": "/images/clients/adani-dhamra-port.png",
+      "onDark": true
     },
     {
       "name": "G.K. General Hospital (GAIMS)",
-      "logo": "/images/clients/adanihealth.jpg"
+      "logo": "/images/clients/adanihealth.jpg",
+      "onDark": true
     },
     {
-      "name": "ACC Limited",
+      "name": "ACC Limited — Ametha, MP",
+      "logo": "/images/clients/acc.png"
+    },
+    {
+      "name": "ACC Limited — Sonebhadra, UP",
       "logo": "/images/clients/acc.png"
     },
     {
@@ -66,7 +93,8 @@
     },
     {
       "name": "Jindal Saw",
-      "logo": "/images/clients/jindal.png"
+      "logo": "/images/clients/jindal.png",
+      "onDark": true
     },
     {
       "name": "Lucknow International Airport",
@@ -86,7 +114,8 @@
     },
     {
       "name": "Nilkanth Steel",
-      "logo": "/images/clients/nilkanth-steel.png"
+      "logo": "/images/clients/nilkanth-steel.png",
+      "onDark": true
     },
     {
       "name": "Agrocel Industries",

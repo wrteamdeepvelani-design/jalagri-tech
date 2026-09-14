@@ -1,5 +1,6 @@
 {
-  "image": "/images/whychoose/float.png",
+  "video": "/images/video1.mp4",
+  "poster": "/images/projects/cards/adani-green-energy-khavda.jpg",
   "eyebrow": {
     "icon": "/images/home-2/icon/05.svg",
     "text": "why choose us?"

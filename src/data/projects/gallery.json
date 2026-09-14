@@ -1,0 +1,195 @@
+{
+  "_description": "Shared work gallery rendered on every project detail page. Company-wide photography, deliberately NOT presented as the photos of the project being viewed.",
+  "eyebrow": "our work",
+  "title": "More of Our Work",
+  "description": "Landscaping, irrigation, fountains, vertical gardens and nursery work from across our projects.",
+  "categories": [
+    "Landscaping",
+    "Plantation",
+    "Irrigation",
+    "Fountains & Vertical Gardens",
+    "Nurseries & Supply"
+  ],
+  "images": [
+    {
+      "src": "/images/projects/adani-township/adani-township-02.jpg",
+      "category": "Landscaping",
+      "caption": "Garden pathway"
+    },
+    {
+      "src": "/images/projects/adani-township/adani-township-03.jpg",
+      "category": "Landscaping",
+      "caption": "Hedge & shrub care"
+    },
+    {
+      "src": "/images/projects/adani-township/adani-township-05.jpg",
+      "category": "Landscaping",
+      "caption": "Lawn & common areas"
+    },
+    {
+      "src": "/images/projects/adani-township/adani-township-15.jpg",
+      "category": "Landscaping",
+      "caption": "Ornamental topiary"
+    },
+    {
+      "src": "/images/projects/adani-township/adani-township-19.jpg",
+      "category": "Landscaping",
+      "caption": "Paved garden walkway"
+    },
+    {
+      "src": "/images/projects/website-photos/website-photos-03.jpg",
+      "category": "Landscaping",
+      "caption": "Lawn mowing & turf care"
+    },
+    {
+      "src": "/images/projects/website-photos/website-photos-08.jpg",
+      "category": "Landscaping",
+      "caption": "Stone path landscaping"
+    },
+    {
+      "src": "/images/projects/website-photos/website-photos-10.jpg",
+      "category": "Landscaping",
+      "caption": "Flower bed planting"
+    },
+    {
+      "src": "/images/projects/website-photos/website-photos-11.jpg",
+      "category": "Landscaping",
+      "caption": "Ornamental garden"
+    },
+    {
+      "src": "/images/projects/website-photos/website-photos-12.jpg",
+      "category": "Landscaping",
+      "caption": "Turf lawn at sunset"
+    },
+    {
+      "src": "/images/projects/website-photos/website-photos-04.jpg",
+      "category": "Plantation",
+      "caption": "Dense native planting"
+    },
+    {
+      "src": "/images/projects/website-photos/website-photos-05.jpg",
+      "category": "Plantation",
+      "caption": "Established green cover"
+    },
+    {
+      "src": "/images/projects/website-photos/website-photos-07.jpg",
+      "category": "Plantation",
+      "caption": "Forest trail plantation"
+    },
+    {
+      "src": "/images/projects/website-photos/website-photos-16.jpg",
+      "category": "Plantation",
+      "caption": "Plantation from the air"
+    },
+    {
+      "src": "/images/projects/website-photos/website-photos-17.jpg",
+      "category": "Plantation",
+      "caption": "Green belt development"
+    },
+    {
+      "src": "/images/projects/website-photos/website-photos-18.jpg",
+      "category": "Plantation",
+      "caption": "Landscape masterplan view"
+    },
+    {
+      "src": "/images/projects/website-photos/website-photos-19.jpg",
+      "category": "Plantation",
+      "caption": "Site-wide green cover"
+    },
+    {
+      "src": "/images/projects/misc/misc-07.jpg",
+      "category": "Irrigation",
+      "caption": "Sprinkler in operation"
+    },
+    {
+      "src": "/images/projects/misc/misc-12.jpg",
+      "category": "Irrigation",
+      "caption": "Large-area sprinkler coverage"
+    },
+    {
+      "src": "/images/projects/misc/misc-22.jpg",
+      "category": "Irrigation",
+      "caption": "Drip lateral installation"
+    },
+    {
+      "src": "/images/projects/misc/misc-54.jpg",
+      "category": "Irrigation",
+      "caption": "Irrigated green channel"
+    },
+    {
+      "src": "/images/projects/misc/misc-63.jpg",
+      "category": "Irrigation",
+      "caption": "Irrigated roadside planting"
+    },
+    {
+      "src": "/images/projects/misc/misc-66.jpg",
+      "category": "Irrigation",
+      "caption": "Field irrigation equipment"
+    },
+    {
+      "src": "/images/projects/misc/misc-06.jpg",
+      "category": "Fountains & Vertical Gardens",
+      "caption": "Illuminated fountain"
+    },
+    {
+      "src": "/images/projects/misc/misc-11.jpg",
+      "category": "Fountains & Vertical Gardens",
+      "caption": "Garden fountain"
+    },
+    {
+      "src": "/images/projects/website-photos/website-photos-15.jpg",
+      "category": "Fountains & Vertical Gardens",
+      "caption": "Stepped water feature"
+    },
+    {
+      "src": "/images/projects/vertical-with-fountain-welspun/vertical-with-fountain-welspun-01.jpg",
+      "category": "Fountains & Vertical Gardens",
+      "caption": "Fountain basin"
+    },
+    {
+      "src": "/images/projects/vertical-with-fountain-welspun/vertical-with-fountain-welspun-04.jpg",
+      "category": "Fountains & Vertical Gardens",
+      "caption": "Lit fountain feature"
+    },
+    {
+      "src": "/images/projects/vertical-with-fountain-welspun/vertical-with-fountain-welspun-24.jpg",
+      "category": "Fountains & Vertical Gardens",
+      "caption": "Vertical garden wall"
+    },
+    {
+      "src": "/images/projects/vertical-with-fountain-welspun/vertical-with-fountain-welspun-26.jpg",
+      "category": "Fountains & Vertical Gardens",
+      "caption": "Modular green wall"
+    },
+    {
+      "src": "/images/projects/vertical-with-fountain-welspun/vertical-with-fountain-welspun-27.jpg",
+      "category": "Fountains & Vertical Gardens",
+      "caption": "Living wall planting"
+    },
+    {
+      "src": "/images/projects/jal-agro-mall/jal-agro-mall-01.jpg",
+      "category": "Nurseries & Supply",
+      "caption": "Jal Agro Mall, Bhachau"
+    },
+    {
+      "src": "/images/projects/jal-agro-mall/jal-agro-mall-07.webp",
+      "category": "Nurseries & Supply",
+      "caption": "Agri inputs & supplies"
+    },
+    {
+      "src": "/images/projects/net-house/net-house-09.jpg",
+      "category": "Nurseries & Supply",
+      "caption": "Net house structure"
+    },
+    {
+      "src": "/images/projects/net-house/net-house-10.jpg",
+      "category": "Nurseries & Supply",
+      "caption": "Shade net cultivation"
+    },
+    {
+      "src": "/images/projects/misc/misc-59.jpg",
+      "category": "Nurseries & Supply",
+      "caption": "Nursery planting stock"
+    }
+  ]
+}
