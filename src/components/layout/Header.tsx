@@ -7,9 +7,8 @@ import { usePathname } from "next/navigation";
  * Header — static markup matching the theme. The theme's main.js handles:
  *   - sticky scroll (toggles `.sticky` on `#header-sticky` past 250px scroll)
  *   - offcanvas open (.sidebar__toggle click adds .info-open)
- *   - search modal open (.search_btn click adds .search-opened)
  *
- * Do NOT add React state for sticky/offcanvas/search — main.js handles via
+ * Do NOT add React state for sticky/offcanvas — main.js handles via
  * jQuery class selectors. Pathname-based variant switching is React routing.
  */
 
@@ -112,7 +111,7 @@ export default function Header() {
                       Get In Touch
                     </Link>
                   </div>
-                  <div className="header__hamburger d-xl-none my-auto">
+                  <div className="header__hamburger d-lg-none my-auto">
                     <div
                       className="sidebar__toggle"
                       role="button"
@@ -159,24 +158,13 @@ export default function Header() {
                 <NavMenu isInner={true} />
               </div>
 
-              <div className="icon-items">
-                <div className="menu_search">
-                  <button className="search_btn" aria-label="Search">
-                    <i className="far fa-search"></i>
-                  </button>
-                </div>
-                <Link href="/shop/cart">
-                  <i className="fa-solid fa-cart-shopping"></i>
-                </Link>
-              </div>
-
               <div className="header-btn">
                 <div className="header-button">
                   <Link href="/contact" className="theme-btn theme-btn-3">
                     Get In Touch
                   </Link>
                 </div>
-                <div className="header__hamburger my-auto">
+                <div className="header__hamburger d-lg-none my-auto">
                   <div
                     className="sidebar__toggle"
                     role="button"

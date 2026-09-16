@@ -18,27 +18,23 @@ export default function WhyChooseSection() {
 
   return (
     <section className="why-choose-us-section-2 section-padding fix theme-bg-2">
-      <div className="left-shape float-bob-x">
-        <img src="/images/features/feature-2.png" alt="img" />
-      </div>
-      <div className="right-shape float-bob-x">
-        <img src="/images/features/feature-2.png" alt="img" />
-      </div>
-      <div className="maize-3">
-        <img src="/images/home-1/maize-2.png" alt="img" />
-      </div>
       <div className="container">
         <div className="why-choose-us-wrapper-2">
           <div className="row g-4">
-            <div className="col-lg-6">
-              <div className="why-choose-us-image float-bob-y">
-                <img src={data.image} alt="img" />
-                {/* <div className="circle-shape">
-                  <img src="/images/home-2/circle.png" alt="img" />
-                </div> */}
+            <div className="col-xl-6">
+              <div className="why-choose-video">
+                <video
+                  src={data.video}
+                  poster={data.poster}
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  preload="metadata"
+                />
               </div>
             </div>
-            <div className="col-lg-6">
+            <div className="col-xl-6">
               <div className="why-choose-us-content">
                 <div className="section-title mb-0">
                   <span className="sub-title-2 style-2">

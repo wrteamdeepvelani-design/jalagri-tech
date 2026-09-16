@@ -1,7 +1,8 @@
 "use client";
 
 /**
- * StickySidebarPin — pins the service-detail sidebar with GSAP ScrollTrigger.
+ * StickySidebarPin — keeps the service-detail sidebar in view by translating
+ * it with GSAP ScrollTrigger as the content column scrolls.
  *
  * Why JS and not CSS: the theme runs ScrollSmoother (smooth: 2), which fakes
  * scrolling by putting a transform on #smooth-content. A transformed ancestor
@@ -48,22 +49,34 @@ export default function StickySidebarPin() {
       // Only pin when the sidebar sits beside the content (lg and up).
       if (!window.matchMedia("(min-width: 992px)").matches) return;
 
+      // Do NOT use ScrollTrigger's pin here. Pinning with pinSpacing:false
+      // pulls the sidebar out of the flow, collapsing the row and leaving
+      // ScrollSmoother's cached scroll length stale (dead space past the
+      // footer); pinSpacing:true instead pads the page with the pin duration.
+      // Refreshing on toggle fixes the height but reflows every trigger
+      // mid-scroll, which flickers.
+      //
+      // Instead the sidebar stays in the flow at its natural height and is
+      // simply translated as the content scrolls — visually identical, no
+      // layout change, nothing to resync.
+      const room = () =>
+        Math.max(0, content.offsetHeight - sidebar.offsetHeight - 100);
+      if (room() <= 0) return;
+
       gsap.registerPlugin(ScrollTrigger);
 
       trigger = ScrollTrigger.create({
-        trigger: sidebar,
+        trigger: content,
         start: "top 70px",
-        // Pin for exactly the height difference so the sidebar releases
-        // right as the content column ends.
-        end: () =>
-          "+=" +
-          Math.max(0, content.offsetHeight - sidebar.offsetHeight - 100),
-        pin: sidebar,
-        pinSpacing: false,
+        end: () => "+=" + room(),
         invalidateOnRefresh: true,
+        onUpdate: (self: any) => {
+          gsap.set(sidebar, { y: self.progress * room() });
+        },
+        onRefresh: (self: any) => {
+          gsap.set(sidebar, { y: self.progress * room() });
+        },
       });
-
-      ScrollTrigger.refresh();
     };
 
     // Delay so ScrollSmoother.create() in main.js runs first.
@@ -72,6 +85,10 @@ export default function StickySidebarPin() {
     return () => {
       window.clearTimeout(timer);
       if (trigger) trigger.kill();
+      const sidebar = document.querySelector<HTMLElement>(
+        ".service-details-sidebar"
+      );
+      if (sidebar) window.gsap?.set(sidebar, { clearProps: "transform" });
     };
   }, []);
 

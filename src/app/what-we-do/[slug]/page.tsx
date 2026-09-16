@@ -11,7 +11,6 @@
  *   - impact  → ImpactBannerSection     (bg-cover banner + counters)
  *   - stats   → StatisticsSection       (image + percentage stat cards)
  *   - detail  → WhatWeDoDetailSection   (rich topic content + sidebar)
- *   - mask    → MaskBannerSection       (animated text banner)
  *
  * Adding/replacing a category:
  *   1. categories.json — add slug with available: true
@@ -25,7 +24,6 @@ import ServiceCardsSection from "@/components/what-we-do/ServiceCardsSection";
 import ServiceGridSection from "@/components/what-we-do/ServiceGridSection";
 import ImpactBannerSection from "@/components/what-we-do/ImpactBannerSection";
 import StatisticsSection from "@/components/what-we-do/StatisticsSection";
-import MaskBannerSection from "@/components/what-we-do/MaskBannerSection";
 import WhatWeDoDetailSection from "@/components/what-we-do/WhatWeDoDetailSection";
 import categoriesData from "@/data/what-we-do/categories.json";
 
@@ -53,15 +51,15 @@ const contentBySlug: Record<string, AnyContent> = {
   "trading":                    tradingData as unknown as AnyContent,
 };
 
-type Block = "cards" | "grid" | "impact" | "stats" | "detail" | "mask";
+type Block = "cards" | "grid" | "impact" | "stats" | "detail";
 
 // Distinct layout per category — no two pages render the same block order.
 const layoutBySlug: Record<string, Block[]> = {
   "irrigation-and-landscaping": ["cards",  "impact", "stats",  "detail"],
-  "services":                   ["grid",                       "detail", "mask"],
+  "services":                   ["grid",                       "detail"],
   "maintenance":                [          "impact",           "detail", "stats"],
-  "outlets":                    ["grid",                       "detail", "mask"],
-  "manufacturing":              ["cards",            "stats",  "detail", "mask"],
+  "outlets":                    ["grid",                       "detail"],
+  "manufacturing":              ["cards",            "stats",  "detail"],
   "trading":                    ["grid",   "impact",           "detail"],
 };
 
@@ -123,9 +121,6 @@ export default async function WhatWeDoDetailPage(
           case "detail":
             // eslint-disable-next-line @typescript-eslint/no-explicit-any
             return <WhatWeDoDetailSection key={i} content={content as any} />;
-          case "mask":
-            // eslint-disable-next-line @typescript-eslint/no-explicit-any
-            return <MaskBannerSection key={i} image={(content as any).maskImage} />;
           default:
             return null;
         }

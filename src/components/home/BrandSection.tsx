@@ -1,27 +1,32 @@
 /**
- * BrandSection — theme markup from index.html lines 1295-1373. Editable
- * content lives in src/data/home/brand.json. Each slide holds 2 logos.
- * The .swiper.brand-slider Swiper is initialized by main.js.
+ * BrandSection — client logo cards (logo + client name) in the theme's
+ * .brand-slider Swiper, which main.js initializes.
+ * Editable content lives in src/data/home/brand.json.
  */
 import data from "@/data/home/brand.json";
 
+type Client = { name: string; logo: string; onDark?: boolean };
+
 export default function BrandSection() {
-  const slides = data.slides as [string, string][];
+  const clients = data.clients as Client[];
 
   return (
     <div className="brand-section-2 section-padding pt-0 fix">
       <div className="container">
         <div className="swiper brand-slider">
           <div className="swiper-wrapper">
-            {slides.map(([a, b]) => (
-              <div key={a} className="swiper-slide">
-                <div className="brand-box-1">
-                  <span className="brand-img-1">
-                    <img src={a} alt="img" />
-                  </span>
-                  <span className="brand-img-1">
-                    <img src={b} alt="img" />
-                  </span>
+            {clients.map((client) => (
+              <div key={client.name + client.logo} className="swiper-slide">
+                <div className="client-card">
+                  <div
+                    className={
+                      "client-card__logo" +
+                      (client.onDark ? " client-card__logo--on-dark" : "")
+                    }
+                  >
+                    <img src={client.logo} alt={client.name} />
+                  </div>
+                  <p className="client-card__name">{client.name}</p>
                 </div>
               </div>
             ))}

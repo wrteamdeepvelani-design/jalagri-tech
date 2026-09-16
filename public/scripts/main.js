@@ -416,13 +416,13 @@
         
             breakpoints: {
                 1399: {
-                    slidesPerView: 7,
-                },
-                1199: {
                     slidesPerView: 5,
                 },
-                991: {
+                1199: {
                     slidesPerView: 4,
+                },
+                991: {
+                    slidesPerView: 3,
                 },
                 767: {
                     slidesPerView: 3,
@@ -1066,21 +1066,52 @@
             animatedTextElements = document.querySelectorAll(".text-anim");
 
         animatedTextElements.forEach(element => {
-            let animationSplitText = new SplitText(element, { type: "chars, words" });
+            // initThemePage() re-runs on every client-side navigation. Without
+            // this cleanup the heading is split a second time (chars nested in
+            // chars) while the previous ScrollTrigger keeps animating the now
+            // detached spans — which is what left headings half-invisible
+            // until a hard refresh.
+            if (element.__textAnimTrigger) {
+                element.__textAnimTrigger.kill();
+                element.__textAnimTrigger = null;
+            }
+            if (element.__textAnimSplit) {
+                element.__textAnimSplit.revert();
+                element.__textAnimSplit = null;
+            }
 
-            // ScrollTrigger দিয়ে section এ ঢুকলে animation শুরু হবে
-            ScrollTrigger.create({
+            let animationSplitText = new SplitText(element, { type: "chars, words" });
+            element.__textAnimSplit = animationSplitText;
+
+            // The tween is built inside onEnter rather than as a gsap.from() at
+            // create time, so the text is never hidden unless the reveal really
+            // runs. If the trigger never fires the heading just stays visible
+            // instead of being stranded at opacity 0.
+            element.__textAnimTrigger = ScrollTrigger.create({
                 trigger: element,
                 start: "top 85%",
+                once: true,
                 onEnter: () => {
-                    gsap.from(animationSplitText.chars, {
-                        duration: 1,
-                        delay: delayValue,
-                        x: translateXValue,
-                        autoAlpha: 0,
-                        stagger: staggerAmount,
-                        ease: easeType,
-                    });
+                    gsap.fromTo(
+                        animationSplitText.chars,
+                        { autoAlpha: 0, x: translateXValue },
+                        {
+                            duration: 1,
+                            delay: delayValue,
+                            x: 0,
+                            autoAlpha: 1,
+                            stagger: staggerAmount,
+                            ease: easeType,
+                            overwrite: "auto",
+                            // Drop inline visibility/opacity afterwards so a
+                            // later refresh cannot resurrect a hidden state.
+                            onComplete: () => {
+                                gsap.set(animationSplitText.chars, {
+                                    clearProps: "visibility,opacity,transform",
+                                });
+                            },
+                        }
+                    );
                 },
             });
         });
@@ -1242,25 +1273,46 @@
             tp_delay_value = item.getAttribute("data-delay") || 0.15,
             tp_ease_value = item.getAttribute("data-ease") || "power2.out";
 
-        let tp_anim_setting = {
+        // initThemePage() re-runs on every client-side navigation; without
+        // cleanup each pass stacks another tween/trigger on the same element.
+        if (item.__fadeTrigger) { item.__fadeTrigger.kill(); item.__fadeTrigger = null; }
+        if (item.__fadeTween) { item.__fadeTween.kill(); item.__fadeTween = null; }
+        gsap.set(item, { clearProps: "opacity,transform,visibility" });
+
+        let from_vars = {
             opacity: 0,
-            ease: tp_ease_value,
-            duration: tp_duration_value,
-            delay: tp_delay_value,
             x: (tp_fade_direction == "left" ? -tp_fade_offset : (tp_fade_direction == "right" ? tp_fade_offset : 0)),
             y: (tp_fade_direction == "top" ? -tp_fade_offset : (tp_fade_direction == "bottom" ? tp_fade_offset : 0)),
         };
+        let to_vars = {
+            opacity: 1,
+            x: 0,
+            y: 0,
+            ease: tp_ease_value,
+            duration: tp_duration_value,
+            delay: tp_delay_value,
+            overwrite: "auto",
+            // Clear the inline state afterwards so nothing can re-hide it.
+            onComplete: () => gsap.set(item, { clearProps: "opacity,transform" }),
+        };
 
-        // Scroll এ animate হবে
         if (tp_onscroll_value == 1) {
-            tp_anim_setting.scrollTrigger = {
+            // The tween is created on enter rather than up front, so the
+            // element is never hidden unless the reveal actually runs. The old
+            // code used gsap.from() with toggleActions "... reset", which hid
+            // the element immediately and re-hid it on scroll-back — leaving
+            // whole sections blank when a trigger did not replay.
+            item.__fadeTrigger = ScrollTrigger.create({
                 trigger: item,
                 start: "top 85%",
-                toggleActions: "play none none reset",
-            };
+                once: true,
+                onEnter: () => {
+                    item.__fadeTween = gsap.fromTo(item, from_vars, to_vars);
+                },
+            });
+        } else {
+            item.__fadeTween = gsap.fromTo(item, from_vars, to_vars);
         }
-
-        gsap.from(item, tp_anim_setting);
     });
 
    

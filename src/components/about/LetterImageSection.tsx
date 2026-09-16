@@ -7,7 +7,7 @@ import data from "@/data/about/letter.json";
 
 export default function LetterImageSection() {
   return (
-    <div className="letter-image-section-2 fix">
+    <div className="letter-image-section-2 fix hidden">
       <div className="letter-image mb-0">{data.text}</div>
     </div>
   );

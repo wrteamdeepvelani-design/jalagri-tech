@@ -58,6 +58,22 @@ export default function ThemeReinit() {
       /* fonts API unavailable — ignore */
     }
 
+    /* ScrollSmoother fakes scrolling with a transform on #smooth-content and
+       leaves #smooth-wrapper as a fixed, overflow:hidden box. That box is
+       still *programmatically* scrollable, and anything that calls
+       scrollIntoView() — Next.js' router when navigating to a #hash, browser
+       fragment handling — scrolls the wrapper itself. The smoother knows
+       nothing about that offset, so the whole page renders shifted: you can
+       scroll past the footer into blank space and never get back to the top.
+       Reset it whenever it happens; the smoother remains the only scroller. */
+    const wrapper = document.getElementById("smooth-wrapper");
+    const resetWrapperScroll = () => {
+      if (!wrapper) return;
+      if (wrapper.scrollTop !== 0) wrapper.scrollTop = 0;
+      if (wrapper.scrollLeft !== 0) wrapper.scrollLeft = 0;
+    };
+    wrapper?.addEventListener("scroll", resetWrapperScroll, { passive: true });
+
     // Auto-refresh on ANY content height change (lazy images, async client
     // content, expanding sections). Debounced to one refresh per frame.
     let raf = 0;
@@ -73,6 +89,7 @@ export default function ThemeReinit() {
 
     return () => {
       window.removeEventListener("load", refreshScrollTrigger);
+      wrapper?.removeEventListener("scroll", resetWrapperScroll);
       cancelAnimationFrame(raf);
       resizeObserver?.disconnect();
     };

@@ -1,13 +1,15 @@
 /**
- * AboutBrandSection — theme markup from about.html lines 1006-1085.
+ * AboutBrandSection — client logo cards under an h2 title. Uses
+ * .brand-section-3 (the about-page variant) with the same .brand-slider
+ * Swiper wired by main.js.
  * Editable content lives in src/data/about/brand.json.
- * Uses .brand-section-3 (different from homepage's .brand-section-2) and
- * has an h2 title. .brand-slider Swiper wired by main.js.
  */
 import data from "@/data/about/brand.json";
 
+type Client = { name: string; logo: string; onDark?: boolean };
+
 export default function AboutBrandSection() {
-  const slides = data.slides as [string, string][];
+  const clients = data.clients as Client[];
 
   return (
     <div className="brand-section-3 section-padding fix pb-0">
@@ -15,15 +17,18 @@ export default function AboutBrandSection() {
         <h2>{data.title}</h2>
         <div className="swiper brand-slider">
           <div className="swiper-wrapper">
-            {slides.map(([a, b]) => (
-              <div key={a} className="swiper-slide">
-                <div className="brand-box-1">
-                  <span className="brand-img-1">
-                    <img src={a} alt="img" />
-                  </span>
-                  <span className="brand-img-1">
-                    <img src={b} alt="img" />
-                  </span>
+            {clients.map((client) => (
+              <div key={client.name + client.logo} className="swiper-slide">
+                <div className="client-card">
+                  <div
+                    className={
+                      "client-card__logo" +
+                      (client.onDark ? " client-card__logo--on-dark" : "")
+                    }
+                  >
+                    <img src={client.logo} alt={client.name} />
+                  </div>
+                  <p className="client-card__name">{client.name}</p>
                 </div>
               </div>
             ))}

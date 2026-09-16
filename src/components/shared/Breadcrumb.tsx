@@ -14,13 +14,15 @@ export default function Breadcrumb({ title, items = [] }: BreadcrumbProps) {
   const crumbs = items.length > 0 ? items : [{ label: title }];
 
   return (
+    /* The theme drops the CSS background below 1400px in favour of a
+       .top-image <img>. We use one background for every width instead, fed
+       through a custom property so globals.css can beat that !important. */
     <div
       className="breadcrumb-wrapper bg-cover"
-      style={{ backgroundImage: "url('/images/breadcrumb.png')" }}
+      style={
+        { "--breadcrumb-image": "url('/images/breadcrumb.png')" } as React.CSSProperties
+      }
     >
-      <div className="top-image">
-        <img src="/images/breadcrumb-2.jpg" alt="breadcrumb" />
-      </div>
       <div className="container">
         <div className="page-heading">
           <div className="breadcrumb-sub-title">

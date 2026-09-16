@@ -1,7 +1,7 @@
 /**
  * Project detail page (/projects/[slug]) — Next.js 16 dynamic route.
  * Same pattern as services/[slug]:
- *   - generateStaticParams pre-builds all 6 project routes at build time
+ *   - generateStaticParams pre-builds every project route at build time
  *   - generateMetadata feeds per-project SEO from the JSON's seo field
  *   - Page renders Breadcrumb + ProjectDetailSection with the matched project
  */
@@ -9,6 +9,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Breadcrumb from "@/components/shared/Breadcrumb";
 import ProjectDetailSection from "@/components/projects/ProjectDetailSection";
+import WorkGallerySection from "@/components/projects/WorkGallerySection";
 import data from "@/data/projects/projects.json";
 
 type Params = { slug: string };
@@ -53,6 +54,7 @@ export default async function ProjectDetailPage(
         ]}
       />
       <ProjectDetailSection project={project} />
+      <WorkGallerySection />
     </>
   );
 }

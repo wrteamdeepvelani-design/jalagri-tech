@@ -1,5 +1,5 @@
 import Link from "next/link";
-import NewsletterForm from "@/components/shared/NewsletterForm";
+import FooterCta from "@/components/shared/FooterCta";
 
 const COMPANY = {
   name: "Jal Agritech India Pvt Ltd",
@@ -58,7 +58,7 @@ export default function Footer() {
             </div>
             <div className="icon-item wow fadeInUp" data-wow-delay=".6s">
               <div className="icon">
-                <img src="/images/home-2/icon/10.svg" alt="" />
+                <i className="fa-solid fa-phone-volume"></i>
               </div>
               <div className="cont">
                 <span>call for details</span>
@@ -67,7 +67,7 @@ export default function Footer() {
             </div>
             <div className="icon-item wow fadeInUp" data-wow-delay=".8s">
               <div className="icon">
-                <img src="/images/home-2/icon/11.svg" alt="" />
+                <i className="fa-solid fa-envelope"></i>
               </div>
               <div className="cont">
                 <span>send us email</span>
@@ -81,10 +81,10 @@ export default function Footer() {
         <div className="footer-widget-wrapper footer-widget-wrapper-2">
           <div className="row">
 
-            {/* Newsletter */}
+            {/* Quote CTA */}
             <div className="col-xl-5 col-md-7 col-lg-6 wow fadeInUp" data-wow-delay=".2s">
               <div className="single-footer-widget">
-                <NewsletterForm />
+                <FooterCta />
               </div>
             </div>
 

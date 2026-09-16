@@ -92,7 +92,10 @@ export default function WhatWeDoDetailSection({
                     {topic.thumbnails && topic.thumbnails.length > 0 && (
                       <div className="row g-4 mt-4 mb-4">
                         {topic.thumbnails.map((src, i) => (
-                          <div key={i} className="col-lg-6">
+                          <div
+                            key={i}
+                            className={topic.thumbnails!.length === 1 ? "col-12" : "col-lg-6"}
+                          >
                             <div className="thumb">
                               {/* No data-speed here: the ScrollSmoother
                                   parallax sets inline transforms/height on the
