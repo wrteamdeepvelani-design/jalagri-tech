@@ -445,6 +445,10 @@
         spaceBetween: 30,
         speed: 1300,
         loop: true,
+        // The CEO is the first slide and is styled as the highlighted card, so
+        // centre the active slide and start on him.
+        centeredSlides: true,
+        initialSlide: 0,
         autoplay: {
             delay: 2000,
             disableOnInteraction: false,
@@ -454,23 +458,26 @@
             prevEl: ".array-prev",
         },
         breakpoints: {
+            1599: {
+                slidesPerView: 5,
+            },
             1399: {
                 slidesPerView: 4,
             },
             1199: {
-                slidesPerView: 3,
+                slidesPerView: 3.4,
             },
             991: {
-                slidesPerView: 2,
+                slidesPerView: 2.6,
             },
             767: {
-                slidesPerView: 2,
+                slidesPerView: 2.2,
             },
             575: {
-                slidesPerView: 1,
+                slidesPerView: 1.6,
             },
             0: {
-                slidesPerView: 1,
+                slidesPerView: 1.3,
             },
         },
     });

@@ -1373,6 +1373,13 @@ div.breadcrumb-wrapper.bg-cover {
   object-fit: cover;
   background: #223026;
 }
+/* Side-by-side from 1200px up — a landscape crop keeps the card's bottom edge
+   near the CTA button row instead of running far past it. */
+@media (min-width: 1200px) {
+  .why-choose-video video {
+    aspect-ratio: 4 / 4.6;
+  }
+}
 /* Stacked below 1200px — full-width video reads better as a landscape band. */
 @media (max-width: 1199px) {
   .why-choose-video video {
@@ -1383,4 +1390,44 @@ div.breadcrumb-wrapper.bg-cover {
   .why-choose-video video {
     aspect-ratio: 4 / 3;
   }
+}
+
+/* Team — real photographs replace the theme's uniform cut-outs. They are all
+   roughly 3:4 portraits, so lock that ratio and crop rather than letting each
+   card size itself to its own file. */
+.team-card-item .team-image img {
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+
+/* CEO card keeps the theme's hover treatment permanently, so the slider always
+   has one named face instead of four anonymous portraits. */
+.team-section .team-card-item.is-featured .team-image::before {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+.team-section .team-card-item.is-featured .team-image .team-content {
+  bottom: 30px !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* The theme sizes this section for four large cards; with real headshots it
+   reads too heavy, so tighten the padding and the name/role type. */
+.team-section {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+@media (max-width: 991px) {
+  .team-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+.team-card-item .team-image .team-content h3,
+.team-card-item .team-image .team-content h3 a {
+  font-size: 20px;
+}
+.team-card-item .team-image .team-content p {
+  font-size: 14px;
 }

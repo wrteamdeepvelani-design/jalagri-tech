@@ -32,7 +32,7 @@ export default function AboutPage() {
       <CounterInnerSection />
       <OurHistorySection />
       <WorkProcessSection />
-      {/* <TeamSection /> */}
+      <TeamSection />
       {/* <FaqInnerSection /> */}
       <AboutTestimonialSection />
       <AboutBrandSection />

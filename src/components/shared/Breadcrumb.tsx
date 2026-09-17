@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import Link from "next/link";
 
 interface BreadcrumbItem {
@@ -37,16 +38,16 @@ export default function Breadcrumb({ title, items = [] }: BreadcrumbProps) {
               </Link>
             </li>
             {crumbs.map((item, i) => (
-              <>
-                <li key={`sep-${i}`}>:</li>
-                <li key={`item-${i}`}>
+              <Fragment key={i}>
+                <li>:</li>
+                <li>
                   {item.href ? (
                     <Link href={item.href}>{item.label}</Link>
                   ) : (
                     item.label
                   )}
                 </li>
-              </>
+              </Fragment>
             ))}
           </ul>
         </div>

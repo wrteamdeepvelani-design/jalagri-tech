@@ -12,6 +12,7 @@ type Member = {
   role: string;
   href: string;
   socials: Social[];
+  featured?: boolean;
 };
 
 export default function TeamSection() {
@@ -48,7 +49,9 @@ export default function TeamSection() {
           <div className="swiper-wrapper">
             {members.map((m, i) => (
               <div key={i} className="swiper-slide">
-                <div className="team-card-item">
+                <div
+                  className={`team-card-item${m.featured ? " is-featured" : ""}`}
+                >
                   <div className="team-image">
                     <img src={m.image} alt="img" />
                     <div className="social-icon">
