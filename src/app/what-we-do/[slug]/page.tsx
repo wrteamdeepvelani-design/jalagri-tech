@@ -77,7 +77,8 @@ export async function generateMetadata(
   if (!content) return { title: "Page not found" };
 
   return {
-    title: content.seo.title,
+    // The JSON title already carries the brand; bypass the root template.
+    title: { absolute: content.seo.title },
     description: content.seo.description,
     keywords: content.seo.keywords,
     openGraph: {

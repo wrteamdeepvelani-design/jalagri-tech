@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "build:standalone": "next build && cp -r public .next/standalone/ && cp -r .next/static .next/standalone/.next/",
+    "start:standalone": "node .next/standalone/server.js"
   },
   "dependencies": {
     "clsx": "^2.1.1",

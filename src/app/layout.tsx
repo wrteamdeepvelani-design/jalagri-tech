@@ -23,9 +23,47 @@ import CustomCursor from "@/components/shared/CustomCursor";
 import BackToTop from "@/components/shared/BackToTop";
 import ThemeReinit from "@/components/shared/ThemeReinit";
 
+// metadataBase makes every relative OG/Twitter image URL absolute. Override it
+// per environment with NEXT_PUBLIC_SITE_URL when the domain changes.
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://jalagri-tech.vercel.app";
+const siteName = "Jal Agritech India Pvt Ltd";
+const siteDescription =
+  "Jal Agritech India Pvt Ltd — 15+ years of turnkey irrigation, plantation, landscaping and agriculture solutions from Bhuj-Kutch, Gujarat, delivered across India.";
+
 export const metadata: Metadata = {
-  title: "Agriva - Agriculture Organic Farm",
-  description: "Agriva - Agriculture Farming HTML Template",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: `${siteName} | Irrigation, Landscaping & Agriculture Solutions`,
+    template: `%s | ${siteName}`,
+  },
+  description: siteDescription,
+  keywords: [
+    "jal agritech",
+    "irrigation company",
+    "drip irrigation",
+    "landscaping",
+    "horticulture",
+    "agriculture solutions",
+    "Bhuj",
+    "Kutch",
+    "Gujarat",
+  ],
+  applicationName: siteName,
+  alternates: { canonical: "/" },
+  openGraph: {
+    type: "website",
+    siteName,
+    locale: "en_IN",
+    url: siteUrl,
+    title: `${siteName} | Irrigation, Landscaping & Agriculture Solutions`,
+    description: siteDescription,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${siteName} | Irrigation, Landscaping & Agriculture Solutions`,
+    description: siteDescription,
+  },
+  robots: { index: true, follow: true },
 };
 
 // JS load order — matches index.html exactly. All files vendored at

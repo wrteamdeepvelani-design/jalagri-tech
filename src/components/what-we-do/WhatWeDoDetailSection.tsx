@@ -29,7 +29,9 @@ type Topic = {
   title: string;
   intro?: string[];
   highlight?: string;
-  thumbnails?: string[];
+  // A thumbnail is either a plain path or, for before/after pairs, an object
+  // carrying the caption shown over the image.
+  thumbnails?: (string | { src: string; label?: string })[];
   sections?: Section[];
   outro?: string;
 };
@@ -91,7 +93,11 @@ export default function WhatWeDoDetailSection({
 
                     {topic.thumbnails && topic.thumbnails.length > 0 && (
                       <div className="row g-4 mt-4 mb-4">
-                        {topic.thumbnails.map((src, i) => (
+                        {topic.thumbnails.map((thumb, i) => {
+                          const src = typeof thumb === "string" ? thumb : thumb.src;
+                          const label =
+                            typeof thumb === "string" ? undefined : thumb.label;
+                          return (
                           <div
                             key={i}
                             className={topic.thumbnails!.length === 1 ? "col-12" : "col-lg-6"}
@@ -102,10 +108,12 @@ export default function WhatWeDoDetailSection({
                                   img and fights the fixed 300px thumb box,
                                   making the height track the source image.
                                   Plain img → CSS controls it, always 300px. */}
-                              <img src={src} alt="img" />
+                              <img src={src} alt={label ?? "img"} />
+                              {label && <span className="thumb-label">{label}</span>}
                             </div>
                           </div>
-                        ))}
+                          );
+                        })}
                       </div>
                     )}
 

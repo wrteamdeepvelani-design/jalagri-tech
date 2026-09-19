@@ -14,15 +14,33 @@
   "testimonials": [
     {
       "image": "/images/home-3/client-2.png",
-      "name": "Project Lead",
-      "role": "Government Sector Client",
-      "quote": "Jal Agritech delivered a turn-key landscape and irrigation system on schedule and under budget. Their team handled survey, design, installation, and post-handover support as a single accountable partner."
+      "name": "Site Engineer",
+      "role": "Solar Park Project — Khavda",
+      "quote": "We had close to forty acres to cover before the monsoon and half of it was rocky ground. Their survey team redid the layout twice until the flow was even across the whole site. Two seasons on, no major line failures."
     },
     {
       "image": "/images/home-3/client-2.png",
-      "name": "Facility Manager",
-      "role": "Corporate Township",
-      "quote": "15+ years of Kutch experience really shows. The plant selection and irrigation engineering hold up through summer heat and monsoon. Our AMC has paid for itself many times over."
+      "name": "Facility In-charge",
+      "role": "Industrial Township — Mundra",
+      "quote": "The useful part was having one team for supply and for installation. Earlier we were chasing three different vendors. Now if a valve fails, one call and someone is on site the next day."
+    },
+    {
+      "image": "/images/home-3/client-2.png",
+      "name": "Horticulture Supervisor",
+      "role": "Government Memorial Project — Bhuj",
+      "quote": "Plant selection made the difference. They pushed for native species we had not considered, and those came through the first summer on far less water than the ornamentals we originally asked for."
+    },
+    {
+      "image": "/images/home-3/client-2.png",
+      "name": "Project Coordinator",
+      "role": "Defence Establishment — Kutch",
+      "quote": "Documentation and billing were clean, which matters to us because every file goes through audit. Work finished inside the sanctioned timeline and the handover notes were actually usable."
+    },
+    {
+      "image": "/images/home-3/client-2.png",
+      "name": "Farmer",
+      "role": "Nakhatrana, Kutch",
+      "quote": "I put drip on two acres of castor first because I was not sure about it. Water use came down and the crop was even, so the next year I did the rest of the land. For servicing they turn up without me calling twice."
     }
   ]
 }

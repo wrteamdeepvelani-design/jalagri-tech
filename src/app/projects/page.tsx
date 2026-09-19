@@ -7,8 +7,17 @@ import Breadcrumb from "@/components/shared/Breadcrumb";
 import ProjectGridSection from "@/components/projects/ProjectGridSection";
 
 export const metadata = {
-  title: "Projects - Agriva",
-  description: "Explore our portfolio of completed agriculture, irrigation, and landscape projects.",
+  title: "Projects",
+  description:
+    "Explore our portfolio of completed agriculture, irrigation, and landscape projects.",
+  openGraph: {
+    title: "Projects | Jal Agritech India Pvt Ltd",
+    description:
+      "Explore our portfolio of completed agriculture, irrigation, and landscape projects.",
+    // Declaring openGraph here overrides the root metadata, so the
+    // site-wide social card has to be re-attached explicitly.
+    images: ["/opengraph-image"],
+  },
 };
 
 export default function ProjectsPage() {

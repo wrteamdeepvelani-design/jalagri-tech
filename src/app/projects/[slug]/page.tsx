@@ -26,7 +26,8 @@ export async function generateMetadata(
   if (!project) return { title: "Project not found" };
 
   return {
-    title: project.seo.title,
+    // The JSON title already carries the brand; bypass the root template.
+    title: { absolute: project.seo.title },
     description: project.seo.description,
     keywords: project.seo.keywords,
     openGraph: {

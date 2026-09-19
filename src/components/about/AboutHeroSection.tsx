@@ -14,9 +14,12 @@ type ImageItem = {
 
 type Cta = { label: string; href: string; className: string };
 
+type Person = { image: string; name: string; role: string };
+
 export default function AboutHeroSection() {
   const images = data.images as ImageItem[];
   const ctas = data.rightBox.ctas as Cta[];
+  const people = data.rightBox.people as Person[];
 
   return (
     <section className="about-section-3 section-padding fix">
@@ -80,12 +83,16 @@ export default function AboutHeroSection() {
                       </ul>
                     ))}
                   </div>
-                  <div className="info-item">
-                    <img src={data.rightBox.person.image} alt="img" />
-                    <div className="content">
-                      <h4>{data.rightBox.person.name}</h4>
-                      <span>{data.rightBox.person.role}</span>
-                    </div>
+                  <div className="info-item director-info">
+                    {people.map((person) => (
+                      <div key={person.name} className="director">
+                        <img src={person.image} alt={person.name} />
+                        <div className="content">
+                          <h4>{person.name}</h4>
+                          <span>{person.role}</span>
+                        </div>
+                      </div>
+                    ))}
                   </div>
                   <div className="about-button wow fadeInUp" data-wow-delay=".3s">
                     {ctas.map((cta) => (

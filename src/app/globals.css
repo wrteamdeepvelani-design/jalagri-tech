@@ -739,7 +739,7 @@
    Pin a sensible height across every logo slot; width auto keeps aspect. */
 .logo .header-logo img,
 .logo .header-logo-2 img {
-  height: 90px;
+  height: 50px;
   width: auto;
   object-fit: contain;
 }
@@ -872,6 +872,36 @@ div.breadcrumb-wrapper.bg-cover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+/* The banner photo is a mid-tone field, so the theme's 10% green tint leaves
+   the page title unreadable. Lay a dark gradient over the photo — strongest
+   behind the text, lighter at the edges — and force the heading white. */
+div.breadcrumb-wrapper.bg-cover::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(14, 24, 16, 0.5) 0%,
+    rgba(14, 24, 16, 0.72) 55%,
+    rgba(14, 24, 16, 0.82) 100%
+  );
+}
+.breadcrumb-wrapper .container {
+  position: relative;
+  z-index: 2;
+}
+.breadcrumb-wrapper .page-heading h1 {
+  color: #fff !important;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.35);
+}
+.breadcrumb-wrapper .breadcrumb-items li,
+.breadcrumb-wrapper .breadcrumb-items li a {
+  color: rgba(255, 255, 255, 0.92) !important;
+}
+.breadcrumb-wrapper .breadcrumb-items li a:hover {
+  color: #fff !important;
 }
 
 /* Client cards — logo above the client name. Replaces the theme's bare
@@ -1431,3 +1461,863 @@ div.breadcrumb-wrapper.bg-cover {
 .team-card-item .team-image .team-content p {
   font-size: 14px;
 }
+
+/* About hero — the theme's single 68x68 client avatar becomes two real
+   director portraits (CEO + MD) sitting side by side above the CTAs. The
+   avatar is centred against both text lines, so name and role stay on one
+   line each and the two cards line up with each other. */
+.about-wrapper-3 .about-box .about-right-item .info-item.director-info {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  align-items: center;
+}
+.about-wrapper-3 .about-box .about-right-item .director {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+}
+.about-wrapper-3 .about-box .about-right-item .director img {
+  width: 70px;
+  height: 70px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  object-fit: cover;
+  object-position: top center;
+  background: #fff;
+}
+.about-wrapper-3 .about-box .about-right-item .director .content {
+  min-width: 0;
+}
+.about-wrapper-3 .about-box .about-right-item .director .content h4 {
+  font-size: 16px;
+  line-height: 1.35;
+  margin-bottom: 2px;
+}
+.about-wrapper-3 .about-box .about-right-item .director .content span {
+  font-size: 13px;
+  line-height: 1.35;
+  letter-spacing: 0.04em;
+}
+@media (max-width: 1399px) {
+  .about-wrapper-3 .about-box .about-right-item .director .content h4 {
+    font-size: 15px;
+  }
+}
+@media (max-width: 575px) {
+  .about-wrapper-3 .about-box .about-right-item .info-item.director-info {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* Before/after captions on topic thumbnails (Miyawaki growth, etc.). */
+.service-details-wrapper .service-details-content .thumb {
+  position: relative;
+}
+.service-details-wrapper .service-details-content .thumb-label {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  z-index: 2;
+  padding: 6px 14px;
+  border-radius: 100px;
+  background: rgba(20, 30, 22, 0.82);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+/* Header logo — the enlarged, floating mark is only for the white sticky
+   bar, where it reads as a badge overhanging the bar. The transparent
+   homepage header and the inner-page green bar keep the plain inline logo. */
+.sticky .header-main .header-left .logo {
+  position: relative;
+  z-index: 3;
+}
+.sticky .header-main .header-left .logo .header-logo-2 {
+  position: relative;
+  display: block;
+  height: 90px;
+  width: 132px;
+}
+.sticky .header-main .header-left .logo .header-logo-2 img {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 132px;
+  width: auto;
+  max-width: none;
+}
+@media (max-width: 991px) {
+  .sticky .header-main .header-left .logo .header-logo-2 {
+    height: 64px;
+    width: 92px;
+  }
+  .sticky .header-main .header-left .logo .header-logo-2 img {
+    height: 92px;
+  }
+}
+
+/* Mobile nav breakpoint — meanmenu used to hide the desktop nav by mutating
+   #mobile-menu inline. We render the mobile menu in React now and no longer
+   run meanmenu on it, so hide the desktop nav wrapper here instead. Laptops
+   keep the inline navbar; only tablet/mobile (<=991px) fall back to the
+   hamburger + React-rendered offcanvas menu. */
+@media (max-width: 991px) {
+  .header-1 .header-main .mean__menu-wrapper {
+    display: none !important;
+  }
+}
+
+/* Laptop range — tighten the navbar; the theme already hides the phone
+   number and CTA button below 1400px, which keeps this band uncrowded. */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .header-main .main-menu ul li {
+    margin-inline-end: 22px;
+  }
+  .header-main .main-menu ul li a {
+    font-size: 15px;
+  }
+}
+
+/* Theme hides the CTA below 1400px. With the navbar inline from 1200px up
+   there is room for it, so bring it back across that range. */
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .header-main .header-right .header-btn .header-button {
+    display: block;
+  }
+}
+
+/* About "Why Agriva" heading — centered section title above the feature
+   cards. Constrain the description width and add space before the cards. */
+.feature-section .section-title {
+  max-width: 680px;
+  margin-bottom: 50px;
+}
+.feature-section .section-title p {
+  color: var(--text);
+}
+
+/* Statistics stat cards — theme sizes each card to its text (flex with
+   space-between, no width), so the 2x2 grid is ragged and rows differ in
+   height. Force equal-width columns + equal-height rows for a clean grid. */
+.our-statistics-wrapper .our-statistics-content .our-statistics-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: stretch;
+}
+.our-statistics-wrapper .our-statistics-content .our-statistics-card .statistics-card {
+  width: auto;
+  margin-top: 0;
+}
+.our-statistics-wrapper .our-statistics-content .our-statistics-card .statistics-card p {
+  max-width: none;
+}
+@media (max-width: 575px) {
+  .our-statistics-wrapper .our-statistics-content .our-statistics-card {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Home feature cards — the theme gives the card no height, so each one
+   shrinks to its own copy and the card with the longest description runs
+   taller than its neighbours. The bootstrap columns already stretch to a
+   shared height; filling the column is all that's needed. Height only —
+   do NOT make the card a flex container: .masking-shape is an inline-block
+   that would stretch to the card width, distorting the mask and dragging
+   the absolutely-centred icon out of it. */
+.feature-section-2 .feature-box-item-2 {
+  height: 100%;
+}
+
+/* About section-title-area — the theme gives neither column a width and
+   relies on hard-coded <br> tags in the heading and paragraph to balance
+   them, so whichever side has more text takes the room and the other
+   collapses. Our copy comes from about.json without those breaks, so a
+   long description squeezed the heading to one word per line. Pin the
+   split instead of letting content decide it. Scoped to >=992px: below
+   that the theme already wraps this to a single stacked column. */
+@media (min-width: 992px) {
+  .about-section-2 .section-title-area {
+    gap: 60px;
+  }
+  .about-section-2 .section-title-area .section-title {
+    flex: 0 0 auto;
+    width: 40%;
+  }
+  .about-section-2 .section-title-area .content {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+}
+
+/* Breadcrumb banner — main.css sets `background-image: none !important` below
+   1400px and shows a .top-image <img> instead (whose theme asset we don't
+   ship). We render no .top-image, so restore the background at every width;
+   the !important is required to outrank the theme's own. */
+div.breadcrumb-wrapper.bg-cover {
+  background-image: var(--breadcrumb-image) !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* The banner photo is a mid-tone field, so the theme's 10% green tint leaves
+   the page title unreadable. Lay a dark gradient over the photo — strongest
+   behind the text, lighter at the edges — and force the heading white. */
+div.breadcrumb-wrapper.bg-cover::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(14, 24, 16, 0.5) 0%,
+    rgba(14, 24, 16, 0.72) 55%,
+    rgba(14, 24, 16, 0.82) 100%
+  );
+}
+.breadcrumb-wrapper .container {
+  position: relative;
+  z-index: 2;
+}
+.breadcrumb-wrapper .page-heading h1 {
+  color: #fff !important;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.35);
+}
+.breadcrumb-wrapper .breadcrumb-items li,
+.breadcrumb-wrapper .breadcrumb-items li a {
+  color: rgba(255, 255, 255, 0.92) !important;
+}
+.breadcrumb-wrapper .breadcrumb-items li a:hover {
+  color: #fff !important;
+}
+
+/* Client cards — logo above the client name. Replaces the theme's bare
+   .brand-box-1 logo strip (two stacked images swapped on hover). Slides sit
+   inside the theme's .brand-slider Swiper, so cards stretch to equal height. */
+/* Swiper clips at its own box; pad the track so the hover shadow renders. */
+.brand-slider {
+  padding: 10px 6px 18px;
+}
+.brand-slider .swiper-slide {
+  height: auto;
+}
+.client-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 14px;
+  padding: 24px 18px 20px;
+  background: var(--white);
+  border: 1px solid rgba(17, 162, 27, 0.14);
+  border-radius: 14px;
+  text-align: center;
+  transition: box-shadow 0.35s ease, border-color 0.35s ease, background 0.35s ease;
+}
+.client-card__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 66px;
+}
+.client-card__logo img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  /* Muted by default so the row reads as one system; true colour on hover. */
+  filter: grayscale(100%);
+  opacity: 0.78;
+  transition: filter 0.35s ease, opacity 0.35s ease;
+}
+/* Some brand assets only exist as white-on-transparent versions, which are
+   invisible on the white card. Those get a dark plate behind the logo so the
+   mark reads, instead of being silently blank. */
+.client-card__logo--on-dark {
+  background: #24352a;
+  border-radius: 8px;
+  padding: 8px 14px;
+}
+.client-card__logo--on-dark img {
+  filter: none;
+  opacity: 0.92;
+}
+.client-card:hover .client-card__logo--on-dark img {
+  opacity: 1;
+}
+.client-card__name {
+  margin: 0;
+  font-family: "Instrument Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--text);
+  transition: color 0.35s ease;
+}
+/* Emphasis without movement — a lift would escape the Swiper's clipped box
+   and slide under neighbouring slides, which stack above it. */
+.client-card:hover {
+  border-color: rgba(17, 162, 27, 0.55);
+  box-shadow: 0 6px 18px rgba(17, 162, 27, 0.12);
+}
+.client-card:hover .client-card__logo img {
+  filter: grayscale(0);
+  opacity: 1;
+}
+.client-card:hover .client-card__name {
+  color: var(--theme3);
+}
+@media (max-width: 767px) {
+  .client-card {
+    padding: 20px 14px 16px;
+    gap: 12px;
+  }
+  .client-card__logo {
+    height: 54px;
+  }
+  .client-card__name {
+    font-size: 13px;
+  }
+}
+
+/* Service card tag pills — flex items were shrinking, so labels like
+   "R&D-Driven" broke across two lines inside the capsule. Keep each pill
+   intact and let the row wrap between pills instead. */
+.service-card-items-2 .top-content .tag-list {
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.service-card-items-2 .top-content .tag-list span {
+  flex: 0 0 auto;
+  white-space: nowrap;
+  font-size: 14px;
+  padding: 3px 12px;
+}
+@media (max-width: 1399px) {
+  .service-card-items-2 .top-content .tag-list span {
+    font-size: 13px;
+    padding: 3px 10px;
+  }
+}
+
+/* Project cards — theme pins .project-image to 500px, which crops the wide
+   (16:9) project images hard. Use the images' own aspect ratio so the whole
+   frame sits inside the card instead. */
+.project-section-4 .project-card-items-4 .project-image {
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
+.project-section-4 .project-card-items-4 .project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+@media (max-width: 991px) {
+  .project-section-4 .project-card-items-4 .project-image {
+    aspect-ratio: 3 / 2;
+  }
+}
+/* Label block is sized for the old 500px card; scale it down so it sits on
+   the image rather than covering it. */
+.project-section-4 .project-card-items-4 .project-image .content {
+  left: 14px;
+  right: 14px;
+  bottom: 14px;
+  padding: 14px 18px;
+}
+.project-section-4 .project-card-items-4 .project-image .content p {
+  font-size: 13px;
+  margin-bottom: 2px;
+}
+.project-section-4 .project-card-items-4 .project-image .content h2 {
+  font-size: 19px;
+  line-height: 1.28;
+  margin: 0;
+}
+.project-section-4 .project-card-items-4:hover .project-image .content {
+  bottom: 18px;
+}
+
+/* Shared "More of Our Work" gallery on project detail pages — horizontal
+   scroll strip plus lightbox. Independent of the theme's Swiper/main.js. */
+.work-gallery__head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 26px;
+}
+.work-gallery__eyebrow {
+  display: inline-block;
+  margin-bottom: 8px;
+  font-family: "Instrument Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--theme3);
+}
+.work-gallery__head h2 {
+  margin: 0 0 8px;
+  font-size: 34px;
+  line-height: 1.2;
+}
+.work-gallery__head p {
+  margin: 0;
+  max-width: 620px;
+  color: var(--text);
+}
+.work-gallery__nav {
+  display: flex;
+  gap: 10px;
+  flex: 0 0 auto;
+}
+.work-gallery__nav button {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 1px solid rgba(17, 162, 27, 0.35);
+  background: transparent;
+  color: var(--theme3);
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+.work-gallery__nav button:hover {
+  background: var(--theme3);
+  color: var(--white);
+}
+.work-gallery__filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+.work-gallery__filters button {
+  padding: 7px 16px;
+  border-radius: 100px;
+  border: 1px solid rgba(47, 47, 47, 0.2);
+  background: transparent;
+  font-family: "Instrument Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+  color: var(--header);
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+.work-gallery__filters button:hover {
+  border-color: var(--theme3);
+  color: var(--theme3);
+}
+.work-gallery__filters button.is-active {
+  background: var(--theme3);
+  border-color: var(--theme3);
+  color: var(--white);
+}
+.work-gallery__track {
+  display: flex;
+  gap: 18px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 6px;
+  scrollbar-width: none;
+}
+.work-gallery__track::-webkit-scrollbar {
+  display: none;
+}
+.work-gallery__item {
+  position: relative;
+  flex: 0 0 300px;
+  padding: 0;
+  border: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  background: none;
+  cursor: pointer;
+  scroll-snap-align: start;
+}
+.work-gallery__item img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.work-gallery__item span {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 26px 14px 12px;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--white);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.72) 100%);
+}
+.work-gallery__item:hover img {
+  transform: scale(1.06);
+}
+.work-gallery__lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 24px;
+  background: rgba(10, 20, 12, 0.92);
+}
+.work-gallery__lightbox figure {
+  margin: 0;
+  max-width: min(1100px, 92vw);
+}
+.work-gallery__lightbox img {
+  display: block;
+  max-width: 100%;
+  max-height: 78vh;
+  object-fit: contain;
+  border-radius: 10px;
+}
+.work-gallery__lightbox figcaption {
+  margin-top: 12px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.85);
+}
+.work-gallery__lightbox button {
+  width: 46px;
+  height: 46px;
+  flex: 0 0 auto;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.14);
+  color: var(--white);
+  cursor: pointer;
+}
+.work-gallery__lightbox button:hover {
+  background: var(--theme3);
+}
+.work-gallery__close {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+}
+@media (max-width: 767px) {
+  .work-gallery__head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .work-gallery__head h2 {
+    font-size: 26px;
+  }
+  .work-gallery__item {
+    flex-basis: 240px;
+  }
+  .work-gallery__prev,
+  .work-gallery__next {
+    display: none;
+  }
+}
+
+/* Flagship project counter — theme renders it as transparent text with a thin
+   green stroke, which disappears over busy photography. Give it a dark,
+   blurred badge so it reads on any image. */
+.project-wrapper-2 .project-thumb-item .project-thumb h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 78px;
+  height: 78px;
+  right: 28px;
+  top: 28px;
+  margin: 0;
+  font-size: 34px;
+  line-height: 1;
+  color: var(--white);
+  -webkit-text-stroke: 0;
+  background: rgba(12, 32, 16, 0.55);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 50%;
+  z-index: 3;
+}
+/* The theme hides this counter below 1400px, where the thumb panel shrinks and
+   the badge would escape into the next section. Keep that behaviour — the
+   badge styling above must not resurrect it at every width. */
+@media (max-width: 1399px) {
+  .project-wrapper-2 .project-thumb-item .project-thumb h2 {
+    display: none;
+  }
+}
+
+/* Footer quote CTA — replaces the theme's newsletter card (whose background
+   image, /images/home-2/vutta.jpg, was never shipped with this build). */
+.footer-cta {
+  padding: 34px 32px 30px;
+  border-radius: 14px;
+  background: linear-gradient(150deg, rgba(17, 162, 27, 0.22), rgba(12, 32, 16, 0.55));
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+.footer-cta__eyebrow {
+  display: inline-block;
+  margin-bottom: 12px;
+  font-family: "Instrument Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--theme2);
+}
+.footer-cta h3 {
+  margin: 0 0 10px;
+  font-size: 26px;
+  line-height: 1.28;
+  color: var(--white);
+}
+.footer-cta p {
+  margin: 0 0 22px;
+  color: rgba(255, 255, 255, 0.72);
+}
+.footer-cta__whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  height: 54px;
+  padding: 0 26px;
+  border-radius: 8px;
+  background: #25d366;
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 600;
+  color: #0b2912;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+.footer-cta__whatsapp i {
+  font-size: 20px;
+}
+.footer-cta__whatsapp:hover {
+  background: #1fb855;
+  color: #0b2912;
+}
+.footer-cta__call {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 18px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.72);
+  transition: color 0.3s ease;
+}
+.footer-cta__call:hover {
+  color: var(--theme2);
+}
+@media (max-width: 575px) {
+  .footer-cta {
+    padding: 26px 20px 24px;
+  }
+  .footer-cta h3 {
+    font-size: 22px;
+  }
+  .footer-cta__whatsapp {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Footer decorative plant graphics are absolutely positioned over the content
+   column and were intercepting clicks on the CTA button. They are pure
+   decoration, so they should never take pointer events. */
+.footer-section-2 .left-shape,
+.footer-section-2 .right-shape,
+.footer-section-2 .left-shape img,
+.footer-section-2 .right-shape img {
+  pointer-events: none;
+}
+.footer-cta {
+  position: relative;
+  z-index: 2;
+}
+
+/* "JAL AGRITECH" letter-image strip — the theme sizes this at 440px, which
+   fills nearly a whole screen. Scale the whole ramp down by roughly half so it
+   reads as a divider rather than a section of its own. */
+.letter-image-section-2 .letter-image {
+  font-size: 230px;
+}
+@media (max-width: 1899px) {
+  .letter-image-section-2 .letter-image {
+    font-size: 220px;
+  }
+}
+@media (max-width: 1600px) {
+  .letter-image-section-2 .letter-image {
+    font-size: 190px;
+  }
+}
+@media (max-width: 1399px) {
+  .letter-image-section-2 .letter-image {
+    font-size: 130px;
+  }
+}
+@media (max-width: 991px) {
+  .letter-image-section-2 .letter-image {
+    font-size: 92px;
+  }
+}
+@media (max-width: 575px) {
+  .letter-image-section-2 .letter-image {
+    font-size: 48px;
+  }
+}
+
+/* Why Choose Us — the left column is a video card now (the theme's floating
+   cut-out image and its plant decorations were removed). Video cannot carry
+   an alpha channel, so it needs a frame rather than sitting loose on the
+   yellow panel. */
+.why-choose-video {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 18px 40px rgba(47, 47, 47, 0.18);
+}
+.why-choose-video video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  background: #223026;
+}
+/* Side-by-side from 1200px up — a landscape crop keeps the card's bottom edge
+   near the CTA button row instead of running far past it. */
+@media (min-width: 1200px) {
+  .why-choose-video video {
+    aspect-ratio: 4 / 4.6;
+  }
+}
+/* Stacked below 1200px — full-width video reads better as a landscape band. */
+@media (max-width: 1199px) {
+  .why-choose-video video {
+    aspect-ratio: 16 / 9;
+  }
+}
+@media (max-width: 767px) {
+  .why-choose-video video {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+/* Team — real photographs replace the theme's uniform cut-outs. They are all
+   roughly 3:4 portraits, so lock that ratio and crop rather than letting each
+   card size itself to its own file. */
+.team-card-item .team-image img {
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+
+/* CEO card keeps the theme's hover treatment permanently, so the slider always
+   has one named face instead of four anonymous portraits. */
+.team-section .team-card-item.is-featured .team-image::before {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+.team-section .team-card-item.is-featured .team-image .team-content {
+  bottom: 30px !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* The theme sizes this section for four large cards; with real headshots it
+   reads too heavy, so tighten the padding and the name/role type. */
+.team-section {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+@media (max-width: 991px) {
+  .team-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+.team-card-item .team-image .team-content h3,
+.team-card-item .team-image .team-content h3 a {
+  font-size: 20px;
+}
+.team-card-item .team-image .team-content p {
+  font-size: 14px;
+}
+
+/* About hero — the theme's single 68x68 client avatar becomes two real
+   director portraits (CEO + MD) sitting side by side above the CTAs. The
+   avatar is centred against both text lines, so name and role stay on one
+   line each and the two cards line up with each other. */
+.about-wrapper-3 .about-box .about-right-item .info-item.director-info {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  align-items: center;
+}
+.about-wrapper-3 .about-box .about-right-item .director {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+}
+.about-wrapper-3 .about-box .about-right-item .director img {
+  width: 70px;
+  height: 70px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  object-fit: cover;
+  object-position: top center;
+  background: #fff;
+}
+.about-wrapper-3 .about-box .about-right-item .director .content {
+  min-width: 0;
+}
+.about-wrapper-3 .about-box .about-right-item .director .content h4 {
+  font-size: 16px;
+  line-height: 1.35;
+  margin-bottom: 2px;
+}
+.about-wrapper-3 .about-box .about-right-item .director .content span {
+  font-size: 13px;
+  line-height: 1.35;
+  letter-spacing: 0.04em;
+}
+@media (max-width: 1399px) {
+  .about-wrapper-3 .about-box .about-right-item .director .content h4 {
+    font-size: 15px;
+  }
+}
+@media (max-width: 575px) {
+  .about-wrapper-3 .about-box .about-right-item .info-item.director-info {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* Before/after captions on topic thumbnails (Miyawaki growth, etc.). */
+.service-details-wrapper .service-details-content .thumb {
+  position: relative;
+}
+.service-details-wrapper .service-details-content .thumb-label {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  z-index: 2;
+  padding: 6px 14px;
+  border-radius: 100px;
+  background: rgba(20, 30, 22, 0.82);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+

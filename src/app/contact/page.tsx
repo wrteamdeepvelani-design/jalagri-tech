@@ -12,12 +12,16 @@ import DroneSpecificationSection from "@/components/contact/DroneSpecificationSe
 import data from "@/data/contact/contact.json";
 
 export const metadata: Metadata = {
-  title: data.seo.title,
+  // Already brand-suffixed in the JSON, so bypass the root title template.
+  title: { absolute: data.seo.title },
   description: data.seo.description,
   keywords: data.seo.keywords,
   openGraph: {
     title: data.seo.title,
     description: data.seo.description,
+    // Declaring openGraph here overrides the root metadata, so the
+    // site-wide social card has to be re-attached explicitly.
+    images: ["/opengraph-image"],
   },
 };
 

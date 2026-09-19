@@ -5,7 +5,11 @@
   "images": [
     {
       "src": "/images/about/landscaping-2.png",
-      "counter": { "value": "15", "suffix": "+", "label": "years of experience" }
+      "counter": {
+        "value": "15",
+        "suffix": "+",
+        "label": "years of experience"
+      }
     },
     {
       "src": "/images/about/irrigation-2.png"
@@ -15,17 +19,38 @@
     "background": "/images/about/aboutbg.png",
     "title": "What Makes Us Different",
     "columns": [
-      ["Turn-Key Delivery", "Native Species"],
-      ["Govt & Corporate", "Eco-Friendly"]
+      [
+        "Turn-Key Delivery",
+        "Native Species"
+      ],
+      [
+        "Govt & Corporate",
+        "Eco-Friendly"
+      ]
     ],
-    "person": {
-      "image": "/images/home-3/client-1.png",
-      "name": "Jagdish Bachani, Parsotam Bachani",
-      "role": "Directors"
-    },
+    "people": [
+      {
+        "image": "/images/team/jagdish-bachani.jpeg",
+        "name": "Mr. Jagdish Bachani",
+        "role": "CEO"
+      },
+      {
+        "image": "/images/team/parsotam-bachani.jpeg",
+        "name": "Mr. Parsotam Bachani",
+        "role": "MD"
+      }
+    ],
     "ctas": [
-      { "label": "Explore Our Work",  "href": "/projects",            "className": "theme-btn theme-btn-3" },
-      { "label": "Talk To Us",        "href": "/contact",             "className": "theme-btn style-2" }
+      {
+        "label": "Explore Our Work",
+        "href": "/projects",
+        "className": "theme-btn theme-btn-3"
+      },
+      {
+        "label": "Talk To Us",
+        "href": "/contact",
+        "className": "theme-btn style-2"
+      }
     ]
   }
 }

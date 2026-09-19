@@ -21,7 +21,7 @@ export default function Breadcrumb({ title, items = [] }: BreadcrumbProps) {
     <div
       className="breadcrumb-wrapper bg-cover"
       style={
-        { "--breadcrumb-image": "url('/images/breadcrumb.png')" } as React.CSSProperties
+        { "--breadcrumb-image": "url('/images/breadcrumb.jpg')" } as React.CSSProperties
       }
     >
       <div className="container">

@@ -1,14 +1,14 @@
 {
   "slug": "maintenance",
   "title": "Maintenance",
-  "heroImage": "/images/what-we-do/maintenance/hero.jpg",
+  "heroImage": "/images/what-we-do/real/memorial-roof-green.jpg",
   "seo": {
     "title": "Maintenance Services — AMC, On-Call Repairs & Landscape Upkeep | Jal Agritech",
     "description": "Annual Maintenance Contracts, on-call repairs, general landscape maintenance, and drainage & grading — keeping your irrigation systems and landscapes healthy year-round.",
     "keywords": "maintenance, AMC, annual maintenance contract, on-call repairs, landscape maintenance, drainage, grading, irrigation upkeep, jal agritech"
   },
   "impact": {
-    "background": "/images/what-we-do/maintenance/impact.jpg",
+    "background": "/images/what-we-do/real/campus-landscape.jpg",
     "title": "Always-On Support\nFor Your Project",
     "items": [
       {
@@ -32,7 +32,7 @@
     ]
   },
   "statistics": {
-    "image": "/images/what-we-do/maintenance/stats.jpg",
+    "image": "/images/what-we-do/real/highway-median-sprinkler.jpg",
     "eyebrow": "uptime that matters",
     "headline": "Maintenance Built Around Your Schedule.",
     "description": "We keep your irrigation systems and landscapes healthy through scheduled servicing, fast-response repairs, and full seasonal care — so you never lose a season to downtime.",
@@ -74,8 +74,7 @@
         "We provide prompt and reliable on-call repair services to address unexpected breakdowns, system malfunctions, and operational issues. Our experienced technical team responds quickly to diagnose problems, perform necessary repairs, and restore system functionality with minimal downtime. Whether for irrigation systems, landscaping infrastructure, fountains, pumps, automation controls, or related equipment, we ensure efficient troubleshooting and timely solutions to maintain uninterrupted performance and operational efficiency."
       ],
       "thumbnails": [
-        "/images/what-we-do/maintenance/t2-a.jpg",
-        "/images/what-we-do/maintenance/t2-b.jpg"
+        "/images/what-we-do/real/site-planting-crew.jpg"
       ],
       "sections": []
     },
@@ -85,8 +84,8 @@
         "Our General Landscape Maintenance services are designed to preserve the health, beauty, and functionality of outdoor spaces throughout the year. Services include lawn care, pruning, trimming, weeding, fertilization, plant health management, irrigation system monitoring, pest and disease control, seasonal planting, and overall site upkeep. With a focus on sustainability and horticultural best practices, our skilled team ensures that landscapes remain vibrant, safe, and aesthetically appealing while promoting long-term plant health and environmental well-being."
       ],
       "thumbnails": [
-        "/images/what-we-do/maintenance/t3-a.jpg",
-        "/images/what-we-do/maintenance/t3-b.jpg"
+        "/images/what-we-do/real/campus-landscape.jpg",
+        "/images/what-we-do/real/memorial-roof-green.jpg"
       ],
       "sections": []
     },

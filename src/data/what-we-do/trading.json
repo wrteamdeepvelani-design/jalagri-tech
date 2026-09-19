@@ -1,7 +1,7 @@
 {
   "slug": "trading",
   "title": "Trading",
-  "heroImage": "/images/what-we-do/trading/hero.jpg",
+  "heroImage": "/images/what-we-do/real/outlet-shelves.jpg",
   "seo": {
     "title": "Trading | Jal Agritech",
     "description": "Jal Agritech trading division — pipes, fittings, fertilizers, seeds, and agriculture inputs supplied at scale.",
@@ -10,17 +10,17 @@
   "gridCards": [
     {
       "title": "Pipes & Fittings",
-      "image": "/images/what-we-do/trading/grid-1.jpg",
+      "image": "/images/what-we-do/real/outlet-shelves.jpg",
       "anchor": "topic-0"
     },
     {
       "title": "Fertilizers & Inputs",
-      "image": "/images/what-we-do/trading/fertilizer.webp",
+      "image": "/images/what-we-do/real/mall-2.jpg",
       "anchor": "topic-0"
     },
     {
       "title": "Seeds & Plants",
-      "image": "/images/what-we-do/trading/grid-3.jpg",
+      "image": "/images/what-we-do/real/bholenath-2.jpg",
       "anchor": "topic-0"
     }
   ],
@@ -54,7 +54,7 @@
     }
   ],
   "impact": {
-    "background": "/images/what-we-do/trading/impact.jpg",
+    "background": "/images/what-we-do/real/nursery-nethouse.jpg",
     "title": "Bulk Supply,\nFair Pricing",
     "items": [
       {
@@ -78,7 +78,7 @@
     ]
   },
   "statistics": {
-    "image": "/images/what-we-do/trading/grid-2.jpg",
+    "image": "/images/what-we-do/real/planters-range.jpg",
     "eyebrow": "supply that scales",
     "headline": "One Partner For Every Input You Need.",
     "description": "Our trading division consolidates pipes, fittings, fertilizers, seeds, and plants under a single PO — saving you procurement effort.",

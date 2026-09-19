@@ -1,7 +1,7 @@
 {
   "bannerImage": "/images/services/textimage.png",
   "feature": {
-    "background": "/images/what-we-do/landscaping/landscaping-1.jpg",
+    "background": "/images/what-we-do/real/campus-landscape.jpg",
     "eyebrow": {
       "icon": "/images/home-2/icon/04.svg",
       "text": "what we do"
@@ -14,7 +14,7 @@
   },
   "cards": [
     {
-      "image": "/images/what-we-do/irrigation/irrigation-1.jpg",
+      "image": "/images/what-we-do/real/campus-landscape.jpg",
       "title": "Irrigation & Landscaping",
       "href": "/what-we-do/irrigation-and-landscaping",
       "delay": ".5",
@@ -26,7 +26,7 @@
       "description": "Automated irrigation, rain gun systems, softscaping and hardscaping, Miyawaki forests, and vertical gardens."
     },
     {
-      "image": "/images/what-we-do/landscaping/landscaping-2.jpg",
+      "image": "/images/what-we-do/real/site-planting-crew.jpg",
       "title": "Maintenance & Upkeep",
       "href": "/what-we-do/maintenance",
       "delay": ".7",
@@ -38,7 +38,7 @@
       "description": "Annual Maintenance Contracts, on-call repairs, landscape upkeep, and drainage & grading — healthy systems year-round."
     },
     {
-      "image": "/images/what-we-do/outlets/outlets-1.webp",
+      "image": "/images/what-we-do/real/outlet-shelves.jpg",
       "title": "Outlets & Nurseries",
       "href": "/what-we-do/outlets",
       "delay": ".3",
@@ -50,7 +50,7 @@
       "description": "Jal Agro Mall, Neelkanth, Bholenath, Boondh Agritech and Garden Care — plants, irrigation parts and on-site advice."
     },
     {
-      "image": "/images/what-we-do/manufacturing/manufacturing-1.jpg",
+      "image": "/images/what-we-do/generated/polyester-barbed-wire-fencing.jpg",
       "title": "Manufacturing",
       "href": "/what-we-do/manufacturing",
       "delay": ".5",

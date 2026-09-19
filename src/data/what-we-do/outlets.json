@@ -1,7 +1,7 @@
 {
   "slug": "outlets",
   "title": "Outlets",
-  "heroImage": "/images/what-we-do/outlets/o-hero.jpg",
+  "heroImage": "/images/what-we-do/real/outlet-shelves.jpg",
   "seo": {
     "title": "Our Outlets — Mall & Nurseries | Jal Agritech",
     "description": "Visit Jal Agritech outlets — Jal Agro Mall (Bhachau, Kutch), Neelkanth Nursery (Bhuj), Bholenath Nursery (Adas, Anand), Boondh Agritech (Unnao, UP), and Garden Care (Ayodhya, UP). Walk-in support for irrigation, landscaping, plants and supplies.",
@@ -15,7 +15,7 @@
     },
     {
       "title": "Neelkanth Nursery — Bhuj",
-      "image": "/images/what-we-do/outlets/o-grid-2.jpg",
+      "image": "/images/what-we-do/real/nursery-nethouse.jpg",
       "anchor": "topic-1"
     },
     {
@@ -25,7 +25,7 @@
     },
     {
       "title": "Boondh Agritech — Unnao, Uttar Pradesh",
-      "image": "/images/what-we-do/outlets/o-grid-4.jpg",
+      "image": "/images/what-we-do/real/mall-3.jpg",
       "anchor": "topic-3"
     },
     {
@@ -55,7 +55,7 @@
     }
   ],
   "impact": {
-    "background": "/images/what-we-do/outlets/outlets-3.webp",
+    "background": "/images/what-we-do/real/nursery-nethouse.jpg",
     "title": "Reach Where You Are",
     "items": [
       {
@@ -79,7 +79,7 @@
     ]
   },
   "statistics": {
-    "image": "/images/what-we-do/outlets/outlets-5.webp",
+    "image": "/images/what-we-do/real/outlet-shelves.jpg",
     "eyebrow": "local presence",
     "headline": "Walk-In Support Across Bhuj, Gujarat & Beyond.",
     "description": "Five Jal Agritech outlets serve as full-service points for plant supply, irrigation parts, and on-site advice — backed by our pan-India operations team.",
@@ -116,8 +116,8 @@
         "Backed by expert consultation, quality assurance, and dedicated customer support, JAL Agro Mall has become a trusted partner for farmers, helping them embrace modern agriculture and achieve sustainable growth across Kutch, Gujarat, and beyond."
       ],
       "thumbnails": [
-        "/images/projects/jal-agro-mall/jal-agro-mall-02.webp",
-        "/images/projects/jal-agro-mall/jal-agro-mall-03.webp"
+        "/images/what-we-do/real/mall-1.jpg",
+        "/images/what-we-do/real/mall-2.jpg"
       ],
       "sections": []
     },
@@ -130,8 +130,8 @@
         "Through our extensive product range, professional services, and commitment to excellence, Neelkanth Nursery strives to be the preferred destination for all gardening, plantation, and landscaping requirements across Kutch and Gujarat."
       ],
       "thumbnails": [
-        "/images/what-we-do/outlets/o-t2-a.jpg",
-        "/images/what-we-do/outlets/o-t2-b.jpg"
+        "/images/what-we-do/real/nursery-nethouse.jpg",
+        "/images/what-we-do/real/nethouse-2.jpg"
       ],
       "sections": []
     },
@@ -144,8 +144,8 @@
         "Backed by extensive nursery infrastructure, quality plant material, and efficient logistics, Bholenath Nursery serves clients not only across Gujarat but also throughout 10–15 neighbouring states in India. Through quality products, professional expertise, and dedicated customer support, we strive to be a trusted partner and preferred destination for gardening, plantation, landscaping, and environmental development projects nationwide."
       ],
       "thumbnails": [
-        "/images/projects/bholenath-nursery/bholenath-nursery-02.webp",
-        "/images/projects/bholenath-nursery/bholenath-nursery-03.webp"
+        "/images/what-we-do/real/bholenath-1.jpg",
+        "/images/what-we-do/real/bholenath-2.jpg"
       ],
       "sections": []
     },
@@ -156,10 +156,7 @@
         "Through Boondh Agritech, we undertake the cultivation and maintenance of a wide variety of live plants, ornamental species, avenue trees, and landscape materials, supporting projects across residential, commercial, institutional, corporate, and government sectors. The facility also serves as a demonstration and development site for advanced irrigation systems, horticultural practices, and landscape management techniques.",
         "With a strong focus on quality, innovation, and sustainability, Boondh Agritech contributes to our mission of delivering integrated agriculture, irrigation, landscaping, and environmental solutions while supporting green development initiatives across the region."
       ],
-      "thumbnails": [
-        "/images/what-we-do/outlets/o-t4-a.jpg",
-        "/images/what-we-do/outlets/o-t4-b.jpg"
-      ],
+      "thumbnails": [],
       "sections": []
     },
     {
@@ -170,8 +167,8 @@
         "Through professional horticultural practices, sustainable cultivation methods, and dedicated customer support, Garden Care contributes to our mission of creating greener, healthier, and more aesthetically appealing environments while serving clients across Uttar Pradesh and neighbouring regions."
       ],
       "thumbnails": [
-        "/images/projects/garden-care-nursery/garden-care-nursery-02.webp",
-        "/images/projects/garden-care-nursery/garden-care-nursery-03.webp"
+        "/images/what-we-do/real/garden-care-pots.jpg",
+        "/images/what-we-do/real/garden-care-2.jpg"
       ],
       "sections": []
     }

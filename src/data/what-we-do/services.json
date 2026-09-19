@@ -1,7 +1,7 @@
 {
   "slug": "services",
   "title": "Services",
-  "heroImage": "/images/what-we-do/services/hero.jpg",
+  "heroImage": "/images/what-we-do/real/site-planting-crew.jpg",
   "seo": {
     "title": "Professional Services — Survey, Design, Installation & Consultation | Jal Agritech",
     "description": "End-to-end professional services from Jal Agritech — site survey, landscape and irrigation design, turn-key installation, and consultation & support.",
@@ -10,22 +10,22 @@
   "gridCards": [
     {
       "title": "Survey & Site Assessment",
-      "image": "/images/what-we-do/services/grid-1.jpg",
+      "image": "/images/what-we-do/real/site-grading.jpg",
       "anchor": "topic-0"
     },
     {
       "title": "Design & Planning",
-      "image": "/images/what-we-do/services/t2-a.jpg",
+      "image": "/images/what-we-do/generated/design-planning-layout.jpg",
       "anchor": "topic-1"
     },
     {
       "title": "Turn-Key Installation",
-      "image": "/images/what-we-do/services/grid-3.jpg",
+      "image": "/images/what-we-do/real/rooftop-install-2.jpg",
       "anchor": "topic-2"
     },
     {
       "title": "Consultation & Support",
-      "image": "/images/what-we-do/services/grid-4.jpg",
+      "image": "/images/what-we-do/real/outlet-shelves.jpg",
       "anchor": "topic-3"
     }
   ],
@@ -56,7 +56,7 @@
         "A detailed survey and site assessment are conducted to evaluate existing site conditions, topography, soil characteristics, water availability, drainage patterns, vegetation, and project requirements. This process helps identify opportunities and constraints, ensuring the development of efficient, sustainable, and cost-effective irrigation, landscaping, and environmental solutions tailored to the specific needs of the project. The collected data serves as the foundation for accurate planning, design, and successful project execution."
       ],
       "thumbnails": [
-        "/images/what-we-do/services/t1-a.jpg"
+        "/images/what-we-do/real/site-grading.jpg"
       ],
       "sections": []
     },
@@ -66,8 +66,7 @@
         "Our Design & Planning process focuses on developing efficient, sustainable, and customized solutions based on detailed site assessments and client requirements. This includes conceptual design, layout planning, hydraulic calculations, irrigation network design, planting schemes, landscape master planning, material selection, and project scheduling. By integrating technical expertise, innovative approaches, and environmental considerations, we ensure that every project is optimized for performance, aesthetics, resource efficiency, and long-term sustainability."
       ],
       "thumbnails": [
-        "/images/what-we-do/services/t2-a.jpg",
-        "/images/what-we-do/services/t2-b.jpg"
+        "/images/what-we-do/generated/design-planning-layout.jpg"
       ],
       "sections": []
     },
@@ -77,7 +76,8 @@
         "We provide complete turn-key installation services, managing every stage of project execution from procurement and logistics to installation, testing, and commissioning. Our experienced team ensures the seamless implementation of irrigation systems, landscaping works, water features, environmental projects, and related infrastructure in accordance with approved designs and quality standards. With a focus on safety, efficiency, and timely delivery, we provide fully operational solutions that meet client requirements and ensure long-term performance and reliability."
       ],
       "thumbnails": [
-        "/images/what-we-do/services/t3-a.jpg"
+        "/images/what-we-do/real/rooftop-plantation-install.jpg",
+        "/images/what-we-do/real/rooftop-install-2.jpg"
       ],
       "sections": []
     },

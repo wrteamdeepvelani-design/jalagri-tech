@@ -20,8 +20,17 @@ import LetterImageSection from "@/components/about/LetterImageSection";
 
 
 export const metadata = {
-  title: "About Us - Agriva",
-  description: "Agriva - Agriculture Farming Template",
+  title: "About Us",
+  description:
+    "Meet the team behind Jal Agritech India Pvt Ltd — 15+ years of irrigation, plantation and landscape delivery from Bhuj-Kutch across India.",
+  openGraph: {
+    title: "About Us | Jal Agritech India Pvt Ltd",
+    description:
+      "Meet the team behind Jal Agritech India Pvt Ltd — 15+ years of irrigation, plantation and landscape delivery from Bhuj-Kutch across India.",
+    // Declaring openGraph here overrides the root metadata, so the
+    // site-wide social card has to be re-attached explicitly.
+    images: ["/opengraph-image"],
+  },
 };
 
 export default function AboutPage() {

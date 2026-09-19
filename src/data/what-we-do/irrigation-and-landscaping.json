@@ -1,7 +1,7 @@
 {
   "slug": "irrigation-and-landscaping",
   "title": "Irrigation and Landscaping",
-  "heroImage": "/images/what-we-do/irrigation/irrigation-1.jpg",
+  "heroImage": "/images/what-we-do/real/campus-landscape.jpg",
   "seo": {
     "title": "Irrigation and Landscaping | Jal Agritech",
     "description": "Automated irrigation, rain gun systems, landscape softscaping & hardscaping, Miyawaki forests, and vertical gardens — built for Indian farms, gardens, and commercial landscapes by Jal Agritech.",
@@ -82,7 +82,7 @@
     }
   ],
   "impact": {
-    "background": "/images/what-we-do/landscaping/landscaping-1.jpg",
+    "background": "/images/what-we-do/real/vertical-garden.jpg",
     "title": "Our Irrigation Work\nAt a Glance",
     "items": [
       {
@@ -106,7 +106,7 @@
     ]
   },
   "statistics": {
-    "image": "/images/what-we-do/irrigation/irrigation-2.png",
+    "image": "/images/what-we-do/real/site-planting-crew.jpg",
     "eyebrow": "by the numbers",
     "headline": "Smart Irrigation Delivers Measurable Results.",
     "description": "Our automated and high-coverage irrigation systems are engineered around four performance pillars — water efficiency, energy savings, plant survival, and yield gains.",
@@ -142,8 +142,8 @@
       ],
       "highlight": "A balanced combination of softscaping and hardscaping creates a durable, attractive, and functional outdoor environment for residential, commercial, and agricultural projects.",
       "thumbnails": [
-        "/images/what-we-do/landscaping/landscaping-8.png",
-        "/images/what-we-do/landscaping/landscaping-7.png"
+        "/images/what-we-do/real/campus-landscape.jpg",
+        "/images/what-we-do/real/site-planting-crew.jpg"
       ],
       "sections": [
         {
@@ -239,8 +239,8 @@
       ],
       "highlight": "Living walls maximize space in urban environments, insulate buildings, and improve both indoor and outdoor air quality.",
       "thumbnails": [
-        "/images/projects/vertical-with-fountain-welspun/vertical-with-fountain-welspun-02.jpg",
-        "/images/projects/vertical-with-fountain-welspun/vertical-with-fountain-welspun-03.jpg"
+        "/images/what-we-do/real/vertical-garden.jpg",
+        "/images/what-we-do/real/vertical-garden-2.jpg"
       ],
       "sections": [
         {
@@ -329,8 +329,14 @@
       ],
       "highlight": "Smritivan in Bhuj — built on the Bhujiyo Dungar hills as a 2001 earthquake memorial — is widely recognized as one of the world's largest Miyawaki-style afforestation projects.",
       "thumbnails": [
-        "/images/what-we-do/miyawaki/miyawaki-1.png",
-        "/images/what-we-do/miyawaki/miyawaki-2.png"
+        {
+          "src": "/images/what-we-do/real/plantation-hillside.jpg",
+          "label": "Before — planting underway"
+        },
+        {
+          "src": "/images/what-we-do/real/smritivan-aerial.jpg",
+          "label": "After — established forest"
+        }
       ],
       "sections": [
         {
@@ -410,8 +416,8 @@
         "Our company successfully completed India's second-largest terrace gardening project at the prestigious Smritivan Earthquake Memorial & Museum, Bhuj–Kutch, Gujarat. This landmark green infrastructure project demonstrates our expertise in large-scale landscape development, sustainable horticulture, irrigation systems, and innovative environmental solutions."
       ],
       "thumbnails": [
-        "/images/what-we-do/landscaping/landscaping-7.png",
-        "/images/what-we-do/landscaping/landscaping-8.png"
+        "/images/what-we-do/real/rooftop-plantation-install.jpg",
+        "/images/what-we-do/real/memorial-roof-green.jpg"
       ],
       "sections": [
         {
@@ -452,8 +458,7 @@
       ],
       "highlight": "Reduce water waste by up to 50%, improve plant health, and eliminate the need for constant manual watering.",
       "thumbnails": [
-        "/images/what-we-do/irrigation/irrigation-1.jpg",
-        "/images/what-we-do/irrigation/irrigation-2.jpg"
+        "/images/what-we-do/generated/atomization-misting.jpg"
       ],
       "sections": [
         {
@@ -525,8 +530,7 @@
       ],
       "highlight": "Covers a spray radius of 27 to 60 meters — one setup irrigates roughly half an acre in under 2 hours.",
       "thumbnails": [
-        "/images/what-we-do/irrigation/irrigation-3.jpg",
-        "/images/what-we-do/irrigation/irrigation-4.jpg"
+        "/images/what-we-do/generated/rain-gun.jpg"
       ],
       "sections": [
         {
@@ -620,8 +624,7 @@
         "These projects contribute to environmental conservation, improved air quality, reduced land degradation, enhanced site aesthetics, and sustainable ecosystem development. With extensive experience in mining, industrial, commercial, government, and infrastructure sectors, we deliver customized dust control and erosion management solutions that provide long-term environmental and operational benefits."
       ],
       "thumbnails": [
-        "/images/what-we-do/irrigation/irrigation-3.jpg",
-        "/images/what-we-do/irrigation/irrigation-4.jpg"
+        "/images/what-we-do/generated/dust-suppression-erosion.jpg"
       ]
     },
     {
@@ -630,8 +633,7 @@
         "A 'Fountains Project' could refer to a few different concepts depending on whether you are interested in DIY landscaping, commercial musical fountains, or scientific physics experiments."
       ],
       "thumbnails": [
-        "/images/projects/vertical-with-fountain-welspun/vertical-with-fountain-welspun-04.jpg",
-        "/images/projects/vertical-with-fountain-welspun/vertical-with-fountain-welspun-05.jpg"
+        "/images/what-we-do/generated/fountain.jpg"
       ],
       "sections": [
         {

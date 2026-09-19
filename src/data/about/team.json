@@ -16,86 +16,128 @@
       "featured": true
     },
     {
-      "image": "/images/team/arvind-dodiya.jpeg",
-      "name": "Mr. Arvind Dodiya",
-      "role": "Managing Director",
+      "image": "/images/team/parsotam-bachani.jpeg",
+      "name": "Mr. Parsotam Bachani",
+      "role": "Managing Director (MD)",
       "href": "/contact",
       "socials": []
     },
     {
       "image": "/images/team/bharti-bachani.jpeg",
-      "name": "Ms. Bharti Bachani",
-      "role": "Assistant Director",
+      "name": "Mrs. Bharti Bachani",
+      "role": "Assistant Director (AD)",
       "href": "/contact",
       "socials": []
     },
     {
       "image": "/images/team/poonam-bachani.jpeg",
-      "name": "Ms. Poonam Bachani",
-      "role": "Assistant Director",
+      "name": "Mrs. Poonam Bachani",
+      "role": "Assistant Director (AD)",
       "href": "/contact",
       "socials": []
     },
     {
-      "image": "/images/team/satyendra-bhartiya.jpeg",
-      "name": "Mr. Satyendra Bhartiya",
-      "role": "Assistant General Manager",
+      "image": "/images/team/tahir-sama.jpeg",
+      "name": "Tahir Sama",
+      "role": "General Manager (GM)",
+      "href": "/contact",
+      "socials": []
+    },
+    {
+      "image": "/images/team/arvind-dodiya.jpeg",
+      "name": "Arvind Dodiya",
+      "role": "Managing Director (MD)",
       "href": "/contact",
       "socials": []
     },
     {
       "image": "/images/team/nikunj-soni.jpeg",
-      "name": "Mr. Nikunj Soni",
-      "role": "Account Manager",
+      "name": "Nikunj Soni",
+      "role": "Account Manager (AM)",
       "href": "/contact",
       "socials": []
     },
     {
-      "image": "/images/team/nilesh-ingole.jpeg",
-      "name": "Mr. Nilesh Ingole",
-      "role": "Project Manager",
+      "image": "/images/team/krupali-acharya.jpeg",
+      "name": "Krupali Acharya",
+      "role": "Account Manager (AM)",
       "href": "/contact",
       "socials": []
     },
     {
-      "image": "/images/team/rahul-bodhale.jpeg",
-      "name": "Mr. Rahul Bodhale",
-      "role": "Project Manager",
+      "image": "/images/team/satyendrasingh-bhartiya.jpeg",
+      "name": "Satyendrasingh Bhartiya",
+      "role": "Assistant General Manager (AGM)",
       "href": "/contact",
       "socials": []
     },
     {
-      "image": "/images/team/rodulal-suryavanshi.jpeg",
-      "name": "Mr. Rodulal Suryavanshi",
-      "role": "Manager — Production",
+      "image": "/images/team/nagendrasingh-bhartiya.jpeg",
+      "name": "Nagendrasingh Bhartiya",
+      "role": "Manager (UP Division)",
       "href": "/contact",
       "socials": []
     },
     {
       "image": "/images/team/sanjay-parmar.jpeg",
-      "name": "Mr. Sanjay Parmar",
-      "role": "Associate Manager",
+      "name": "Sanjay Parmar",
+      "role": "Associate Manager (AM)",
+      "href": "/contact",
+      "socials": []
+    },
+    {
+      "image": "/images/team/rahul-bodhale.jpeg",
+      "name": "Rahul Bodhale",
+      "role": "Project Manager (PM)",
+      "href": "/contact",
+      "socials": []
+    },
+    {
+      "image": "/images/team/nilesh-ingole.jpeg",
+      "name": "Nilesh Ingole",
+      "role": "Project Manager (PM)",
       "href": "/contact",
       "socials": []
     },
     {
       "image": "/images/team/manish-dodiya.jpeg",
-      "name": "Mr. Manish Dodiya",
-      "role": "Assistant Manager — Production",
+      "name": "Manish Dodiya",
+      "role": "Assistant Manager (Production)",
+      "href": "/contact",
+      "socials": []
+    },
+    {
+      "image": "/images/team/prashant-sharma.jpeg",
+      "name": "Prashant Sharma",
+      "role": "Nursery Manager (NM)",
+      "href": "/contact",
+      "socials": []
+    },
+    {
+      "image": "/images/team/paresh-kariya.jpeg",
+      "name": "Paresh Kariya",
+      "role": "Manager (Rajkot Division)",
+      "href": "/contact",
+      "socials": []
+    },
+    {
+      "image": "/images/team/rodulal-suryavanshi.jpeg",
+      "name": "Rodulal Suryavanshi",
+      "role": "Production Manager (PM)",
       "href": "/contact",
       "socials": []
     },
     {
       "image": "/images/team/himesh-bhagnani.jpeg",
-      "name": "Mr. Himesh Bhagnani",
-      "role": "Assistant Manager",
+      "name": "Himesh Bhagnani",
+      "role": "Assistant Manager (AM)",
       "href": "/contact",
       "socials": []
     },
     {
-      "image": "/images/team/nagendra-singh.jpeg",
-      "name": "Mr. Nagendra Singh",
-      "role": "Manager — UP Division",
+      "image": "/images/team/sanjay-dod.jpeg",
+      "name": "Sanjay Dod",
+      "role": "Mall Manager (Bhachau)",
       "href": "/contact",
       "socials": []
     }
