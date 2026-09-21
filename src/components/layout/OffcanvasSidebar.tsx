@@ -153,12 +153,6 @@ export default function OffcanvasSidebar() {
                     </div>
                   </li>
                 </ul>
-                <div className="social-icon d-flex align-items-center style-2">
-                  <a href="#"><i className="fab fa-facebook-f"></i></a>
-                  <a href="#"><i className="fab fa-twitter"></i></a>
-                  <a href="#"><i className="fab fa-youtube"></i></a>
-                  <a href="#"><i className="fab fa-linkedin-in"></i></a>
-                </div>
               </div>
             </div>
           </div>

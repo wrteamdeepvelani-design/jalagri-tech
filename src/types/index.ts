@@ -1,4 +1,4 @@
-// Global TypeScript types for Agriva
+// Global TypeScript types for Jal Agritech
 
 export interface Product {
   id: string;

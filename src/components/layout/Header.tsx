@@ -88,10 +88,10 @@ export default function Header() {
               <div className="header-left">
                 <div className="logo">
                   <Link href="/" className="header-logo">
-                    <img src="/images/logo/logo.png" alt="Agriva" />
+                    <img src="/images/logo/logo.png" alt="Jal Agritech India Pvt Ltd" />
                   </Link>
                   <Link href="/" className="header-logo-2">
-                    <img src="/images/logo/logo.png" alt="Agriva" />
+                    <img src="/images/logo/logo.png" alt="Jal Agritech India Pvt Ltd" />
                   </Link>
                 </div>
               </div>
@@ -144,10 +144,10 @@ export default function Header() {
             <div className="header-left">
               <div className="logo">
                 <Link href="/" className="header-logo">
-                  <img src="/images/logo/logo.png" alt="Agriva" />
+                  <img src="/images/logo/logo.png" alt="Jal Agritech India Pvt Ltd" />
                 </Link>
                 <Link href="/" className="header-logo-2">
-                  <img src="/images/logo/logo.png" alt="Agriva" />
+                  <img src="/images/logo/logo.png" alt="Jal Agritech India Pvt Ltd" />
                 </Link>
               </div>
             </div>

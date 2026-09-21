@@ -87,16 +87,6 @@ export default function BlogDetailSection({ post }: { post: Post }) {
                       ))}
                     </div>
                   </div>
-                  <div className="col-lg-4 col-12 mt-3 mt-lg-0 text-lg-end">
-                    <div className="social-share">
-                      <span className="me-3">{data.shareLabel}</span>
-                      {data.socialShare.map((s) => (
-                        <a key={s.icon} href={s.href}>
-                          <i className={`fab ${s.icon}`}></i>
-                        </a>
-                      ))}
-                    </div>
-                  </div>
                 </div>
 
                 <div className="comments-area">

@@ -1,4 +1,4 @@
-export const SITE_NAME = "Agriva";
+export const SITE_NAME = "Jal Agritech India Pvt Ltd";
 export const SITE_DESCRIPTION = "Fresh Organic Farm Products – Straight from Farm to Your Table";
 export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
 

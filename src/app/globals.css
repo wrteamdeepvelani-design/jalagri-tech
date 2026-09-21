@@ -1,7 +1,7 @@
 /* ───────────────────────────────────────────────────────────────────
-   globals.css — Agriva Next.js (Maize Farming theme)
+   globals.css — Jal Agritech (Maize Farming theme)
 
-   The Agriva theme's CSS architecture is intact in src/app/styles/:
+   The theme's CSS architecture is intact in src/app/styles/:
      1. bootstrap.min.css
      2. all.min.css            (FontAwesome)
      3. animate.css
@@ -799,7 +799,7 @@
   }
 }
 
-/* About "Why Agriva" heading — centered section title above the feature
+/* About "Why Jal Agritech" heading — centered section title above the feature
    cards. Constrain the description width and add space before the cards. */
 .feature-section .section-title {
   max-width: 680px;
@@ -1591,7 +1591,7 @@ div.breadcrumb-wrapper.bg-cover::after {
   }
 }
 
-/* About "Why Agriva" heading — centered section title above the feature
+/* About "Why Jal Agritech" heading — centered section title above the feature
    cards. Constrain the description width and add space before the cards. */
 .feature-section .section-title {
   max-width: 680px;
@@ -2344,4 +2344,13 @@ div.breadcrumb-wrapper.bg-cover::after {
   margin-bottom: 0;
   font-size: 14px;
   opacity: 0.75;
+}
+
+/* Footer contact row — each .icon-item carries a left divider, which made
+   sense when the social icons sat first in the row. With those removed the
+   phone block leads, so drop its now-orphaned leading line and keep only the
+   divider between phone and email. */
+.footer-section-2 .footer-top-item .footer-right-item .icon-item:first-child {
+  border-left: 0;
+  padding-left: 0;
 }

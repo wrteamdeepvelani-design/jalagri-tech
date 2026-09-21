@@ -1,5 +1,6 @@
 import Link from "next/link";
 import FooterCta from "@/components/shared/FooterCta";
+import CopyrightYear from "@/components/shared/CopyrightYear";
 
 const COMPANY = {
   name: "Jal Agritech India Pvt Ltd",
@@ -50,12 +51,6 @@ export default function Footer() {
             </Link>
           </div>
           <div className="footer-right-item">
-            <div className="social-icon wow fadeInUp" data-wow-delay=".4s">
-              <a href="#"><i className="fa-brands fa-facebook-f"></i></a>
-              <a href="#"><i className="fa-brands fa-linkedin-in"></i></a>
-              <a href="#"><i className="fa-brands fa-twitter"></i></a>
-              <a href="#"><i className="fa-brands fa-youtube"></i></a>
-            </div>
             <div className="icon-item wow fadeInUp" data-wow-delay=".6s">
               <div className="icon">
                 <i className="fa-solid fa-phone-volume"></i>
@@ -148,7 +143,7 @@ export default function Footer() {
         {/* Footer Bottom */}
         <div className="footer-bottom pb-0">
           <div className="footer-wrapper justify-content-center">
-            <p>©{new Date().getFullYear()} <span>{COMPANY.name}</span>, All Rights Reserved.</p>
+            <p>©<CopyrightYear /> <span>{COMPANY.name}</span>, All Rights Reserved.</p>
           </div>
         </div>
 

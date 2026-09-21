@@ -5,13 +5,11 @@
  */
 import data from "@/data/about/team.json";
 
-type Social = { icon: string; href: string };
 type Member = {
   image: string;
   name: string;
   role: string;
   href: string;
-  socials: Social[];
   featured?: boolean;
 };
 
@@ -54,13 +52,6 @@ export default function TeamSection() {
                 >
                   <div className="team-image">
                     <img src={m.image} alt="img" />
-                    <div className="social-icon">
-                      {m.socials.map((s) => (
-                        <a key={s.icon} href={s.href}>
-                          <i className={`fa-brands ${s.icon}`}></i>
-                        </a>
-                      ))}
-                    </div>
                     <div className="team-content">
                       <h3>
                         <a href={m.href}>{m.name}</a>

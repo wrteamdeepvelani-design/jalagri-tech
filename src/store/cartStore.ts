@@ -55,6 +55,6 @@ export const useCartStore = create<CartState>()(
           0
         ),
     }),
-    { name: "agriva-cart" }
+    { name: "jalagritech-cart" }
   )
 );
