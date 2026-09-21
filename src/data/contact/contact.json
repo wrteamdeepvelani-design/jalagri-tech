@@ -11,8 +11,8 @@
       {
         "icon": "/images/home-2/icon/10.svg",
         "label": "call for details",
-        "value": "+91 98794 47395",
-        "href": "tel:+919879447395",
+        "value": "+91 98794 47399",
+        "href": "tel:+919879447399",
         "delay": ".6s"
       },
       {
@@ -36,16 +36,50 @@
       "maize": "/images/contact/plant.png"
     },
     "fields": [
-      { "label": "your Name",      "type": "text",     "name": "name",       "id": "name",    "placeholder": "adam gilcrist" },
-      { "label": "your email",     "type": "email",    "name": "Email",      "id": "email2",  "placeholder": "contact.adam@gmail.com" },
-      { "label": "contact number", "type": "text",     "name": "number",     "id": "number",  "placeholder": "+11 0321 456 9870" },
-      { "label": "subject",        "type": "text",     "name": "Subject",    "id": "jubject", "placeholder": "Subject" },
-      { "label": "Message",        "type": "textarea", "name": "conMessage", "id": "message", "placeholder": "write message. . ." }
+      {
+        "label": "your name",
+        "type": "text",
+        "name": "name",
+        "id": "name",
+        "placeholder": "Full name",
+        "required": true
+      },
+      {
+        "label": "contact number",
+        "type": "tel",
+        "name": "number",
+        "id": "number",
+        "placeholder": "+91 00000 00000",
+        "required": true
+      },
+      {
+        "label": "subject",
+        "type": "text",
+        "name": "subject",
+        "id": "subject",
+        "placeholder": "Irrigation / Landscaping / Maintenance",
+        "required": false
+      },
+      {
+        "label": "message",
+        "type": "textarea",
+        "name": "message",
+        "id": "message",
+        "placeholder": "Tell us about your site and requirement",
+        "required": true
+      }
     ],
-    "submitLabel": "Send Message",
+    "submitLabel": "Send on WhatsApp",
     "map": {
       "embedUrl": "https://maps.google.com/maps?q=34%2C+Time+Square+Empire%2C+Mirzapar+Road%2C+Bhuj+%E2%80%93+Kutch+370001%2C+Gujarat%2C+India&t=&z=15&ie=UTF8&iwloc=&output=embed",
       "title": "Jal Agritech India Pvt Ltd — 34 Time Square Empire, Mirzapar Road, Bhuj-Kutch 370001"
+    },
+    "whatsappNumber": "919879447399",
+    "note": "Your details open in WhatsApp as a ready-to-send message.",
+    "errors": {
+      "name": "Please enter your name.",
+      "number": "Please enter a valid phone number.",
+      "message": "Please tell us what you need."
     }
   },
   "gallery": {

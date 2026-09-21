@@ -2321,3 +2321,27 @@ div.breadcrumb-wrapper.bg-cover::after {
   letter-spacing: 0.02em;
 }
 
+
+/* Contact form — validation errors, WhatsApp button and helper note. The
+   form has no backend: it opens WhatsApp with the enquiry prefilled. */
+.contact-form .form-clt .form-error {
+  display: block;
+  margin-top: 6px;
+  color: #c0392b;
+  font-size: 13px;
+  font-weight: 500;
+}
+.contact-form .contact-wa-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.contact-form .contact-wa-btn i {
+  font-size: 20px;
+}
+.contact-form .form-note {
+  margin-top: 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  opacity: 0.75;
+}

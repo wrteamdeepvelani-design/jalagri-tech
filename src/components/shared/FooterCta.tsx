@@ -4,9 +4,9 @@
  * goes straight to WhatsApp with a prefilled message instead of a form that
  * would silently fail.
  */
-const WHATSAPP_NUMBER = "919879447395";
-const PHONE_TEL = "+919879447395";
-const PHONE_LABEL = "+91 98794 47395";
+const WHATSAPP_NUMBER = "919879447399";
+const PHONE_TEL = "+919879447399";
+const PHONE_LABEL = "+91 98794 47399";
 
 const PREFILLED_MESSAGE =
   "Hi Jal Agritech, I'd like to know more about your irrigation and landscaping services.";

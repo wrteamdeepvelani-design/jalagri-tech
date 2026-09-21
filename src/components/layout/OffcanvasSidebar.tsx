@@ -149,7 +149,7 @@ export default function OffcanvasSidebar() {
                       <i className="far fa-phone"></i>
                     </div>
                     <div className="offcanvas__contact-text">
-                      <a href="tel:+919879447395">+91 98794 47395</a>
+                      <a href="tel:+919879447399">+91 98794 47399</a>
                     </div>
                   </li>
                 </ul>

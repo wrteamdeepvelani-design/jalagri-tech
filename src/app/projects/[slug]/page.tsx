@@ -30,7 +30,10 @@ export async function generateMetadata(
     title: { absolute: project.seo.title },
     description: project.seo.description,
     keywords: project.seo.keywords,
+    alternates: { canonical: `/projects/${slug}` },
     openGraph: {
+      type: "website",
+      url: `/projects/${slug}`,
       title: project.seo.title,
       description: project.seo.description,
       images: [project.card.image],

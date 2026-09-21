@@ -30,11 +30,13 @@ export async function generateMetadata(
     title: { absolute: post.seo.title },
     description: post.seo.description,
     keywords: post.seo.keywords,
+    alternates: { canonical: `/blog/${slug}` },
     openGraph: {
+      type: "article",
+      url: `/blog/${slug}`,
       title: post.seo.title,
       description: post.seo.description,
       images: [post.card.image],
-      type: "article",
     },
   };
 }

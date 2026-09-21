@@ -104,7 +104,7 @@ export default function Header() {
                 <div className="header-btn">
                   <span>
                     <i className="fa-solid fa-phone-volume"></i>
-                    <a href="tel:+8801234567890">+880 1234 567890</a>
+                    <a href="tel:+919879447399">+91 98794 47399</a>
                   </span>
                   <div className="header-button">
                     <Link href="/contact" className="theme-btn-2 style-btns">

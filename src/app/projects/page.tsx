@@ -7,10 +7,20 @@ import Breadcrumb from "@/components/shared/Breadcrumb";
 import ProjectGridSection from "@/components/projects/ProjectGridSection";
 
 export const metadata = {
+  keywords: [
+    "irrigation projects India",
+    "landscaping projects Gujarat",
+    "drip irrigation case studies",
+    "industrial landscape projects",
+    "jal agritech projects",
+  ],
+  alternates: { canonical: "/projects" },
   title: "Projects",
   description:
     "Explore our portfolio of completed agriculture, irrigation, and landscape projects.",
   openGraph: {
+    type: "website",
+    url: "/projects",
     title: "Projects | Jal Agritech India Pvt Ltd",
     description:
       "Explore our portfolio of completed agriculture, irrigation, and landscape projects.",

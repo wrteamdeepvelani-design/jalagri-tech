@@ -3,8 +3,8 @@ import FooterCta from "@/components/shared/FooterCta";
 
 const COMPANY = {
   name: "Jal Agritech India Pvt Ltd",
-  phone: "+91 98794 47395",
-  phoneTel: "+919879447395",
+  phone: "+91 98794 47399",
+  phoneTel: "+919879447399",
   email: "jalagritechindiapvtltd@gmail.com",
   gst: "24AAFCJ0462P1ZD",
   cin: "U01409GJ2020PTC118906",

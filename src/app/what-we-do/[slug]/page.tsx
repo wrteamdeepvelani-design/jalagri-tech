@@ -81,9 +81,14 @@ export async function generateMetadata(
     title: { absolute: content.seo.title },
     description: content.seo.description,
     keywords: content.seo.keywords,
+    alternates: { canonical: `/what-we-do/${slug}` },
     openGraph: {
+      type: "website",
+      url: `/what-we-do/${slug}`,
       title: content.seo.title,
       description: content.seo.description,
+      // Declaring openGraph here drops the root card, so re-attach it.
+      images: [typeof content.heroImage === "string" ? content.heroImage : "/opengraph-image"],
     },
   };
 }

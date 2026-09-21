@@ -20,10 +20,20 @@ import LetterImageSection from "@/components/about/LetterImageSection";
 
 
 export const metadata = {
+  keywords: [
+    "about jal agritech",
+    "irrigation company Bhuj",
+    "landscaping company Kutch",
+    "agriculture company Gujarat",
+    "jal agritech directors",
+  ],
+  alternates: { canonical: "/about" },
   title: "About Us",
   description:
     "Meet the team behind Jal Agritech India Pvt Ltd — 15+ years of irrigation, plantation and landscape delivery from Bhuj-Kutch across India.",
   openGraph: {
+    type: "website",
+    url: "/about",
     title: "About Us | Jal Agritech India Pvt Ltd",
     description:
       "Meet the team behind Jal Agritech India Pvt Ltd — 15+ years of irrigation, plantation and landscape delivery from Bhuj-Kutch across India.",

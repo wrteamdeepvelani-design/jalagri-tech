@@ -7,6 +7,10 @@ import { ImageResponse } from "next/og";
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 
+// Static export needs this route prerendered to a file rather than served
+// on demand.
+export const dynamic = "force-static";
+
 export const alt =
   "Jal Agritech India Pvt Ltd — irrigation, landscaping and agriculture solutions";
 export const size = { width: 1200, height: 630 };

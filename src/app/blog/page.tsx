@@ -7,9 +7,18 @@ import Breadcrumb from "@/components/shared/Breadcrumb";
 import BlogGridSection from "@/components/blog/BlogGridSection";
 
 export const metadata = {
+  keywords: [
+    "irrigation blog",
+    "farming insights India",
+    "drip irrigation tips",
+    "landscaping advice",
+  ],
+  alternates: { canonical: "/blog" },
   title: "Blog",
   description: "Latest news, farming insights, and stories from the field.",
   openGraph: {
+    type: "website",
+    url: "/blog",
     title: "Blog | Jal Agritech India Pvt Ltd",
     description: "Latest news, farming insights, and stories from the field.",
     // Declaring openGraph here overrides the root metadata, so the
