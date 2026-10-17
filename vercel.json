@@ -1,0 +1,41 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "https://jalagritech.com/",
+      "permanent": true
+    },
+    {
+      "source": "/:file(opengraph-image|twitter-image)",
+      "destination": "https://jalagritech.com/:file",
+      "permanent": true
+    },
+    {
+      "source": "/:path(.*\\.[^/]+)",
+      "destination": "https://jalagritech.com/:path",
+      "permanent": true
+    },
+    {
+      "source": "/:path(.*/)",
+      "destination": "https://jalagritech.com/:path",
+      "permanent": true
+    },
+    {
+      "source": "/:path(.+)",
+      "destination": "https://jalagritech.com/:path/",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow, noarchive"
+        }
+      ]
+    }
+  ]
+}

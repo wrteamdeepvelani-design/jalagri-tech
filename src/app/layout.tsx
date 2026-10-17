@@ -34,6 +34,7 @@ import ThemeReinit from "@/components/shared/ThemeReinit";
 // robots and JSON-LD can't drift apart. Override the host per environment
 // with NEXT_PUBLIC_SITE_URL.
 const pageTitle = `${SITE_NAME} | ${SITE_TAGLINE}`;
+const isVercelBuild = process.env.VERCEL === "1";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -77,12 +78,14 @@ export const metadata: Metadata = {
     title: pageTitle,
     description: SITE_DESCRIPTION,
   },
+  // Vercel sets VERCEL=1 at build time. The *.vercel.app copy must stay out
+  // of the index; the production build (Hostinger) stays indexable.
   robots: {
-    index: true,
-    follow: true,
+    index: !isVercelBuild,
+    follow: !isVercelBuild,
     googleBot: {
-      index: true,
-      follow: true,
+      index: !isVercelBuild,
+      follow: !isVercelBuild,
       "max-image-preview": "large",
       "max-snippet": -1,
       "max-video-preview": -1,

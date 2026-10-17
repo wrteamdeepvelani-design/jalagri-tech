@@ -4,7 +4,7 @@
  * a domain change is one edit (or one NEXT_PUBLIC_SITE_URL env var).
  */
 export const SITE_URL = (
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://jalagri-tech.vercel.app"
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://jalagritech.com"
 ).replace(/\/$/, "");
 
 export const SITE_NAME = "Jal Agritech India Pvt Ltd";
