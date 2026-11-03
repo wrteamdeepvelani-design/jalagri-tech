@@ -8,6 +8,7 @@ import { url } from "@/lib/site";
 import projects from "@/data/projects/projects.json";
 import blog from "@/data/blog/blog.json";
 import categories from "@/data/what-we-do/categories.json";
+import products from "@/data/products/products.json";
 
 export const dynamic = "force-static";
 
@@ -19,6 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: url("/about"), lastModified: now, changeFrequency: "yearly", priority: 0.8 },
     { url: url("/contact"), lastModified: now, changeFrequency: "yearly", priority: 0.8 },
     { url: url("/projects"), lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: url("/manufacturing"), lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: url("/blog"), lastModified: now, changeFrequency: "monthly", priority: 0.6 },
   ];
 
@@ -29,7 +31,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }));
 
-  const projectPages = projects.projects.map((p: { slug: string }) => ({
+  const productPages = products.categories.map((c: { slug: string }) => ({
+    url: url(`/products/${c.slug}`),
+    lastModified: now,
+    changeFrequency: "monthly" as const,
+    priority: 0.9,
+  }));
+
+  const projectPages =projects.projects.map((p: { slug: string }) => ({
     url: url(`/projects/${p.slug}`),
     lastModified: now,
     changeFrequency: "yearly" as const,
@@ -43,5 +52,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.5,
   }));
 
-  return [...top, ...services, ...projectPages, ...posts];
+  return [...top, ...services, ...productPages, ...projectPages, ...posts];
 }

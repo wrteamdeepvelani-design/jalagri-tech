@@ -24,23 +24,85 @@
  *      on #smooth-content so ANY height change auto-corrects positions.
  */
 import { usePathname } from "next/navigation";
-import { useEffect, useRef } from "react";
+import { useEffect, useLayoutEffect, useRef } from "react";
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 declare global {
   interface Window {
     __initThemePage?: () => void;
     ScrollTrigger?: any;
+    ScrollSmoother?: any;
   }
 }
 
 function refreshScrollTrigger() {
+  // refresh() makes ScrollSmoother restart its smoothing from near the top
+  // and glide back to the real scroll position — a visible jump-and-slide
+  // every time the layout is re-measured. Pin it to the real position: the
+  // native scrollY, not smoother.scrollTop(), which returns the in-flight
+  // smoothed value and would freeze a glide mid-way.
+  const y = window.scrollY;
   window.ScrollTrigger?.refresh();
+  window.ScrollSmoother?.get?.()?.scrollTop(y);
+}
+
+/**
+ * Put the new page at the top (or at its #hash target) after a client-side
+ * navigation. Next.js normally does this, but ScrollSmoother owns scrolling
+ * here, so without it a link clicked near the footer opened the next page
+ * still scrolled to the footer.
+ */
+function scrollToTopOrHash() {
+  const smoother = window.ScrollSmoother?.get?.();
+  const hash = window.location.hash;
+  const target = hash.length > 1 ? document.getElementById(decodeURIComponent(hash.slice(1))) : null;
+  if (target) {
+    if (smoother) smoother.scrollTo(target, false, "top 90px");
+    else target.scrollIntoView();
+    return;
+  }
+  // "instant": an animated scroll is still mid-way when ScrollTrigger next
+  // refreshes, and refresh() restores the position it reads at that moment.
+  window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+  smoother?.scrollTop(0);
+}
+
+/**
+ * For a moment after a page change, keep ScrollSmoother's displayed position
+ * on the real scroll position. The theme's page re-init rebuilds its
+ * ScrollTriggers, which sets the smoother gliding in from a stale offset —
+ * a visible flash of the page scrolled partway down. Stops early on any
+ * user scroll input so manual scrolling stays smooth.
+ */
+function holdScrollPosition(ms: number) {
+  const gsap = (window as any).gsap;
+  const smoother = window.ScrollSmoother?.get?.();
+  if (!gsap || !smoother) return () => {};
+  // Also hold the native position: late content growth can nudge it.
+  const target = window.scrollY;
+  const tick = () => {
+    if (Math.abs(window.scrollY - target) > 1) {
+      window.scrollTo({ top: target, left: 0, behavior: "instant" });
+    }
+    if (Math.abs(smoother.scrollTop() - target) > 1) smoother.scrollTop(target);
+  };
+  const inputs = ["wheel", "touchstart", "keydown", "pointerdown"];
+  let timer = 0;
+  const stop = () => {
+    gsap.ticker.remove(tick);
+    inputs.forEach((e) => window.removeEventListener(e, stop));
+    clearTimeout(timer);
+  };
+  gsap.ticker.add(tick);
+  inputs.forEach((e) => window.addEventListener(e, stop, { passive: true }));
+  timer = window.setTimeout(stop, ms);
+  return stop;
 }
 
 export default function ThemeReinit() {
   const pathname = usePathname();
   const isFirst = useRef(true);
+  const prevPath = useRef<string | null>(null);
 
   // One-time: recompute ScrollTrigger positions whenever the layout settles
   // or the content height changes. This is what stops the intermittent
@@ -95,6 +157,33 @@ export default function ThemeReinit() {
     };
   }, []);
 
+  // Per-navigation: reset the scroll position before the new page paints.
+  // Product category switches keep their place (handled in place by
+  // ProductCategoryBrowser), so they are skipped.
+  const lastScrolledPath = useRef<string | null>(null);
+  useLayoutEffect(() => {
+    const prev = lastScrolledPath.current;
+    lastScrolledPath.current = pathname;
+    if (prev === null || prev === pathname) return;
+    const isProducts = (p: string | null) => !!p?.startsWith("/products/");
+    if (isProducts(prev) && isProducts(pathname)) return;
+    scrollToTopOrHash();
+    let release = holdScrollPosition(1500);
+    // A #hash target may sit below late-loading images; aim again once the
+    // layout has settled and ScrollTrigger has re-measured.
+    const t = window.location.hash.length > 1
+      ? window.setTimeout(() => {
+          release();
+          scrollToTopOrHash();
+          release = holdScrollPosition(600);
+        }, 900)
+      : 0;
+    return () => {
+      release();
+      clearTimeout(t);
+    };
+  }, [pathname]);
+
   // Per-navigation: re-run page inits, then refresh at a few settle points.
   useEffect(() => {
     const timers: number[] = [];
@@ -109,9 +198,19 @@ export default function ThemeReinit() {
     // late images/fonts) — not re-run the inits.
     if (isFirst.current) {
       isFirst.current = false;
+      prevPath.current = pathname;
       refreshAtSettlePoints();
       return () => timers.forEach(clearTimeout);
     }
+
+    // Product category pills switch in place and only push the URL
+    // (ProductCategoryBrowser); re-running the page inits there would
+    // replay animations on an unchanged page. The ResizeObserver above
+    // already re-measures when the new products change the page height.
+    const isProducts = (p: string | null) => !!p?.startsWith("/products/");
+    const categorySwitch = isProducts(prevPath.current) && isProducts(pathname);
+    prevPath.current = pathname;
+    if (categorySwitch) return;
 
     let tries = 0;
     const run = () => {

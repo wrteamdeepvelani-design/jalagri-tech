@@ -30,13 +30,13 @@ export const metadata = {
   alternates: { canonical: "/about" },
   title: "About Us",
   description:
-    "Meet the team behind Jal Agritech India Pvt Ltd — 15+ years of irrigation, plantation and landscape delivery from Bhuj-Kutch across India.",
+    "Meet the team behind Jal Agritech India Pvt Ltd — 20+ years of irrigation, plantation and landscape delivery from Bhuj-Kutch across India.",
   openGraph: {
     type: "website",
     url: "/about",
     title: "About Us | Jal Agritech India Pvt Ltd",
     description:
-      "Meet the team behind Jal Agritech India Pvt Ltd — 15+ years of irrigation, plantation and landscape delivery from Bhuj-Kutch across India.",
+      "Meet the team behind Jal Agritech India Pvt Ltd — 20+ years of irrigation, plantation and landscape delivery from Bhuj-Kutch across India.",
     // Declaring openGraph here overrides the root metadata, so the
     // site-wide social card has to be re-attached explicitly.
     images: ["/opengraph-image"],

@@ -11,8 +11,15 @@ export default function BrandSection() {
   const clients = data.clients as Client[];
 
   return (
-    <div className="brand-section-2 section-padding pt-0 fix">
+    <div className="brand-section-2 section-padding fix">
       <div className="container">
+        <div className="section-title text-center">
+          <span className="sub-title-2">
+            <img src="/images/home-2/icon/04.svg" alt="img" /> our clients
+            <img src="/images/home-2/icon/04.svg" alt="img" className="ms-2" />
+          </span>
+          <h2>Trusted by Leading Organisations</h2>
+        </div>
         <div className="swiper brand-slider">
           <div className="swiper-wrapper">
             {clients.map((client) => (

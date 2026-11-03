@@ -12,7 +12,7 @@ export const SITE_NAME = "Jal Agritech India Pvt Ltd";
 export const SITE_TAGLINE = "Irrigation, Landscaping & Agriculture Solutions";
 
 export const SITE_DESCRIPTION =
-  "Jal Agritech India Pvt Ltd — 15+ years of turnkey irrigation, plantation, landscaping and agriculture solutions from Bhuj-Kutch, Gujarat, delivered across India.";
+  "Jal Agritech India Pvt Ltd — 20+ years of turnkey irrigation, plantation, landscaping and agriculture solutions from Bhuj-Kutch, Gujarat, delivered across India.";
 
 export const CONTACT = {
   phone: "+91 98794 47399",

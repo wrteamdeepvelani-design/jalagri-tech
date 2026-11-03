@@ -3,12 +3,12 @@
   "tractorImage": "/images/about/floatingmain.png",
   "stats": [
     {
-      "value": "15",
+      "value": "20",
       "suffix": "+",
       "description": "Years of irrigation & landscape experience"
     },
     {
-      "value": "15",
+      "value": "20",
       "suffix": "+",
       "description": "Years of Pan-India operations",
       "modifier": "style-top"

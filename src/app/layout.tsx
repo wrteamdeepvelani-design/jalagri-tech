@@ -139,12 +139,10 @@ const organizationJsonLd = {
     "@type": "OfferCatalog",
     name: "Services",
     itemListElement: [
-      "Irrigation & Landscaping",
-      "Services",
+      "Landscaping & Irrigation",
+      "Design & Installation",
       "Maintenance",
       "Outlets & Nurseries",
-      "Manufacturing",
-      "Trading",
     ].map((name, i) => ({
       "@type": "Offer",
       position: i + 1,

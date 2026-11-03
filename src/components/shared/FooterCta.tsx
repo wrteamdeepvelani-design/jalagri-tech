@@ -19,7 +19,7 @@ export default function FooterCta() {
   return (
     <div className="footer-cta">
       <span className="footer-cta__eyebrow">Get a free quote</span>
-      <h3>Planning an irrigation or landscape project?</h3>
+      <h3>Contact our Product and Service Expert</h3>
       <p>
         Message us on WhatsApp and our team will get back with a site assessment
         and an estimate.

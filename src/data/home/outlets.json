@@ -1,0 +1,40 @@
+{
+  "eyebrow": {
+    "icon": "/images/home-2/icon/04.svg",
+    "text": "our outlets"
+  },
+  "headline": "Walk-In Support Across\nGujarat & Uttar Pradesh",
+  "intro": "Five Jal Agritech outlets and nurseries serve as full-service points for plants, irrigation parts, farm inputs and on-site advice.",
+  "outlets": [
+    {
+      "name": "Jal Agro Mall",
+      "location": "Bhachau, Kutch",
+      "image": "/images/projects/jal-agro-mall/jal-agro-mall-01.jpg",
+      "description": "Our flagship one-stop agri mall — irrigation systems, seeds, fertilizers, crop protection, farm machinery and expert guidance under one roof."
+    },
+    {
+      "name": "Neelkanth Nursery",
+      "location": "Bhuj, Kutch",
+      "image": "/images/what-we-do/real/nursery-nethouse.jpg",
+      "description": "Live plants, ornamentals, avenue trees, pots, planters and gardening tools for homes, businesses and institutions across Kutch."
+    },
+    {
+      "name": "Bholenath Nursery",
+      "location": "Adas, Anand, Gujarat",
+      "image": "/images/projects/bholenath-nursery/bholenath-nursery-01.webp",
+      "description": "Large-scale nursery supplying plantation drives, landscape projects and afforestation work across Gujarat and 10–15 neighbouring states."
+    },
+    {
+      "name": "Boondh Agritech",
+      "location": "Unnao, Uttar Pradesh",
+      "image": "/images/what-we-do/real/mall-3.jpg",
+      "description": "Sister concern for irrigation, landscaping and plantation — and a demonstration site for modern irrigation and horticulture practices."
+    },
+    {
+      "name": "Garden Care",
+      "location": "Ayodhya, Uttar Pradesh",
+      "image": "/images/projects/garden-care-nursery/garden-care-nursery-01.webp",
+      "description": "Nursery and garden centre for live plants, decorative pots, planters and horticultural products across Uttar Pradesh."
+    }
+  ]
+}

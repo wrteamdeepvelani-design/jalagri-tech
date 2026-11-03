@@ -1,0 +1,258 @@
+{
+  "_description": "Product catalogue. Each category renders at /products/{slug} and appears in the navbar 'Products' dropdown. Images live in public/images/products/{folder}/. A product with an empty `images` array shows a placeholder until a photo is added.",
+  "categories": [
+    {
+      "slug": "fencing-solutions",
+      "title": "Fencing Solutions",
+      "heroImage": "/images/products/fencing/polyester-barbed-wire-1.jpg",
+      "intro": "Rust-free polyester fencing made with our joint-venture partner Inoventive Filaments Pvt Ltd — lighter, longer-lasting alternatives to metal wire for farms, orchards and boundaries.",
+      "seo": {
+        "title": "Fencing Solutions — Polyester Wire, Nets, Barbed Wire & Tree Guards | Jal Agritech",
+        "description": "India's first polyester barbed wire, plus polyester fibre wire, fencing nets, twisted ropes, zatka barbed wire and FRP tree guards from Jal Agritech.",
+        "keywords": "polyester fencing wire, fencing nets, polyester rope, polyester barbed wire, zatka barbed wire, FRP tree guard, farm fencing, Kutch, Gujarat, polyester barbed wire manufacturer, India's first polyester barbed wire, manufacturing"
+      },
+      "products": [
+        {
+          "title": "Polyester Fibre Wire",
+          "description": "High-tensile, UV-stabilised PET wire that never rusts — ideal for fencing and trellising.",
+          "images": [
+            "/images/products/fencing/polyester-fibre-wire-1.jpg"
+          ]
+        },
+        {
+          "title": "Fencing Nets",
+          "description": "Lightweight hexagonal polyester nets for farms, gardens, orchards and net houses.",
+          "images": [
+            "/images/products/fencing/fencing-nets-1.jpg",
+            "/images/products/fencing/fencing-nets-2.jpg",
+            "/images/products/fencing/fencing-nets-3.jpg"
+          ]
+        },
+        {
+          "title": "Polyester Twisted Ropes",
+          "description": "Strong, weather-resistant twisted ropes for fencing, support and general farm use.",
+          "images": [
+            "/images/products/fencing/polyester-ropes-1.jpg"
+          ]
+        },
+        {
+          "title": "Polyester Barbed Wire",
+          "description": "PET core wire with metal barbs — the deterrent of barbed wire with rust-free longevity.",
+          "images": [
+            "/images/products/fencing/polyester-barbed-wire-1.jpg",
+            "/images/products/fencing/polyester-barbed-wire-2.jpg"
+          ]
+        },
+        {
+          "title": "Zatka Barbed Wire",
+          "description": "Barbed wire for zatka (energised) fencing that keeps animals away from crops.",
+          "images": [
+            "/images/products/fencing/barbed-wire-coil-closeup.jpg"
+          ]
+        },
+        {
+          "title": "FRP Tree Guard",
+          "description": "Durable fibre-reinforced plastic guards that protect young saplings from animals and damage.",
+          "images": [
+            "/images/products/fencing/frp-tree-guard-1.jpg",
+            "/images/products/fencing/frp-tree-guard-2.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "irrigation-solutions",
+      "title": "Irrigation Solutions",
+      "heroImage": "/images/products/irrigation/drip-1.jpg",
+      "intro": "Complete irrigation supply for farms, campuses, townships and industrial green belts — from automation controllers and drip lines down to the last fitting, sourced from trusted manufacturers and backed by our installation team.",
+      "seo": {
+        "title": "Irrigation Solutions — Drip, Sprinkler, Pipes & Fittings | Jal Agritech",
+        "description": "Automation, drip and sprinkler irrigation systems, lateral, PVC and HDPE pipes and fittings, electrofusion and compression fittings, filtration and fertigation systems, pumps and valves from Jal Agritech, Bhuj.",
+        "keywords": "irrigation products, drip irrigation, sprinkler irrigation, automation irrigation, HDPE pipes, PVC pipes, lateral pipes, electrofusion fittings, compression fittings, fertigation, pumps, valves, Kutch, Gujarat"
+      },
+      "products": [
+        {
+          "title": "Automation Irrigation Systems",
+          "description": "Controllers, sensors and solenoid valves that schedule and run irrigation automatically, saving water and labour.",
+          "images": [
+            "/images/products/irrigation/automation-1.jpg",
+            "/images/products/irrigation/automation-2.jpg",
+            "/images/products/irrigation/automation-3.jpg"
+          ]
+        },
+        {
+          "title": "Drip Irrigation Systems",
+          "description": "Inline and online drip systems that deliver water and nutrients straight to the root zone.",
+          "images": [
+            "/images/products/irrigation/drip-3.jpg",
+            "/images/products/irrigation/drip-2.jpg",
+            "/images/products/irrigation/drip-1.jpg"
+          ]
+        },
+        {
+          "title": "Sprinkler Irrigation Systems",
+          "description": "Pop-up, impact and rain-gun sprinklers for lawns, landscapes and open-field crops.",
+          "images": [
+            "/images/products/irrigation/sprinkler-2.jpg",
+            "/images/products/irrigation/sprinkler-3.jpg",
+            "/images/products/irrigation/sprinkler-4.jpg",
+            "/images/products/irrigation/sprinkler-5.jpg",
+            "/images/products/irrigation/sprinkler-1.jpg"
+          ]
+        },
+        {
+          "title": "Lateral Pipes and Fittings",
+          "description": "LLDPE lateral pipes with joiners, take-offs, end caps and grommets for drip networks.",
+          "images": [
+            "/images/products/irrigation/lateral-fittings-rack.jpg",
+            "/images/products/irrigation/lateral-pipes-1.jpg"
+          ]
+        },
+        {
+          "title": "PVC Pipes and Fittings",
+          "description": "Pressure-rated PVC pipes, elbows, tees and couplers for mains and sub-mains.",
+          "images": [
+            "/images/products/irrigation/pvc-pipes-1.jpg",
+            "/images/products/irrigation/pvc-pipes-2.jpg"
+          ]
+        },
+        {
+          "title": "HDPE Pipes and Fittings",
+          "description": "Durable, flexible HDPE pipes for water supply and long-distance irrigation lines.",
+          "images": [
+            "/images/products/irrigation/hdpe-pipes-1.jpg",
+            "/images/products/irrigation/hdpe-pipes-2.jpg",
+            "/images/products/irrigation/hdpe-pipes-3.jpg"
+          ]
+        },
+        {
+          "title": "HDPE Electrofusion Fittings",
+          "description": "Electrofusion couplers, elbows and tees for leak-proof, permanent HDPE joints.",
+          "images": [
+            "/images/products/irrigation/hdpe-electrofusion-2.jpg",
+            "/images/products/irrigation/hdpe-electrofusion-1.jpg"
+          ]
+        },
+        {
+          "title": "Compression Fittings and Irrigation Accessories",
+          "description": "Compression couplers, adaptors, clamps and the accessories that complete every installation.",
+          "images": [
+            "/images/products/irrigation/compression-fittings-2.jpg",
+            "/images/products/irrigation/compression-fittings-1.png"
+          ]
+        },
+        {
+          "title": "Water Filtration and Fertigation Systems",
+          "description": "Screen, disc and sand filters with venturi and tank fertigation units for clean, fed water.",
+          "images": [
+            "/images/products/irrigation/filtration-fertigation-1.jpg",
+            "/images/products/irrigation/filtration-fertigation-3.png",
+            "/images/products/irrigation/filtration-fertigation-4.jpg",
+            "/images/products/irrigation/filtration-fertigation-2.jpg"
+          ]
+        },
+        {
+          "title": "Pumps, Valves, and Control Equipment",
+          "description": "Pumps, ball and air-release valves, pressure gauges and control equipment for reliable flow.",
+          "images": [
+            "/images/products/irrigation/pumps-valves-1.jpg",
+            "/images/products/irrigation/pumps-valves-2.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "agriculture-solutions",
+      "title": "Agriculture Solutions",
+      "heroImage": "/images/products/agriculture/seeds-1.jpg",
+      "intro": "Quality farm inputs and tools from leading brands — available at Jal Agro Mall with on-field advice from our agronomists.",
+      "seo": {
+        "title": "Agriculture Solutions — Fertilizers, Seeds, Crop Protection & Tools | Jal Agritech",
+        "description": "Fertilizers and plant nutrients, pesticides and crop protection, agricultural seeds, gardening tools and agricultural tools and tackles from Jal Agritech, Kutch.",
+        "keywords": "fertilizers, plant nutrients, pesticides, crop protection, agricultural seeds, gardening tools, agricultural tools, Jal Agro Mall, Kutch, Gujarat"
+      },
+      "products": [
+        {
+          "title": "Fertilizers and Plant Nutrients",
+          "description": "Water-soluble, granular, organic and micronutrient fertilizers for every crop stage.",
+          "images": [
+            "/images/products/agriculture/fertilizers-1.jpg",
+            "/images/products/agriculture/fertilizers-2.jpg"
+          ]
+        },
+        {
+          "title": "Pesticides and Crop Protection Products",
+          "description": "Insecticides, fungicides, herbicides and bio-solutions to protect crops and yields.",
+          "images": [
+            "/images/products/agriculture/pesticides-1.jpg",
+            "/images/products/agriculture/pesticides-2.jpg"
+          ]
+        },
+        {
+          "title": "Agricultural Seeds",
+          "description": "High-yield vegetable, field-crop and hybrid seeds from trusted seed companies.",
+          "images": [
+            "/images/products/agriculture/seeds-1.jpg",
+            "/images/products/agriculture/seeds-2.jpg"
+          ]
+        },
+        {
+          "title": "Gardening Tools and Equipment",
+          "description": "Pruners, trowels, hoses, sprayers and everyday tools for gardens and nurseries.",
+          "images": [
+            "/images/products/agriculture/gardening-tools-1.jpg",
+            "/images/products/agriculture/gardening-tools-2.jpg",
+            "/images/products/agriculture/gardening-tools-3.jpg"
+          ]
+        },
+        {
+          "title": "Agricultural Tools and Tackles",
+          "description": "Hand tools, sprayers and field equipment built for daily farm work.",
+          "images": [
+            "/images/products/agriculture/agri-tools-1.jpg",
+            "/images/products/agriculture/agri-tools-2.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "landscaping-solutions",
+      "title": "Landscaping Solutions",
+      "heroImage": "/images/products/landscaping/live-plants-1.jpg",
+      "intro": "Everything a landscape needs to come to life — healthy plants from our own nurseries, decorative planters and the materials that finish a space.",
+      "seo": {
+        "title": "Landscaping Solutions — Plants, Pots & Landscape Materials | Jal Agritech",
+        "description": "Garden pots and decorative planters, live plants and nursery products, and landscape materials and accessories from Jal Agritech and its nurseries across Gujarat and UP.",
+        "keywords": "landscaping products, garden pots, decorative planters, live plants, nursery plants, landscape materials, Bhuj, Kutch, Gujarat"
+      },
+      "products": [
+        {
+          "title": "Garden Pots and Decorative Planters",
+          "description": "Ceramic, FRP, plastic and cement planters in sizes for homes, offices and large landscapes.",
+          "images": [
+            "/images/products/landscaping/garden-pots-1.jpg",
+            "/images/products/landscaping/garden-pots-2.jpg",
+            "/images/products/landscaping/garden-pots-3.jpg"
+          ]
+        },
+        {
+          "title": "Live Plants and Nursery Products",
+          "description": "Ornamental, flowering, indoor, outdoor and avenue plants grown in our own nurseries.",
+          "images": [
+            "/images/products/landscaping/live-plants-1.jpg",
+            "/images/products/landscaping/live-plants-3.jpg",
+            "/images/products/landscaping/live-plants-2.jpg"
+          ]
+        },
+        {
+          "title": "Landscape Materials and Accessories",
+          "description": "Decorative fountains, garden décor, pebbles, edging and accessories that finish a landscape.",
+          "images": [
+            "/images/products/landscaping/landscape-materials-1.jpg",
+            "/images/products/landscaping/landscape-materials-2.jpg"
+          ]
+        }
+      ]
+    }
+  ]
+}

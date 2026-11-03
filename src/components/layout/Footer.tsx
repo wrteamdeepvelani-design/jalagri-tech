@@ -17,16 +17,17 @@ const COMPANY = {
 };
 
 const services = [
-  { label: "Irrigation & Landscaping", href: "/what-we-do/irrigation-and-landscaping" },
+  { label: "Landscaping & Irrigation", href: "/what-we-do/irrigation-and-landscaping" },
+  { label: "Design & Installation",    href: "/what-we-do/services" },
   { label: "Maintenance",              href: "/what-we-do/maintenance" },
-  { label: "Outlets & Nurseries",      href: "/what-we-do/outlets" },
-  { label: "Manufacturing",            href: "/what-we-do/manufacturing" },
-  { label: "Trading",                  href: "/what-we-do/trading" },
-  { label: "Professional Services",    href: "/what-we-do/services" },
+  { label: "Our Products",             href: "/products/irrigation-solutions" },
+  { label: "Polyester Fencing",        href: "/products/fencing-solutions" },
+  { label: "Outlets & Nurseries",      href: "/#outlets" },
 ];
 
 const quickLinks = [
   { label: "About Us",    href: "/about" },
+  { label: "Manufacturing", href: "/manufacturing" },
   { label: "Our Projects",href: "/projects" },
   { label: "Contact Us",  href: "/contact" },
   { label: "Get a Quote", href: "/contact" },
@@ -83,11 +84,11 @@ export default function Footer() {
               </div>
             </div>
 
-            {/* What We Do */}
+            {/* Our Services */}
             <div className="col-xl-3 col-md-5 col-lg-4 ps-lg-5 wow fadeInUp" data-wow-delay=".4s">
               <div className="single-footer-widget">
                 <div className="widget-head">
-                  <h4>what we do</h4>
+                  <h4>our services</h4>
                 </div>
                 <ul className="list-area">
                   {services.map((s) => (

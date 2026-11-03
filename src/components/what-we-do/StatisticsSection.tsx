@@ -38,7 +38,11 @@ export default function StatisticsSection({
                   {statistics.stats.map((s, si) => (
                     <div key={si} className="statistics-card">
                       <h3>
-                        <span className="count">{s.value}</span>
+                        {/* counterUp turns non-numeric values like "ISO"
+                            into 0, so only numbers get the .count hook. */}
+                        <span className={/^[\d,.]+$/.test(s.value) ? "count" : undefined}>
+                          {s.value}
+                        </span>
                         {s.suffix}
                       </h3>
                       <p>{s.description}</p>

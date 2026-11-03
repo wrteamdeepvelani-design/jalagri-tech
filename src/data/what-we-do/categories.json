@@ -1,5 +1,5 @@
 {
-  "_description": "All 6 'What We Do' categories. Sidebar reads from this — every category page shows them as 'More services'. Add/remove here = nav + sidebar update automatically. `available: true` = JSON exists at src/data/what-we-do/{slug}.json and route is live; false = link parks at /services until content is provided.",
+  "_description": "All 3 'Our Services' categories (Outlets moved to a home page section; Trading replaced by /products; Manufacturing merged into /products/fencing-solutions). Sidebar reads from this — every category page shows them as 'More services'. Add/remove here = nav + sidebar update automatically. `available: true` = JSON exists at src/data/what-we-do/{slug}.json and route is live; false = link parks at /services until content is provided.",
   "sharedSidebar": {
     "moreServicesTitle": "More services",
     "promo": {
@@ -11,11 +11,8 @@
     }
   },
   "categories": [
-    { "slug": "irrigation-and-landscaping", "title": "Irrigation and Landscaping", "available": true },
-    { "slug": "services",                   "title": "Services",                  "available": true },
-    { "slug": "maintenance",                "title": "Maintenance",               "available": true },
-    { "slug": "outlets",                    "title": "Outlets",                   "available": true },
-    { "slug": "manufacturing",              "title": "Manufacturing",             "available": true },
-    { "slug": "trading",                    "title": "Trading",                   "available": true }
+    { "slug": "irrigation-and-landscaping", "title": "Landscaping and Irrigation", "available": true },
+    { "slug": "services",                   "title": "Design & Installation",     "available": true },
+    { "slug": "maintenance",                "title": "Maintenance",               "available": true }
   ]
 }

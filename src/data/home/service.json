@@ -4,7 +4,7 @@
     "background": "/images/what-we-do/real/campus-landscape.jpg",
     "eyebrow": {
       "icon": "/images/home-2/icon/04.svg",
-      "text": "what we do"
+      "text": "our services"
     },
     "headline": "Complete Agriculture\nSolutions",
     "cta": {
@@ -15,7 +15,7 @@
   "cards": [
     {
       "image": "/images/what-we-do/real/campus-landscape.jpg",
-      "title": "Irrigation & Landscaping",
+      "title": "Landscaping & Irrigation",
       "href": "/what-we-do/irrigation-and-landscaping",
       "delay": ".5",
       "tags": [
@@ -33,26 +33,26 @@
       "tags": [
         "AMC",
         "On-Call Repairs",
-        "Drainage"
+        "Rain Water Harvesting"
       ],
-      "description": "Annual Maintenance Contracts, on-call repairs, landscape upkeep, and drainage & grading — healthy systems year-round."
+      "description": "Annual Maintenance Contracts, on-call repairs, landscape upkeep, and rain water harvesting — healthy systems year-round."
     },
     {
       "image": "/images/what-we-do/real/outlet-shelves.jpg",
-      "title": "Outlets & Nurseries",
-      "href": "/what-we-do/outlets",
+      "title": "Our Products",
+      "href": "/products/irrigation-solutions",
       "delay": ".3",
       "tags": [
-        "5 Outlets",
-        "Gujarat & UP",
-        "Walk-In"
+        "Irrigation",
+        "Agriculture",
+        "Fencing"
       ],
-      "description": "Jal Agro Mall, Neelkanth, Bholenath, Boondh Agritech and Garden Care — plants, irrigation parts and on-site advice."
+      "description": "Irrigation, landscaping, agriculture and fencing products — pipes, fittings, plants, fertilizers, seeds and polyester fencing."
     },
     {
       "image": "/images/what-we-do/generated/polyester-barbed-wire-fencing.jpg",
       "title": "Manufacturing",
-      "href": "/what-we-do/manufacturing",
+      "href": "/manufacturing",
       "delay": ".5",
       "tags": [
         "R&D-Driven",

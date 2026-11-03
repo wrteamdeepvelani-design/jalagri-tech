@@ -2,6 +2,8 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
+import productData from "@/data/products/products.json";
 
 /**
  * OffcanvasSidebar — mobile slide-in panel.
@@ -24,20 +26,42 @@ const navItems = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about" },
   {
-    label: "What We Do",
+    label: "Our Services",
     href: "#",
     submenu: [
-      { label: "Irrigation and Landscaping", href: "/what-we-do/irrigation-and-landscaping" },
-      { label: "Services", href: "/what-we-do/services" },
+      { label: "Landscaping and Irrigation", href: "/what-we-do/irrigation-and-landscaping" },
+      { label: "Design & Installation", href: "/what-we-do/services" },
       { label: "Maintenance", href: "/what-we-do/maintenance" },
-      { label: "Outlets", href: "/what-we-do/outlets" },
-      { label: "Manufacturing", href: "/what-we-do/manufacturing" },
-      { label: "Trading", href: "/what-we-do/trading" },
     ],
   },
+  {
+    label: "Products",
+    href: "#",
+    submenu: productData.categories.map((c) => ({
+      label: c.title,
+      href: `/products/${c.slug}`,
+    })),
+  },
+  { label: "Manufacturing", href: "/manufacturing" },
   { label: "Our Projects", href: "/projects" },
   { label: "Contact Us", href: "/contact" },
 ];
+
+type NavItem = (typeof navItems)[number];
+
+/** Active when the route is the item's page, or one of its submenu pages. */
+function isActive(item: NavItem, pathname: string) {
+  const strip = (p: string) => p.replace(/\/$/, "") || "/";
+  const path = strip(pathname);
+  if (item.submenu) {
+    return item.submenu.some((sub) => {
+      const base = strip(sub.href).split("/").slice(0, 2).join("/");
+      return path.startsWith(base + "/");
+    });
+  }
+  const href = strip(item.href);
+  return href === "/" ? path === "/" : path === href || path.startsWith(href + "/");
+}
 
 function closeOffcanvas() {
   document.querySelector(".offcanvas__info")?.classList.remove("info-open");
@@ -45,7 +69,9 @@ function closeOffcanvas() {
 }
 
 export default function OffcanvasSidebar() {
-  const [openSubmenu, setOpenSubmenu] = useState(false);
+  const pathname = usePathname() ?? "/";
+  // Label of the expanded submenu; only one is open at a time.
+  const [openSubmenu, setOpenSubmenu] = useState<string | null>(null);
 
   return (
     <>
@@ -74,7 +100,7 @@ export default function OffcanvasSidebar() {
                     <ul>
                       {navItems.map((item) =>
                         item.submenu ? (
-                          <li key={item.label}>
+                          <li key={item.label} className={isActive(item, pathname) ? "active" : undefined}>
                             <Link
                               href={item.href}
                               onClick={(e) => e.preventDefault()}
@@ -82,18 +108,18 @@ export default function OffcanvasSidebar() {
                               {item.label}
                             </Link>
                             <a
-                              className={`mean-expand${openSubmenu ? " mean-clicked" : ""}`}
+                              className={`mean-expand${openSubmenu === item.label ? " mean-clicked" : ""}`}
                               href="#"
                               onClick={(e) => {
                                 e.preventDefault();
-                                setOpenSubmenu((v) => !v);
+                                setOpenSubmenu((v) => (v === item.label ? null : item.label));
                               }}
                             >
                               <i className="far fa-plus"></i>
                             </a>
                             <ul
                               className="submenu"
-                              style={{ display: openSubmenu ? "block" : "none" }}
+                              style={{ display: openSubmenu === item.label ? "block" : "none" }}
                             >
                               {item.submenu.map((sub) => (
                                 <li key={sub.href}>
@@ -105,7 +131,7 @@ export default function OffcanvasSidebar() {
                             </ul>
                           </li>
                         ) : (
-                          <li key={item.label}>
+                          <li key={item.label} className={isActive(item, pathname) ? "active" : undefined}>
                             <Link href={item.href} onClick={closeOffcanvas}>
                               {item.label}
                             </Link>

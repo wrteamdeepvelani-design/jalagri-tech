@@ -1,9 +1,9 @@
 {
   "slug": "services",
-  "title": "Services",
+  "title": "Design & Installation",
   "heroImage": "/images/what-we-do/real/site-planting-crew.jpg",
   "seo": {
-    "title": "Professional Services — Survey, Design, Installation & Consultation | Jal Agritech",
+    "title": "Design & Installation — Survey, Design, Installation & Consultation | Jal Agritech",
     "description": "End-to-end professional services from Jal Agritech — site survey, landscape and irrigation design, turn-key installation, and consultation & support.",
     "keywords": "agriculture services, irrigation design, landscape design, project survey, turn-key installation, consultation, jal agritech services"
   },
@@ -20,12 +20,12 @@
     },
     {
       "title": "Turn-Key Installation",
-      "image": "/images/what-we-do/real/rooftop-install-2.jpg",
+      "image": "/images/what-we-do/real/turnkey-installation.jpg",
       "anchor": "topic-2"
     },
     {
       "title": "Consultation & Support",
-      "image": "/images/what-we-do/real/outlet-shelves.jpg",
+      "image": "/images/what-we-do/real/consultation-support.jpg",
       "anchor": "topic-3"
     }
   ],
@@ -76,8 +76,8 @@
         "We provide complete turn-key installation services, managing every stage of project execution from procurement and logistics to installation, testing, and commissioning. Our experienced team ensures the seamless implementation of irrigation systems, landscaping works, water features, environmental projects, and related infrastructure in accordance with approved designs and quality standards. With a focus on safety, efficiency, and timely delivery, we provide fully operational solutions that meet client requirements and ensure long-term performance and reliability."
       ],
       "thumbnails": [
-        "/images/what-we-do/real/rooftop-plantation-install.jpg",
-        "/images/what-we-do/real/rooftop-install-2.jpg"
+        "/images/what-we-do/real/turnkey-installation.jpg",
+        "/images/what-we-do/real/turnkey-commissioning.jpg"
       ],
       "sections": []
     },

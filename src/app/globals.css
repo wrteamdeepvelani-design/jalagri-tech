@@ -941,10 +941,8 @@ div.breadcrumb-wrapper.bg-cover::after {
   width: auto;
   height: auto;
   object-fit: contain;
-  /* Muted by default so the row reads as one system; true colour on hover. */
-  filter: grayscale(100%);
-  opacity: 0.78;
-  transition: filter 0.35s ease, opacity 0.35s ease;
+  /* Full brand colour always; hover scales the mark up. */
+  transition: transform 0.35s ease;
 }
 /* Some brand assets only exist as white-on-transparent versions, which are
    invisible on the white card. Those get a dark plate behind the logo so the
@@ -953,13 +951,6 @@ div.breadcrumb-wrapper.bg-cover::after {
   background: #24352a;
   border-radius: 8px;
   padding: 8px 14px;
-}
-.client-card__logo--on-dark img {
-  filter: none;
-  opacity: 0.92;
-}
-.client-card:hover .client-card__logo--on-dark img {
-  opacity: 1;
 }
 .client-card__name {
   margin: 0;
@@ -970,18 +961,317 @@ div.breadcrumb-wrapper.bg-cover::after {
   color: var(--text);
   transition: color 0.35s ease;
 }
-/* Emphasis without movement — a lift would escape the Swiper's clipped box
-   and slide under neighbouring slides, which stack above it. */
+/* The card itself doesn't lift — that would escape the Swiper's clipped box
+   and slide under neighbouring slides. The logo scales inside its card. */
 .client-card:hover {
   border-color: rgba(17, 162, 27, 0.55);
-  box-shadow: 0 6px 18px rgba(17, 162, 27, 0.12);
+  box-shadow: 0 8px 22px rgba(17, 162, 27, 0.16);
+  background: #f6fbf6;
 }
 .client-card:hover .client-card__logo img {
-  filter: grayscale(0);
-  opacity: 1;
+  transform: scale(1.1);
 }
 .client-card:hover .client-card__name {
   color: var(--theme3);
+}
+.brand-section-2 .section-title {
+  margin-bottom: 30px;
+}
+
+/* Product category pages (/products/[category]).
+   The theme capitalises every <p>/<span>; product copy is sentence case. */
+.product-section {
+  --product-green: #0b7a13; /* darker than --theme3 so small text passes 4.5:1 */
+  --product-ease: cubic-bezier(0.16, 1, 0.3, 1);
+}
+.product-section p,
+.product-section span {
+  text-transform: none;
+}
+.product-section__head p {
+  max-width: 680px;
+  margin: 16px auto 0;
+  text-wrap: pretty;
+}
+.product-section__tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 36px 0 44px;
+}
+.product-section__tabs a {
+  padding: 9px 20px;
+  border: 1px solid rgba(47, 47, 47, 0.14);
+  border-radius: 100px;
+  background: var(--white);
+  color: var(--header);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.4;
+  white-space: nowrap;
+  transition: background 0.3s var(--product-ease), border-color 0.3s var(--product-ease), color 0.3s var(--product-ease);
+}
+.product-section__tabs a:hover {
+  border-color: var(--product-green);
+  color: var(--product-green);
+}
+.product-section__tabs a.is-active {
+  background: var(--product-green);
+  border-color: var(--product-green);
+  color: var(--white);
+}
+.product-section__tabs a:focus-visible,
+.product-card__cta:focus-visible,
+.product-card__thumbs button:focus-visible {
+  outline: 2px solid var(--product-green);
+  outline-offset: 3px;
+}
+
+.product-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background: var(--white);
+  border: 1px solid rgba(47, 47, 47, 0.08);
+  border-radius: 18px;
+  box-shadow: 0 1px 2px rgba(22, 48, 24, 0.04);
+  transition: transform 0.5s var(--product-ease), box-shadow 0.5s var(--product-ease);
+}
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 44px -26px rgba(22, 60, 26, 0.45);
+}
+
+/* Photo frame: every photo is stacked and cross-faded, so switching never
+   reflows the card. Cover fills the frame — no letterbox bars. */
+.product-card__media {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #eef2ec;
+}
+/* Photos show whole (contain) so nothing is cut off; a blurred, enlarged
+   copy of the active photo fills the rest of the frame. */
+.product-card__backdrop {
+  position: absolute;
+  inset: -24px;
+  width: calc(100% + 48px);
+  height: calc(100% + 48px);
+  object-fit: cover;
+  filter: blur(22px) saturate(1.15);
+  opacity: 0.7;
+}
+.product-card__photo {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity 0.45s var(--product-ease), transform 0.9s var(--product-ease);
+}
+.product-card__photo.is-active {
+  opacity: 1;
+}
+.product-card:hover .product-card__photo.is-active {
+  transform: scale(1.03);
+}
+/* Bottom scrim so the thumbnail strip reads on light photos. */
+.product-card__media:has(.product-card__thumbs)::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  inset: auto 0 0;
+  height: 42%;
+  background: linear-gradient(to top, rgba(12, 24, 13, 0.5), rgba(12, 24, 13, 0));
+  pointer-events: none;
+}
+.product-card__count {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 2;
+  padding: 3px 10px;
+  border-radius: 100px;
+  background: rgba(12, 24, 13, 0.62);
+  color: var(--white);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.6;
+  font-variant-numeric: tabular-nums;
+}
+.product-card__thumbs {
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: 12px;
+  z-index: 2;
+  display: flex;
+  gap: 6px;
+}
+.product-card__thumbs button {
+  flex: 0 0 auto;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  border: 2px solid rgba(255, 255, 255, 0.75);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--white);
+  opacity: 0.8;
+  transition: opacity 0.25s var(--product-ease), border-color 0.25s var(--product-ease), transform 0.25s var(--product-ease);
+}
+.product-card__thumbs button:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+.product-card__thumbs button.is-active {
+  opacity: 1;
+  border-color: var(--white);
+  box-shadow: 0 0 0 2px var(--product-green);
+}
+.product-card__thumbs img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.product-card__placeholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background:
+    radial-gradient(circle at 1px 1px, rgba(11, 122, 19, 0.12) 1px, transparent 0) 0 0 / 18px 18px,
+    #eef2ec;
+  color: #4a6b4c;
+  font-size: 14px;
+  font-weight: 600;
+}
+.product-card__placeholder i {
+  font-size: 34px;
+  color: #6f9a71;
+}
+
+.product-card__body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 18px 12px 10px;
+}
+.product-card__body h3 {
+  margin-bottom: 8px;
+  font-size: 20px;
+  line-height: 1.3;
+  text-wrap: balance;
+}
+.product-card__body p {
+  margin: 0 0 18px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text);
+}
+/* Compact .theme-btn in the site's green (the theme default is red). */
+.product-card__cta.theme-btn {
+  background-color: var(--product-green);
+  margin-top: auto;
+  align-self: flex-start;
+  gap: 8px;
+  padding: 11px 22px;
+  font-size: 15px;
+}
+/* .theme-btn forces outline: none !important, so ring with a shadow. */
+.product-card__cta.theme-btn:focus-visible {
+  box-shadow: 0 0 0 3px var(--white), 0 0 0 5px var(--product-green);
+}
+.product-card__cta i {
+  font-size: 13px;
+  transition: transform 0.35s var(--product-ease);
+}
+.product-card__cta:hover i,
+.product-card:hover .product-card__cta i {
+  transform: translateX(4px);
+}
+@media (max-width: 575px) {
+  .product-section__tabs {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+    margin: 28px -15px 32px;
+    padding: 0 15px 4px;
+    scrollbar-width: none;
+  }
+  .product-card__thumbs button {
+    width: 36px;
+    height: 36px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .product-card,
+  .product-card__photo,
+  .product-card__thumbs button,
+  .product-card__cta i {
+    transition: opacity 0.2s linear;
+    transform: none !important;
+  }
+}
+
+/* Home page outlets section. */
+.outlet-section {
+  background: var(--bg);
+}
+.outlet-section__intro {
+  max-width: 680px;
+  margin: 16px auto 0;
+}
+.outlet-card {
+  height: 100%;
+  background: var(--white);
+  border-radius: 14px;
+  overflow: hidden;
+  transition: box-shadow 0.35s ease;
+}
+.outlet-card:hover {
+  box-shadow: 0 10px 26px rgba(17, 162, 27, 0.14);
+}
+.outlet-card__image {
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+}
+.outlet-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.outlet-card:hover .outlet-card__image img {
+  transform: scale(1.05);
+}
+.outlet-card__body {
+  padding: 22px 24px 26px;
+}
+.outlet-card__location {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--theme3);
+  margin-bottom: 6px;
+}
+.outlet-card__body h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.outlet-card__body p {
+  margin: 0;
+  font-size: 15px;
 }
 @media (max-width: 767px) {
   .client-card {
@@ -1529,35 +1819,27 @@ div.breadcrumb-wrapper.bg-cover::after {
   letter-spacing: 0.02em;
 }
 
-/* Header logo — the enlarged, floating mark is only for the white sticky
-   bar, where it reads as a badge overhanging the bar. The transparent
-   homepage header and the inner-page green bar keep the plain inline logo. */
-.sticky .header-main .header-left .logo {
-  position: relative;
-  z-index: 3;
+/* Sticky (scrolled) header — kept compact so it covers as little of the
+   page as possible: an inline logo that fits inside the bar, less padding
+   and a smaller Contact Us button. Applies to every page's sticky header. */
+.sticky .header-main {
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
 }
 .sticky .header-main .header-left .logo .header-logo-2 {
-  position: relative;
   display: block;
-  height: 90px;
-  width: 132px;
 }
 .sticky .header-main .header-left .logo .header-logo-2 img {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  height: 132px;
+  height: 70px; /* tall, narrow mark — needs the height to stay legible */
   width: auto;
-  max-width: none;
+}
+.sticky .header-main .header-right .header-btn .header-button a {
+  padding: 10px 22px;
+  font-size: 15px;
 }
 @media (max-width: 991px) {
-  .sticky .header-main .header-left .logo .header-logo-2 {
-    height: 64px;
-    width: 92px;
-  }
   .sticky .header-main .header-left .logo .header-logo-2 img {
-    height: 92px;
+    height: 56px;
   }
 }
 
@@ -1694,98 +1976,6 @@ div.breadcrumb-wrapper.bg-cover::after {
 }
 .breadcrumb-wrapper .breadcrumb-items li a:hover {
   color: #fff !important;
-}
-
-/* Client cards — logo above the client name. Replaces the theme's bare
-   .brand-box-1 logo strip (two stacked images swapped on hover). Slides sit
-   inside the theme's .brand-slider Swiper, so cards stretch to equal height. */
-/* Swiper clips at its own box; pad the track so the hover shadow renders. */
-.brand-slider {
-  padding: 10px 6px 18px;
-}
-.brand-slider .swiper-slide {
-  height: auto;
-}
-.client-card {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 14px;
-  padding: 24px 18px 20px;
-  background: var(--white);
-  border: 1px solid rgba(17, 162, 27, 0.14);
-  border-radius: 14px;
-  text-align: center;
-  transition: box-shadow 0.35s ease, border-color 0.35s ease, background 0.35s ease;
-}
-.client-card__logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 66px;
-}
-.client-card__logo img {
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
-  object-fit: contain;
-  /* Muted by default so the row reads as one system; true colour on hover. */
-  filter: grayscale(100%);
-  opacity: 0.78;
-  transition: filter 0.35s ease, opacity 0.35s ease;
-}
-/* Some brand assets only exist as white-on-transparent versions, which are
-   invisible on the white card. Those get a dark plate behind the logo so the
-   mark reads, instead of being silently blank. */
-.client-card__logo--on-dark {
-  background: #24352a;
-  border-radius: 8px;
-  padding: 8px 14px;
-}
-.client-card__logo--on-dark img {
-  filter: none;
-  opacity: 0.92;
-}
-.client-card:hover .client-card__logo--on-dark img {
-  opacity: 1;
-}
-.client-card__name {
-  margin: 0;
-  font-family: "Instrument Sans", sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1.35;
-  color: var(--text);
-  transition: color 0.35s ease;
-}
-/* Emphasis without movement — a lift would escape the Swiper's clipped box
-   and slide under neighbouring slides, which stack above it. */
-.client-card:hover {
-  border-color: rgba(17, 162, 27, 0.55);
-  box-shadow: 0 6px 18px rgba(17, 162, 27, 0.12);
-}
-.client-card:hover .client-card__logo img {
-  filter: grayscale(0);
-  opacity: 1;
-}
-.client-card:hover .client-card__name {
-  color: var(--theme3);
-}
-@media (max-width: 767px) {
-  .client-card {
-    padding: 20px 14px 16px;
-    gap: 12px;
-  }
-  .client-card__logo {
-    height: 54px;
-  }
-  .client-card__name {
-    font-size: 13px;
-  }
 }
 
 /* Service card tag pills — flex items were shrinking, so labels like
@@ -2354,3 +2544,677 @@ div.breadcrumb-wrapper.bg-cover::after {
   border-left: 0;
   padding-left: 0;
 }
+
+
+
+
+/* ───────────────────────────────────────────────────────────────────
+   Manufacturing page (/manufacturing). Theme greens and type; copy is
+   sentence case, so undo the theme's blanket capitalize here.
+   Spacing steps (4px base): 8 · 12 · 16 · 24 · 32 · 48 · 64 · 96.
+   Tight inside a chapter, generous between sections.
+   ─────────────────────────────────────────────────────────────────── */
+.mfg {
+  --mfg-green: #0b7a13;
+  --mfg-deep: #0e2a15;
+  --mfg-rule: rgba(47, 47, 47, 0.1);
+}
+.mfg p,
+.mfg span,
+.mfg dd {
+  text-transform: none;
+}
+
+/* Chapter heading: outlined number beside the title. */
+.mfg-head {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.mfg-head__num {
+  flex: 0 0 auto;
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 700;
+  line-height: 1;
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgba(11, 122, 19, 0.6);
+}
+.mfg-head h2 {
+  margin: 0;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+/* The chapter's one-line summary (its original card text). */
+.mfg-summary {
+  margin: 12px 0 0;
+  padding-left: 14px;
+  border-left: 1px solid var(--mfg-green);
+  color: var(--mfg-green);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.55;
+}
+
+/* 1. Lead chapter — text beside an overlapping photo pair. */
+.mfg-lead {
+  padding: 96px 0 64px;
+}
+.mfg-lead__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 64px;
+  align-items: center;
+}
+.mfg-lead .mfg-head__num { font-size: 72px; }
+.mfg-lead .mfg-head h2 {
+  font-size: 44px;
+  line-height: 1.1;
+}
+.mfg-lead__para {
+  margin: 24px 0 0;
+  color: var(--header);
+  font-size: 19px;
+  line-height: 1.7;
+}
+.mfg-lead__media {
+  position: relative;
+  padding-bottom: 48px;
+}
+.mfg-lead__img-main {
+  display: block;
+  width: 84%;
+  margin-left: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 18px;
+}
+.mfg-lead__img-inset {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 44%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border: 8px solid var(--bg);
+  border-radius: 20px;
+  box-shadow: 0 18px 36px -18px rgba(14, 42, 21, 0.45);
+}
+/* Remaining paragraphs: three short columns under a hairline. */
+.mfg-lead__more {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 48px;
+  margin-top: 64px;
+  padding-top: 32px;
+  border-top: 1px solid var(--mfg-rule);
+}
+.mfg-lead__more p {
+  margin: 0;
+  color: var(--text);
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+/* 2. Proof band — the original statistics block on deep green. */
+.mfg-proof {
+  padding: 80px 0;
+  background: var(--mfg-deep);
+}
+.mfg-proof__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  gap: 64px;
+  align-items: center;
+}
+/* The photo fills the row the text sets, rather than setting it. */
+.mfg-proof__image {
+  position: relative;
+  align-self: stretch;
+  min-height: 360px;
+  overflow: hidden;
+  border-radius: 18px;
+}
+.mfg-proof__image img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.mfg-proof__eyebrow {
+  display: inline-block;
+  padding: 6px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 100px;
+  color: #bfe8c2;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase !important;
+}
+.mfg-proof__content h2 {
+  margin: 16px 0 12px;
+  color: var(--white);
+  font-size: 40px;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+.mfg-proof__lead {
+  max-width: 60ch;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 17px;
+  line-height: 1.7;
+}
+.mfg-proof__stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  margin: 32px 0 0;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  overflow: hidden;
+}
+.mfg-proof__stat {
+  padding: 24px 28px;
+  background: var(--mfg-deep);
+}
+.mfg-proof__stat dt {
+  font-family: "Instrument Sans", sans-serif;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1;
+  color: #9be3a0;
+  font-variant-numeric: tabular-nums;
+}
+.mfg-proof__stat dd {
+  margin: 8px 0 0;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* 3. Chapters 2 and 3 — paired columns at a comfortable reading width. */
+.mfg-pair {
+  padding: 96px 0;
+}
+.mfg-pair__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+}
+.mfg-pair__item {
+  scroll-margin-top: 96px;
+}
+.mfg-pair__item:first-child {
+  padding-right: 48px;
+}
+.mfg-pair__item + .mfg-pair__item {
+  padding-left: 48px;
+  border-left: 1px solid var(--mfg-rule);
+}
+.mfg-pair .mfg-head__num { font-size: 56px; }
+.mfg-pair .mfg-head h2 {
+  font-size: 32px;
+  line-height: 1.15;
+}
+.mfg-pair__item p {
+  margin: 16px 0 0;
+  color: var(--text);
+  font-size: 16px;
+  line-height: 1.75;
+}
+.mfg-pair__item .mfg-summary {
+  margin-top: 12px;
+  color: var(--mfg-green);
+}
+.mfg-pair__item .mfg-pair__first {
+  margin-top: 24px;
+  color: var(--header);
+  font-size: 18px;
+  line-height: 1.7;
+}
+#topic-0 {
+  scroll-margin-top: 96px;
+}
+
+@media (max-width: 1199px) {
+  .mfg-lead .mfg-head h2 { font-size: 36px; }
+  .mfg-lead .mfg-head__num { font-size: 60px; }
+  .mfg-lead__grid { gap: 48px; }
+  .mfg-lead__more { gap: 32px; }
+  .mfg-proof__content h2 { font-size: 34px; }
+}
+@media (max-width: 991px) {
+  .mfg-lead { padding: 64px 0 48px; }
+  .mfg-lead__grid { grid-template-columns: 1fr; gap: 40px; }
+  .mfg-lead__more {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-top: 40px;
+    padding-top: 24px;
+  }
+  .mfg-proof { padding: 56px 0; }
+  .mfg-proof__grid { grid-template-columns: 1fr; gap: 32px; }
+  .mfg-proof__image { min-height: 0; aspect-ratio: 16 / 10; }
+  .mfg-proof__content h2 { font-size: 30px; }
+  .mfg-pair { padding: 64px 0; }
+  .mfg-pair__grid { grid-template-columns: 1fr; }
+  .mfg-pair__item:first-child { padding-right: 0; }
+  .mfg-pair__item + .mfg-pair__item {
+    margin-top: 48px;
+    padding-top: 48px;
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid var(--mfg-rule);
+  }
+  .mfg-pair .mfg-head__num { font-size: 44px; }
+  .mfg-pair .mfg-head h2 { font-size: 28px; }
+}
+@media (max-width: 575px) {
+  .mfg-lead .mfg-head h2 { font-size: 28px; }
+  .mfg-lead .mfg-head__num { font-size: 48px; }
+  .mfg-lead__para { font-size: 17px; }
+  .mfg-proof__stats { grid-template-columns: 1fr; }
+  .mfg-proof__stat dt { font-size: 38px; }
+}
+
+/* Inner-page header glass bar: the theme only stretches this image to the
+   header's width below 1900px, so on wider screens (or when zoomed out) it
+   stops short while the menu keeps going. Stretch it at every width. */
+.header-1.header-2 .header-main .overlay-shape img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+/* Home header — a solid white bar with dark links, a quiet phone link and a
+   green Contact Us button. Scoped to the home header (.header-1 without
+   .header-2) so inner pages keep their glass header; the theme's sticky
+   state is also white, so scrolling no longer changes its look. */
+.header-1:not(.header-2) {
+  background: var(--white);
+  border-bottom: 1px solid rgba(47, 47, 47, 0.08);
+}
+.header-1:not(.header-2) .header-main .main-menu ul li a {
+  color: var(--header);
+}
+.header-1:not(.header-2) .header-main .main-menu ul li a:hover {
+  color: #0b7a13;
+}
+.header-1:not(.header-2) .header-main .main-menu ul li .submenu {
+  border-top-color: #0b7a13;
+}
+.header-1:not(.header-2) .header-main .header-right .header-btn span {
+  padding: 0;
+  border: 0;
+  background: transparent !important;
+  font-weight: 600;
+}
+.header-1:not(.header-2) .header-main .header-right .header-btn span a {
+  color: var(--header);
+}
+.header-1:not(.header-2) .header-main .header-right .header-btn span a:hover {
+  color: #0b7a13;
+}
+.header-1:not(.header-2) .header-main .header-right .header-btn span i {
+  color: #0b7a13;
+}
+.header-1:not(.header-2) .header-button .theme-btn-2 {
+  border: 0; /* theme's .style-btns adds a yellow outline */
+  background-color: #0b7a13;
+  color: var(--white);
+}
+.header-1:not(.header-2) .header-button .theme-btn-2:hover {
+  color: var(--white);
+}
+.header-1:not(.header-2) .header-main .header-right .header-btn .sidebar__toggle {
+  color: var(--header);
+}
+
+/* Home hero client strip (HeroClients) — full-width row on a light band.
+   Logos sit in full colour without boxes; multiply blending drops the white
+   backgrounds some logo files carry, so every mark sits on the band. */
+.hero-clients {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding: 18px 0 18px max(24px, calc((100vw - 1320px) / 2));
+}
+.hero-clients__label {
+  flex: 0 0 auto;
+  padding-right: 28px;
+  border-right: 1px solid rgba(47, 47, 47, 0.14);
+  color: var(--text);
+  font-family: "Instrument Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase !important;
+  white-space: nowrap;
+}
+.hero-clients__viewport {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 48px, #000 calc(100% - 96px), transparent);
+  mask-image: linear-gradient(to right, transparent, #000 48px, #000 calc(100% - 96px), transparent);
+}
+.hero-clients__track {
+  display: flex;
+  width: max-content;
+  animation: hero-clients-scroll 60s linear infinite;
+}
+.hero-clients__viewport:hover .hero-clients__track {
+  animation-play-state: paused;
+}
+.hero-clients__group {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+  margin: 0;
+  padding: 6px 56px 6px 0;
+  list-style: none;
+}
+.hero-clients__logo {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+}
+.hero-clients__logo img {
+  width: auto;
+  max-width: 132px;
+  max-height: 44px;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.hero-clients__logo:hover img {
+  transform: translateY(-2px) scale(1.1);
+}
+@keyframes hero-clients-scroll {
+  to { transform: translateX(-50%); }
+}
+@media (max-width: 991px) {
+  .hero-clients {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    padding: 14px 0;
+  }
+  .hero-clients__label {
+    padding: 0 16px;
+    border-right: 0;
+    font-size: 12px;
+  }
+  .hero-clients__group { gap: 40px; padding-right: 40px; }
+  .hero-clients__logo { height: 40px; }
+  .hero-clients__logo img { max-width: 104px; max-height: 36px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-clients__track { animation: none; }
+  .hero-clients__viewport { overflow-x: auto; }
+}
+
+/* ───────────────────────────────────────────────────────────────────
+   Home hero (HeroSection): logo band under the floating header, then the
+   video stage with headline, CTAs and "What Makes Us Different".
+   ─────────────────────────────────────────────────────────────────── */
+.home-hero p,
+.home-hero li {
+  text-transform: none;
+}
+.home-hero__brands {
+  padding-top: 89px; /* the home header's height (it is absolutely positioned) */
+  background: #f7f8f6;
+  border-bottom: 1px solid rgba(47, 47, 47, 0.08);
+}
+.home-hero__stage {
+  position: relative;
+  display: flex;
+  min-height: max(560px, calc(100svh - 200px));
+  overflow: hidden;
+  background: #1b1d1c;
+}
+.home-hero__video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* Darken the left (text side) and the bottom (points strip) only. */
+.home-hero__stage::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    linear-gradient(90deg, rgba(8, 20, 10, 0.86) 0%, rgba(8, 20, 10, 0.55) 45%, rgba(8, 20, 10, 0.12) 100%),
+    linear-gradient(to top, rgba(8, 20, 10, 0.7) 0%, rgba(8, 20, 10, 0) 30%);
+}
+.home-hero__inner {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 56px;
+  padding-top: 96px;
+}
+.home-hero__content {
+  max-width: 660px;
+}
+.home-hero__content h1 {
+  margin: 0;
+  color: var(--white);
+  font-size: clamp(42px, 5.2vw, 76px);
+  line-height: 1.04;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+.home-hero__content p {
+  max-width: 52ch;
+  margin: 22px 0 0;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 19px;
+  line-height: 1.6;
+}
+.home-hero__ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 36px;
+}
+.home-hero__ctas .theme-btn-2 {
+  gap: 10px;
+}
+/* Sized to match .theme-btn-2 so the pair reads as one row. */
+.home-hero__ghost {
+  display: inline-flex;
+  align-items: center;
+  padding: 15px 30px;
+  font-size: 16px;
+  line-height: 1.6;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 8px;
+  color: var(--white);
+  font-weight: 700;
+  transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+.home-hero__ghost:hover {
+  background: var(--white);
+  border-color: var(--white);
+  color: var(--header);
+}
+.home-hero__ghost:focus-visible {
+  outline: 2px solid var(--theme2);
+  outline-offset: 3px;
+}
+.home-hero__points {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px 32px;
+  padding: 24px 0 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+}
+.home-hero__points h2 {
+  margin: 0;
+  color: var(--white);
+  font-size: 20px;
+}
+.home-hero__points ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 28px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.home-hero__points li {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 16px;
+  font-weight: 500;
+}
+.home-hero__points li i {
+  color: var(--theme2);
+}
+@media (max-width: 991px) {
+  .home-hero__brands { padding-top: 76px; }
+  .home-hero__stage { min-height: 560px; }
+  .home-hero__stage::before {
+    background:
+      linear-gradient(180deg, rgba(8, 20, 10, 0.55) 0%, rgba(8, 20, 10, 0.75) 100%);
+  }
+  .home-hero__inner { padding-top: 64px; gap: 40px; }
+  .home-hero__content p { font-size: 17px; }
+  .home-hero__points ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+  .home-hero__points li { font-size: 14px; }
+}
+
+/* Active menu item — the theme ships no active style (its hard-coded
+   "active" class did nothing). Header.tsx / OffcanvasSidebar.tsx now set
+   "active" from the route. Underline + colour, tuned per header surface. */
+.main-menu ul > li.active > a {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 10px;
+}
+.header-1:not(.header-2) .main-menu ul > li.active > a,
+.sticky.header-1 .main-menu ul > li.active > a {
+  color: #0b7a13;
+  text-decoration-color: #0b7a13;
+}
+.header-1.header-2:not(.sticky) .main-menu ul > li.active > a {
+  color: var(--white);
+  text-decoration-color: var(--theme2);
+}
+.mobile-menu .mean-nav ul > li.active > a {
+  color: #0b7a13;
+}
+
+/* Logo strip: multiply blending only reaches the backdrop inside the
+   track's own layer (its transform isolates it), so give the track the
+   band colour — white logo backgrounds then disappear into the band. */
+.hero-clients__track {
+  background: #f7f8f6;
+}
+
+
+/* Home header logo — the portrait mark reads too small at the global 50px
+   on the white bar; give it more presence on desktop. */
+@media (min-width: 992px) {
+  .header-1:not(.header-2):not(.sticky) .header-logo img {
+    height: 64px;
+  }
+}
+
+
+
+
+
+
+
+/* Our Services pages — consecutive sections on the same background each
+   kept the theme's 120px padding, stacking into a ~240px empty gap. Close
+   the join to one 80px step (56px on small screens). */
+.service-section-4 + .service-details-section,
+.our-statistics-section + .service-details-section,
+.service-details-section + .our-statistics-section {
+  padding-top: 0;
+}
+.service-section-4:has(+ .service-details-section),
+.our-statistics-section:has(+ .service-details-section),
+.service-details-section:has(+ .our-statistics-section) {
+  padding-bottom: 80px;
+}
+@media (max-width: 991px) {
+  .service-section-4:has(+ .service-details-section),
+  .our-statistics-section:has(+ .service-details-section),
+  .service-details-section:has(+ .our-statistics-section) {
+    padding-bottom: 56px;
+  }
+}
+
+
+
+
+
+/* Manufacturing page — Fencing Solutions products after the chapters.
+   Reuses the product cards (.product-section supplies their tokens). */
+.mfg-products {
+  padding: 72px 0 96px;
+  border-top: 1px solid rgba(47, 47, 47, 0.1);
+}
+.mfg-products__head {
+  max-width: 720px;
+  margin-bottom: 40px;
+}
+.mfg-products__head h2 {
+  margin: 0;
+  font-size: 38px;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+.mfg-products__head p {
+  margin: 12px 0 0;
+  color: var(--text);
+  font-size: 17px;
+  line-height: 1.7;
+}
+@media (max-width: 991px) {
+  .mfg-products { padding: 56px 0 64px; }
+  .mfg-products__head { margin-bottom: 28px; }
+  .mfg-products__head h2 { font-size: 30px; }
+}
+
+
+/* Bootstrap sets `scroll-behavior: smooth` on :root. ScrollSmoother already
+   smooths scrolling, and CSS smoothing turns programmatic jumps (new page →
+   top, ScrollTrigger refresh) into slow animations that get interrupted —
+   pages then opened scrolled to the footer. */
+html {
+  scroll-behavior: auto !important;
+}
+
+
+/* Browser scroll anchoring nudges the native scroll when content above
+   grows; with ScrollSmoother's fixed wrapper that shows up as a page that
+   opens a little scrolled. The smoother handles positioning itself. */
+html,
+body {
+  overflow-anchor: none;
+}
+

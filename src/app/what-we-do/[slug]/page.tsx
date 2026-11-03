@@ -30,9 +30,6 @@ import categoriesData from "@/data/what-we-do/categories.json";
 import irrigationData from "@/data/what-we-do/irrigation-and-landscaping.json";
 import servicesData from "@/data/what-we-do/services.json";
 import maintenanceData from "@/data/what-we-do/maintenance.json";
-import outletsData from "@/data/what-we-do/outlets.json";
-import manufacturingData from "@/data/what-we-do/manufacturing.json";
-import tradingData from "@/data/what-we-do/trading.json";
 
 type Params = { slug: string };
 
@@ -46,9 +43,6 @@ const contentBySlug: Record<string, AnyContent> = {
   "irrigation-and-landscaping": irrigationData as unknown as AnyContent,
   "services":                   servicesData as unknown as AnyContent,
   "maintenance":                maintenanceData as unknown as AnyContent,
-  "outlets":                    outletsData as unknown as AnyContent,
-  "manufacturing":              manufacturingData as unknown as AnyContent,
-  "trading":                    tradingData as unknown as AnyContent,
 };
 
 type Block = "cards" | "grid" | "impact" | "stats" | "detail";
@@ -58,9 +52,6 @@ const layoutBySlug: Record<string, Block[]> = {
   "irrigation-and-landscaping": ["cards",  "impact", "stats",  "detail"],
   "services":                   ["grid",                       "detail"],
   "maintenance":                [          "impact",           "detail", "stats"],
-  "outlets":                    ["grid",                       "detail"],
-  "manufacturing":              ["cards",            "stats",  "detail"],
-  "trading":                    ["grid",   "impact",           "detail"],
 };
 
 export function generateStaticParams() {
@@ -106,7 +97,7 @@ export default async function WhatWeDoDetailPage(
       <Breadcrumb
         title={content.title}
         items={[
-          { label: "What We Do", href: "#" },
+          { label: "Our Services", href: "#" },
           { label: content.title },
         ]}
       />

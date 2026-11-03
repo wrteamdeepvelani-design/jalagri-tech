@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import productData from "@/data/products/products.json";
 
 /**
  * Header — static markup matching the theme. The theme's main.js handles:
@@ -19,48 +20,71 @@ const homeMenuItems = [
   { href: "/home-4", img: "/images/header/home-4.jpg", title: "Vegetable Farming" },
 ];
 
+/** Which top-level item the current route belongs to (for the active state). */
+function sectionOf(pathname: string) {
+  if (pathname === "/") return "home";
+  if (pathname.startsWith("/about")) return "about";
+  if (pathname.startsWith("/what-we-do")) return "services";
+  if (pathname.startsWith("/products")) return "products";
+  if (pathname.startsWith("/projects")) return "projects";
+  if (pathname.startsWith("/manufacturing")) return "manufacturing";
+  return "";
+}
+
 function NavMenu({ isInner }: { isInner: boolean }) {
+  const section = sectionOf(usePathname() ?? "");
+  const active = (key: string, base = "") =>
+    [base, section === key ? "active" : ""].filter(Boolean).join(" ") || undefined;
+
   return (
     <div className="main-menu">
       <nav id="mobile-menu">
         <ul>
           {/* Home - desktop mega menu */}
-          <li className="has-dropdown active menu-thumb">
+          <li className={active("home", "has-dropdown menu-thumb")}>
             <Link href="/">Home</Link>
           </li>
 
           {/* Home - mobile only */}
-          <li className="has-dropdown active d-xl-none">
+          <li className={active("home", "has-dropdown d-xl-none")}>
             <Link href="/" className="border-none">Home</Link>
           </li>
 
-          <li className="has-dropdown">
+          <li className={active("about", "has-dropdown")}>
             <Link href="/about">About Us</Link>
           </li>
 
-          <li className="has-dropdown">
-            {/* "What We Do" is a non-routing parent — clicking just opens
-                the dropdown. All 6 submenu items link to
+          <li className={active("services", "has-dropdown")}>
+            {/* "Our Services" is a non-routing parent — clicking just opens
+                the dropdown. All 3 submenu items link to
                 /what-we-do/[slug] dynamic routes powered by the JSONs in
                 src/data/what-we-do/. Slugs MUST match the JSON filenames
                 and categories.json `slug` field. */}
-            <Link href="#" onClick={(e) => e.preventDefault()}>What We Do</Link>
+            <Link href="#" onClick={(e) => e.preventDefault()}>Our Services</Link>
             <ul className="submenu">
-              <li><Link href="/what-we-do/irrigation-and-landscaping">Irrigation and Landscaping</Link></li>
-              <li><Link href="/what-we-do/services">Services</Link></li>
+              <li><Link href="/what-we-do/irrigation-and-landscaping">Landscaping and Irrigation</Link></li>
+              <li><Link href="/what-we-do/services">Design &amp; Installation</Link></li>
               <li><Link href="/what-we-do/maintenance">Maintenance</Link></li>
-              <li><Link href="/what-we-do/outlets">Outlets</Link></li>
-              <li><Link href="/what-we-do/manufacturing">Manufacturing</Link></li>
-              <li><Link href="/what-we-do/trading">Trading</Link></li>
             </ul>
           </li>
 
-          <li className="has-dropdown">
-            <Link href="/projects">Our Projects</Link>
+          <li className={active("products", "has-dropdown")}>
+            {/* Non-routing parent; categories come from products.json. */}
+            <Link href="#" onClick={(e) => e.preventDefault()}>Products</Link>
+            <ul className="submenu">
+              {productData.categories.map((c) => (
+                <li key={c.slug}><Link href={`/products/${c.slug}`}>{c.title}</Link></li>
+              ))}
+            </ul>
           </li>
 
-          <li>
-            <Link href="/contact">Contact Us</Link>
+          <li className={active("manufacturing")}>
+            <Link href="/manufacturing">Manufacturing</Link>
+          </li>
+
+          {/* Contact Us lives in the header button (and the mobile menu). */}
+          <li className={active("projects", "has-dropdown")}>
+            <Link href="/projects">Our Projects</Link>
           </li>
         </ul>
       </nav>
@@ -88,10 +112,10 @@ export default function Header() {
               <div className="header-left">
                 <div className="logo">
                   <Link href="/" className="header-logo">
-                    <img src="/images/logo/logo.png" alt="Jal Agritech India Pvt Ltd" />
+                    <img src="/images/logo/logo-mark.png" alt="Jal Agritech India Pvt Ltd" />
                   </Link>
                   <Link href="/" className="header-logo-2">
-                    <img src="/images/logo/logo.png" alt="Jal Agritech India Pvt Ltd" />
+                    <img src="/images/logo/logo-mark.png" alt="Jal Agritech India Pvt Ltd" />
                   </Link>
                 </div>
               </div>
@@ -108,7 +132,7 @@ export default function Header() {
                   </span>
                   <div className="header-button">
                     <Link href="/contact" className="theme-btn-2 style-btns">
-                      Get In Touch
+                      Contact Us
                     </Link>
                   </div>
                   <div className="header__hamburger d-lg-none my-auto">
@@ -144,10 +168,10 @@ export default function Header() {
             <div className="header-left">
               <div className="logo">
                 <Link href="/" className="header-logo">
-                  <img src="/images/logo/logo.png" alt="Jal Agritech India Pvt Ltd" />
+                  <img src="/images/logo/logo-mark.png" alt="Jal Agritech India Pvt Ltd" />
                 </Link>
                 <Link href="/" className="header-logo-2">
-                  <img src="/images/logo/logo.png" alt="Jal Agritech India Pvt Ltd" />
+                  <img src="/images/logo/logo-mark.png" alt="Jal Agritech India Pvt Ltd" />
                 </Link>
               </div>
             </div>
@@ -161,7 +185,7 @@ export default function Header() {
               <div className="header-btn">
                 <div className="header-button">
                   <Link href="/contact" className="theme-btn theme-btn-3">
-                    Get In Touch
+                    Contact Us
                   </Link>
                 </div>
                 <div className="header__hamburger d-lg-none my-auto">

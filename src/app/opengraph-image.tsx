@@ -61,7 +61,7 @@ export default async function Image() {
           Irrigation · Landscaping · Agriculture Solutions
         </div>
         <div style={{ marginTop: 14, fontSize: 24, color: "#a9c79c" }}>
-          15+ years · Bhuj-Kutch, Gujarat · Pan-India
+          20+ years · Bhuj-Kutch, Gujarat · Pan-India
         </div>
       </div>
     ),
